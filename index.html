@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Planet - Bảng Điều Khiển Quản Lý</title>
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="theme-dark">
+
+  <!-- Thanh Tiêu Đề Chính (Header) -->
+  <header class="header">
+    <div class="header__left">
+      <div class="brand">
+        <img class="brand__logo" src="https://lh3.googleusercontent.com/aida/AEtjO1WpcGzfKgHlO-sqc1Ob6rGwNsFut5QNfN10ihrov1u1a_xq27giNvmqOB5PZa4MtJQHzVO6GRp-V63eOKFmUeZ4FHtQeS6t7tkq0jsar5aSdONhGapXwSxuZxXeAsnuXLTnOlu5us8a-HhaFnjp1eunSXi808l7I509fndxImvjIiXfV4COVivm0QVVldtgc_4etJQy0N_xHguqEXiKBR2wvE72LT-KiJP_dup6V94MetUtWDdkq6lkBwS_" alt="Crypto Planet Logo"/>
+        <span class="brand__name">Crypto Planet</span>
+      </div>
+      
+      <div class="divider divider--vertical"></div>
+      
+      <div class="ticker-badge">
+        <span class="ticker-badge__label">BTC/USDT</span>
+        <span class="ticker-badge__price">$67,482.35</span>
+        <span class="badge badge--success">+2.35%</span>
+      </div>
+      
+      <div class="divider divider--vertical"></div>
+      
+      <nav class="nav-top">
+        <a class="nav-top__link" href="#">Thị trường</a>
+        <a class="nav-top__link" href="#">Giao dịch</a>
+        <a class="nav-top__link" href="#">Ví tiền</a>
+      </nav>
+    </div>
+
+    <div class="header__right">
+      <form class="search-bar" role="search" onsubmit="event.preventDefault();">
+        <span class="material-symbols-outlined search-bar__icon">search</span>
+        <input class="search-bar__input" type="search" placeholder="Tìm kiếm cặp, token..." aria-label="Tìm kiếm cặp giao dịch, token"/>
+        <kbd class="search-bar__shortcut">⌘K</kbd>
+      </form>
+
+      <div class="user-role-badge">
+        <span class="status-dot status-dot--pulse"></span>
+        <span class="user-role-badge__label">Vai trò:</span>
+        <span class="user-role-badge__value">Nhà giao dịch</span>
+        <span class="material-symbols-outlined icon-sm">expand_more</span>
+      </div>
+
+      <div class="balance-summary">
+        <span class="balance-summary__label">Tổng số dư ước tính</span>
+        <span class="balance-summary__value">$124,580.42</span>
+      </div>
+
+      <button class="btn btn--tertiary btn--icon">
+        <span class="material-symbols-outlined">add</span>
+        <span>Nạp tiền</span>
+      </button>
+
+      <button class="btn-icon-wrapper" aria-label="Thông báo">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="notification-dot"></span>
+      </button>
+
+      <div class="profile-menu">
+        <div class="avatar">
+          <span class="material-symbols-outlined">person</span>
+        </div>
+        <span class="material-symbols-outlined icon-sm profile-menu__chevron">expand_more</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Thanh Điều Hướng Bên Cạnh (Sidebar) -->
+  <aside class="sidebar">
+    <div class="sidebar__content">
+      <div class="sidebar__group">
+        <h3 class="sidebar__heading">Thao tác Giao dịch</h3>
+        <nav class="nav-sidebar">
+          <a class="nav-sidebar__item nav-sidebar__item--active" href="#" aria-current="page">
+            <span class="material-symbols-outlined">dashboard</span>
+            <span>Tổng quan</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">show_chart</span>
+            <span>Thị trường</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">candlestick_chart</span>
+            <span>Giao dịch (Spot)</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">swap_calls</span>
+            <span>Giao dịch (Futures)</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">account_balance_wallet</span>
+            <span>Tài sản &amp; Ví</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">receipt_long</span>
+            <span>Lệnh giao dịch</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">history</span>
+            <span>Lịch sử giao dịch</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">notification_important</span>
+            <span>Cảnh báo giá</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">monitoring</span>
+            <span>Phân tích biểu đồ</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">campaign</span>
+            <span>Ưu đãi &amp; Khuyến mãi</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar__group">
+        <h3 class="sidebar__heading">Cấu hình hệ thống</h3>
+        <nav class="nav-sidebar">
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">headset_mic</span>
+            <span>Trung tâm hỗ trợ</span>
+          </a>
+          <a class="nav-sidebar__item" href="#">
+            <span class="material-symbols-outlined">manage_accounts</span>
+            <span>Cài đặt tài khoản</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sidebar__footer">
+      <a class="nav-sidebar__item nav-sidebar__item--footer" href="#">
+        <span class="flex-center-gap">
+          <span class="material-symbols-outlined">help</span>
+          <span>Trợ giúp</span>
+        </span>
+        <span class="material-symbols-outlined icon-sm">open_in_new</span>
+      </a>
+      <div class="nav-sidebar__item nav-sidebar__item--footer">
+        <span class="flex-center-gap">
+          <span class="material-symbols-outlined">dark_mode</span>
+          <span>Chế độ tối</span>
+        </span>
+        <span class="status-dot status-dot--active"></span>
+      </div>
+      <a class="nav-sidebar__item nav-sidebar__item--danger" href="#">
+        <span class="material-symbols-outlined">logout</span>
+        <span>Đăng xuất</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Nội Dung Chính (Main Layout) -->
+  <div class="layout-wrapper">
+    <main class="main-content">
+      <div class="ambient-glow ambient-glow--primary"></div>
+      <div class="ambient-glow ambient-glow--tertiary"></div>
+
+      <!-- Thanh Trạng Thái Hệ Thống -->
+      <header class="telemetry-bar">
+        <div class="telemetry-bar__status">
+          <span class="status-dot status-dot--glow"></span>
+          <span class="telemetry-bar__label">Nút lưu trữ: Zurich-IX // Đồng bộ Sổ cái v4.19</span>
+          <span class="badge badge--tertiary">ĐANG HOẠT ĐỘNG REAL-TIME</span>
+        </div>
+        <div class="telemetry-bar__info">
+          <span class="flex-center-gap"><span class="material-symbols-outlined icon-sm text-primary">verified_user</span>Bảo mật Định chế Cấp 3</span>
+          <span class="dot-separator"></span>
+          <span>Độ trễ mạng: <span class="text-tertiary">14ms</span></span>
+        </div>
+      </header>
+
+      <!-- Khối Định Giá Danh Mục Đầu Tư -->
+      <section class="grid-overview">
+        <!-- Thẻ Tổng Tài Sản -->
+        <article class="card card--portfolio">
+          <div class="card__gradient-overlay"></div>
+          <div class="card__header">
+            <span class="card__subtitle">Tổng Giá Trị Danh Mục Đầu Tư</span>
+            <button class="btn-text">
+              <span class="material-symbols-outlined icon-sm">visibility</span>
+              <span>Ẩn giá trị</span>
+            </button>
+          </div>
+
+          <div class="card__main-value">
+            <h1 class="text-headline-lg">$125,430.25</h1>
+            <span class="text-crypto-approx">≈ 1.858742 BTC</span>
+          </div>
+
+          <div class="card__change">
+            <div class="badge badge--success-lg">
+              <span class="material-symbols-outlined icon-sm">trending_up</span>
+              <span>+$2,430.25 (+1.96%)</span>
+            </div>
+            <span class="text-subtext">Biến động ròng hôm nay (UTC 00:00)</span>
+          </div>
+
+          <!-- Các Chỉ Số Nhỏ -->
+          <div class="grid-metrics">
+            <div class="card-metric">
+              <span class="card-metric__label">Tổng PnL chưa thực hiện</span>
+              <p class="card-metric__value text-tertiary">+$34,120.80</p>
+              <span class="card-metric__sub">ROI tổng cộng: +37.4%</span>
+            </div>
+            <div class="card-metric">
+              <span class="card-metric__label">Lợi suất trung bình 30D (APR)</span>
+              <p class="card-metric__value text-secondary">8.42%</p>
+              <span class="card-metric__sub">Lợi suất Earn &amp; Staking</span>
+            </div>
+            <div class="card-metric">
+              <span class="card-metric__label">Tỷ lệ An toàn Ký quỹ</span>
+              <p class="card-metric__value">94.8%</p>
+              <span class="card-metric__sub text-tertiary flex-center-gap">
+                <span class="material-symbols-outlined icon-xs">shield</span>Rủi ro thấp
+              </span>
+            </div>
+          </div>
+
+          <!-- Các Nút Thao Tác Đã Được Việt Hóa -->
+          <div class="card__actions">
+            <button class="btn btn--tertiary btn--lg">
+              <span class="material-symbols-outlined">arrow_downward</span>
+              <span>Nạp Tiền Điện Tử</span>
+            </button>
+            <button class="btn btn--surface btn--lg">
+              <span class="material-symbols-outlined">arrow_upward</span>
+              <span>Rút Tiền</span>
+            </button>
+            <button class="btn btn--surface btn--lg">
+              <span class="material-symbols-outlined">swap_horiz</span>
+              <span>Chuyển Ví Futures</span>
+            </button>
+            <button class="btn btn--surface btn--lg btn--accent-text">
+              <span class="material-symbols-outlined">sync_alt</span>
+              <span>Quy Đổi / Swap</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Thẻ Trạng Thái Bảo Mật -->
+        <article class="card card--security">
+          <div>
+            <div class="card__header mb-space-md">
+              <div class="flex-center-gap">
+                <span class="material-symbols-outlined text-primary">tap_and_play</span>
+                <h2 class="text-headline-sm">Bảo mật &amp; Quy định</h2>
+              </div>
+              <span class="badge badge--primary">Chuẩn Định chế Cấp 3</span>
+            </div>
+
+            <!-- Tiến Trình Hạn Mức -->
+            <div class="progress-box">
+              <div class="progress-box__info">
+                <span>Hạn mức rút tiền 24h</span>
+                <span class="font-mono-bold">2.00 / 100.00 BTC</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 2%;"></div>
+              </div>
+              <div class="progress-box__footer">
+                <span>Còn lại 98.00 BTC khả dụng</span>
+                <span>Làm mới lúc 00:00 UTC</span>
+              </div>
+            </div>
+
+            <!-- Khối Bảo Mật -->
+            <div class="grid-security">
+              <div class="card-metric flex-row-align">
+                <div class="icon-box icon-box--tertiary">
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <p class="card-metric__label">Ví danh sách trắng</p>
+                  <p class="card-metric__value font-sm">4 Địa chỉ bật</p>
+                  <span class="text-tertiary text-xs font-bold">BẢO VỆ NGHIÊM NGẶT</span>
+                </div>
+              </div>
+
+              <div class="card-metric flex-row-align">
+                <div class="icon-box icon-box--primary">
+                  <span class="material-symbols-outlined">key</span>
+                </div>
+                <div>
+                  <p class="card-metric__label">Lớp bảo vệ</p>
+                  <p class="card-metric__value font-sm">FIDO2 + 2FA</p>
+                  <span class="text-subtext text-xs">Đã khóa YubiKey</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-banner">
+            <div class="flex-center-gap">
+              <span class="material-symbols-outlined text-secondary">notifications_active</span>
+              <span class="text-subtext">Tự động đóng băng tức thì khi phát hiện địa chỉ ví mới.</span>
+            </div>
+            <a class="link-primary" href="#">Cấu hình</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Phần Phân Bổ Tài Sản -->
+      <section class="card card--allocation">
+        <header class="section-header">
+          <div>
+            <h2 class="text-headline-sm">Phân bổ &amp; Tỷ trọng Tài sản</h2>
+            <p class="text-subtext">Định giá thời gian thực trên các quỹ dự trữ ví nóng &amp; ví lạnh đa chuỗi</p>
+          </div>
+          <div class="segmented-control">
+            <button class="segmented-control__btn segmented-control__btn--active">Tỷ lệ Token</button>
+            <button class="segmented-control__btn">Giá trị USD</button>
+            <button class="segmented-control__btn">Rủi ro Lợi suất</button>
+          </div>
+        </header>
+
+        <div class="allocation-grid">
+          <!-- Biểu Đồ Tròn -->
+          <figure class="chart-container">
+            <div class="donut-chart">
+              <svg class="donut-chart__svg" viewBox="0 0 100 100">
+                <circle class="donut-segment donut-segment--btc" cx="50" cy="50" r="40" stroke-dasharray="113.1 251.3" stroke-dashoffset="0"></circle>
+                <circle class="donut-segment donut-segment--eth" cx="50" cy="50" r="40" stroke-dasharray="70.3 251.3" stroke-dashoffset="-113.1"></circle>
+                <circle class="donut-segment donut-segment--sol" cx="50" cy="50" r="40" stroke-dasharray="30.1 251.3" stroke-dashoffset="-183.4"></circle>
+                <circle class="donut-segment donut-segment--usdt" cx="50" cy="50" r="40" stroke-dasharray="25.1 251.3" stroke-dashoffset="-213.5"></circle>
+                <circle class="donut-segment donut-segment--bnb" cx="50" cy="50" r="40" stroke-dasharray="12.5 251.3" stroke-dashoffset="-238.6"></circle>
+              </svg>
+              <div class="donut-chart__label">
+                <span class="text-label-caps">Tỷ trọng</span>
+                <span class="donut-chart__val">45.0%</span>
+                <span class="donut-chart__sub">Bitcoin</span>
+              </div>
+            </div>
+            <figcaption class="text-subtext text-center mt-space-xs">5 Đồng tiền mục tiêu chính</figcaption>
+          </figure>
+
+          <!-- Chi Tiết Phân Bổ -->
+          <div class="allocation-breakdown">
+            <!-- Thanh Tiến Trình Đa Màu -->
+            <div class="multi-progress">
+              <div class="multi-progress__segment bg-btc" style="width: 45%" title="BTC: 45%"></div>
+              <div class="multi-progress__segment bg-eth" style="width: 28%" title="ETH: 28%"></div>
+              <div class="multi-progress__segment bg-sol" style="width: 12%" title="SOL: 12%"></div>
+              <div class="multi-progress__segment bg-usdt" style="width: 10%" title="USDT: 10%"></div>
+              <div class="multi-progress__segment bg-bnb" style="width: 5%" title="BNB: 5%"></div>
+            </div>
+
+            <!-- Các Thẻ Token -->
+            <div class="tokens-grid">
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-btc"></span>
+                    <span class="token-card__symbol">BTC</span>
+                  </div>
+                  <span class="token-card__pct">45.0%</span>
+                </div>
+                <p class="token-card__val">$56,443.60</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-btc" style="width: 45%"></div>
+                </div>
+              </div>
+
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-eth"></span>
+                    <span class="token-card__symbol">ETH</span>
+                  </div>
+                  <span class="token-card__pct">28.0%</span>
+                </div>
+                <p class="token-card__val">$35,120.47</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-eth" style="width: 28%"></div>
+                </div>
+              </div>
+
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-sol"></span>
+                    <span class="token-card__symbol">SOL</span>
+                  </div>
+                  <span class="token-card__pct">12.0%</span>
+                </div>
+                <p class="token-card__val">$15,051.63</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-sol" style="width: 12%"></div>
+                </div>
+              </div>
+
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-usdt"></span>
+                    <span class="token-card__symbol">USDT</span>
+                  </div>
+                  <span class="token-card__pct">10.0%</span>
+                </div>
+                <p class="token-card__val">$12,543.02</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-usdt" style="width: 10%"></div>
+                </div>
+              </div>
+
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-bnb"></span>
+                    <span class="token-card__symbol">BNB</span>
+                  </div>
+                  <span class="token-card__pct">5.0%</span>
+                </div>
+                <p class="token-card__val">$6,271.53</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-bnb" style="width: 5%"></div>
+                </div>
+              </div>
+
+              <div class="token-card">
+                <div class="token-card__header">
+                  <div class="flex-center-gap">
+                    <span class="color-dot bg-other"></span>
+                    <span class="token-card__symbol">Khác (5)</span>
+                  </div>
+                  <span class="token-card__pct text-outline">0.0%</span>
+                </div>
+                <p class="token-card__val text-subtext">$0.00</p>
+                <div class="progress-bar progress-bar--xs">
+                  <div class="progress-bar__fill bg-other" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Các Thẻ Ví Phụ -->
+      <div class="account-tabs">
+        <div class="account-tabs__group">
+          <button class="tab-btn tab-btn--active">
+            <span class="material-symbols-outlined text-tertiary">toll</span>
+            <span>Ví Spot (Giao ngay)</span>
+            <span class="tab-btn__val">$92,840.10</span>
+          </button>
+          <button class="tab-btn">
+            <span class="material-symbols-outlined">candlestick_chart</span>
+            <span>Ví Futures (Hợp đồng)</span>
+            <span class="tab-btn__val">$22,590.15</span>
+          </button>
+          <button class="tab-btn">
+            <span class="material-symbols-outlined">savings</span>
+            <span>Ví Earn &amp; Staking</span>
+            <span class="tab-btn__val">$10,000.00</span>
+          </button>
+          <button class="tab-btn">
+            <span class="material-symbols-outlined">account_balance</span>
+            <span>Ví Funding (Tài trợ)</span>
+            <span class="tab-btn__val">$0.00</span>
+          </button>
+        </div>
+
+        <div class="account-tabs__info">
+          <span class="material-symbols-outlined icon-sm">lock_reset</span>
+          <span>Tự động lãi kép: <strong class="text-tertiary">ĐÃ BẬT</strong></span>
+        </div>
+      </div>
+
+      <!-- Thanh Công Cụ Lọc -->
+      <form class="toolbar" onsubmit="event.preventDefault();">
+        <div class="toolbar__left">
+          <div class="search-bar search-bar--table">
+            <span class="material-symbols-outlined search-bar__icon">search</span>
+            <input class="search-bar__input" id="assetSearchInput" type="text" placeholder="Tìm tên tài sản / token..." aria-label="Tìm tài sản"/>
+          </div>
+
+          <label class="checkbox-label" for="hideSmallBalances">
+            <input class="checkbox-input" id="hideSmallBalances" type="checkbox"/>
+            <span>Ẩn số dư nhỏ (&lt; $1.00)</span>
+          </label>
+        </div>
+
+        <div class="toolbar__right">
+          <button class="btn btn--surface btn--sm" type="button">
+            <span class="material-symbols-outlined icon-sm">tune</span>
+            <span>Tùy chỉnh cột</span>
+          </button>
+          <button class="btn btn--surface btn--sm" type="button">
+            <span class="material-symbols-outlined icon-sm">ios_share</span>
+            <span>Xuất báo cáo CSV</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Bảng Dữ Liệu Tài Sản Chi Tiết -->
+      <section class="card card--table">
+        <div class="table-responsive">
+          <table class="data-table" id="assetsTable">
+            <thead>
+              <tr>
+                <th scope="col">Tài sản</th>
+                <th scope="col" class="text-right">Tổng số dư</th>
+                <th scope="col" class="text-right">Khả dụng</th>
+                <th scope="col" class="text-right">Đang chờ xử lý</th>
+                <th scope="col" class="text-right">Giá chỉ số</th>
+                <th scope="col" class="text-right">Tổng giá trị (USD)</th>
+                <th scope="col" class="text-right">Biến động 24h</th>
+                <th scope="col" class="text-center">Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="asset-row" data-value="56443.60">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-btc-light">₿</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">BTC</span>
+                        <span class="tag">POW</span>
+                      </div>
+                      <span class="asset-cell__name">Bitcoin</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right font-bold">0.83642100</td>
+                <td class="text-right">0.81642100</td>
+                <td class="text-right text-outline">0.02000000</td>
+                <td class="text-right">$67,482.35</td>
+                <td class="text-right font-bold font-md">$56,443.60</td>
+                <td class="text-right"><span class="badge badge--success">+2.35%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table">Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 3.2%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="35120.47">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-eth-light">Ξ</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">ETH</span>
+                        <span class="tag">POS</span>
+                      </div>
+                      <span class="asset-cell__name">Ethereum</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right font-bold">10.02350000</td>
+                <td class="text-right">9.50000000</td>
+                <td class="text-right text-outline">0.52350000</td>
+                <td class="text-right">$3,503.81</td>
+                <td class="text-right font-bold font-md">$35,120.47</td>
+                <td class="text-right"><span class="badge badge--success">+1.18%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table">Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 4.8%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="15051.63">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-sol-light">S</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">SOL</span>
+                        <span class="tag">L1</span>
+                      </div>
+                      <span class="asset-cell__name">Solana</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right font-bold">104.2250000</td>
+                <td class="text-right">104.2250000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$144.41</td>
+                <td class="text-right font-bold font-md">$15,051.63</td>
+                <td class="text-right"><span class="badge badge--success">+6.42%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table">Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 7.1%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="12543.02">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-usdt-light">₮</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">USDT</span>
+                        <span class="tag">STABLECOIN</span>
+                      </div>
+                      <span class="asset-cell__name">Tether USD</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right font-bold">12,543.0200</td>
+                <td class="text-right">11,043.0200</td>
+                <td class="text-right text-outline">1,500.0000</td>
+                <td class="text-right">$1.0001</td>
+                <td class="text-right font-bold font-md">$12,543.02</td>
+                <td class="text-right"><span class="badge badge--neutral">+0.01%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table">Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 11.2%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="6271.53">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-bnb-light">B</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">BNB</span>
+                        <span class="tag">CHAIN</span>
+                      </div>
+                      <span class="asset-cell__name">BNB Chain</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right font-bold">10.8350000</td>
+                <td class="text-right">10.8350000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$578.82</td>
+                <td class="text-right font-bold font-md">$6,271.53</td>
+                <td class="text-right"><span class="badge badge--danger">-0.42%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table">Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 3.0%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="0.00">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-neutral">✕</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">XRP</span>
+                        <span class="tag">XRPL</span>
+                      </div>
+                      <span class="asset-cell__name">Ripple</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$0.5841</td>
+                <td class="text-right text-subtext">$0.00</td>
+                <td class="text-right"><span class="badge badge--success">+3.88%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table btn-table--disabled" disabled>Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 1.9%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="0.00">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-ada-light">₳</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">ADA</span>
+                        <span class="tag">POS</span>
+                      </div>
+                      <span class="asset-cell__name">Cardano</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$0.4529</td>
+                <td class="text-right text-subtext">$0.00</td>
+                <td class="text-right"><span class="badge badge--danger">-1.14%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table btn-table--disabled" disabled>Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 3.4%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="0.00">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-avax-light">▲</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">AVAX</span>
+                        <span class="tag">C-CHAIN</span>
+                      </div>
+                      <span class="asset-cell__name">Avalanche</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$29.15</td>
+                <td class="text-right text-subtext">$0.00</td>
+                <td class="text-right"><span class="badge badge--success">+4.91%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table btn-table--disabled" disabled>Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 6.2%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="0.00">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-neutral">N</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">NEAR</span>
+                        <span class="tag">SHARDING</span>
+                      </div>
+                      <span class="asset-cell__name">NEAR Protocol</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$5.32</td>
+                <td class="text-right text-subtext">$0.00</td>
+                <td class="text-right"><span class="badge badge--success">+1.85%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table btn-table--disabled" disabled>Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 8.5%</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="asset-row" data-value="0.00">
+                <td>
+                  <div class="asset-cell">
+                    <div class="asset-icon bg-link-light">⬡</div>
+                    <div>
+                      <div class="flex-center-gap">
+                        <span class="asset-cell__symbol">LINK</span>
+                        <span class="tag">ORACLE</span>
+                      </div>
+                      <span class="asset-cell__name">Chainlink</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-subtext">0.0000000</td>
+                <td class="text-right text-outline">0.0000000</td>
+                <td class="text-right">$13.88</td>
+                <td class="text-right text-subtext">$0.00</td>
+                <td class="text-right"><span class="badge badge--danger">-0.77%</span></td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn-table hover-tertiary">Nạp</button>
+                    <button class="btn-table btn-table--disabled" disabled>Rút</button>
+                    <button class="btn-table hover-primary">Trade</button>
+                    <button class="btn-table hover-secondary">Earn 5.0%</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <footer class="table-footer">
+          <div class="flex-center-gap">
+            <span>Hiển thị <strong class="text-on-surface">10</strong> nút tài sản hỗ trợ</span>
+            <span class="dot-separator"></span>
+            <span>Bảo vệ Đa chữ ký MPC Bảo chứng Đang hoạt động</span>
+          </div>
+          <div class="pagination flex-center-gap">
+            <button class="btn-pagination" disabled>Trước</button>
+            <span class="font-mono">Trang 1 / 1</span>
+            <button class="btn-pagination" disabled>Sau</button>
+          </div>
+        </footer>
+      </section>
+
+      <!-- Khối Bằng Chứng Dự Trữ PoR -->
+      <footer class="por-audit-strip">
+        <div class="flex-center-gap">
+          <div class="icon-box icon-box--secondary">
+            <span class="material-symbols-outlined">account_balance</span>
+          </div>
+          <div>
+            <h4 class="text-headline-sm font-sm">100% Bằng chứng Dự trữ (PoR) Có thể Xác minh</h4>
+            <p class="text-subtext">Crypto Planet bảo chứng tài sản khách hàng 1:1 thông qua bằng chứng mật mã Merkle Tree.</p>
+          </div>
+        </div>
+        <div class="por-audit-strip__actions">
+          <a class="link-primary flex-center-gap" href="#">
+            <span>Xem Hash Kiểm toán Merkle</span>
+            <span class="material-symbols-outlined icon-xs">open_in_new</span>
+          </a>
+          <button class="btn btn--surface btn--sm">Tải Ảnh chụp PoR</button>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Logic bộ lọc giữ nguyên
+    const hideCheckbox = document.getElementById('hideSmallBalances');
+    const searchInput = document.getElementById('assetSearchInput');
+    const rows = document.querySelectorAll('.asset-row');
+
+    function applyFilters() {
+      const hideSmall = hideCheckbox.checked;
+      const query = (searchInput.value || '').trim().toLowerCase();
+
+      rows.forEach(row => {
+        const val = parseFloat(row.getAttribute('data-value') || '0');
+        const text = row.innerText.toLowerCase();
+
+        let visible = true;
+        if (hideSmall && val < 1.0) visible = false;
+        if (query && !text.includes(query)) visible = false;
+
+        row.style.display = visible ? '' : 'none';
+      });
+    }
+
+    if (hideCheckbox) hideCheckbox.addEventListener('change', applyFilters);
+    if (searchInput) searchInput.addEventListener('input', applyFilters);
+  </script>
+</body>
+</html>
