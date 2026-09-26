@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hệ thống quản lý dự án">
+    <title>Quản lý dự án - Project Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700;1&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="du-an.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+    <aside class="sidebar">
+
+        <div class="sidebar-content">
+
+            <!-- Logo -->
+            <div class="sidebar-header">
+
+                <div class="brand">
+
+                    <div class="brand-logo">
+                        <span class="material-symbols-outlined">
+                            account_tree
+                        </span>
+                    </div>
+
+                    <div class="brand-text">
+                        <span class="brand-title">
+                            PROJECT MGMT
+                        </span>
+
+                        <span class="brand-subtitle">
+                            Hệ Thống Quản Trị
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Tổng quan -->
+                <div class="nav-section">
+
+                    <div class="nav-section-title">
+                        TỔNG QUAN
+                    </div>
+
+                    <a href="../TongQuan_Staff/tong-quan.html" class="nav-link" data-path="tong-quan">
+
+                        <span class="material-symbols-outlined">
+                            dashboard
+                        </span>
+
+                        <span>Tổng quan</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Quản lý -->
+                <div class="nav-section">
+
+                    <div class="nav-section-title">
+                        QUẢN LÝ
+                    </div>
+
+                    <a href="../NhanVien_Leader/nhan-vien.html" class="nav-link" data-path="nhan-vien">
+
+                        <span class="material-symbols-outlined">
+                            badge
+                        </span>
+
+                        <span>Nhân viên</span>
+
+                        
+
+                    </a>
+
+
+                    <a href="../DuAn_Staff/du-an.html" class="nav-link active" data-path="du-an">
+
+                        <span class="material-symbols-outlined">
+                            folder_managed
+                        </span>
+
+                        <span>Dự án</span>
+
+                        
+
+                    </a>
+
+
+                    <a href="../NhiemVu_Staff/nhiem-vu.html" class="nav-link" data-path="nhiem-vu">
+
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+
+                        <span>Nhiệm vụ</span>
+
+                        
+
+                    </a>
+
+
+                    <a href="../TaiNguyen_Staff/tai-nguyen.html" class="nav-link" data-path="tai-nguyen">
+
+                        <span class="material-symbols-outlined">
+                            inventory_2
+                        </span>
+
+                        <span>Tài nguyên</span>
+
+                      
+
+                    </a>
+
+
+                    <a href="../ThanhVien_Staff/thanh-vien.html" class="nav-link" data-path="thanh-vien-du-an">
+
+                        <span class="material-symbols-outlined">
+                            group
+                        </span>
+
+                        <span>Thành viên</span>
+
+                      
+
+                    </a>
+
+                </div>
+
+
+                <!-- Theo dõi -->
+                <div class="nav-section">
+
+                    <div class="nav-section-title">
+                        THEO DÕI
+                    </div>
+
+                    <a href="../TienDo_Staff/tien-do.html" class="nav-link" data-path="tien-do-du-an">
+
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+
+                        <span>Tiến độ dự án</span>
+
+                        
+
+                    </a>
+
+
+                    <a href="../KhungThoiGian_Staff/khung-thoi-gian.html" class="nav-link" data-path="khung-thoi-gian">
+
+                        <span class="material-symbols-outlined">
+                            date_range
+                        </span>
+
+                        <span>Khung thời gian</span>
+
+                      
+
+                    </a>
+
+                </div>
+
+
+                <!-- Hệ thống -->
+                <div class="nav-section">
+
+                    <div class="nav-section-title">
+                        HỆ THỐNG
+                    </div>
+
+                    <a href="../ThongBao_Staff/thong-bao.html" class="nav-link" data-path="thong-bao">
+
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+
+                        <span>Thông báo</span>
+
+                       
+
+                    </a>
+
+
+                    <a href="../HoTro_Leader/ho-tro.html" class="nav-link" data-path="ho-tro">
+
+                        <span class="material-symbols-outlined">
+                            help
+                        </span>
+
+                        <span>Hỗ trợ</span>
+
+                      
+
+                    </a>
+
+
+                    <a href="../BaoMat_Leader/bao-mat.html" class="nav-link" data-path="bao-mat">
+
+                        <span class="material-symbols-outlined">
+                            shield
+                        </span>
+
+                        <span>Bảo mật</span>
+
+                       
+
+                    </a>
+
+                </div>
+
+
+                <!-- Tài khoản -->
+                <div class="nav-section">
+
+                    <div class="nav-section-title">
+                        TÀI KHOẢN
+                    </div>
+
+
+
+                    <a href="../index.html" class="nav-link logout-link" data-path="dang-xuat">
+
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+
+                        <span>Đăng xuất</span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+        <!-- User -->
+        <div class="sidebar-user">
+
+            <div class="user-card">
+
+                <div class="user-avatar" onclick="openMemberModal('NA')" style="cursor: pointer;">
+                    VA
+                </div>
+
+                <div class="user-info">
+
+                    <span class="user-name">
+                        Nguyễn Văn An
+                    </span>
+
+                    <span class="user-role">
+                        Trưởng dự án / Leader
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN AREA
+    ========================================================== -->
+    <div class="main-wrapper">
+
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+        <header class="topbar">
+
+            <div class="topbar-search">
+
+                <div class="global-search">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="text"
+                        placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã tài liệu..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button
+                    class="icon-button"
+                    type="button"
+                    title="Trợ giúp & Hướng dẫn">
+
+                    <span class="material-symbols-outlined">
+                        help_outline
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="icon-button notification-button"
+                    type="button"
+                    title="Thông báo hệ thống">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="topbar-divider"></div>
+
+
+                <div class="topbar-user" onclick="openMemberModal('NA')">
+
+                    <div class="topbar-avatar">
+
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+
+                    </div>
+
+                    <div class="topbar-user-info">
+
+                        <span>
+                            Nguyễn Văn An
+                        </span>
+
+                        <small>
+                            Quản trị hệ thống
+                        </small>
+
+                    </div>
+
+                    <span class="material-symbols-outlined expand-icon">
+                        expand_more
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+        <main class="main-content">
+
+            <div class="content-container">
+
+                <!-- =================================================
+                     VIEW 1: DANH SÁCH DỰ ÁN (PROJECTS LIST VIEW)
+                ================================================== -->
+                <div id="projectsListView">
+
+                    <!-- PAGE HEADER -->
+                    <div class="page-header">
+
+                        <div class="page-title-area">
+
+                            <div class="breadcrumb">
+
+                                <span>Trang chủ</span>
+
+                                <span class="material-symbols-outlined">chevron_right</span>
+
+                                <span>Quản lý</span>
+
+                                <span class="material-symbols-outlined">chevron_right</span>
+
+                                <span class="current">Dự án</span>
+
+                            </div>
+
+
+                            <div class="title-row">
+
+                                <h1>Quản lý dự án</h1>
+
+                                <span class="page-code">LD-ADM02</span>
+
+                            </div>
+
+
+                            <p>
+                                Theo dõi toàn diện danh mục dự án, tiến độ thực hiện
+                                và nguồn lực nhân sự trong tổ chức.
+                            </p>
+
+                        </div>
+
+
+                        <div class="page-actions">
+
+                            <button
+                                class="button button-secondary"
+                                id="exportDataBtn"
+                                type="button"
+                                onclick="alert('Đã xuất báo cáo danh mục dự án ra file Excel!')">
+
+                                <span class="material-symbols-outlined">file_download</span>
+
+                                <span>Xuất dữ liệu</span>
+
+                            </button>
+
+
+                            <button
+                                class="button button-primary"
+                                id="openCreateModal"
+                                type="button"
+                                onclick="openCreateModal()">
+
+                                <span class="material-symbols-outlined">add</span>
+
+                                <span>+ Thêm dự án mới</span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- KPI GRID -->
+                    <div class="kpi-grid">
+
+                        <!-- KPI 1 -->
+                        <div class="kpi-card">
+
+                            <div class="kpi-top">
+
+                                <div>
+
+                                    <span class="kpi-label">TỔNG SỐ DỰ ÁN</span>
+
+                                    <div class="kpi-value-row">
+
+                                        <span class="kpi-value">12</span>
+
+                                        <span class="kpi-unit">dự án</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="kpi-icon blue">
+
+                                    <span class="material-symbols-outlined">folder_special</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-bottom">
+
+                                <div class="kpi-positive">
+
+                                    <span class="material-symbols-outlined">trending_up</span>
+
+                                    <strong>+2 dự án</strong>
+
+                                </div>
+
+                                <span>so với quý trước</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KPI 2 -->
+                        <div class="kpi-card">
+
+                            <div class="kpi-top">
+
+                                <div>
+
+                                    <span class="kpi-label">ĐANG THỰC HIỆN</span>
+
+                                    <div class="kpi-value-row">
+
+                                        <span class="kpi-value primary-text">08</span>
+
+                                        <span class="kpi-unit">dự án</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="kpi-icon blue-light">
+
+                                    <span class="material-symbols-outlined">timelapse</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-bottom">
+
+                                <div class="kpi-positive">
+
+                                    <strong>66.7%</strong>
+
+                                    <span>tổng số danh mục</span>
+
+                                </div>
+
+                                <span>Đang triển khai</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KPI 3 -->
+                        <div class="kpi-card">
+
+                            <div class="kpi-top">
+
+                                <div>
+
+                                    <span class="kpi-label">ĐÃ HOÀN THÀNH</span>
+
+                                    <div class="kpi-value-row">
+
+                                        <span class="kpi-value">03</span>
+
+                                        <span class="kpi-unit">dự án</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="kpi-icon cyan">
+
+                                    <span class="material-symbols-outlined">task_alt</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-bottom">
+
+                                <div class="kpi-cyan">
+
+                                    <strong>25.0%</strong>
+
+                                    <span>nghiệm thu chuẩn hạn</span>
+
+                                </div>
+
+                                <span>Q1 & Q2/2025</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KPI 4 -->
+                        <div class="kpi-card">
+
+                            <div class="kpi-top">
+
+                                <div>
+
+                                    <span class="kpi-label">QUÁ HẠN / CẦN CHÚ Ý</span>
+
+                                    <div class="kpi-value-row">
+
+                                        <span class="kpi-value error-text">01</span>
+
+                                        <span class="kpi-unit">dự án</span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="kpi-icon error">
+
+                                    <span class="material-symbols-outlined">warning</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-bottom">
+
+                                <div class="kpi-error">
+
+                                    <strong>8.3%</strong>
+
+                                    <span>nguy cơ rủi ro cao</span>
+
+                                </div>
+
+                                <span>Yêu cầu can thiệp</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FILTER TOOLBAR -->
+                    <div class="filter-toolbar">
+
+                        <div class="filter-left">
+
+                            <div class="project-search">
+
+                                <span class="material-symbols-outlined">search</span>
+
+                                <input
+                                    id="searchInput"
+                                    type="text"
+                                    placeholder="Tìm kiếm theo tên dự án, mã dự án, quản lý..."
+                                >
+
+                            </div>
+
+
+                            <div class="select-wrapper">
+
+                                <select id="statusFilter">
+
+                                    <option value="all">Tất cả trạng thái</option>
+
+                                    <option value="ongoing">Đang thực hiện</option>
+
+                                    <option value="closing">Sắp hoàn tất</option>
+
+                                    <option value="delayed">Chậm tiến độ</option>
+
+                                    <option value="completed">Đã hoàn thành</option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">expand_more</span>
+
+                            </div>
+
+
+                            <div class="select-wrapper">
+
+                                <select id="leaderFilter">
+
+                                    <option value="all">Tất cả người phụ trách</option>
+
+                                    <option value="Nguyễn Văn An">Nguyễn Văn An</option>
+
+                                    <option value="Trần Thị Bình">Trần Thị Bình</option>
+
+                                    <option value="Lê Minh Cường">Lê Minh Cường</option>
+
+                                    <option value="Phạm Hoàng Nam">Phạm Hoàng Nam</option>
+
+                                    <option value="Hoàng Thùy Linh">Hoàng Thùy Linh</option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">expand_more</span>
+
+                            </div>
+
+
+                            <div class="select-wrapper">
+
+                                <select id="timeFilter">
+
+                                    <option value="all">Tất cả mốc thời gian</option>
+
+                                    <option value="q2-2025">Quý 2/2025</option>
+
+                                    <option value="q1-2025">Quý 1/2025</option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">expand_more</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="filter-right">
+
+                            <button
+                                class="reset-button"
+                                id="resetFilters"
+                                type="button">
+
+                                <span class="material-symbols-outlined">refresh</span>
+
+                                <span>Làm mới</span>
+
+                            </button>
+
+
+                            <div class="filter-divider"></div>
+
+
+                            <div class="view-switch">
+
+                                <button
+                                    id="viewGridBtn"
+                                    class="view-button active"
+                                    type="button">
+
+                                    <span class="material-symbols-outlined">grid_view</span>
+
+                                    <span>Dạng thẻ</span>
+
+                                </button>
+
+
+                                <button
+                                    id="viewTableBtn"
+                                    class="view-button"
+                                    type="button">
+
+                                    <span class="material-symbols-outlined">table_rows</span>
+
+                                    <span>Danh sách</span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJECT GRID -->
+                    <div class="project-grid" id="projectGridContainer">
+                        <!-- Card 1 -->
+                        <div class="project-card" data-code="PRJ-ECOMM-01" data-leader="Nguyễn Văn An" data-status="ongoing" data-title="Xây dựng Website thương mại điện tử">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <div class="project-heading">
+                                        <span class="project-code">PRJ-ECOMM-01</span>
+                                        <h3 onclick="openDetailModal('PRJ-ECOMM-01')">Xây dựng Website thương mại điện tử</h3>
+                                    </div>
+                                    <span class="status-badge ongoing"><span class="status-dot"></span>Đang thực hiện</span>
+                                </div>
+                                <div class="project-image">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5wO-bJv7T1mL8M0xOu_3zbP0S86XYiElSN2exMykCR0cwnP-HjW8EZPQMbCx3rkKsWFomfztAOd0MDkxzUYwuMCW1EfiNs_QC9VhrPRV3xM8GvGrDyUZE8_7VF5joMQhOQX3-Jjb6269AKPvNX15OeBk9yWvh0MXfjcaWJc64NHX0adNVXj2VkROwnteqauhnOso5eLED2v6VxD8oYIwzeAsCLj9BZZlRellyTxnjlKa0GPh0Cks8mw" alt="Thương mại điện tử">
+                                    <div class="image-overlay"></div>
+                                    <span class="image-label">Thương mại điện tử</span>
+                                </div>
+                                <div class="progress-section">
+                                    <div class="progress-header"><span>Tiến độ dự án</span><strong>85%</strong></div>
+                                    <div class="progress-track"><div class="progress-bar blue" style="width:85%"></div></div>
+                                </div>
+                                <div class="project-meta">
+                                    <div><span><span class="material-symbols-outlined">calendar_today</span>Thời gian:</span><strong>15/01/2025 - 15/06/2025</strong></div>
+                                    <div><span><span class="material-symbols-outlined">person</span>Quản lý:</span><strong>Nguyễn Văn An</strong></div>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <div class="avatar-stack">
+                                    <div class="avatar blue-bg" onclick="openMemberModal('NA')" title="Nguyễn Văn An">NA</div>
+                                    <div class="avatar cyan-bg" onclick="openMemberModal('TH')" title="Trần Văn Hòa">TH</div>
+                                    <div class="avatar purple-bg" onclick="openMemberModal('LK')" title="Lê Thị Khánh">LK</div>
+                                    <div class="avatar more" onclick="openDetailModal('PRJ-ECOMM-01')">+3</div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-ECOMM-01')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                    <button onclick="openDetailModal('PRJ-ECOMM-01')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="openEditModal('PRJ-ECOMM-01')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                    <button class="delete-action" onclick="confirmDeleteProject('PRJ-ECOMM-01','Xây dựng Website thương mại điện tử')" title="Xóa dự án"><span class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="project-card" data-code="PRJ-HRM-02" data-leader="Trần Thị Bình" data-status="ongoing" data-title="Phát triển ứng dụng quản lý nhân sự">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <div class="project-heading">
+                                        <span class="project-code">PRJ-HRM-02</span>
+                                        <h3 onclick="openDetailModal('PRJ-HRM-02')">Phát triển ứng dụng quản lý nhân sự</h3>
+                                    </div>
+                                    <span class="status-badge ongoing"><span class="status-dot"></span>Đang thực hiện</span>
+                                </div>
+                                <div class="project-image">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOfJoZO2-11lwdnvFXYbY0R0ZMls0oVedEjAuleiRvYk3l_NGEzgrDSopPUxBvHFKA6w32VBZrv5O94vVw9_RcuaZBILZRgpuL_cjVo05QnAAPvjJsKPxyCzH8duDQRvt8iFEDQbQRTbhocr_U4ZcjzEUfOaBDfQLIn2g78FwL46V8pXHTgzN-dcv74Jdx_UPPKZNpPYnuiVjlzKJ9HEVVQVaYq_osWkre83qpRcrDdQeY5_7MxBeifA" alt="Hệ thống nhân sự">
+                                    <div class="image-overlay"></div>
+                                    <span class="image-label">Hệ thống Nhân sự</span>
+                                </div>
+                                <div class="progress-section">
+                                    <div class="progress-header"><span>Tiến độ dự án</span><strong>64%</strong></div>
+                                    <div class="progress-track"><div class="progress-bar blue" style="width:64%"></div></div>
+                                </div>
+                                <div class="project-meta">
+                                    <div><span><span class="material-symbols-outlined">calendar_today</span>Thời gian:</span><strong>01/03/2025 - 30/07/2025</strong></div>
+                                    <div><span><span class="material-symbols-outlined">person</span>Quản lý:</span><strong>Trần Thị Bình</strong></div>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <div class="avatar-stack">
+                                    <div class="avatar purple-bg" onclick="openMemberModal('TB')" title="Trần Thị Bình">TB</div>
+                                    <div class="avatar blue-bg" onclick="openMemberModal('QV')" title="Quách Văn Vũ">QV</div>
+                                    <div class="avatar cyan-bg" onclick="openMemberModal('DN')" title="Đỗ Ngọc Nam">DN</div>
+                                    <div class="avatar more" onclick="openDetailModal('PRJ-HRM-02')">+2</div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-HRM-02')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                    <button onclick="openDetailModal('PRJ-HRM-02')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="openEditModal('PRJ-HRM-02')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                    <button class="delete-action" onclick="confirmDeleteProject('PRJ-HRM-02','Phát triển ứng dụng quản lý nhân sự')" title="Xóa dự án"><span class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="project-card" data-code="PRJ-LIB-03" data-leader="Lê Minh Cường" data-status="closing" data-title="Thiết kế hệ thống quản lý thư viện">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <div class="project-heading">
+                                        <span class="project-code">PRJ-LIB-03</span>
+                                        <h3 onclick="openDetailModal('PRJ-LIB-03')">Thiết kế hệ thống quản lý thư viện</h3>
+                                    </div>
+                                    <span class="status-badge closing"><span class="status-dot"></span>Sắp hoàn tất</span>
+                                </div>
+                                <div class="project-image">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs47-CRwD2aSBx7j6pzTm7hdRF2fpkrm1fsamaDZyCdatF4uJpp5Kqw-T91o7pBOOXZaz052aCmSxeWtjtWeEkIBpLPaTqAUjDH9Yr8ZZ07IaCTdn3ceEvkha6uj87Qv64qPaDyLsdU7rHNU45IcboX99hffIKA5JLFEFR0IF07kaK525vRucFHcnkO93TRanfiM7IjtE8Gj8t-9UJ0b-Ti6CJVOEL3uxUfioDsFp2vPLzBTRiDoTLdQ" alt="Thư viện số">
+                                    <div class="image-overlay"></div>
+                                    <span class="image-label">Thư viện số</span>
+                                </div>
+                                <div class="progress-section">
+                                    <div class="progress-header"><span>Tiến độ dự án</span><strong class="cyan-text">92%</strong></div>
+                                    <div class="progress-track"><div class="progress-bar cyan" style="width:92%"></div></div>
+                                </div>
+                                <div class="project-meta">
+                                    <div><span><span class="material-symbols-outlined">calendar_today</span>Thời gian:</span><strong>10/02/2025 - 20/05/2025</strong></div>
+                                    <div><span><span class="material-symbols-outlined">person</span>Quản lý:</span><strong>Lê Minh Cường</strong></div>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <div class="avatar-stack">
+                                    <div class="avatar cyan-bg" onclick="openMemberModal('LC')" title="Lê Minh Cường">LC</div>
+                                    <div class="avatar blue-bg" onclick="openMemberModal('HP')" title="Hoàng Văn Phúc">HP</div>
+                                    <div class="avatar more" onclick="openDetailModal('PRJ-LIB-03')">+2</div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-LIB-03')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                    <button onclick="openDetailModal('PRJ-LIB-03')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="openEditModal('PRJ-LIB-03')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                    <button class="delete-action" onclick="confirmDeleteProject('PRJ-LIB-03','Thiết kế hệ thống quản lý thư viện')" title="Xóa dự án"><span class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="project-card" data-code="PRJ-EDU-04" data-leader="Phạm Hoàng Nam" data-status="delayed" data-title="Xây dựng nền tảng học trực tuyến">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <div class="project-heading">
+                                        <span class="project-code">PRJ-EDU-04</span>
+                                        <h3 onclick="openDetailModal('PRJ-EDU-04')">Xây dựng nền tảng học trực tuyến</h3>
+                                    </div>
+                                    <span class="status-badge delayed"><span class="status-dot"></span>Chậm tiến độ</span>
+                                </div>
+                                <div class="project-image">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAufbS7f5x-SbnWBrC0jxo0d9L5xrCdF2sSNTT7s8vAZ53a3LPoD-nQJQrDzA2msVNvmldrGi-AV5QcvX5q5LwiN-VuMw5cmbJ_xO_QsEMtw-URvcKhibmyhFYAeNXnZ0TjPGLEBk5h7c1vyAcvRnxyvMtew1epo64BZPsIWVwyokOxKIUFeyEwsgvEbfHS0_qE5FaP7BplUcU5CwvmmzHuu4-imLas4Na63yUtLVK9PB4SmaAx4P0QYA" alt="Giáo dục số">
+                                    <div class="image-overlay"></div>
+                                    <span class="image-label">Giáo dục số</span>
+                                </div>
+                                <div class="progress-section">
+                                    <div class="progress-header"><span>Tiến độ dự án</span><strong class="error-text">40%</strong></div>
+                                    <div class="progress-track"><div class="progress-bar error" style="width:40%"></div></div>
+                                </div>
+                                <div class="project-meta">
+                                    <div><span><span class="material-symbols-outlined">calendar_today</span>Thời gian:</span><strong class="error-text">05/04/2025 - 10/08/2025</strong></div>
+                                    <div><span><span class="material-symbols-outlined">person</span>Quản lý:</span><strong>Phạm Hoàng Nam</strong></div>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <div class="avatar-stack">
+                                    <div class="avatar error-bg" onclick="openMemberModal('PN')" title="Phạm Hoàng Nam">PN</div>
+                                    <div class="avatar blue-bg" onclick="openMemberModal('MA')" title="Mai Anh Tuấn">MA</div>
+                                    <div class="avatar purple-bg" onclick="openMemberModal('TH')" title="Trần Văn Hòa">TH</div>
+                                    <div class="avatar more" onclick="openDetailModal('PRJ-EDU-04')">+4</div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-EDU-04')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                    <button onclick="openDetailModal('PRJ-EDU-04')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="openEditModal('PRJ-EDU-04')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                    <button class="delete-action" onclick="confirmDeleteProject('PRJ-EDU-04','Xây dựng nền tảng học trực tuyến')" title="Xóa dự án"><span class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="project-card" data-code="PRJ-INFRA-05" data-leader="Hoàng Thùy Linh" data-status="completed" data-title="Nâng cấp hạ tầng Microservices Core">
+                            <div class="project-card-content">
+                                <div class="project-card-header">
+                                    <div class="project-heading">
+                                        <span class="project-code">PRJ-INFRA-05</span>
+                                        <h3 onclick="openDetailModal('PRJ-INFRA-05')">Nâng cấp hạ tầng Microservices Core</h3>
+                                    </div>
+                                    <span class="status-badge completed"><span class="material-symbols-outlined">check_circle</span>Đã hoàn thành</span>
+                                </div>
+                                <div class="project-image">
+                                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmsYC8DZLIZgxcUp58SVO0QmKSypgr9WWc_cNYPQJ2c8O_B7ZqfTdFLA9TCC6STQUiv1TC5LTzfNTAS7BA5CW1VXAT43bHKLRGLqmXYSPnHSpk1ZpGR_HjomTPMkiH9DiZ29nTVtdK1HNMEQVZ54nAYVav8yTdJO_8YYKEabRrJQh235HGq1nDfyNSeSnbTOvTq-9vnJE96d1VS0KBgQP9nhux0rLRlBIwFcyx47qieKh-bWaSXMrFUQ" alt="Hạ tầng Cloud">
+                                    <div class="image-overlay"></div>
+                                    <span class="image-label">Hạ tầng Cloud</span>
+                                </div>
+                                <div class="progress-section">
+                                    <div class="progress-header"><span>Tiến độ dự án</span><strong class="purple-text">100%</strong></div>
+                                    <div class="progress-track"><div class="progress-bar purple" style="width:100%"></div></div>
+                                </div>
+                                <div class="project-meta">
+                                    <div><span><span class="material-symbols-outlined">calendar_today</span>Thời gian:</span><strong>01/01/2025 - 30/04/2025</strong></div>
+                                    <div><span><span class="material-symbols-outlined">person</span>Quản lý:</span><strong>Hoàng Thùy Linh</strong></div>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <div class="avatar-stack">
+                                    <div class="avatar cyan-bg" onclick="openMemberModal('HL')" title="Hoàng Thùy Linh">HL</div>
+                                    <div class="avatar blue-bg" onclick="openMemberModal('QD')" title="Quyền Đức Anh">QD</div>
+                                    <div class="avatar purple-bg" onclick="openMemberModal('MN')" title="Minh Nhật">MN</div>
+                                    <div class="avatar more" onclick="openDetailModal('PRJ-INFRA-05')">+1</div>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-INFRA-05')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                    <button onclick="openDetailModal('PRJ-INFRA-05')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                    <button onclick="openEditModal('PRJ-INFRA-05')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                    <button class="delete-action" onclick="confirmDeleteProject('PRJ-INFRA-05','Nâng cấp hạ tầng Microservices Core')" title="Xóa dự án"><span class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- PROJECT TABLE -->
+                    <div class="project-table-container hidden" id="projectTableContainer">
+                        <div class="table-scroll">
+                            <table class="project-table">
+                                <thead>
+                                    <tr>
+                                        <th>Mã dự án</th>
+                                        <th>Tên dự án</th>
+                                        <th>Quản lý</th>
+                                        <th>Nhóm</th>
+                                        <th>Tiến độ</th>
+                                        <th>Thời gian</th>
+                                        <th>Trạng thái</th>
+                                        <th class="text-right">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row" data-code="PRJ-ECOMM-01" data-leader="Nguyễn Văn An" data-status="ongoing" data-title="Xây dựng Website thương mại điện tử">
+                                        <td class="project-code">PRJ-ECOMM-01</td>
+                                        <td class="project-name">Xây dựng Website thương mại điện tử</td>
+                                        <td><div class="table-person"><div class="table-avatar blue-bg" onclick="openMemberModal('NA')">NA</div><span>Nguyễn Văn An</span></div></td>
+                                        <td><div class="table-avatar-stack"><div class="table-avatar blue-bg">NA</div><div class="table-avatar cyan-bg">TH</div><div class="table-avatar more">+4</div></div></td>
+                                        <td><div class="table-progress"><div class="table-progress-track"><div class="table-progress-bar blue" style="width:85%"></div></div><span class="blue-text">85%</span></div></td>
+                                        <td class="date-cell">15/01/2025 - 15/06/2025</td>
+                                        <td><span class="table-status ongoing">Đang thực hiện</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-ECOMM-01')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                                <button onclick="openDetailModal('PRJ-ECOMM-01')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                                <button onclick="openEditModal('PRJ-ECOMM-01')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                                <button onclick="confirmDeleteProject('PRJ-ECOMM-01','Xây dựng Website thương mại điện tử')" title="Xóa"><span class="material-symbols-outlined">delete</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row" data-code="PRJ-HRM-02" data-leader="Trần Thị Bình" data-status="ongoing" data-title="Phát triển ứng dụng quản lý nhân sự">
+                                        <td class="project-code">PRJ-HRM-02</td>
+                                        <td class="project-name">Phát triển ứng dụng quản lý nhân sự</td>
+                                        <td><div class="table-person"><div class="table-avatar purple-bg" onclick="openMemberModal('TB')">TB</div><span>Trần Thị Bình</span></div></td>
+                                        <td><div class="table-avatar-stack"><div class="table-avatar purple-bg">TB</div><div class="table-avatar blue-bg">QV</div><div class="table-avatar more">+2</div></div></td>
+                                        <td><div class="table-progress"><div class="table-progress-track"><div class="table-progress-bar blue" style="width:64%"></div></div><span class="blue-text">64%</span></div></td>
+                                        <td class="date-cell">01/03/2025 - 30/07/2025</td>
+                                        <td><span class="table-status ongoing">Đang thực hiện</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="workspace-action-btn" onclick="goToProjectWorkspace('PRJ-HRM-02')" title="Vào không gian dự án"><span class="material-symbols-outlined">rocket_launch</span></button>
+                                                <button onclick="openDetailModal('PRJ-HRM-02')" title="Xem chi tiết"><span class="material-symbols-outlined">visibility</span></button>
+                                                <button onclick="openEditModal('PRJ-HRM-02')" title="Chỉnh sửa"><span class="material-symbols-outlined">edit</span></button>
+                                                <button onclick="confirmDeleteProject('PRJ-HRM-02','Phát triển ứng dụng quản lý nhân sự')" title="Xóa"><span class="material-symbols-outlined">delete</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <!-- PAGINATION -->
+                    <div class="pagination">
+                        <div class="pagination-info">
+                            Hiển thị <strong>1 đến 5</strong> trong tổng số <strong>12</strong> dự án
+                        </div>
+                        <div class="pagination-buttons">
+                            <button disabled><span class="material-symbols-outlined">chevron_left</span></button>
+                            <button class="current">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button><span class="material-symbols-outlined">chevron_right</span></button>
+                        </div>
+                    </div>
+
+                </div> <!-- END #projectsListView -->
+
+
+                <!-- =================================================
+                     VIEW 2: KHÔNG GIAN DỰ ÁN (PROJECT WORKSPACE VIEW)
+                ================================================== -->
+                <div id="workspaceView" class="workspace-container hidden">
+
+                    <div class="workspace-back-bar">
+                        <button class="button button-secondary" onclick="leaveProjectWorkspace()">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                            <span>Quay lại danh sách dự án</span>
+                        </button>
+                    </div>
+
+                    <!-- WORKSPACE HEADER CARD -->
+                    <div class="workspace-header-card">
+                        <div class="ws-header-top">
+                            <div class="ws-title-area">
+                                <div class="ws-tags">
+                                    <span class="ws-code" id="wsProjectCode">PRJ-ECOMM-01</span>
+                                    <span class="status-badge ongoing" id="wsProjectBadge"><span class="status-dot"></span>Đang thực hiện</span>
+                                </div>
+                                <h2 id="wsProjectTitle">Xây dựng Website thương mại điện tử</h2>
+                            </div>
+
+                            <div class="page-actions">
+                                <button class="button button-secondary" onclick="openEditModal(currentWorkspaceCode)">
+                                    <span class="material-symbols-outlined">edit</span>
+                                    <span>Cài đặt dự án</span>
+                                </button>
+                                <button class="button button-primary" onclick="showNewTaskModal()">
+                                    <span class="material-symbols-outlined">add</span>
+                                    <span>+ Thêm công việc</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ws-quick-stats">
+                            <div class="stat-box">
+                                <span>Người phụ trách (Leader)</span>
+                                <strong id="wsProjectLeader">Nguyễn Văn An</strong>
+                            </div>
+                            <div class="stat-box">
+                                <span>Thời gian triển khai</span>
+                                <strong id="wsProjectPeriod">15/01/2025 - 15/06/2025</strong>
+                            </div>
+                            <div class="stat-box">
+                                <span>Tiến độ tổng thể</span>
+                                <strong id="wsProjectProgressText" class="primary-text">85%</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WORKSPACE TABS -->
+                    <div class="workspace-tabs">
+                        <button class="ws-tab-btn active" onclick="switchWsTab('kanbanTab', this)">
+                            <span class="material-symbols-outlined">view_kanban</span>
+                            <span>Bảng công việc (Kanban)</span>
+                        </button>
+                        <button class="ws-tab-btn" onclick="switchWsTab('filesTab', this)">
+                            <span class="material-symbols-outlined">folder_open</span>
+                            <span>Tài liệu & Tệp tin</span>
+                        </button>
+                        <button class="ws-tab-btn" onclick="switchWsTab('discussionTab', this)">
+                            <span class="material-symbols-outlined">forum</span>
+                            <span>Thành viên & Trao đổi</span>
+                        </button>
+                    </div>
+
+                    <!-- TAB 1: KANBAN BOARD -->
+                    <div id="kanbanTab" class="ws-tab-content">
+                        <div class="kanban-board">
+
+                            <!-- Column 1: Cần làm -->
+                            <div class="kanban-column">
+                                <div class="kanban-column-header">
+                                    <div class="kanban-title"><span class="material-symbols-outlined">radio_button_unchecked</span>Cần làm</div>
+                                    <span class="kanban-count" id="todoCount">2</span>
+                                </div>
+                                <div class="kanban-tasks" id="todoTaskList">
+                                    <div class="kanban-card">
+                                        <span class="kanban-card-tag feature">Tính năng</span>
+                                        <div class="kanban-card-title">Tích hợp cổng VNPay & MoMo</div>
+                                        <div class="kanban-card-footer"><span>Hạn: 28/05/2025</span><strong>TH</strong></div>
+                                    </div>
+                                </div>
+                                <button class="add-kanban-task-btn" onclick="showNewTaskModal('todo')">
+                                    <span class="material-symbols-outlined">add</span>Thêm công việc
+                                </button>
+                            </div>
+
+                            <!-- Column 2: Đang thực hiện -->
+                            <div class="kanban-column">
+                                <div class="kanban-column-header">
+                                    <div class="kanban-title"><span class="material-symbols-outlined primary-text">sync</span>Đang làm</div>
+                                    <span class="kanban-count" id="doingCount">2</span>
+                                </div>
+                                <div class="kanban-tasks" id="doingTaskList">
+                                    <div class="kanban-card">
+                                        <span class="kanban-card-tag design">Thiết kế</span>
+                                        <div class="kanban-card-title">Thiết kế giao diện mua hàng Chuẩn Mobile</div>
+                                        <div class="kanban-card-footer"><span>Hạn: 10/06/2025</span><strong>LK</strong></div>
+                                    </div>
+                                </div>
+                                <button class="add-kanban-task-btn" onclick="showNewTaskModal('doing')">
+                                    <span class="material-symbols-outlined">add</span>Thêm công việc
+                                </button>
+                            </div>
+
+                            <!-- Column 3: Kiểm thử -->
+                            <div class="kanban-column">
+                                <div class="kanban-column-header">
+                                    <div class="kanban-title"><span class="material-symbols-outlined cyan-text">fact_check</span>Kiểm thử (Review)</div>
+                                    <span class="kanban-count" id="reviewCount">1</span>
+                                </div>
+                                <div class="kanban-tasks" id="reviewTaskList">
+                                    <div class="kanban-card">
+                                        <span class="kanban-card-tag bug">Sửa lỗi</span>
+                                        <div class="kanban-card-title">Kiểm thử tải hệ thống (Load Testing)</div>
+                                        <div class="kanban-card-footer"><span>Hạn: 12/06/2025</span><strong>DN</strong></div>
+                                    </div>
+                                </div>
+                                <button class="add-kanban-task-btn" onclick="showNewTaskModal('review')">
+                                    <span class="material-symbols-outlined">add</span>Thêm công việc
+                                </button>
+                            </div>
+
+                            <!-- Column 4: Hoàn thành -->
+                            <div class="kanban-column">
+                                <div class="kanban-column-header">
+                                    <div class="kanban-title"><span class="material-symbols-outlined success-text">check_circle</span>Hoàn thành</div>
+                                    <span class="kanban-count" id="doneCount">3</span>
+                                </div>
+                                <div class="kanban-tasks" id="doneTaskList">
+                                    <div class="kanban-card">
+                                        <span class="kanban-card-tag feature">Đã xong</span>
+                                        <div class="kanban-card-title">Khảo sát yêu cầu khách hàng & Thiết kế DB</div>
+                                        <div class="kanban-card-footer"><span>Đã xong: 02/05/2025</span><strong>NA</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: TÀI LIỆU & TỆP TIN -->
+                    <div id="filesTab" class="ws-tab-content hidden">
+                        <div class="filter-toolbar" style="margin-bottom: 16px;">
+                            <div class="filter-left">
+                                <strong>Danh sách tài liệu dự án</strong>
+                            </div>
+                            <div class="filter-right">
+                                <button class="button button-primary" onclick="alert('Tính năng tải lên tài liệu mới đang khởi tạo!')">
+                                    <span class="material-symbols-outlined">upload_file</span>
+                                    <span>Tải lên tài liệu</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="file-grid">
+                            <div class="file-card">
+                                <div class="file-icon-box"><span class="material-symbols-outlined">description</span></div>
+                                <div class="file-info-title">Dac_Ta_Yeu_Cau_He_Thong.pdf</div>
+                                <div class="file-info-sub">2.4 MB • Tải lên bởi NA</div>
+                            </div>
+                            <div class="file-card">
+                                <div class="file-icon-box"><span class="material-symbols-outlined">image</span></div>
+                                <div class="file-info-title">UI_Design_System_v2.fig</div>
+                                <div class="file-info-sub">14.8 MB • Tải lên bởi LK</div>
+                            </div>
+                            <div class="file-card">
+                                <div class="file-icon-box"><span class="material-symbols-outlined">table_chart</span></div>
+                                <div class="file-info-title">Ke_Hoach_Phan_Cong_Chi_Tiet.xlsx</div>
+                                <div class="file-info-sub">1.1 MB • Tải lên bởi TH</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: THÀNH VIÊN & TRAO ĐỔI -->
+                    <div id="discussionTab" class="ws-tab-content hidden">
+                        <div class="discussion-box">
+                            <div class="discussion-item">
+                                <div class="discussion-avatar blue-bg">NA</div>
+                                <div class="discussion-body">
+                                    <div class="discussion-header">
+                                        <span class="discussion-author">Nguyễn Văn An</span>
+                                        <span class="discussion-time">10:30 - Hôm nay</span>
+                                    </div>
+                                    <div class="discussion-text">
+                                        @Trần Văn Hòa Đã cập nhật xong đặc tả cổng thanh toán VNPay chưa? Nhóm cần chốt trong chiều nay nhé.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discussion-input-area">
+                                <input type="text" placeholder="Nhập bình luận hoặc trao đổi nội bộ dự án...">
+                                <button class="button button-primary"><span class="material-symbols-outlined">send</span>Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- END #workspaceView -->
+
+            </div>
+        </main>
+    </div>
+
+
+    <!-- =========================================================
+         MODALS (CHI TIẾT DỰ ÁN & THAO TÁC)
+    ========================================================= -->
+
+    <!-- MODAL 1: XEM CHI TIẾT DỰ ÁN (XÂY DỰNG THEO BỐ CỤC CHUẨN ĐỒNG BỘ) -->
+    <div class="modal-overlay hidden" id="projectDetailModal">
+        <div class="modal">
+            <div class="modal-header">
+                <div>
+                    <div class="modal-badges">
+                        <span class="modal-code" id="detailCode">PRJ-ECOMM-01</span>
+                        <span class="status-badge ongoing" id="detailStatus"><span class="status-dot"></span>Đang thực hiện</span>
+                    </div>
+                    <h2 class="modal-title" id="detailTitle">Xây dựng Website thương mại điện tử</h2>
+                </div>
+                <button class="modal-close" onclick="closeDetailModal()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="detail-desc" id="detailDesc">
+                    Dự án phát triển nền tảng bán hàng đa kênh chuẩn responsive, tích hợp ví điện tử, quản lý kho tự động và hệ thống phân tích hành vi khách hàng.
+                </p>
+
+                <div class="detail-grid">
+                    <div>
+                        <span>QUẢN LÝ DỰ ÁN</span>
+                        <strong id="detailLeader">Nguyễn Văn An</strong>
+                    </div>
+                    <div>
+                        <span>THỜI GIAN TRIỂN KHAI</span>
+                        <strong id="detailTime">15/01/2025 - 15/06/2025</strong>
+                    </div>
+                    <div>
+                        <span>TIẾN ĐỘ THỰC HIỆN</span>
+                        <strong id="detailProgressText" class="primary-text">85%</strong>
+                    </div>
+                    <div>
+                        <span>NGÂN SÁCH ĐƯỢC DUYỆT</span>
+                        <strong>250.000.000 VNĐ</strong>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-header"><span>Tiến độ tổng thể</span><strong id="detailProgressPercent">85%</strong></div>
+                    <div class="progress-track"><div class="progress-bar blue" id="detailProgressBar" style="width: 85%;"></div></div>
+                </div>
+
+                <div class="task-section">
+                    <span class="task-title">CÔNG VIỆC TRỌNG TÂM</span>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <span><span class="material-symbols-outlined">check_circle</span>Khảo sát yêu cầu & Lập tài liệu UI/UX</span>
+                            <span class="success-text">Hoàn thành</span>
+                        </div>
+                        <div class="task-item">
+                            <span><span class="material-symbols-outlined pending">pending</span>Tích hợp thanh toán trực tuyến & Kiểm thử Bảo mật</span>
+                            <span class="pending-text">Đang làm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="members-section">
+                    <span class="members-title">NHÂN SỰ THAM GIA</span>
+                    <div class="members-grid">
+                        <div class="member-chip" onclick="openMemberModal('NA')">
+                            <div class="member-chip-avatar blue-bg">NA</div>
+                            <div class="member-chip-info">
+                                <span class="member-chip-name">Nguyễn Văn An</span>
+                                <span class="member-chip-role">Leader</span>
+                            </div>
+                        </div>
+                        <div class="member-chip" onclick="openMemberModal('TH')">
+                            <div class="member-chip-avatar cyan-bg">TH</div>
+                            <div class="member-chip-info">
+                                <span class="member-chip-name">Trần Văn Hòa</span>
+                                <span class="member-chip-role">Backend</span>
+                            </div>
+                        </div>
+                        <div class="member-chip" onclick="openMemberModal('LK')">
+                            <div class="member-chip-avatar purple-bg">LK</div>
+                            <div class="member-chip-info">
+                                <span class="member-chip-name">Lê Thị Khánh</span>
+                                <span class="member-chip-role">Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" onclick="closeDetailModal()">Đóng</button>
+                <button class="button button-primary" onclick="goToProjectWorkspaceFromDetail()"><span class="material-symbols-outlined">rocket_launch</span>Vào không gian dự án</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL 2: THÊM / SỬA DỰ ÁN -->
+    <div class="modal-overlay hidden" id="projectFormModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="formModalTitle">Thêm dự án mới</h2>
+                <button class="modal-close" onclick="closeFormModal()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+
+            <form id="projectForm" onsubmit="handleSaveProject(event)">
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Mã dự án *</label>
+                            <input type="text" id="inputCode" required placeholder="VD: PRJ-APP-06">
+                        </div>
+                        <div class="form-group">
+                            <label>Trạng thái *</label>
+                            <select id="inputStatus">
+                                <option value="ongoing">Đang thực hiện</option>
+                                <option value="closing">Sắp hoàn tất</option>
+                                <option value="delayed">Chậm tiến độ</option>
+                                <option value="completed">Đã hoàn thành</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tên dự án *</label>
+                        <input type="text" id="inputTitle" required placeholder="Nhập tên dự án...">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Người phụ trách (Leader)</label>
+                            <select id="inputLeader">
+                                <option value="Nguyễn Văn An">Nguyễn Văn An</option>
+                                <option value="Trần Thị Bình">Trần Thị Bình</option>
+                                <option value="Lê Minh Cường">Lê Minh Cường</option>
+                                <option value="Phạm Hoàng Nam">Phạm Hoàng Nam</option>
+                                <option value="Hoàng Thùy Linh">Hoàng Thùy Linh</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tiến độ (%)</label>
+                            <input type="number" id="inputProgress" min="0" max="100" value="0">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ngày bắt đầu</label>
+                            <input type="date" id="inputStartDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày kết thúc</label>
+                            <input type="date" id="inputEndDate">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mô tả chi tiết</label>
+                        <textarea id="inputDesc" rows="3" placeholder="Ghi chú mục tiêu hoặc phạm vi dự án..."></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="button button-secondary" onclick="closeFormModal()">Hủy</button>
+                    <button type="submit" class="button button-primary">Lưu dự án</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- MODAL 3: XÁC NHẬN XÓA DỰ ÁN -->
+    <div class="modal-overlay hidden" id="deleteConfirmModal">
+        <div class="modal delete-modal">
+            <div class="delete-icon">
+                <span class="material-symbols-outlined">warning</span>
+            </div>
+            <h3>Xác nhận xóa dự án?</h3>
+            <p style="margin-top: 8px; color: var(--text-muted); font-size: 13px;">
+                Thao tác này sẽ xóa dự án <strong id="deleteProjectName" style="color: var(--text-title);">---</strong> khỏi hệ thống và không thể hoàn tác.
+            </p>
+            <div class="modal-actions">
+                <button class="button button-secondary" onclick="closeDeleteModal()">Hủy bỏ</button>
+                <button class="button button-danger" onclick="executeDeleteProject()">Xóa dự án</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL 4: CHI TIẾT THÀNH VIÊN -->
+    <div class="modal-overlay hidden" id="memberDetailModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">Thông tin nhân sự</h2>
+                <button class="modal-close" onclick="closeMemberModal()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="member-detail-header">
+                    <div class="member-detail-avatar blue-bg" id="memAvatar">NA</div>
+                    <div class="member-detail-main-info">
+                        <h3 id="memName">Nguyễn Văn An</h3>
+                        <p id="memRole">Trưởng dự án / Project Leader</p>
+                    </div>
+                </div>
+
+                <div class="member-info-list">
+                    <div class="member-info-item">
+                        <span>Email liên hệ:</span>
+                        <strong id="memEmail">an.nguyen@company.com</strong>
+                    </div>
+                    <div class="member-info-item">
+                        <span>Phòng ban:</span>
+                        <strong>Phòng Phát Triển Phầm Mềm</strong>
+                    </div>
+                    <div class="member-info-item">
+                        <span>Số điện thoại:</span>
+                        <strong>0912 345 678</strong>
+                    </div>
+                    <div class="member-info-item">
+                        <span>Số dự án đang tham gia:</span>
+                        <strong class="primary-text">3 dự án</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" onclick="closeMemberModal()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS LOGIC XỬ LÝ GIAO DIỆN -->
+    <script>
+        let currentDetailCode = 'PRJ-ECOMM-01';
+        let currentWorkspaceCode = 'PRJ-ECOMM-01';
+        let targetDeleteCode = '';
+
+        // 1. Chuyển đổi giữa dạng Thẻ và Danh Sách
+        const viewGridBtn = document.getElementById('viewGridBtn');
+        const viewTableBtn = document.getElementById('viewTableBtn');
+        const projectGridContainer = document.getElementById('projectGridContainer');
+        const projectTableContainer = document.getElementById('projectTableContainer');
+
+        if(viewGridBtn && viewTableBtn) {
+            viewGridBtn.addEventListener('click', () => {
+                viewGridBtn.classList.add('active');
+                viewTableBtn.classList.remove('active');
+                projectGridContainer.classList.remove('hidden');
+                projectTableContainer.classList.add('hidden');
+            });
+
+            viewTableBtn.addEventListener('click', () => {
+                viewTableBtn.classList.add('active');
+                viewGridBtn.classList.remove('active');
+                projectTableContainer.classList.remove('hidden');
+                projectGridContainer.classList.add('hidden');
+            });
+        }
+
+        // 2. Chuyển sang không gian dự án
+        function goToProjectWorkspace(code) {
+            currentWorkspaceCode = code;
+            document.getElementById('projectsListView').classList.add('hidden');
+            document.getElementById('workspaceView').classList.remove('hidden');
+            document.getElementById('wsProjectCode').innerText = code;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function leaveProjectWorkspace() {
+            document.getElementById('workspaceView').classList.add('hidden');
+            document.getElementById('projectsListView').classList.remove('hidden');
+        }
+
+        function goToProjectWorkspaceFromDetail() {
+            closeDetailModal();
+            goToProjectWorkspace(currentDetailCode);
+        }
+
+        // 3. Chuyển Tabs trong Không Gian Dự Án
+        function switchWsTab(tabId, btnElement) {
+            document.querySelectorAll('.ws-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.ws-tab-content').forEach(c => c.classList.add('hidden'));
+
+            btnElement.classList.add('active');
+            document.getElementById(tabId).classList.remove('hidden');
+        }
+
+        // 4. Modal Xem Chi Tiết Dự Án
+        function openDetailModal(code) {
+            currentDetailCode = code;
+            document.getElementById('detailCode').innerText = code;
+            document.getElementById('projectDetailModal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            document.getElementById('projectDetailModal').classList.add('hidden');
+        }
+
+        // 5. Modal Thêm / Sửa
+        function openCreateModal() {
+            document.getElementById('formModalTitle').innerText = 'Thêm dự án mới';
+            document.getElementById('projectForm').reset();
+            document.getElementById('projectFormModal').classList.remove('hidden');
+        }
+
+        function openEditModal(code) {
+            document.getElementById('formModalTitle').innerText = 'Chỉnh sửa dự án - ' + code;
+            document.getElementById('inputCode').value = code;
+            document.getElementById('projectFormModal').classList.remove('hidden');
+        }
+
+        function closeFormModal() {
+            document.getElementById('projectFormModal').classList.add('hidden');
+        }
+
+        function handleSaveProject(e) {
+            e.preventDefault();
+            alert('Đã cập nhật dữ liệu dự án thành công!');
+            closeFormModal();
+        }
+
+        // 6. Modal Xóa
+        function confirmDeleteProject(code, name) {
+            targetDeleteCode = code;
+            document.getElementById('deleteProjectName').innerText = name;
+            document.getElementById('deleteConfirmModal').classList.remove('hidden');
+        }
+
+        function closeDeleteModal() {
+            document.getElementById('deleteConfirmModal').classList.add('hidden');
+        }
+
+        function executeDeleteProject() {
+            alert('Đã xóa dự án ' + targetDeleteCode + ' khỏi hệ thống!');
+            closeDeleteModal();
+        }
+
+        // 7. Modal Chi tiết nhân sự
+        function openMemberModal(initials) {
+            document.getElementById('memAvatar').innerText = initials;
+            document.getElementById('memberDetailModal').classList.remove('hidden');
+        }
+
+        function closeMemberModal() {
+            document.getElementById('memberDetailModal').classList.add('hidden');
+        }
+
+        function showNewTaskModal() {
+            alert('Mở form tạo công việc mới cho bảng Kanban!');
+        }
+
+        // 8. Bộ lọc danh sách dự án
+        const searchInput = document.getElementById('searchInput');
+        const statusFilter = document.getElementById('statusFilter');
+        const leaderFilter = document.getElementById('leaderFilter');
+        const resetFilters = document.getElementById('resetFilters');
+
+        function filterProjects() {
+            const query = searchInput.value.toLowerCase();
+            const status = statusFilter.value;
+            const leader = leaderFilter.value;
+
+            document.querySelectorAll('.project-card').forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                const code = card.getAttribute('data-code').toLowerCase();
+                const cardLeader = card.getAttribute('data-leader');
+                const cardStatus = card.getAttribute('data-status');
+
+                const matchesQuery = title.includes(query) || code.includes(query);
+                const matchesStatus = (status === 'all' || cardStatus === status);
+                const matchesLeader = (leader === 'all' || cardLeader === leader);
+
+                if (matchesQuery && matchesStatus && matchesLeader) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        if(searchInput) searchInput.addEventListener('input', filterProjects);
+        if(statusFilter) statusFilter.addEventListener('change', filterProjects);
+        if(leaderFilter) leaderFilter.addEventListener('change', filterProjects);
+
+        if(resetFilters) {
+            resetFilters.addEventListener('click', () => {
+                searchInput.value = '';
+                statusFilter.value = 'all';
+                leaderFilter.value = 'all';
+                filterProjects();
+            });
+        }
+    </script>
+</body>
+</html>

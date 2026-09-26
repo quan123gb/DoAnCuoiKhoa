@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_dashboard">
+    <title>Quản lý thành viên dự án - Hệ Thống Quản Trị Dự Án</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="thanh-vien.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+        <img
+            src="https://lh3.googleusercontent.com/aida/AEtjO1Xe_UU--qIZ7r6U4lY1LfuZC_C-sg_sA3Wr8YgQlGNieF3c1173APupe_XRT5DU6dTAAPa58PQ46IS4pI2xb_a5oQFNzQXgNinE6LHxI85qxpi8NebK3J3Uv2J_ICiHltBu448Sfn8JDj4mnUf5c-YUZ0ZYks9TP33BxHG8NFNIZzJw1Gc54VQhqB3dCqfwrrMQXgfikDFr4CX884N7WjptvPgBalcqt_3925x9JQB6ha-9xKIu6Sk3W94"
+            alt="PROJECT MGMT"
+            class="brand-logo"
+        >
+
+        <div class="brand-text">
+            <span class="brand-title">PROJECT MGMT</span>
+            <span class="brand-subtitle">Hệ thống quản trị</span>
+        </div>
+    </div>
+
+    <div class="sidebar-content">
+
+        <!-- Tổng quan -->
+        <nav class="sidebar-group">
+            <div class="sidebar-group-title">Tổng quan</div>
+
+            <a href="../TongQuan_Leader/dashboard.html" class="sidebar-link" data-path="tong-quan">
+                <span class="material-symbols-outlined">dashboard</span>
+                <span>Tổng quan</span>
+            </a>
+        </nav>
+
+        <!-- Quản lý -->
+        <nav class="sidebar-group">
+            <div class="sidebar-group-title">Quản lý</div>
+
+            <a href="../NhanVien_Leader/nhan-vien.html" class="sidebar-link" data-path="nhan-vien">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">badge</span>
+                    <span>Nhân viên</span>
+                </span>
+                
+            </a>
+
+            <a href="../DuAn_Leader/du-an.html" class="sidebar-link" data-path="du-an">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">folder</span>
+                    <span>Dự án</span>
+                </span>
+              
+            </a>
+
+            <a href="../NhiemVu_Leader/nhiem-vu.html" class="sidebar-link" data-path="nhiem-vu">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">task_alt</span>
+                    <span>Nhiệm vụ</span>
+                </span>
+                
+            </a>
+
+            <a href="../TaiNguyen_Leader/tai-nguyen.html" class="sidebar-link" data-path="tai-nguyen">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    <span>Tài nguyên</span>
+                </span>
+               
+            </a>
+
+            <a href="../ThanhVien_Leader/thanh-vien.html" class="sidebar-link active" aria-current="page" data-path="thanh-vien">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">groups</span>
+                    <span>Thành viên</span>
+                </span>
+            
+            </a>
+        </nav>
+
+        <!-- Theo dõi -->
+        <nav class="sidebar-group">
+            <div class="sidebar-group-title">Theo dõi</div>
+
+            <a href="../TienDo_Leader/tien-do.html" class="sidebar-link" data-path="tien-do-du-an">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    <span>Tiến độ dự án</span>
+                </span>
+            
+            </a>
+
+            <a href="../KhungThoiGian_Leader/khung-thoi-gian.html" class="sidebar-link" data-path="khung-thoi-gian">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <span>Khung thời gian</span>
+                </span>
+           
+            </a>
+        </nav>
+
+        <!-- Hệ thống -->
+        <nav class="sidebar-group">
+            <div class="sidebar-group-title">Hệ thống</div>
+
+            <a href="../ThongBao_Leader/thong-bao.html" class="sidebar-link" data-path="thong-bao">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span>Thông báo</span>
+                </span>
+                
+            </a>
+
+            <a href="../HoTro_Leader/ho-tro.html" class="sidebar-link" data-path="ho-tro">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">help_center</span>
+                    <span>Hỗ trợ</span>
+                </span>
+                
+            </a>
+
+            <a href="../BaoMat_Leader/bao-mat.html" class="sidebar-link" data-path="bao-mat">
+                <span class="sidebar-link-main">
+                    <span class="material-symbols-outlined">security</span>
+                    <span>Bảo mật</span>
+                </span>
+               
+            </a>
+        </nav>
+
+        <!-- Tài khoản -->
+        <nav class="sidebar-group">
+            <div class="sidebar-group-title">Tài khoản</div>
+
+       
+
+            <a href="../DangXuat_Leader/dang-xuat.html" class="sidebar-link" data-path="dang-xuat">
+                <span class="material-symbols-outlined">logout</span>
+                <span>Đăng xuất</span>
+            </a>
+        </nav>
+
+    </div>
+
+    <div class="sidebar-user">
+        <div class="sidebar-user-card">
+            <div class="user-avatar">A</div>
+
+            <div class="sidebar-user-info">
+                <span>Nguyễn Văn An</span>
+                <small>Trưởng dự án / Leader</small>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- =========================================================
+     MAIN WRAPPER
+========================================================= -->
+<div class="app-wrapper">
+
+    <!-- =====================================================
+         TOPBAR
+    ====================================================== -->
+    <header class="topbar">
+
+        <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Mở menu"
+        >
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        <div class="topbar-search">
+            <span class="material-symbols-outlined">search</span>
+
+            <input
+                type="text"
+                placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã tài liệu..."
+                id="globalSearch"
+            >
+        </div>
+
+        <div class="topbar-actions">
+
+            <button
+                type="button"
+                class="icon-button"
+                id="helpButton"
+                title="Trợ giúp"
+            >
+                <span class="material-symbols-outlined">help</span>
+            </button>
+
+            <button
+                type="button"
+                class="icon-button notification-button"
+                id="notificationButton"
+                title="Thông báo hệ thống"
+            >
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="notification-dot"></span>
+            </button>
+
+            <div class="topbar-divider"></div>
+
+            <button type="button" class="topbar-user" id="userMenuButton">
+                <div class="topbar-avatar">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+
+                <div class="topbar-user-info">
+                    <span>Nguyễn Văn An</span>
+                    <small>Quản trị hệ thống</small>
+                </div>
+
+                <span class="material-symbols-outlined expand-icon">
+                    expand_more
+                </span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <!-- Toast -->
+            <div class="toast hidden" id="successToast">
+                <div class="toast-icon">
+                    <span class="material-symbols-outlined">check_circle</span>
+                </div>
+
+                <div class="toast-content">
+                    <strong id="toastTitle">
+                        Cập nhật nhân sự thành công
+                    </strong>
+
+                    <span id="toastMessage">
+                        Đã phân bổ Trần Thị Bình vào dự án PRJ-HRM-02
+                    </span>
+                </div>
+
+                <button type="button" class="toast-close" id="toastClose">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+            <section class="page-header">
+
+                <div class="breadcrumb-row">
+
+                    <div class="breadcrumb">
+                        <span>Trang chủ</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                        <span>Quản lý</span>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                        <strong>Thành viên dự án</strong>
+                    </div>
+
+                    <div class="page-badges">
+                        <span class="badge badge-code">MÃ: LD-ADM09</span>
+                        <span class="badge badge-blue">Quản lý thành viên</span>
+
+                        <span class="badge badge-role" id="openHighPermHeaderBtn" title="Bấm để xem cấu hình phân quyền cao">
+                            <span class="material-symbols-outlined">shield_person</span>
+                            Vai trò: Leader (Xem phân quyền cao)
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="title-action-row">
+
+                    <div>
+                        <h1>Quản lý thành viên dự án</h1>
+
+                        <p>
+                            Điều phối nhân sự, phân bổ thành viên vào các dự án trọng điểm,
+                            kiểm soát quyền hạn và theo dõi hiệu suất thực thi nhiệm vụ.
+                        </p>
+                    </div>
+
+                    <div class="header-actions">
+
+                        <button
+                            type="button"
+                            class="button button-secondary"
+                            id="exportButton"
+                            title="Tải xuống danh sách dữ liệu thành viên"
+                        >
+                            <span class="material-symbols-outlined">download</span>
+                            <span>Tải xuống Excel</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-secondary"
+                            id="uploadDocBtn"
+                            title="Tải hồ sơ / tài liệu thành viên lên hệ thống"
+                        >
+                            <span class="material-symbols-outlined">upload_file</span>
+                            <span>Tải tài liệu lên</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-secondary"
+                            id="shareBtn"
+                            title="Chia sẻ danh sách hoặc dự án"
+                        >
+                            <span class="material-symbols-outlined">share</span>
+                            <span>Chia sẻ</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-secondary"
+                            id="contactAdminBtn"
+                            title="Gửi yêu cầu tới Quản trị viên lưu trữ"
+                        >
+                            <span class="material-symbols-outlined">admin_panel_settings</span>
+                            <span>Liên hệ QT lưu trữ</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-secondary"
+                            id="openHighPermBtn"
+                            title="Xem cấu hình ma trận phân quyền cao"
+                        >
+                            <span class="material-symbols-outlined">lock_reset</span>
+                            <span>Phân quyền cao</span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="button button-primary"
+                            id="openAddMemberButton"
+                        >
+                            <span class="material-symbols-outlined">person_add</span>
+                            <span>+ Thêm thành viên</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =================================================
+                 KPI CARDS
+            ================================================== -->
+            <section class="kpi-grid">
+
+                <!-- KPI 1 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+                        <div>
+                            <span class="kpi-label">Tổng thành viên tham gia</span>
+
+                            <div class="kpi-number-row">
+                                <strong id="kpiTotalMembers">42</strong>
+                                <span>/ 48 nhân sự</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon blue">
+                            <span class="material-symbols-outlined">groups</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-bottom">
+                        <span class="kpi-positive">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            87.5% tỷ lệ tham gia
+                        </span>
+
+                        <span>6 nhân sự khả dụng</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill blue" style="width:87.5%"></div>
+                    </div>
+
+                </article>
+
+                <!-- KPI 2 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+                        <div>
+                            <span class="kpi-label">Phân bổ theo dự án</span>
+
+                            <div class="kpi-number-row">
+                                <strong>12</strong>
+                                <span>dự án đang chạy</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon secondary">
+                            <span class="material-symbols-outlined">account_tree</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-info">
+                        <div>
+                            <span>Trung bình / dự án:</span>
+                            <strong>3.5 thành viên</strong>
+                        </div>
+
+                        <small>
+                            Cao nhất: PRJ-ECOMM-01 (6 thành viên)
+                        </small>
+                    </div>
+
+                </article>
+
+                <!-- KPI 3 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+                        <div>
+                            <span class="kpi-label">Nhiệm vụ đang giao</span>
+
+                            <div class="kpi-number-row">
+                                <strong>114</strong>
+                                <span>nhiệm vụ active</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon cyan">
+                            <span class="material-symbols-outlined">
+                                assignment_turned_in
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-info">
+                        <div>
+                            <span>Mức độ tải trung bình:</span>
+                            <strong>2.7 task / người</strong>
+                        </div>
+
+                        <small class="success-text">
+                            89% tiến độ đạt chuẩn
+                        </small>
+                    </div>
+
+                </article>
+
+                <!-- KPI 4 -->
+                <article class="kpi-card workload-card">
+
+                    <div class="kpi-top">
+                        <div>
+                            <span class="kpi-label warning-label">
+                                Tối ưu khối lượng (Workload)
+                            </span>
+
+                            <div class="kpi-number-row warning-number">
+                                <strong id="kpiOverloadCount">03</strong>
+                                <span>nhân sự quá tải</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon warning">
+                            <span class="material-symbols-outlined">warning</span>
+                        </div>
+                    </div>
+
+                    <div class="workload-info">
+                        <div>
+                            <span class="pulse-dot"></span>
+                            <strong>CẦN ĐIỀU PHỐI LẠI:</strong>
+                        </div>
+
+                        <small>
+                            Lê Minh Cường (9 task), Đỗ Quốc Hùng (7 task)...
+                        </small>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- =================================================
+                 FILTER
+            ================================================== -->
+            <section class="filter-panel">
+
+                <div class="filter-grid">
+
+                    <div class="filter-search">
+                        <span class="material-symbols-outlined">search</span>
+
+                        <input
+                            id="filterKeyword"
+                            type="text"
+                            placeholder="Tìm theo tên thành viên, email, mã NV..."
+                        >
+                    </div>
+
+                    <div class="select-wrapper project-filter">
+                        <select id="filterProject">
+                            <option value="all">Tất cả dự án (12 dự án)</option>
+                            <option value="PRJ-ECOMM-01">
+                                PRJ-ECOMM-01 - Nền tảng TMĐT Đa kênh
+                            </option>
+                            <option value="PRJ-HRM-02">
+                                PRJ-HRM-02 - Cổng Nhân sự Nội bộ
+                            </option>
+                            <option value="PRJ-LIB-03">
+                                PRJ-LIB-03 - Thư viện Số & Tài liệu
+                            </option>
+                            <option value="PRJ-EDU-04">
+                                PRJ-EDU-04 - Cổng Đào tạo Nhân sự
+                            </option>
+                            <option value="PRJ-INFRA-05">
+                                PRJ-INFRA-05 - Nâng cấp Hạ tầng & Bảo mật
+                            </option>
+                        </select>
+
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+
+                    <div class="select-wrapper role-filter">
+                        <select id="filterRole">
+                            <option value="all">Tất cả vai trò</option>
+                            <option value="lead">Trưởng dự án / Leader</option>
+                            <option value="techlead">Kỹ thuật viên chính / Tech Lead</option>
+                            <option value="backend">Lập trình viên Backend</option>
+                            <option value="frontend">Lập trình viên Frontend</option>
+                            <option value="uiux">Thiết kế UI/UX Lead</option>
+                            <option value="db">Chuyên viên Dữ liệu (DBA)</option>
+                            <option value="sec">Kỹ sư Bảo mật / An toàn</option>
+                            <option value="tester">Kiểm thử QA / QC</option>
+                        </select>
+
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+
+                    <div class="select-wrapper status-filter">
+                        <select id="filterStatus">
+                            <option value="all">Tất cả trạng thái</option>
+                            <option value="active">Đang tham gia</option>
+                            <option value="paused">Tạm dừng điều phối</option>
+                            <option value="completed">Đã hoàn thành</option>
+                        </select>
+
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="reset-filter"
+                        id="resetFilters"
+                        title="Đặt lại bộ lọc"
+                    >
+                        <span class="material-symbols-outlined">restart_alt</span>
+                    </button>
+
+                </div>
+
+                <div class="quick-filter-row">
+
+                    <span class="quick-filter-label">
+                        LỌC NHANH KHỐI LƯỢNG:
+                    </span>
+
+                    <button class="quick-filter active" data-workload="all">
+                        Tất cả (42)
+                    </button>
+
+                    <button class="quick-filter overload" data-workload="overload">
+                        <span class="small-dot"></span>
+                        Quá tải &gt; 5 nhiệm vụ (3)
+                    </button>
+
+                    <button class="quick-filter optimal" data-workload="optimal">
+                        Tải trọng tối ưu 2-4 nhiệm vụ (31)
+                    </button>
+
+                    <button class="quick-filter available" data-workload="available">
+                        Đang sẵn sàng &lt; 2 nhiệm vụ (8)
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- =================================================
+                 MEMBER TABLE
+            ================================================== -->
+            <section class="table-card">
+
+                <div class="table-header">
+
+                    <div class="table-title">
+                        <h2>Danh sách nhân sự phân bổ</h2>
+                        <span id="visibleCount">6/42 hiển thị</span>
+                    </div>
+
+                    <div class="table-mode">
+                        <span class="material-symbols-outlined">tune</span>
+                        Chế độ: Đầy đủ thông tin thực thi
+                    </div>
+
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table id="memberTable">
+
+                        <thead>
+                            <tr>
+                                <th class="checkbox-col">
+                                    <input type="checkbox" id="selectAll">
+                                </th>
+                                <th class="number-col">STT</th>
+                                <th>Thành viên &amp; Định danh</th>
+                                <th>Dự án tham gia</th>
+                                <th>Vai trò &amp; Quyền hạn</th>
+                                <th class="center">Nhiệm vụ</th>
+                                <th>Tiến độ dự án</th>
+                                <th class="center">Trạng thái</th>
+                                <th>Ngày tham gia</th>
+                                <th class="right">Thao tác</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- 01 -->
+                            <tr
+                                data-name="Nguyễn Văn An"
+                                data-email="an.nguyen@congty.vn"
+                                data-code="NV-001"
+                                data-project="PRJ-ECOMM-01"
+                                data-role="lead"
+                                data-status="active"
+                                data-workload="optimal"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">01</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-blue">A</div>
+
+                                        <div class="member-info">
+                                            <strong>Nguyễn Văn An</strong>
+
+                                            <div>
+                                                <span class="employee-code">NV-001</span>
+                                                <span class="employee-email">an.nguyen@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-ECOMM-01</span>
+                                        </strong>
+                                        <small class="project-desc">Nền tảng TMĐT Đa kênh</small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-leader">
+                                        Trưởng dự án (Leader)
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count">4 nhiệm vụ</span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong class="green">90%</strong>
+                                            <span>Đúng hạn</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="green-fill" style="width:90%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status active-status">
+                                        <i></i>
+                                        Đang tham gia
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">15/01/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 02 -->
+                            <tr
+                                class="overload-row"
+                                data-name="Lê Minh Cường"
+                                data-email="cuong.le@congty.vn"
+                                data-code="NV-003"
+                                data-project="PRJ-ECOMM-01"
+                                data-role="techlead"
+                                data-status="active"
+                                data-workload="overload"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">02</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-amber">C</div>
+
+                                        <div class="member-info">
+                                            <div class="name-with-tag">
+                                                <strong>Lê Minh Cường</strong>
+                                                <span class="overload-tag">QUÁ TẢI</span>
+                                            </div>
+
+                                            <div>
+                                                <span class="employee-code">NV-003</span>
+                                                <span class="employee-email">cuong.le@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell multi-project">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-ECOMM-01</span>
+                                        </strong>
+
+                                        <small class="project-desc">
+                                            <span class="material-symbols-outlined">link</span>
+                                            PRJ-LIB-03 (Hỗ trợ core)
+                                        </small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-tech">
+                                        Tech Lead Backend
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count overload-task">
+                                        <span class="material-symbols-outlined">error</span>
+                                        9 nhiệm vụ
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong class="amber">78%</strong>
+                                            <span class="amber-text">1 task trễ hạn</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="amber-fill" style="width:78%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status active-status">
+                                        <i></i>
+                                        Đang tham gia
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">10/01/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 03 -->
+                            <tr
+                                data-name="Trần Thị Bình"
+                                data-email="binh.tran@congty.vn"
+                                data-code="NV-002"
+                                data-project="PRJ-HRM-02"
+                                data-role="uiux"
+                                data-status="active"
+                                data-workload="optimal"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">03</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-rose">B</div>
+
+                                        <div class="member-info">
+                                            <strong>Trần Thị Bình</strong>
+
+                                            <div>
+                                                <span class="employee-code">NV-002</span>
+                                                <span class="employee-email">binh.tran@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-HRM-02</span>
+                                        </strong>
+                                        <small class="project-desc">Cổng Nhân sự Nội bộ</small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-uiux">
+                                        UI/UX Lead Designer
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count">6 nhiệm vụ</span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong class="blue-text">85%</strong>
+                                            <span>Đúng tiến độ</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="blue-fill" style="width:85%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status active-status">
+                                        <i></i>
+                                        Đang tham gia
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">20/01/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 04 -->
+                            <tr
+                                data-name="Phạm Hoàng Nam"
+                                data-email="nam.pham@congty.vn"
+                                data-code="NV-004"
+                                data-project="PRJ-EDU-04"
+                                data-role="db"
+                                data-status="active"
+                                data-workload="optimal"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">04</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-indigo">N</div>
+
+                                        <div class="member-info">
+                                            <strong>Phạm Hoàng Nam</strong>
+
+                                            <div>
+                                                <span class="employee-code">NV-004</span>
+                                                <span class="employee-email">nam.pham@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-EDU-04</span>
+                                        </strong>
+                                        <small class="project-desc">Cổng Đào tạo Nhân sự</small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-dba">
+                                        Database Specialist (DBA)
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count">5 nhiệm vụ</span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong>50%</strong>
+                                            <span>Giai đoạn cấu trúc</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="secondary-fill" style="width:50%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status active-status">
+                                        <i></i>
+                                        Đang tham gia
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">01/02/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 05 -->
+                            <tr
+                                class="completed-row"
+                                data-name="Hoàng Thùy Linh"
+                                data-email="linh.hoang@congty.vn"
+                                data-code="NV-005"
+                                data-project="PRJ-INFRA-05"
+                                data-role="sec"
+                                data-status="completed"
+                                data-workload="available"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">05</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-green">L</div>
+
+                                        <div class="member-info">
+                                            <strong>Hoàng Thùy Linh</strong>
+
+                                            <div>
+                                                <span class="employee-code">NV-005</span>
+                                                <span class="employee-email">linh.hoang@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-INFRA-05</span>
+                                        </strong>
+                                        <small class="project-desc">Hạ tầng &amp; An ninh DevSecOps</small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-infra">
+                                        Kỹ sư Bảo mật &amp; Hạ tầng
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count completed-task">
+                                        3/3 xong
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong class="green">100%</strong>
+                                            <span class="green-text">Đã bàn giao</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="green-fill" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status completed-status">
+                                        <span class="material-symbols-outlined">task_alt</span>
+                                        Đã hoàn thành
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">05/01/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- 06 -->
+                            <tr
+                                class="overload-row"
+                                data-name="Đỗ Quốc Hùng"
+                                data-email="hung.do@congty.vn"
+                                data-code="NV-006"
+                                data-project="PRJ-ECOMM-01"
+                                data-role="frontend"
+                                data-status="active"
+                                data-workload="overload"
+                            >
+                                <td class="center">
+                                    <input type="checkbox" class="member-checkbox">
+                                </td>
+
+                                <td class="center muted row-stt">06</td>
+
+                                <td>
+                                    <div class="member-cell">
+                                        <div class="avatar avatar-cyan">H</div>
+
+                                        <div class="member-info">
+                                            <div class="name-with-tag">
+                                                <strong>Đỗ Quốc Hùng</strong>
+                                                <span class="overload-tag light">TẢI CAO</span>
+                                            </div>
+
+                                            <div>
+                                                <span class="employee-code">NV-006</span>
+                                                <span class="employee-email">hung.do@congty.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="project-cell">
+                                        <strong>
+                                            <span class="material-symbols-outlined">folder_open</span>
+                                            <span class="project-title">PRJ-ECOMM-01</span>
+                                        </strong>
+                                        <small class="project-desc">Nền tảng TMĐT Đa kênh</small>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="role-badge role-tech">
+                                        Frontend Developer
+                                    </span>
+                                </td>
+
+                                <td class="center">
+                                    <span class="task-count overload-task">
+                                        7 nhiệm vụ
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="progress-cell">
+                                        <div class="progress-label">
+                                            <strong class="blue-text">65%</strong>
+                                            <span>Đang chạy Sprint 3</span>
+                                        </div>
+
+                                        <div class="table-progress">
+                                            <div class="blue-fill" style="width:65%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="center">
+                                    <span class="status active-status">
+                                        <i></i>
+                                        Đang tham gia
+                                    </span>
+                                </td>
+
+                                <td class="date-cell">18/01/2025</td>
+
+                                <td>
+                                    <div class="row-actions">
+                                        <button class="row-action view-member" title="Xem chi tiết hồ sơ & nhiệm vụ">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </button>
+
+                                        <button class="row-action edit-member" title="Chỉnh sửa vai trò & phân quyền">
+                                            <span class="material-symbols-outlined">edit</span>
+                                        </button>
+
+                                        <button class="row-action remove-member danger" title="Rút khỏi dự án">
+                                            <span class="material-symbols-outlined">person_remove</span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="empty-state" id="emptyState">
+                        <span class="material-symbols-outlined">search_off</span>
+                        <strong>Không tìm thấy thành viên</strong>
+                        <p>Hãy thử thay đổi từ khóa hoặc điều kiện lọc.</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+
+                    <div class="pagination-info">
+                        <span>Hiển thị</span>
+
+                        <select id="pageSize">
+                            <option value="6" selected>6</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+
+                        <span>
+                            trong tổng số
+                            <strong id="totalCountText">42</strong>
+                            thành viên
+                        </span>
+                    </div>
+
+                    <div class="pagination-buttons">
+
+                        <button type="button" id="firstPageBtn" disabled>
+                            <span class="material-symbols-outlined">first_page</span>
+                        </button>
+
+                        <button type="button" id="prevPageBtn" disabled>
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+
+                        <button type="button" class="page-num page-active" data-page="1">1</button>
+
+                        <button type="button" class="page-num" data-page="2">2</button>
+
+                        <button type="button" class="page-num" data-page="3">3</button>
+
+                        <span>...</span>
+
+                        <button type="button" class="page-num" data-page="7">7</button>
+
+                        <button type="button" id="nextPageBtn">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+
+                        <button type="button" id="lastPageBtn">
+                            <span class="material-symbols-outlined">last_page</span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- =================================================
+                 RESOURCE ANALYTICS
+            ================================================== -->
+            <section class="analytics-grid">
+
+                <!-- Chuyên môn -->
+                <article class="analytics-card">
+
+                    <div class="analytics-header">
+                        <div class="analytics-title">
+                            <span class="material-symbols-outlined">pie_chart</span>
+                            <h2>Cơ cấu chuyên môn dự án</h2>
+                        </div>
+
+                        <span class="analytics-count">42 Nhân sự</span>
+                    </div>
+
+                    <p>
+                        Tỷ lệ năng lực phân bổ trên toàn bộ 12 dự án đang kích hoạt.
+                    </p>
+
+                    <div class="specialty-bar">
+                        <div class="tech-segment" style="width:60%"></div>
+                        <div class="product-segment" style="width:25%"></div>
+                        <div class="qa-segment" style="width:15%"></div>
+                    </div>
+
+                    <div class="specialty-list">
+
+                        <div>
+                            <span>
+                                <i class="legend-square blue"></i>
+                                Khối Công nghệ &amp; Hạ tầng
+                            </span>
+
+                            <span>
+                                <small>25 nhân sự</small>
+                                <strong>60%</strong>
+                            </span>
+                        </div>
+
+                        <div>
+                            <span>
+                                <i class="legend-square cyan"></i>
+                                Thiết kế &amp; Quản trị Sản phẩm
+                            </span>
+
+                            <span>
+                                <small>11 nhân sự</small>
+                                <strong>25%</strong>
+                            </span>
+                        </div>
+
+                        <div>
+                            <span>
+                                <i class="legend-square gray"></i>
+                                Kiểm thử Chất lượng (QA/QC)
+                            </span>
+
+                            <span>
+                                <small>6 nhân sự</small>
+                                <strong>15%</strong>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="analytics-footer">
+                        <span>Cập nhật theo chu kỳ Sprint tuần này</span>
+                        <button type="button" class="text-button" id="analyticsDetailBtn">
+                            Chi tiết báo cáo
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- Theo dự án -->
+                <article class="analytics-card large">
+
+                    <div class="analytics-header">
+
+                        <div class="analytics-title">
+                            <span class="material-symbols-outlined">bar_chart</span>
+                            <h2>Mật độ nhân sự tại các dự án trọng điểm</h2>
+                        </div>
+
+                        <span class="quarter-badge">Q1 / 2025</span>
+
+                    </div>
+
+                    <p>
+                        Các dự án cấp cao đang chiếm phần lớn nguồn lực của đội ngũ phát triển.
+                    </p>
+
+                    <div class="project-density-list">
+
+                        <div class="density-item">
+                            <div class="density-info">
+                                <strong>
+                                    PRJ-ECOMM-01
+                                    (Website Thương mại điện tử Bán lẻ)
+                                </strong>
+
+                                <span>
+                                    <b>6 thành viên</b>
+                                    (24 nhiệm vụ)
+                                </span>
+                            </div>
+
+                            <div class="density-bar">
+                                <div style="width:82%"></div>
+                            </div>
+                        </div>
+
+                        <div class="density-item">
+                            <div class="density-info">
+                                <strong>
+                                    PRJ-HRM-02
+                                    (Cổng Quản trị Nhân sự &amp; Đãi ngộ Số)
+                                </strong>
+
+                                <span>
+                                    <b>5 thành viên</b>
+                                    (19 nhiệm vụ)
+                                </span>
+                            </div>
+
+                            <div class="density-bar">
+                                <div class="dark-blue" style="width:68%"></div>
+                            </div>
+                        </div>
+
+                        <div class="density-item">
+                            <div class="density-info">
+                                <strong>
+                                    PRJ-LIB-03
+                                    (Thư viện Kiến trúc Số &amp; Tài nguyên Mở)
+                                </strong>
+
+                                <span>
+                                    <b>4 thành viên</b>
+                                    (14 nhiệm vụ)
+                                </span>
+                            </div>
+
+                            <div class="density-bar">
+                                <div class="cyan" style="width:52%"></div>
+                            </div>
+                        </div>
+
+                        <div class="density-item">
+                            <div class="density-info">
+                                <strong>
+                                    PRJ-INFRA-05
+                                    (Nâng cấp Hạ tầng Đám mây &amp; Tuân thủ An ninh)
+                                </strong>
+
+                                <span>
+                                    <b>4 thành viên</b>
+                                    (12 nhiệm vụ)
+                                </span>
+                            </div>
+
+                            <div class="density-bar">
+                                <div class="green" style="width:45%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="analytics-footer">
+
+                        <div class="info-text">
+                            <span class="material-symbols-outlined">info</span>
+                            Chỉ số phản ánh tổng số giờ công cam kết theo tuần.
+                        </div>
+
+                        <button
+                            type="button"
+                            class="text-button"
+                            id="optimizeButton"
+                        >
+                            Tối ưu hóa phân bổ tự động
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<!-- =========================================================
+     ADD MEMBER MODAL
+========================================================= -->
+<div class="modal-overlay hidden" id="addMemberModal">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">person_add</span>
+                </div>
+
+                <div>
+                    <h3>Thêm thành viên vào dự án</h3>
+                    <span>Mã chức năng phân quyền: LD-ADM09</span>
+                </div>
+            </div>
+
+            <button type="button" class="modal-close" id="closeAddMemberButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+        </div>
+
+        <form id="addMemberForm">
+
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label>Chọn nhân sự công ty *</label>
+
+                    <div class="select-wrapper">
+                        <select id="memberSelect" required>
+                            <option value="">
+                                -- Chọn thành viên từ kho nhân sự --
+                            </option>
+                            <option value="NV-007" data-name="Vũ Thu Thảo" data-email="thao.vu@congty.vn">
+                                Vũ Thu Thảo (NV-007) - Product Owner
+                            </option>
+                            <option value="NV-008" data-name="Trịnh Quốc Bảo" data-email="bao.trinh@congty.vn">
+                                Trịnh Quốc Bảo (NV-008) - Fullstack Dev
+                            </option>
+                            <option value="NV-009" data-name="Đặng Quỳnh Trang" data-email="trang.dang@congty.vn">
+                                Đặng Quỳnh Trang (NV-009) - QA Automation
+                            </option>
+                            <option value="NV-010" data-name="Bùi Hữu Tài" data-email="tai.bui@congty.vn">
+                                Bùi Hữu Tài (NV-010) - DevOps Engineer
+                            </option>
+                        </select>
+
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Chỉ định dự án *</label>
+
+                    <div class="select-wrapper">
+                        <select id="addMemberProject" required>
+                            <option value="PRJ-ECOMM-01">
+                                PRJ-ECOMM-01 - Nền tảng TMĐT Đa kênh
+                            </option>
+                            <option value="PRJ-HRM-02">
+                                PRJ-HRM-02 - Cổng Quản trị Nhân sự Nội bộ
+                            </option>
+                            <option value="PRJ-LIB-03">
+                                PRJ-LIB-03 - Thư viện Số &amp; Tài liệu
+                            </option>
+                            <option value="PRJ-EDU-04">
+                                PRJ-EDU-04 - Cổng Đào tạo Nhân sự
+                            </option>
+                            <option value="PRJ-INFRA-05">
+                                PRJ-INFRA-05 - Nâng cấp Hạ tầng &amp; Bảo mật
+                            </option>
+                        </select>
+
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-two-columns">
+
+                    <div class="form-group">
+                        <label>Vai trò đảm nhiệm *</label>
+
+                        <div class="select-wrapper">
+                            <select id="addMemberRole" required>
+                                <option value="backend">Lập trình viên Backend</option>
+                                <option value="frontend">Lập trình viên Frontend</option>
+                                <option value="uiux">Thiết kế UI/UX</option>
+                                <option value="tester">Kiểm thử QA / QC</option>
+                                <option value="sec">Kỹ sư Hệ thống / DevOps</option>
+                                <option value="lead">Trưởng dự án (Leader)</option>
+                                <option value="techlead">Tech Lead Backend</option>
+                                <option value="db">Chuyên viên Dữ liệu (DBA)</option>
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quyền hạn truy cập *</label>
+
+                        <div class="select-wrapper">
+                            <select required>
+                                <option value="member">
+                                    Thành viên thực thi (Member)
+                                </option>
+                                <option value="sublead">
+                                    Điều phối viên kỹ thuật (Sub-Lead)
+                                </option>
+                                <option value="viewer">
+                                    Chỉ xem tài liệu (Viewer)
+                                </option>
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Ngày bắt đầu tham gia</label>
+
+                    <input
+                        type="date"
+                        id="addMemberDate"
+                        value="2025-02-15"
+                    >
+                </div>
+
+                <div class="security-note">
+                    <span class="material-symbols-outlined">verified_user</span>
+
+                    <span>
+                        Thành viên sau khi được chỉ định sẽ lập tức nhận email
+                        thông báo kèm quyền hạn tạo và cập nhật các nhiệm vụ
+                        trong phạm vi dự án này.
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="button button-secondary"
+                    id="cancelAddMemberButton"
+                >
+                    Hủy bỏ
+                </button>
+
+                <button
+                    type="submit"
+                    class="button button-primary"
+                >
+                    <span class="material-symbols-outlined">check</span>
+                    Lưu &amp; Phân bổ ngay
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- =========================================================
+     EDIT MEMBER MODAL (CHỈNH SỬA)
+========================================================= -->
+<div class="modal-overlay hidden" id="editMemberModal">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">edit</span>
+                </div>
+
+                <div>
+                    <h3>Chỉnh sửa vai trò &amp; phân quyền</h3>
+                    <span>Mã chức năng: LD-ADM09</span>
+                </div>
+            </div>
+
+            <button type="button" class="modal-close" id="closeEditMemberButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+        </div>
+
+        <form id="editMemberForm">
+
+            <div class="modal-body">
+
+                <div class="form-two-columns">
+                    <div class="form-group">
+                        <label>Họ và tên thành viên *</label>
+                        <input type="text" id="editMemberName" required placeholder="Nhập họ và tên">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mã nhân sự / Email *</label>
+                        <input type="text" id="editMemberCode" required placeholder="NV-000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email liên hệ *</label>
+                    <input type="email" id="editMemberEmail" required placeholder="email@congty.vn">
+                </div>
+
+                <div class="form-group">
+                    <label>Dự án phân bổ *</label>
+                    <div class="select-wrapper">
+                        <select id="editMemberProject" required>
+                            <option value="PRJ-ECOMM-01">PRJ-ECOMM-01 - Nền tảng TMĐT Đa kênh</option>
+                            <option value="PRJ-HRM-02">PRJ-HRM-02 - Cổng Quản trị Nhân sự Nội bộ</option>
+                            <option value="PRJ-LIB-03">PRJ-LIB-03 - Thư viện Số &amp; Tài liệu</option>
+                            <option value="PRJ-EDU-04">PRJ-EDU-04 - Cổng Đào tạo Nhân sự</option>
+                            <option value="PRJ-INFRA-05">PRJ-INFRA-05 - Nâng cấp Hạ tầng &amp; Bảo mật</option>
+                        </select>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-two-columns">
+
+                    <div class="form-group">
+                        <label>Vai trò đảm nhiệm *</label>
+                        <div class="select-wrapper">
+                            <select id="editMemberRole" required>
+                                <option value="lead">Trưởng dự án (Leader)</option>
+                                <option value="techlead">Tech Lead Backend</option>
+                                <option value="backend">Lập trình viên Backend</option>
+                                <option value="frontend">Frontend Developer</option>
+                                <option value="uiux">UI/UX Lead Designer</option>
+                                <option value="db">Database Specialist (DBA)</option>
+                                <option value="sec">Kỹ sư Bảo mật &amp; Hạ tầng</option>
+                                <option value="tester">Kiểm thử QA / QC</option>
+                            </select>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Trạng thái tham gia *</label>
+                        <div class="select-wrapper">
+                            <select id="editMemberStatus" required>
+                                <option value="active">Đang tham gia</option>
+                                <option value="paused">Tạm dừng điều phối</option>
+                                <option value="completed">Đã hoàn thành</option>
+                            </select>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-two-columns">
+
+                    <div class="form-group">
+                        <label>Khối lượng / Workload *</label>
+                        <div class="select-wrapper">
+                            <select id="editMemberWorkload" required>
+                                <option value="optimal">Tối ưu (2-4 nhiệm vụ)</option>
+                                <option value="overload">Quá tải (> 5 nhiệm vụ)</option>
+                                <option value="available">Sẵn sàng (< 2 nhiệm vụ)</option>
+                            </select>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Số nhiệm vụ đang giao</label>
+                        <input type="number" id="editMemberTaskCount" min="0" max="20" value="4">
+                    </div>
+
+                </div>
+
+                <div class="security-note">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>
+                        Thay đổi vai trò sẽ cập nhật lại ngay quyền hạn truy cập tài nguyên và báo cáo tiến độ của thành viên.
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="button button-secondary"
+                    id="cancelEditMemberButton"
+                >
+                    Hủy bỏ
+                </button>
+
+                <button
+                    type="submit"
+                    class="button button-primary"
+                >
+                    <span class="material-symbols-outlined">check</span>
+                    Cập nhật thay đổi
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- =========================================================
+     DETAIL MODAL (XEM CHI TIẾT)
+========================================================= -->
+<div class="modal-overlay hidden" id="detailModal">
+
+    <div class="modal small-modal">
+
+        <div class="modal-header">
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+
+                <div>
+                    <h3 id="detailTitle">Thông tin thành viên</h3>
+                    <span id="detailSubtitle">Chi tiết nhân sự</span>
+                </div>
+            </div>
+
+            <button type="button" class="modal-close" id="closeDetailButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="detail-body" id="detailBody"></div>
+
+    </div>
+</div>
+
+<!-- =========================================================
+     UPLOAD DOCUMENT MODAL (TẢI TÀI LIỆU LÊN)
+========================================================= -->
+<div class="modal-overlay hidden" id="uploadDocModal">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">upload_file</span>
+                </div>
+                <div>
+                    <h3>Tải tài liệu lên hệ thống</h3>
+                    <span>Lưu trữ tài liệu nhân sự &amp; dự án</span>
+                </div>
+            </div>
+            <button type="button" class="modal-close" id="closeUploadDocBtn">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <form id="uploadDocForm">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Loại tài liệu nhân sự / dự án *</label>
+                    <div class="select-wrapper">
+                        <select required id="docCategorySelect">
+                            <option value="contract">Hợp đồng bảo mật NDA / Phân công</option>
+                            <option value="profile">Hồ sơ năng lực &amp; Chứng chỉ</option>
+                            <option value="report">Báo cáo đánh giá hiệu suất (KPI)</option>
+                            <option value="guideline">Tài liệu bàn giao quy trình công việc</option>
+                        </select>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="upload-dropzone" id="uploadDropzone">
+                    <span class="material-symbols-outlined">cloud_upload</span>
+                    <p>Kéo và thả tệp tài liệu vào đây hoặc nhấp để chọn tệp</p>
+                    <small>Hỗ trợ định dạng PDF, DOCX, XLSX, ZIP (Tối đa 25MB)</small>
+                    <input type="file" id="fileInputSelect" style="display:none;" multiple>
+                </div>
+
+                <div class="form-group">
+                    <label>Ghi chú đính kèm</label>
+                    <textarea placeholder="Nhập mô tả ngắn gọn về tài liệu này..."></textarea>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="button button-secondary" id="cancelUploadDocBtn">Hủy bỏ</button>
+                <button type="submit" class="button button-primary">
+                    <span class="material-symbols-outlined">upload</span>
+                    Tải lên ngay
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- =========================================================
+     SHARE MODAL (CHIA SẺ)
+========================================================= -->
+<div class="modal-overlay hidden" id="shareModal">
+    <div class="modal small-modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">share</span>
+                </div>
+                <div>
+                    <h3>Chia sẻ danh sách thành viên</h3>
+                    <span>Tạo liên kết xem hoặc phân quyền trực tiếp</span>
+                </div>
+            </div>
+            <button type="button" class="modal-close" id="closeShareBtn">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Liên kết chia sẻ nhanh nội bộ</label>
+                <div class="share-url-box">
+                    <input type="text" readonly id="shareUrlInput" value="https://pm.congty.vn/thanh-vien/share?token=a8f9c1b">
+                    <button type="button" class="button button-secondary" id="copyShareUrlBtn">
+                        <span class="material-symbols-outlined">content_copy</span>
+                        Sao chép
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gửi qua email nhân sự</label>
+                <input type="email" placeholder="nhap.email@congty.vn" id="shareEmailInput">
+            </div>
+
+            <div class="form-group">
+                <label>Quyền hạn của người nhận liên kết</label>
+                <div class="select-wrapper">
+                    <select id="sharePermissionSelect">
+                        <option value="read">Chỉ xem danh sách &amp; tiến độ</option>
+                        <option value="comment">Xem và gửi bình luận / góp ý</option>
+                        <option value="edit">Toàn quyền điều phối (Thành viên Leader)</option>
+                    </select>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="button button-secondary" id="cancelShareBtn">Đóng</button>
+            <button type="button" class="button button-primary" id="sendShareEmailBtn">
+                <span class="material-symbols-outlined">send</span>
+                Gửi thư chia sẻ
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     CONTACT ARCHIVE ADMIN MODAL (LIÊN HỆ QUẢN TRỊ VIÊN LƯU TRỮ)
+========================================================= -->
+<div class="modal-overlay hidden" id="contactAdminModal">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">admin_panel_settings</span>
+                </div>
+                <div>
+                    <h3>Liên hệ Quản trị viên lưu trữ</h3>
+                    <span>Gửi yêu cầu hỗ trợ tài liệu &amp; khôi phục dữ liệu</span>
+                </div>
+            </div>
+            <button type="button" class="modal-close" id="closeContactAdminBtn">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <form id="contactAdminForm">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Chủ đề yêu cầu lưu trữ *</label>
+                    <div class="select-wrapper">
+                        <select required id="contactTopicSelect">
+                            <option value="restore">Yêu cầu khôi phục thành viên / dự án đã lưu trữ</option>
+                            <option value="storage">Mở rộng dung lượng kho lưu trữ hồ sơ</option>
+                            <option value="access">Xin cấp quyền truy cập kho tài liệu lưu trữ mật</option>
+                            <option value="other">Yêu cầu hỗ trợ kỹ thuật lưu trữ khác</option>
+                        </select>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Mức độ ưu tiên *</label>
+                    <div class="select-wrapper">
+                        <select required id="contactUrgencySelect">
+                            <option value="normal">Bình thường (Xử lý trong 24h)</option>
+                            <option value="high">Cao (Xử lý trong 4h)</option>
+                            <option value="urgent">Khẩn cấp (Cần mở kho ngay lập tức)</option>
+                        </select>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nội dung chi tiết gửi Quản trị viên lưu trữ *</label>
+                    <textarea required id="contactMessageArea" placeholder="Mô tả cụ thể mã dự án, tên thành viên hoặc tệp tài liệu cần khôi phục/hỗ trợ..."></textarea>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="button button-secondary" id="cancelContactAdminBtn">Hủy bỏ</button>
+                <button type="submit" class="button button-primary">
+                    <span class="material-symbols-outlined">mail</span>
+                    Gửi yêu cầu ngay
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- =========================================================
+     HIGH PERMISSION CONFIG MODAL (CẤU HÌNH PHÂN QUYỀN CAO)
+========================================================= -->
+<div class="modal-overlay hidden" id="highPermModal">
+    <div class="modal large-modal">
+        <div class="modal-header">
+            <div class="modal-title">
+                <div class="modal-icon">
+                    <span class="material-symbols-outlined">security</span>
+                </div>
+                <div>
+                    <h3>Cấu hình phân quyền hệ thống cao cấp</h3>
+                    <span>Ma trận phân quyền hạn thực thi &amp; bảo mật</span>
+                </div>
+            </div>
+            <button type="button" class="modal-close" id="closeHighPermBtn">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <div class="security-note">
+                <span class="material-symbols-outlined">shield</span>
+                <span>
+                    Cấu hình này áp dụng trên toàn bộ mô-đun quản lý thành viên. Chỉ có tài khoản Leader &amp; Quản trị viên hệ thống mới có thể thiết lập các quyền cấp cao này.
+                </span>
+            </div>
+
+            <div style="overflow-x:auto;">
+                <table class="perm-table">
+                    <thead>
+                        <tr>
+                            <th>Vai trò hệ thống</th>
+                            <th>Xem chi tiết</th>
+                            <th>Chỉnh sửa</th>
+                            <th>Tải xuống (Excel/Doc)</th>
+                            <th>Chia sẻ</th>
+                            <th>Tải tài liệu lên</th>
+                            <th>Liên hệ QT lưu trữ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Trưởng dự án (Leader)</strong></td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td><input type="checkbox" checked disabled></td>
+                            <td><input type="checkbox" checked disabled></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tech Lead / Sub-Lead</strong></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thành viên thực thi (Member)</strong></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Người quan sát (Viewer)</strong></td>
+                            <td><input type="checkbox" checked></td>
+                            <td><input type="checkbox" disabled></td>
+                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" disabled></td>
+                            <td><input type="checkbox" disabled></td>
+                            <td><input type="checkbox" disabled></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="button button-secondary" id="cancelHighPermBtn">Đóng</button>
+            <button type="button" class="button button-primary" id="saveHighPermBtn">
+                <span class="material-symbols-outlined">save</span>
+                Lưu thiết lập phân quyền
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="thanh-vien.js"></script>
+
+</body>
+</html>

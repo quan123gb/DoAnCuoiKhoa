@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng ký tài khoản Nhân viên - Project Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- BRAND -->
+            <div class="brand-group">
+
+                <img
+                    class="brand-logo"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1Xe_UU--qIZ7r6U4lY1LfuZC_C-sg_sA3Wr8YgQlGNieF3c1173APupe_XRT5DU6dTAAPa58PQ46IS4pI2xb_a5oQFNzQXgNinE6LHxI85qxpi8NebK3J3Uv2J_ICiHltBu448Sfn8JDj4mnUf5c-YUZ0ZYks9TP33BxHG8NFNIZzJw1Gc54VQhqB3dCqfwrrMQXgfikDFr4CX884N7WjptvPgBalcqt_3925x9JQB6ha-9xKIu6Sk3W94"
+                    alt="Project Management System"
+                >
+
+                <div class="brand-text">
+
+                    <div class="brand-title">
+                        PROJECT MGMT
+                    </div>
+
+                    <div
+                        class="brand-subtitle"
+                        data-i18n="brandSubtitle"
+                    >
+                        HỆ THỐNG QUẢN TRỊ DỰ ÁN NỘI BỘ
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+
+                <!-- LANGUAGE -->
+                <div class="language-switcher">
+
+                    <button
+                        type="button"
+                        class="lang-btn active"
+                        id="btnVietnamese"
+                    >
+                        Tiếng Việt
+                    </button>
+
+                    <button
+                        type="button"
+                        class="lang-btn"
+                        id="btnEnglish"
+                    >
+                        English
+                    </button>
+
+                </div>
+
+
+                <!-- HELP -->
+                <a href="#" class="help-link">
+
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+
+                    <span data-i18n="help">
+                        Trợ giúp
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+    <main class="main-content">
+
+        <!-- DOT BACKGROUND -->
+        <div class="dot-background"></div>
+
+
+        <div class="main-container">
+
+            <div class="registration-layout">
+
+
+                <!-- =================================================
+                     LEFT COLUMN - FORM
+                ================================================== -->
+                <section class="register-card">
+
+                    <!-- CARD TOP -->
+                    <div class="card-top">
+
+                        <div class="registration-code">
+
+                            <span>ST-NV01</span>
+
+                            <span class="small-dot"></span>
+
+                            <span data-i18n="newWorkspace">
+                                Đăng ký tài khoản Nhân viên
+                            </span>
+
+                        </div>
+
+
+                        <div class="tls-badge">
+
+                            <span class="material-symbols-outlined">
+                                shield
+                            </span>
+
+                            <span data-i18n="tls">
+                                Mã hóa TLS 1.3
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TITLE -->
+                    <div class="form-heading">
+
+                        <h1 data-i18n="registerTitle">
+                            Đăng ký tài khoản Nhân viên
+                        </h1>
+
+                        <p data-i18n="registerSubtitle">
+                            Khởi tạo tài khoản dành cho nhân viên mới tham gia vào hệ thống quản lý dự án
+                        </p>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PROGRESS
+                    ================================================== -->
+                    <div class="progress-section">
+
+                        <div class="progress-line"></div>
+
+
+                        <!-- STEP 1 -->
+                        <div class="progress-step active">
+
+                            <div class="step-number">
+                                1
+                            </div>
+
+                            <div class="step-content">
+
+                                <strong data-i18n="stepPersonal">
+                                    Thông tin cá nhân
+                                </strong>
+
+                                <span data-i18n="stepSetting">
+                                    Đang khai báo
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STEP 2 -->
+                        <div class="progress-step">
+
+                            <div class="step-number">
+                                2
+                            </div>
+
+                            <div class="step-content">
+
+                                <strong data-i18n="stepOrganization">
+                                    Phòng ban & Chức danh
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STEP 3 -->
+                        <div class="progress-step">
+
+                            <div class="step-number">
+                                3
+                            </div>
+
+                            <div class="step-content">
+
+                                <strong data-i18n="stepVerify">
+                                    Xác thực & Kích hoạt
+                                </strong>
+
+                                <span>
+                                    2FA
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         FORM
+                    ================================================== -->
+                    <form id="registerForm">
+
+
+                        <!-- FULL NAME -->
+                        <div class="form-group">
+
+                            <label for="fullName">
+
+                                <span data-i18n="fullName">
+                                    Họ và tên nhân viên
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="vd: Nguyễn Văn An"
+                                data-placeholder="fullNamePlaceholder"
+                            >
+
+                        </div>
+
+
+                        <!-- EMPLOYEE CODE -->
+                        <div class="form-group">
+
+                            <label for="employeeCode">
+
+                                <span data-i18n="employeeCode">
+                                    Mã số nhân viên (Mã NV)
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="employeeCode"
+                                placeholder="vd: NV-1024"
+                                data-placeholder="employeeCodePlaceholder"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="companyEmail">
+
+                                <span data-i18n="companyEmail">
+                                    Email công ty cấp
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div class="input-with-icon">
+
+                                <input
+                                    type="email"
+                                    id="companyEmail"
+                                    placeholder="tenban@congty.com"
+                                    data-placeholder="emailPlaceholder"
+                                >
+
+                                <div class="input-icon-text">
+
+                                    <span class="material-symbols-outlined">
+                                        badge
+                                    </span>
+
+                                    <span data-i18n="internalDomain">
+                                        Email nội bộ
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                class="help-text"
+                                data-i18n="emailHelp"
+                            >
+                                Vui lòng nhập chính xác email do công ty cấp để hệ thống tự động phân quyền dự án.
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="form-group">
+
+                            <label for="phone">
+
+                                <span data-i18n="phone">
+                                    Số điện thoại cá nhân
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div class="phone-input">
+
+                                <div class="country-code">
+                                    🇻🇳 +84
+                                </div>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="0912 345 678"
+                                    data-placeholder="phonePlaceholder"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ROLE -->
+                        <div class="form-group">
+
+                            <label for="role">
+
+                                <span data-i18n="role">
+                                    Chức danh trong dự án
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div class="select-wrapper">
+
+                                <select id="role">
+
+                                    <option
+                                        value=""
+                                        data-i18n="rolePlaceholder"
+                                    >
+                                        Chọn vị trí / chức danh công việc...
+                                    </option>
+
+                                    <option
+                                        value="pm"
+                                        data-i18n="rolePM"
+                                    >
+                                        Trưởng dự án / Quản lý dự án (Project Manager)
+                                    </option>
+
+                                    <option
+                                        value="lead"
+                                        data-i18n="roleLead"
+                                    >
+                                        Trưởng nhóm kỹ thuật (Tech Lead / Team Lead)
+                                    </option>
+
+                                    <option
+                                        value="developer"
+                                        data-i18n="roleDeveloper"
+                                    >
+                                        Kỹ sư phần mềm (Software Engineer)
+                                    </option>
+
+                                    <option
+                                        value="designer"
+                                        data-i18n="roleDesigner"
+                                    >
+                                        Nhà thiết kế sản phẩm (UI/UX Designer)
+                                    </option>
+
+                                    <option
+                                        value="qa"
+                                        data-i18n="roleQA"
+                                    >
+                                        Kỹ sư kiểm thử chất lượng (QA/QC Engineer)
+                                    </option>
+
+                                    <option
+                                        value="po"
+                                        data-i18n="rolePO"
+                                    >
+                                        Quản lý sản phẩm / Phân tích nghiệp vụ (PO / BA)
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="pwd-input">
+
+                                <span data-i18n="password">
+                                    Mật khẩu đăng nhập
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div class="password-input">
+
+                                <input
+                                    type="password"
+                                    id="pwd-input"
+                                    placeholder="Tối thiểu 10 ký tự, kết hợp ký tự hoa, số và ký hiệu"
+                                    data-placeholder="passwordPlaceholder"
+                                >
+
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="pwd-toggle"
+                                >
+
+                                    <span
+                                        class="material-symbols-outlined"
+                                        id="passwordEye"
+                                    >
+                                        visibility
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- PASSWORD STRENGTH -->
+                            <div class="password-strength">
+
+                                <div class="strength-header">
+
+                                    <span data-i18n="passwordStrength">
+                                        Độ an toàn mật khẩu:
+                                    </span>
+
+                                    <strong id="strengthText">
+                                        Khá mạnh
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="strength-bars">
+
+                                    <span class="strength-bar active"></span>
+                                    <span class="strength-bar active"></span>
+                                    <span class="strength-bar active"></span>
+                                    <span class="strength-bar"></span>
+
+                                </div>
+
+
+                                <div class="password-rules">
+
+
+                                    <div
+                                        class="rule valid"
+                                        id="ruleLength"
+                                    >
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                        <span data-i18n="ruleLength">
+                                            Tối thiểu 10 ký tự
+                                        </span>
+
+                                    </div>
+
+
+                                    <div
+                                        class="rule valid"
+                                        id="ruleCase"
+                                    >
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                        <span data-i18n="ruleCase">
+                                            Ký tự viết hoa & viết thường
+                                        </span>
+
+                                    </div>
+
+
+                                    <div
+                                        class="rule valid"
+                                        id="ruleNumber"
+                                    >
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                        <span data-i18n="ruleNumber">
+                                            Ít nhất 1 chữ số (0-9)
+                                        </span>
+
+                                    </div>
+
+
+                                    <div
+                                        class="rule"
+                                        id="ruleSpecial"
+                                    >
+
+                                        <span class="material-symbols-outlined">
+                                            radio_button_unchecked
+                                        </span>
+
+                                        <span data-i18n="ruleSpecial">
+                                            Chứa ký tự đặc biệt (!@#$)
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="confirm-password">
+
+                                <span data-i18n="confirmPassword">
+                                    Xác nhận mật khẩu
+                                </span>
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div class="confirm-password-input">
+
+                                <span class="material-symbols-outlined left-icon">
+                                    lock_reset
+                                </span>
+
+                                <input
+                                    type="password"
+                                    id="confirm-password"
+                                    placeholder="Nhập lại mật khẩu để khớp bảo mật"
+                                    data-placeholder="confirmPasswordPlaceholder"
+                                >
+
+                                <span
+                                    class="material-symbols-outlined right-icon"
+                                    id="confirmIcon"
+                                >
+                                    check_circle
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AGREEMENT -->
+                        <div class="agreement">
+
+                            <label class="checkbox-wrapper">
+
+                                <input
+                                    type="checkbox"
+                                    id="agreement"
+                                    checked
+                                >
+
+                                <span class="custom-checkbox"></span>
+
+
+                                <span class="agreement-text">
+
+                                    <span data-i18n="agreementStart">
+                                        Tôi đồng ý với
+                                    </span>
+
+                                    <a href="#" data-i18n="usagePolicy">
+                                        Nội quy lao động & Quy chế CNTT
+                                    </a>
+
+                                    <span>, </span>
+
+                                    <a href="#" data-i18n="privacyPolicy">
+                                        Chính sách bảo mật dữ liệu công ty
+                                    </a>
+
+                                    <span data-i18n="agreementAnd">
+                                        và
+                                    </span>
+
+                                    <a href="#" data-i18n="nda">
+                                        Thỏa thuận bảo mật thông tin (NDA)
+                                    </a>
+
+                                    <span>.</span>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+
+                            <span data-i18n="submit">
+                                Gửi thông tin đăng ký nhân viên
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- CARD BOTTOM -->
+                    <div class="card-bottom">
+
+                        <div class="login-area">
+
+                            <span data-i18n="alreadyAccount">
+                                Đã có tài khoản nhân viên?
+                            </span>
+
+                            <a href="#">
+
+                                <span data-i18n="loginNow">
+                                    Đăng nhập hệ thống (ST-LOG01)
+                                </span>
+
+                                <span class="material-symbols-outlined">
+                                    login
+                                </span>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="version">
+                            Phiên bản Nhân sự v4.8.2
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     RIGHT COLUMN
+                ================================================== -->
+                <aside class="side-column">
+
+
+                    <!-- ENTERPRISE / HR CARD -->
+                    <section class="enterprise-card">
+
+                        <div class="enterprise-header">
+
+                            <div>
+
+                                <div
+                                    class="enterprise-label"
+                                    data-i18n="enterpriseLabel"
+                                >
+                                    HỆ THỐNG NHÂN SỰ NỘI BỘ
+                                </div>
+
+                                <h2 data-i18n="enterpriseTitle">
+                                    Nền tảng làm việc & quản lý công việc tập trung dành cho Nhân viên
+                                </h2>
+
+                            </div>
+
+
+                            <div class="sla-badge">
+                                SLA 99.9%
+                            </div>
+
+                        </div>
+
+
+                        <!-- IMAGE -->
+                        <div class="enterprise-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBllUezOfltIxtGzg5svjekV4y6LvIAQul25QFad62T-FD3NCU8zy5KXxFos5GXu1NpnIHV_kvMwwE4oOytE7e3qVXVEsYp8pd8AUnf7BWF2Ho_tQyXH7NWeMwqIXeQBmz_AOLKYzSQnozMP_2F2EWgDVLSPmRj8xQwH39npjegFyAXyLnBHU702OrKvGkEg1pl5YR0OmQSWWjtFvPpefFK1O7ViosznU9NfMXxxhedbd5yzd1QaVT9sw"
+                                alt="Employee Workspace"
+                            >
+
+
+                            <div class="image-overlay"></div>
+
+
+                            <div class="iso-badge">
+
+                                <span class="material-symbols-outlined">
+                                    verified
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        ISO/IEC 27001 : 2022
+                                    </strong>
+
+                                    <span data-i18n="isoText">
+                                        An toàn thông tin & Bảo mật dữ liệu nội bộ
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FEATURES -->
+                        <div class="feature-list">
+
+
+                            <!-- FEATURE 1 -->
+                            <div class="feature-item">
+
+                                <div class="feature-icon">
+
+                                    <span class="material-symbols-outlined">
+                                        task_alt
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <h3 data-i18n="feature1Title">
+                                        Theo dõi tiến độ & Nhận giao việc
+                                    </h3>
+
+                                    <p data-i18n="feature1Text">
+                                        Quản lý danh sách công việc cá nhân, tiến độ dự án theo sơ đồ Gantt và bảng Kanban trực quan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- FEATURE 2 -->
+                            <div class="feature-item">
+
+                                <div class="feature-icon">
+
+                                    <span class="material-symbols-outlined">
+                                        security
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <h3 data-i18n="feature2Title">
+                                        Bảo mật thông tin & Phân quyền IAM
+                                    </h3>
+
+                                    <p data-i18n="feature2Text">
+                                        Truy cập đúng thẩm quyền dự án, mã hóa tài liệu công việc và quản lý danh tính nhân sự an toàn.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- FEATURE 3 -->
+                            <div class="feature-item">
+
+                                <div class="feature-icon">
+
+                                    <span class="material-symbols-outlined">
+                                        groups
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <h3 data-i18n="feature3Title">
+                                        Cộng tác làm việc nhóm
+                                    </h3>
+
+                                    <p data-i18n="feature3Text">
+                                        Trao đổi công việc tức thì, chia sẻ tài liệu dự án và nhật ký hoạt động nhóm minh bạch 24/7.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- ACTIVATION -->
+                    <section class="activation-card">
+
+                        <div class="activation-title">
+
+                            <div class="activation-icon">
+
+                                <span class="material-symbols-outlined">
+                                    badge
+                                </span>
+
+                            </div>
+
+                            <h2 data-i18n="activationTitle">
+                                Quy trình kích hoạt tài khoản Nhân viên
+                            </h2>
+
+                        </div>
+
+
+                        <div class="activation-steps">
+
+
+                            <div class="activation-step">
+
+                                <div class="activation-number">
+                                    1
+                                </div>
+
+                                <span data-i18n="activation1">
+                                    Điền thông tin cá nhân & Mã số nhân viên (Mã NV)
+                                </span>
+
+                            </div>
+
+
+                            <div class="activation-step">
+
+                                <div class="activation-number">
+                                    2
+                                </div>
+
+                                <span data-i18n="activation2">
+                                    Bộ phận Quản trị / HR kiểm tra và phê duyệt
+                                </span>
+
+                            </div>
+
+
+                            <div class="activation-step">
+
+                                <div class="activation-number">
+                                    3
+                                </div>
+
+                                <span data-i18n="activation3">
+                                    Đăng nhập, xác thực 2FA và nhận phân quyền làm việc
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- SUPPORT -->
+                    <section class="support-card">
+
+                        <div class="support-icon">
+
+                            <span class="material-symbols-outlined">
+                                support_agent
+                            </span>
+
+                        </div>
+
+
+                        <div class="support-content">
+
+                            <strong data-i18n="supportTitle">
+                                Hỗ trợ Kỹ thuật & Nhân sự (HR)
+                            </strong>
+
+                            <span data-i18n="supportText">
+                                Hotline nội bộ: 1900 6886 • hr-support@pm-system.internal
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="support-button"
+                            data-i18n="supportButton"
+                        >
+                            Gửi yêu cầu
+                        </button>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-left">
+
+                <span class="material-symbols-outlined">
+                    verified_user
+                </span>
+
+                <span data-i18n="copyright">
+                    Bản quyền 2025 Enterprise Project Management System - Khối Nhân sự & CNTT
+                </span>
+
+                <span class="footer-dot"></span>
+
+                <span data-i18n="isoFooter">
+                    Chứng nhận ISO/IEC 27001
+                </span>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#" data-i18n="footerPrivacy">
+                    Quy định Bảo mật Nội bộ
+                </a>
+
+                <a href="#" data-i18n="footerTerms">
+                    Điều khoản Sử dụng Hệ thống
+                </a>
+
+                <a href="#" data-i18n="footerContact">
+                    Liên hệ HR / IT Helpdesk
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="register.js"></script>
+
+</body>
+</html>

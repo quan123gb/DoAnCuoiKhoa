@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Management System - Tài nguyên &amp; Tài liệu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="tai-nguyen.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="sidebar">
+
+        <div class="sidebar-content">
+
+            <!-- Logo -->
+            <div class="brand">
+                <div class="brand-logo">
+                    <span class="material-symbols-outlined">folder_managed</span>
+                </div>
+
+                <div class="brand-text">
+                    <span class="brand-title">PROJECT MGMT</span>
+                    <span class="brand-subtitle">NHÂN VIÊN DỰ ÁN</span>
+                </div>
+            </div>
+
+            <!-- Employee -->
+            <div class="employee-box">
+                <div class="employee-status">
+                    <span class="status-dot"></span>
+                    <span>NV-002 • UI/UX Designer</span>
+                </div>
+
+                <span class="project-count">
+                    2 Dự án
+                </span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <div class="nav-group">
+
+                    <div class="nav-title">
+                        TỔNG QUAN
+                    </div>
+
+                    <a href="../TongQuan_Staff/tong-quan.html" class="nav-link" data-path="tong-quan-cua-toi">
+                        Tổng quan của tôi
+                    </a>
+
+                    <a href="../Lich_Staff/lich.html" class="nav-link" data-path="lich-lam-viec-deadline">
+                        Lịch làm việc &amp; Deadline
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <div class="nav-title">
+                        CÔNG VIỆC CỦA TÔI
+                    </div>
+
+                    <a href="../NhiemVu_Staff/nhiem-vu.html" class="nav-link nav-link-count" data-path="nhiem-vu-duoc-giao">
+                        <span>Nhiệm vụ được giao</span>
+                        <span class="nav-badge">8</span>
+                    </a>
+
+                    <a href="../DuAn_Staff/du-an.html" class="nav-link" data-path="du-an-tham-gia">
+                        Dự án tham gia
+                    </a>
+
+                    <a href="../BaoCao_Staff/bao-cao.html" class="nav-link" data-path="bao-cao-tien-do">
+                        Báo cáo tiến độ
+                    </a>
+
+                    <a href="../TaiNguyen_Staff/tai-nguyen.html" class="nav-link active" data-path="tai-nguyen-tai-lieu">
+                        Tài nguyên &amp; Tài liệu
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <div class="nav-title">
+                        TƯƠNG TÁC &amp; HỖ TRỢ
+                    </div>
+
+                    <a
+                        href="../ThongBao_Staff/thong-bao.html"
+                        class="nav-link nav-link-count"
+                        data-path="thong-bao-thao-luan"
+                    >
+                        <span>Thông báo &amp; Thảo luận</span>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <a href="../YeuCau_Staff/yeu-cau.html" class="nav-link" data-path="yeu-cau-ho-tro">
+                        Yêu cầu hỗ trợ
+                    </a>
+
+                </div>
+
+
+                <div class="nav-group">
+
+                    <div class="nav-title">
+                        TÀI KHOẢN
+                    </div>
+
+                    <a href="../HoSo_Staff/ho-so.html" class="nav-link" data-path="ho-so-ca-nhan-ky-nang">
+                        Hồ sơ &amp; Kỹ năng
+                    </a>
+
+                    <a href="../DangXuat_Staff/dang-xuat.html" class="nav-link logout-link" data-path="dang-xuat">
+                        Đăng xuất
+                    </a>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+        <!-- Sidebar profile -->
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar-wrap">
+
+                <div class="profile-avatar">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+
+                <span class="profile-online"></span>
+
+            </div>
+
+            <div class="profile-info">
+
+                <p class="profile-name">
+                    Trần Thị Bình
+                </p>
+
+                <p class="profile-role">
+                    NV-002 • UI/UX Designer
+                </p>
+
+                <div class="profile-projects">
+
+                    <span>PRJ-HRM-02</span>
+                    <span>ECOMM-01</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MOBILE MENU
+    ========================== -->
+
+    <button
+        class="mobile-menu-button"
+        type="button"
+        aria-label="Mở menu"
+    >
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </button>
+
+    <div class="page-overlay"></div>
+
+
+    <!-- =========================
+         PAGE WRAPPER
+    ========================== -->
+
+    <div class="page-wrapper">
+
+        <!-- =========================
+             TOPBAR
+        ========================== -->
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <div class="global-search">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="text"
+                        id="globalSearch"
+                        placeholder="Tìm kiếm công việc của tôi, tài liệu, dự án..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button
+                    type="button"
+                    class="primary-button quick-report-button"
+                >
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+
+                    <span>
+                        Báo cáo nhanh
+                    </span>
+                </button>
+
+
+                <div class="topbar-actions">
+
+                    <button
+                        type="button"
+                        class="icon-button"
+                        title="Trợ giúp"
+                    >
+                        <span class="material-symbols-outlined">
+                            help
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="icon-button notification-button"
+                        title="Thông báo"
+                    >
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+
+                        <span class="notification-number">
+                            3
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <div class="top-profile">
+
+                    <div class="top-profile-info">
+
+                        <span class="top-profile-name">
+                            Trần Thị Bình
+                        </span>
+
+                        <span class="online-status">
+                            <span></span>
+                            Trực tuyến
+                        </span>
+
+                    </div>
+
+                    <div class="top-avatar">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main class="main-content">
+
+            <div class="content-container">
+
+
+                <!-- =========================
+                     BREADCRUMB
+                ========================== -->
+
+                <section class="page-header-section">
+
+                    <nav class="breadcrumb">
+
+                        <a href="#">
+                            Trang chủ
+                        </a>
+
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+
+                        <a href="#">
+                            Phân hệ Nhân viên
+                        </a>
+
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+
+                        <a href="#">
+                            Công việc của tôi
+                        </a>
+
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+
+                        <span class="current">
+                            Tài nguyên &amp; Tài liệu
+                        </span>
+
+                    </nav>
+
+
+                    <div class="page-header-card">
+
+                        <div class="page-title-area">
+
+                            <div class="page-title-row">
+
+                                <h1>
+                                    Tài nguyên &amp; Tài liệu dự án
+                                </h1>
+
+                                <span class="code-badge">
+                                    ST-RES01
+                                </span>
+
+                                <span class="access-badge">
+                                    <span class="material-symbols-outlined">
+                                        verified_user
+                                    </span>
+
+                                    Quyền truy cập: Thành viên dự án
+                                    (Read &amp; Write)
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Truy cập, quản lý và chia sẻ tài liệu đặc tả
+                                (PRD/SRS), Design Specs, Brand Assets,
+                                API Documentation và tài nguyên kỹ thuật
+                                dùng chung cho các dự án bạn tham gia.
+                            </p>
+
+                        </div>
+
+
+                        <div class="page-actions">
+
+                            <button
+                                type="button"
+                                class="secondary-button"
+                                data-action="permission"
+                            >
+                                <span class="material-symbols-outlined">
+                                    lock_open
+                                </span>
+
+                                Yêu cầu cấp quyền
+                            </button>
+
+                            <button
+                                type="button"
+                                class="secondary-button"
+                                data-action="sync"
+                            >
+                                <span class="material-symbols-outlined">
+                                    cloud_sync
+                                </span>
+
+                                Đồng bộ Cloud
+                            </button>
+
+                            <button
+                                type="button"
+                                class="primary-button"
+                                data-action="upload"
+                            >
+                                <span class="material-symbols-outlined">
+                                    upload_file
+                                </span>
+
+                                Tải lên tài liệu mới
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     KPI
+                ========================== -->
+
+                <section class="kpi-grid">
+
+                    <!-- KPI 1 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <span class="kpi-label">
+                                Tổng tài liệu khả dụng
+                            </span>
+
+                            <div class="kpi-icon primary">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-value-row">
+
+                            <span class="kpi-value">
+                                148
+                            </span>
+
+                            <span class="kpi-unit">
+                                tệp tin
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-note success">
+                            <span></span>
+                            +24 tệp mới tuần này
+                            (PRJ-ECOMM &amp; HRM)
+                        </div>
+
+                    </div>
+
+
+                    <!-- KPI 2 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <span class="kpi-label">
+                                Tài liệu theo dõi (Starred)
+                            </span>
+
+                            <div class="kpi-icon secondary">
+                                <span
+                                    class="material-symbols-outlined filled"
+                                >
+                                    star
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-value-row">
+
+                            <span class="kpi-value" id="starredKpiCount">
+                                2
+                            </span>
+
+                            <span class="kpi-unit">
+                                tài liệu ưu tiên
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-description">
+                            Đã ghim để truy cập tức thì
+                            trên bảng điều khiển
+                        </div>
+
+                    </div>
+
+
+                    <!-- KPI 3 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <span class="kpi-label">
+                                Dung lượng lưu trữ
+                            </span>
+
+                            <div class="kpi-icon tertiary">
+                                <span class="material-symbols-outlined">
+                                    cloud_queue
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="storage-value">
+
+                            <strong>
+                                18.4 GB
+                            </strong>
+
+                            <span>
+                                50 GB quota
+                            </span>
+
+                        </div>
+
+                        <div class="storage-progress">
+                            <div style="width:36.8%"></div>
+                        </div>
+
+                        <div class="storage-footer">
+
+                            <span>
+                                Đã dùng 36.8%
+                            </span>
+
+                            <span>
+                                Còn trống 31.6 GB
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- KPI 4 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <span class="kpi-label">
+                                Bản Specs mới cập nhật
+                            </span>
+
+                            <div class="kpi-icon blue">
+                                <span class="material-symbols-outlined">
+                                    fork_right
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="spec-version">
+
+                            <strong>
+                                v2.4
+                            </strong>
+
+                            <span>
+                                Checkout
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-description">
+                            Bởi Đỗ Quốc Hùng • 2 giờ trước
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     FILTER
+                ========================== -->
+
+                <section class="filter-card">
+
+                    <div class="category-tabs">
+
+                        <button
+                            type="button"
+                            class="category-tab active"
+                            data-category="all"
+                        >
+                            <span>
+                                Tất cả tài liệu
+                            </span>
+
+                            <span class="category-count">
+                                148
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-tab"
+                            data-category="design"
+                        >
+                            <span>
+                                Thiết kế &amp; Design System
+                            </span>
+
+                            <span class="category-count">
+                                36
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-tab"
+                            data-category="spec"
+                        >
+                            <span>
+                                Đặc tả PRD &amp; SRS
+                            </span>
+
+                            <span class="category-count">
+                                28
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-tab"
+                            data-category="api"
+                        >
+                            <span>
+                                Tài liệu API &amp; Kỹ thuật
+                            </span>
+
+                            <span class="category-count">
+                                42
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-tab"
+                            data-category="meeting"
+                        >
+                            <span>
+                                Biên bản họp &amp; Nghiệm thu
+                            </span>
+
+                            <span class="category-count">
+                                24
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-tab"
+                            data-category="guide"
+                        >
+                            <span>
+                                Hướng dẫn vận hành
+                            </span>
+
+                            <span class="category-count">
+                                18
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="filter-row">
+
+                        <div class="document-search">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+
+                            <input
+                                type="text"
+                                id="documentSearch"
+                                placeholder="Tìm kiếm tài liệu, PRD, figma link, tác giả, tag (#design, #api)..."
+                            >
+
+                        </div>
+
+
+                        <div class="filter-controls">
+
+                            <select id="projectFilter">
+
+                                <option value="all">
+                                    Dự án: Tất cả
+                                    (PRJ-ECOMM-01, PRJ-HRM-02)
+                                </option>
+
+                                <option value="PRJ-ECOMM-01">
+                                    PRJ-ECOMM-01 (E-Commerce)
+                                </option>
+
+                                <option value="PRJ-HRM-02">
+                                    PRJ-HRM-02 (HRM System)
+                                </option>
+
+                                <option value="internal">
+                                    Nội bộ &amp; Dùng chung
+                                </option>
+
+                            </select>
+
+
+                            <select id="formatFilter">
+
+                                <option value="all">
+                                    Định dạng: Tất cả
+                                </option>
+
+                                <option value="figma">
+                                    Figma (.fig / Prototype)
+                                </option>
+
+                                <option value="pdf">
+                                    Tài liệu PDF (.pdf)
+                                </option>
+
+                                <option value="docx">
+                                    Word (.docx)
+                                </option>
+
+                                <option value="json">
+                                    JSON / Postman Collection
+                                </option>
+
+                                <option value="zip">
+                                    Nén (.zip / .rar)
+                                </option>
+
+                            </select>
+
+
+                            <select id="sortFilter">
+
+                                <option value="date-desc">
+                                    Sắp xếp: Mới cập nhật nhất
+                                </option>
+
+                                <option value="name-asc">
+                                    Sắp xếp: Tên A - Z
+                                </option>
+
+                                <option value="size-desc">
+                                    Sắp xếp: Dung lượng lớn nhất
+                                </option>
+
+                            </select>
+
+
+                            <div class="view-toggle">
+
+                                <button
+                                    type="button"
+                                    title="Chế độ lưới"
+                                    data-view="grid"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        grid_view
+                                    </span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="active"
+                                    title="Chế độ danh sách"
+                                    data-view="list"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        view_list
+                                    </span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     QUICK FOLDERS
+                ========================== -->
+
+                <section class="quick-folders-section">
+
+                    <div class="section-heading">
+
+                        <div class="section-heading-title">
+
+                            <span class="material-symbols-outlined">
+                                folder_open
+                            </span>
+
+                            <h2>
+                                Thư mục dự án &amp;
+                                Tài nguyên ghim nhanh
+                            </h2>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="text-button"
+                            id="viewAllFoldersBtn"
+                        >
+                            Xem tất cả thư mục (12)
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="folder-grid">
+
+                        <div class="folder-card" data-folder="PRJ-ECOMM-01">
+
+                            <div class="folder-icon blue">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                            </div>
+
+                            <div class="folder-content">
+
+                                <h3>
+                                    PRJ-ECOMM-01
+                                </h3>
+
+                                <p>
+                                    E-Commerce Platform
+                                </p>
+
+                                <span>
+                                    48 tài liệu
+                                </span>
+
+                            </div>
+
+                            <button type="button" class="folder-more-btn">
+                                <span class="material-symbols-outlined">
+                                    more_vert
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="folder-card" data-folder="PRJ-HRM-02">
+
+                            <div class="folder-icon purple">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                            </div>
+
+                            <div class="folder-content">
+
+                                <h3>
+                                    PRJ-HRM-02
+                                </h3>
+
+                                <p>
+                                    Human Resource Management
+                                </p>
+
+                                <span>
+                                    37 tài liệu
+                                </span>
+
+                            </div>
+
+                            <button type="button" class="folder-more-btn">
+                                <span class="material-symbols-outlined">
+                                    more_vert
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="folder-card" data-folder="Design System">
+
+                            <div class="folder-icon orange">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                            </div>
+
+                            <div class="folder-content">
+
+                                <h3>
+                                    Design System
+                                </h3>
+
+                                <p>
+                                    Brand Assets &amp; UI Kit
+                                </p>
+
+                                <span>
+                                    36 tài liệu
+                                </span>
+
+                            </div>
+
+                            <button type="button" class="folder-more-btn">
+                                <span class="material-symbols-outlined">
+                                    more_vert
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="folder-card" data-folder="Dùng chung">
+
+                            <div class="folder-icon green">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                            </div>
+
+                            <div class="folder-content">
+
+                                <h3>
+                                    Dùng chung
+                                </h3>
+
+                                <p>
+                                    Tài liệu nội bộ
+                                </p>
+
+                                <span>
+                                    27 tài liệu
+                                </span>
+
+                            </div>
+
+                            <button type="button" class="folder-more-btn">
+                                <span class="material-symbols-outlined">
+                                    more_vert
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     DOCUMENT TABLE
+                ========================== -->
+
+                <section class="document-section">
+
+                    <div class="document-table-wrapper">
+
+                        <table class="document-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            id="selectAll"
+                                        >
+                                    </th>
+
+                                    <th class="star-column">
+                                        ★
+                                    </th>
+
+                                    <th>
+                                        Tài liệu
+                                    </th>
+
+                                    <th>
+                                        Dự án
+                                    </th>
+
+                                    <th>
+                                        Phiên bản
+                                    </th>
+
+                                    <th>
+                                        Định dạng / Dung lượng
+                                    </th>
+
+                                    <th>
+                                        Người cập nhật
+                                    </th>
+
+                                    <th>
+                                        Quyền
+                                    </th>
+
+                                    <th class="action-column">
+                                        Thao tác
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <!-- Row 1 -->
+                                <tr
+                                    data-category="design"
+                                    data-project="PRJ-ECOMM-01"
+                                    data-format="figma"
+                                    data-id="DOC-DSN-24"
+                                    class="selected-row"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span
+                                            class="material-symbols-outlined star-icon"
+                                            data-starred="true"
+                                        >
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon figma">
+                                                <span class="material-symbols-outlined">
+                                                    design_services
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    PRJ-ECOMM-01_UI_Kit_Checkout_v2.4.fig
+                                                </strong>
+
+                                                <small>
+                                                    DOC-DSN-24
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag blue">
+                                            PRJ-ECOMM-01
+                                        </span>
+
+                                        <small>
+                                            Design System
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v2.4
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Figma File
+                                        </strong>
+
+                                        <small>
+                                            84.5 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Đỗ Quốc Hùng
+                                        </strong>
+
+                                        <small>
+                                            18/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag write">
+                                            Read / Write
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 2 -->
+                                <tr
+                                    data-category="spec"
+                                    data-project="PRJ-ECOMM-01"
+                                    data-format="pdf"
+                                    data-id="DOC-PRD-18"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span class="material-symbols-outlined star-icon" data-starred="false">
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon pdf">
+                                                <span class="material-symbols-outlined">
+                                                    picture_as_pdf
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    PRJ-ECOMM-01_PRD_Checkout_Flow_v1.8.pdf
+                                                </strong>
+
+                                                <small>
+                                                    DOC-PRD-18
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag blue">
+                                            PRJ-ECOMM-01
+                                        </span>
+
+                                        <small>
+                                            Product Requirement
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v1.8
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            PDF Document
+                                        </strong>
+
+                                        <small>
+                                            4.8 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Nguyễn Văn An
+                                        </strong>
+
+                                        <small>
+                                            17/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag write">
+                                            Read / Write
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 3 -->
+                                <tr
+                                    data-category="api"
+                                    data-project="PRJ-HRM-02"
+                                    data-format="json"
+                                    data-id="DOC-API-11"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span
+                                            class="material-symbols-outlined star-icon"
+                                            data-starred="true"
+                                        >
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon api">
+                                                <span class="material-symbols-outlined">
+                                                    data_object
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    HRM_API_Postman_Collection_v3.json
+                                                </strong>
+
+                                                <small>
+                                                    DOC-API-11
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag purple">
+                                            PRJ-HRM-02
+                                        </span>
+
+                                        <small>
+                                            API Documentation
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v3.0
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            JSON / Postman
+                                        </strong>
+
+                                        <small>
+                                            2.4 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Đỗ Quốc Hùng
+                                        </strong>
+
+                                        <small>
+                                            16/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag write">
+                                            Read / Write
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 4 -->
+                                <tr
+                                    data-category="design"
+                                    data-project="PRJ-HRM-02"
+                                    data-format="figma"
+                                    data-id="DOC-DSN-21"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span class="material-symbols-outlined star-icon" data-starred="false">
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon figma">
+                                                <span class="material-symbols-outlined">
+                                                    design_services
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    HRM_Dashboard_Design_System.fig
+                                                </strong>
+
+                                                <small>
+                                                    DOC-DSN-21
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag purple">
+                                            PRJ-HRM-02
+                                        </span>
+
+                                        <small>
+                                            UI/UX Design
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v2.1
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Figma File
+                                        </strong>
+
+                                        <small>
+                                            67.2 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Trần Thị Bình
+                                        </strong>
+
+                                        <small>
+                                            15/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag write">
+                                            Read / Write
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 5 -->
+                                <tr
+                                    data-category="meeting"
+                                    data-project="PRJ-ECOMM-01"
+                                    data-format="pdf"
+                                    data-id="DOC-MTG-09"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span class="material-symbols-outlined star-icon" data-starred="false">
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon pdf">
+                                                <span class="material-symbols-outlined">
+                                                    picture_as_pdf
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Bien_Ban_Nghiem_Thu_Sprint_4_Review_ECOMM.pdf
+                                                </strong>
+
+                                                <small>
+                                                    DOC-MTG-09
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag blue">
+                                            PRJ-ECOMM-01
+                                        </span>
+
+                                        <small>
+                                            Biên bản nghiệm thu
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v1.0
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            PDF Document
+                                        </strong>
+
+                                        <small>
+                                            1.6 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Trần Thị Mai (PM)
+                                        </strong>
+
+                                        <small>
+                                            14/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag read">
+                                            Read Only
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 6 -->
+                                <tr
+                                    data-category="design"
+                                    data-project="PRJ-HRM-02"
+                                    data-format="zip"
+                                    data-id="DOC-ASSET-07"
+                                >
+
+                                    <td class="check-column">
+                                        <input
+                                            type="checkbox"
+                                            class="document-checkbox"
+                                        >
+                                    </td>
+
+                                    <td class="star-column">
+                                        <span class="material-symbols-outlined star-icon" data-starred="false">
+                                            star
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="document-name">
+
+                                            <div class="file-icon zip">
+                                                <span class="material-symbols-outlined">
+                                                    folder_zip
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    App_Icons_SVG_And_Illustrations_Bundle.zip
+                                                </strong>
+
+                                                <small>
+                                                    DOC-ASSET-07
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="project-tag purple">
+                                            PRJ-HRM-02
+                                        </span>
+
+                                        <small>
+                                            Graphic Assets
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="version-tag">
+                                            v2.1
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            ZIP Archive
+                                        </strong>
+
+                                        <small>
+                                            142 MB
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+
+                                        <strong>
+                                            Trần Thị Bình
+                                        </strong>
+
+                                        <small>
+                                            12/06/2025
+                                        </small>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="permission-tag write">
+                                            Read / Write
+                                        </span>
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Thao tác khác"
+                                                class="more-actions-btn"
+                                            >
+                                                <span class="material-symbols-outlined">
+                                                    more_vert
+                                                </span>
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="pagination-footer">
+
+                        <div class="pagination-info">
+                            Hiển thị
+                            <strong data-visible-count>6</strong>
+                            trên tổng số
+                            <strong>148</strong>
+                            tài liệu
+                            (Trang <span id="currentPageText">1</span> / 25)
+                        </div>
+
+
+                        <div class="pagination">
+
+                            <button
+                                type="button"
+                                id="prevPageBtn"
+                                disabled
+                            >
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="page-num-btn active"
+                            >
+                                1
+                            </button>
+
+                            <button type="button" class="page-num-btn">
+                                2
+                            </button>
+
+                            <button type="button" class="page-num-btn">
+                                3
+                            </button>
+
+                            <span>
+                                ...
+                            </span>
+
+                            <button type="button" class="page-num-btn">
+                                25
+                            </button>
+
+                            <button type="button" id="nextPageBtn">
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     DETAIL / CLOUD / SLA
+                ========================== -->
+
+                <section class="bottom-grid">
+
+                    <!-- Document detail -->
+                    <div class="bottom-card">
+
+                        <div class="bottom-card-header">
+
+                            <div class="bottom-card-title">
+
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+
+                                <h3>
+                                    Chi tiết tài liệu chọn
+                                </h3>
+
+                            </div>
+
+                            <span class="version-active" id="detailVersionBadge">
+                                v2.4 ACTIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="selected-document">
+
+                            <div class="selected-file-icon" id="detailIcon">
+                                <span class="material-symbols-outlined">
+                                    design_services
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <strong id="detailFileName">
+                                    PRJ-ECOMM-01_UI_Kit_Checkout_v2.4.fig
+                                </strong>
+
+                                <small id="detailFileMeta">
+                                    Figma Enterprise Cloud • 84.5 MB
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="version-history">
+
+                            <label>
+                                LỊCH SỬ 4 PHIÊN BẢN GẦN NHẤT
+                            </label>
+
+
+                            <div class="version-item current">
+
+                                <span>
+                                    v2.4 (Hiện tại)
+                                </span>
+
+                                <small>
+                                    Tối ưu giỏ hàng &amp; Voucher selector
+                                </small>
+
+                            </div>
+
+
+                            <div class="version-item">
+
+                                <span>
+                                    v2.3
+                                </span>
+
+                                <small>
+                                    Thêm luồng hoàn tiền VNPAY
+                                </small>
+
+                            </div>
+
+
+                            <div class="version-item">
+
+                                <span>
+                                    v2.2
+                                </span>
+
+                                <small>
+                                    Fix Responsive Checkout Mobile
+                                </small>
+
+                            </div>
+
+
+                            <div class="version-item">
+
+                                <span>
+                                    v2.0
+                                </span>
+
+                                <small>
+                                    Phê duyệt Design Tokens Core
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="collaborators">
+
+                            <label>
+                                THÀNH VIÊN ĐANG CỘNG TÁC (6)
+                            </label>
+
+                            <div class="collaborator-row">
+
+                                <div class="avatar-stack">
+
+                                    <span class="avatar a1">
+                                        TB
+                                    </span>
+
+                                    <span class="avatar a2">
+                                        NA
+                                    </span>
+
+                                    <span class="avatar a3">
+                                        DH
+                                    </span>
+
+                                    <span class="avatar a4">
+                                        TM
+                                    </span>
+
+                                    <span class="avatar more">
+                                        +2
+                                    </span>
+
+                                </div>
+
+                                <span>
+                                    Đồng bộ trực tiếp
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-actions">
+
+                            <button
+                                type="button"
+                                class="primary-button"
+                                data-action="figma"
+                            >
+                                <span class="material-symbols-outlined">
+                                    open_in_new
+                                </span>
+
+                                Mở trên Figma
+                            </button>
+
+                            <button
+                                type="button"
+                                class="secondary-button"
+                                data-action="share"
+                            >
+                                Chia sẻ
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cloud -->
+                    <div class="bottom-card">
+
+                        <div class="bottom-card-header">
+
+                            <div class="bottom-card-title">
+
+                                <span class="material-symbols-outlined">
+                                    cloud_done
+                                </span>
+
+                                <h3>
+                                    Kho Cloud liên kết
+                                </h3>
+
+                            </div>
+
+                            <span class="cloud-status"></span>
+
+                        </div>
+
+
+                        <p class="bottom-description">
+                            Dữ liệu được đồng bộ tự động hai chiều
+                            với các nền tảng lưu trữ đám mây
+                            của doanh nghiệp.
+                        </p>
+
+
+                        <div class="cloud-list">
+
+                            <div class="cloud-item">
+
+                                <div class="cloud-icon">
+                                    <span class="material-symbols-outlined">
+                                        add_to_drive
+                                    </span>
+                                </div>
+
+                                <div class="cloud-info">
+
+                                    <strong>
+                                        Google Drive Enterprise
+                                    </strong>
+
+                                    <small>
+                                        Đồng bộ: 12.5 GB • 5 phút trước
+                                    </small>
+
+                                </div>
+
+                                <span class="connected">
+                                    Đã kết nối
+                                </span>
+
+                            </div>
+
+
+                            <div class="cloud-item">
+
+                                <div class="cloud-icon">
+                                    <span class="material-symbols-outlined">
+                                        draw
+                                    </span>
+                                </div>
+
+                                <div class="cloud-info">
+
+                                    <strong>
+                                        Figma Organization
+                                    </strong>
+
+                                    <small>
+                                        Workspace: E-Comm Team
+                                    </small>
+
+                                </div>
+
+                                <span class="connected">
+                                    Hoạt động
+                                </span>
+
+                            </div>
+
+
+                            <div class="cloud-item">
+
+                                <div class="cloud-icon">
+                                    <span class="material-symbols-outlined">
+                                        terminal
+                                    </span>
+                                </div>
+
+                                <div class="cloud-info">
+
+                                    <strong>
+                                        GitHub Repo Specs
+                                    </strong>
+
+                                    <small>
+                                        Branch: main • Commit #38f92a
+                                    </small>
+
+                                </div>
+
+                                <span class="connected">
+                                    Đã link
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="cloud-folder-button"
+                            id="openCloudFolderBtn"
+                        >
+                            Mở thư mục gốc Cloud Folder
+
+                            <span class="material-symbols-outlined">
+                                folder_open
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- SLA -->
+                    <div class="bottom-card">
+
+                        <div class="bottom-card-title">
+
+                            <span class="material-symbols-outlined">
+                                gavel
+                            </span>
+
+                            <h3>
+                                Quy chuẩn &amp; Bảo mật (SLA)
+                            </h3>
+
+                        </div>
+
+
+                        <div class="naming-rule">
+
+                            <span>
+                                CHUẨN ĐẶT TÊN FILE BẮT BUỘC
+                            </span>
+
+                            <code>
+                                [MÃ_DỰ_ÁN]_[LOẠI]_[TÊN]_[PHIÊN_BẢN]
+                            </code>
+
+                            <p>
+                                Ví dụ:
+                                <code>
+                                    PRJ-ECOMM-01_SPEC_Checkout_v2.4.fig
+                                </code>
+                            </p>
+
+                        </div>
+
+
+                        <div class="policy-list">
+
+                            <div>
+
+                                <span class="material-symbols-outlined">
+                                    verified
+                                </span>
+
+                                <p>
+                                    Mức bảo mật:
+                                    <strong>
+                                        NDA Cấp độ 2 (Nội bộ dự án)
+                                    </strong>.
+                                    Tuyệt đối không chia sẻ liên kết
+                                    ra ngoài tổ chức.
+                                </p>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="material-symbols-outlined">
+                                    schedule
+                                </span>
+
+                                <p>
+                                    Tự động tạo bản sao lưu
+                                    (Snapshot backup) vào 00:00
+                                    hằng ngày đối với mọi tài liệu
+                                    thiết kế và đặc tả.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="guide-button"
+                            id="viewSlaGuideBtn"
+                        >
+                            <span class="material-symbols-outlined">
+                                menu_book
+                            </span>
+
+                            Xem sổ tay hướng dẫn quản trị tài liệu
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         MODALS HOẠT ĐỘNG
+    ========================== -->
+
+    <!-- Modal Tải lên tài liệu -->
+    <div class="modal-overlay" id="uploadModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Tải lên tài liệu dự án mới</h3>
+                <button type="button" class="modal-close" data-close="uploadModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Chọn dự án áp dụng</label>
+                    <select id="uploadProjectSelect">
+                        <option value="PRJ-ECOMM-01">PRJ-ECOMM-01 (E-Commerce)</option>
+                        <option value="PRJ-HRM-02">PRJ-HRM-02 (HRM System)</option>
+                        <option value="Dùng chung">Tài liệu dùng chung</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Phân loại tài liệu</label>
+                    <select id="uploadCategorySelect">
+                        <option value="design">Thiết kế &amp; Design System</option>
+                        <option value="spec">Đặc tả PRD &amp; SRS</option>
+                        <option value="api">Tài liệu API &amp; Kỹ thuật</option>
+                        <option value="meeting">Biên bản họp &amp; Nghiệm thu</option>
+                        <option value="guide">Hướng dẫn vận hành</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Chọn tập tin từ máy tính</label>
+                    <input type="file" id="uploadFileInput" multiple>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="secondary-button" data-close="uploadModal">Hủy</button>
+                <button type="button" class="primary-button" id="confirmUploadBtn">Tải lên ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Yêu cầu cấp quyền -->
+    <div class="modal-overlay" id="permissionModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Yêu cầu cấp quyền nâng cao</h3>
+                <button type="button" class="modal-close" data-close="permissionModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Quyền muốn đăng ký</label>
+                    <select>
+                        <option>Quyền Ghi/Chỉnh sửa (Read &amp; Write)</option>
+                        <option>Quyền Quản trị viên thư mục (Admin)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Lý do yêu cầu</label>
+                    <textarea rows="3" placeholder="Nhập lý do chi tiết để PM/Lead phê duyệt..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="secondary-button" data-close="permissionModal">Hủy</button>
+                <button type="button" class="primary-button" id="submitPermissionBtn">Gửi yêu cầu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Xem trước tài liệu -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-card" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3 id="previewModalTitle">Xem trước tài liệu</h3>
+                <button type="button" class="modal-close" data-close="previewModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="background: var(--surface-low); padding: 24px; border-radius: 8px; text-align: center;">
+                    <span class="material-symbols-outlined" style="font-size: 48px; color: var(--primary);">description</span>
+                    <h4 id="previewDocName" style="margin: 12px 0 4px;">Tên tài liệu</h4>
+                    <p id="previewDocMeta" style="color: var(--text-secondary); margin: 0; font-size: 12px;">Thông tin tài liệu</p>
+                </div>
+                <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
+                    Nội dung tài liệu đã được kiểm duyệt an toàn. Bạn có thể tải xuống hoặc chia sẻ trực tiếp liên kết cho các thành viên trong nhóm dự án.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="secondary-button" data-close="previewModal">Đóng</button>
+                <button type="button" class="primary-button" id="downloadFromPreviewBtn">Tải xuống tệp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chia sẻ -->
+    <div class="modal-overlay" id="shareModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Chia sẻ tài liệu dự án</h3>
+                <button type="button" class="modal-close" data-close="shareModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Liên kết chia sẻ nội bộ</label>
+                    <input type="text" id="shareLinkInput" readonly value="https://project.internal/docs/PRJ-ECOMM-01_v2.4">
+                </div>
+                <div class="form-group">
+                    <label>Quyền hạn liên kết</label>
+                    <select>
+                        <option>Chỉ thành viên trong dự án có thể xem</option>
+                        <option>Cho phép tất cả nhân viên công ty</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="secondary-button" id="copyShareLinkBtn">
+                    <span class="material-symbols-outlined">content_copy</span> Sao chép link
+                </button>
+                <button type="button" class="primary-button" data-close="shareModal">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Báo cáo nhanh -->
+    <div class="modal-overlay" id="quickReportModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Tạo báo cáo công việc nhanh</h3>
+                <button type="button" class="modal-close" data-close="quickReportModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Tiêu đề báo cáo</label>
+                    <input type="text" placeholder="Cập nhật tiến độ Design System...">
+                </div>
+                <div class="form-group">
+                    <label>Nội dung tóm tắt</label>
+                    <textarea rows="3" placeholder="Mô tả công việc đã hoàn thành..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="secondary-button" data-close="quickReportModal">Hủy</button>
+                <button type="button" class="primary-button" id="submitQuickReportBtn">Gửi báo cáo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Context Menu Floting cho hàng dữ liệu -->
+    <div class="context-menu" id="rowContextMenu">
+        <button type="button" class="context-menu-item" id="ctxPreview">
+            <span class="material-symbols-outlined">visibility</span> Xem trước
+        </button>
+        <button type="button" class="context-menu-item" id="ctxDownload">
+            <span class="material-symbols-outlined">download</span> Tải xuống
+        </button>
+        <button type="button" class="context-menu-item" id="ctxShare">
+            <span class="material-symbols-outlined">share</span> Chia sẻ
+        </button>
+        <button type="button" class="context-menu-item" id="ctxStar">
+            <span class="material-symbols-outlined">star</span> Ghim / Bỏ ghim
+        </button>
+    </div>
+
+    <script src="tai-nguyen.js"></script>
+
+</body>
+</html>

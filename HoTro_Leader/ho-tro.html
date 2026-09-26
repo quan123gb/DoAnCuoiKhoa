@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_dashboard">
+
+    <title>Quản lý hỗ trợ - LD-ADM06</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+          rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="ho-tro.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-content">
+
+        <!-- Brand -->
+        <div class="brand">
+            <div class="brand-logo">
+                <span class="material-symbols-outlined">folder_managed</span>
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-title">PROJECT MGMT</span>
+                <span class="brand-subtitle">Hệ thống Quản trị</span>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+
+            <!-- Tổng quan -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Tổng quan</p>
+
+                <a href="../TongQuan_Leader/dashboard.html"
+                   class="nav-item"
+                   data-path="tong-quan">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Tổng quan</span>
+                </a>
+
+            </div>
+
+            <!-- Quản lý -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Quản lý</p>
+
+                <a href="../NhanVien_Leader/nhan-vien.html"
+                   class="nav-item nav-item-code"
+                   data-path="nhan-vien">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">badge</span>
+                        <span>Nhân viên</span>
+                    </span>
+
+                </a>
+
+                <a href="../DuAn_Leader/du-an.html"
+                   class="nav-item nav-item-code"
+                   data-path="du-an">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">folder</span>
+                        <span>Dự án</span>
+                    </span>
+
+                </a>
+
+                <a href="../NhiemVu_Leader/nhiem-vu.html"
+                   class="nav-item nav-item-code"
+                   data-path="nhiem-vu">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">task_alt</span>
+                        <span>Nhiệm vụ</span>
+                    </span>
+                </a>
+
+                <a href="../TaiNguyen_Leader/tai-nguyen.html"
+                   class="nav-item nav-item-code"
+                   data-path="tai-nguyen">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">inventory_2</span>
+                        <span>Tài nguyên</span>
+                    </span>
+
+                </a>
+
+                <a href="../ThanhVien_Leader/thanh-vien.html"
+                   class="nav-item nav-item-code"
+                   data-path="thanh-vien">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">group</span>
+                        <span>Thành viên</span>
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- Theo dõi -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Theo dõi</p>
+
+                <a href="../TienDo_Leader/tien-do.html"
+                   class="nav-item nav-item-code"
+                   data-path="tien-do-du-an">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <span>Tiến độ dự án</span>
+                    </span>
+
+                </a>
+
+                <a href="../KhungThoiGian_Leader/khung-thoi-gian.html"
+                   class="nav-item nav-item-code"
+                   data-path="khung-thoi-gian">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <span>Khung thời gian</span>
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- Hệ thống -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Hệ thống</p>
+
+                <a href="../ThongBao_Leader/thong-bao.html"
+                   class="nav-item nav-item-code"
+                   data-path="thong-bao">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span>Thông báo</span>
+                    </span>
+
+                </a>
+
+                <a href="../HoTro_Leader/ho-tro.html"
+                   class="nav-item nav-item-code active"
+                   data-path="ho-tro"
+                   aria-current="page">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">help_outline</span>
+                        <span>Hỗ trợ</span>
+                    </span>
+
+                </a>
+
+                <a href="../BaoMat_Leader/bao-mat.html"
+                   class="nav-item nav-item-code"
+                   data-path="bao-mat">
+
+                    <span class="nav-item-left">
+                        <span class="material-symbols-outlined">shield</span>
+                        <span>Bảo mật</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Tài khoản -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Tài khoản</p>
+
+          
+
+                <a href="../DangXuat_Leader/dang-xuat.html"
+                   class="nav-item logout-item"
+                   data-path="dang-xuat">
+
+                    <span class="material-symbols-outlined">logout</span>
+                    <span>Đăng xuất</span>
+                </a>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- User -->
+    <div class="sidebar-user">
+
+        <div class="sidebar-user-card">
+
+            <div class="avatar avatar-primary">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+
+            <div class="sidebar-user-info">
+                <span class="sidebar-user-name">Nguyễn Văn An</span>
+                <span class="sidebar-user-role">Trưởng dự án / Leader</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================================================
+     MOBILE OVERLAY
+========================================================= -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+<!-- =========================================================
+     MAIN WRAPPER
+========================================================= -->
+<div class="main-wrapper">
+
+    <!-- =====================================================
+         TOPBAR
+    ====================================================== -->
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <button class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    type="button"
+                    title="Mở menu">
+
+                <span class="material-symbols-outlined">menu</span>
+
+            </button>
+
+            <div class="breadcrumb-top">
+
+                <span class="material-symbols-outlined">home</span>
+
+                <span>Hệ thống</span>
+
+                <span class="material-symbols-outlined breadcrumb-arrow">
+                    chevron_right
+                </span>
+
+                <span class="breadcrumb-current">
+                    Bảng điều khiển
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Global Search -->
+        <div class="global-search">
+
+            <span class="material-symbols-outlined">
+                search
+            </span>
+
+            <input type="text"
+                   id="globalSearch"
+                   placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã yêu cầu...">
+
+        </div>
+
+
+        <!-- Topbar Actions -->
+        <div class="topbar-actions">
+
+            <button class="icon-button"
+                    id="helpButton"
+                    title="Trợ giúp"
+                    type="button">
+
+                <span class="material-symbols-outlined">
+                    help_outline
+                </span>
+
+            </button>
+
+            <button class="icon-button notification-button"
+                    id="notificationButton"
+                    title="Thông báo"
+                    type="button">
+
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span class="notification-dot"></span>
+
+            </button>
+
+            <div class="topbar-user">
+
+                <div class="avatar avatar-primary">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+
+                <div class="topbar-user-info">
+                    <span class="topbar-user-name">
+                        Nguyễn Văn An
+                    </span>
+
+                    <span class="topbar-user-role">
+                        Quản trị hệ thống
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main class="main-content">
+
+        <div class="page-container">
+
+
+            <!-- =================================================
+                 TOAST
+            ================================================== -->
+            <aside class="system-toast"
+                   id="systemToast">
+
+                <div class="toast-icon">
+                    <span class="material-symbols-outlined">
+                        verified
+                    </span>
+                </div>
+
+                <div class="toast-content">
+
+                    <strong id="toastTitle">
+                        Thao tác thành công
+                    </strong>
+
+                    <span id="toastMessage">
+                        Đã gán kỹ thuật viên Lê Minh Cường xử lý ticket #TK-108.
+                    </span>
+
+                </div>
+
+                <button class="toast-close"
+                        id="toastClose"
+                        type="button">
+
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+
+                </button>
+
+            </aside>
+
+
+            <!-- =================================================
+                 PAGE HEADER
+            ================================================== -->
+            <section class="page-header">
+
+                <div class="page-breadcrumb">
+
+                    <a href="#" class="breadcrumb-link">
+
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+
+                        Trang chủ
+
+                    </a>
+
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+
+                    <span>Hệ thống</span>
+
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+
+                    <span class="breadcrumb-highlight">
+                        Hỗ trợ
+                    </span>
+
+                    <span class="scope-badge">
+                        LD-ADM06 - Leader Scope
+                    </span>
+
+                </div>
+
+
+                <div class="page-header-row">
+
+                    <div class="page-title-area">
+
+                        <div class="page-title-line">
+
+                            <h1>
+                                Quản lý hỗ trợ
+                            </h1>
+
+                            <span class="code-badge">
+                                LD-ADM06
+                            </span>
+
+                            <span class="role-badge">
+                                Vai trò: Leader
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tiếp nhận, phân loại, gán kỹ thuật viên và xử lý
+                            các yêu cầu trợ giúp kỹ thuật, sự cố hệ thống
+                            từ thành viên dự án.
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-actions">
+
+                        <button class="button button-secondary"
+                                id="exportSlaButton"
+                                type="button">
+
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+
+                            <span>Xuất báo cáo SLA</span>
+
+                        </button>
+
+                        <button class="button button-primary"
+                                id="createTicketButton"
+                                type="button">
+
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+
+                            <span>Tạo ticket hỗ trợ mới</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI CARDS
+            ================================================== -->
+            <section class="kpi-grid">
+
+                <!-- Card 1 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-info">
+
+                            <span class="kpi-label">
+                                TỔNG YÊU CẦU
+                            </span>
+
+                            <span class="kpi-value">
+                                68
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-icon icon-blue">
+                            <span class="material-symbols-outlined">
+                                support_agent
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span class="trend-up">
+                            <span class="material-symbols-outlined">
+                                trending_up
+                            </span>
+
+                            +12
+                        </span>
+
+                        <span>
+                            so với tuần trước
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-info">
+
+                            <span class="kpi-label kpi-danger">
+                                YÊU CẦU MỚI (CHỜ XỬ LÝ)
+                            </span>
+
+                            <span class="kpi-value">
+                                14
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-icon icon-danger">
+                            <span class="material-symbols-outlined">
+                                crisis_alert
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span class="status-pill danger">
+                            <span class="material-symbols-outlined">
+                                timer
+                            </span>
+
+                            Phản hồi &lt; 30p
+                        </span>
+
+                        <span>
+                            4 ưu tiên cao
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-info">
+
+                            <span class="kpi-label kpi-primary">
+                                ĐANG XỬ LÝ
+                            </span>
+
+                            <span class="kpi-value">
+                                22
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-icon icon-primary-light">
+                            <span class="material-symbols-outlined">
+                                pending_actions
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <strong>
+                            1.8 giờ
+                        </strong>
+
+                        <span>
+                            thời gian xử lý trung bình
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div class="kpi-info">
+
+                            <span class="kpi-label kpi-secondary">
+                                ĐÃ GIẢI QUYẾT & ĐÓNG
+                            </span>
+
+                            <span class="kpi-value">
+                                32
+                            </span>
+
+                        </div>
+
+                        <div class="kpi-icon icon-secondary">
+                            <span class="material-symbols-outlined">
+                                task_alt
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span class="status-pill sla">
+                            96.5% SLA
+                        </span>
+
+                        <span>
+                            chỉ số hài lòng tuần
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 FILTER
+            ================================================== -->
+            <section class="filter-card">
+
+                <div class="filter-grid">
+
+                    <!-- Search -->
+                    <div class="filter-search">
+
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+
+                        <input type="text"
+                               id="ticketSearch"
+                               placeholder="Tìm theo mã ticket (TK-...), người gửi, tiêu đề sự cố...">
+
+                    </div>
+
+
+                    <!-- Category -->
+                    <div class="filter-control">
+
+                        <select id="categoryFilter">
+
+                            <option value="">
+                                Tất cả danh mục
+                            </option>
+
+                            <option value="bug">
+                                Lỗi phần mềm / Bug
+                            </option>
+
+                            <option value="access">
+                                Quyền truy cập & Tài khoản
+                            </option>
+
+                            <option value="infra">
+                                Hạ tầng & Máy chủ
+                            </option>
+
+                            <option value="feature">
+                                Yêu cầu tính năng mới
+                            </option>
+
+                            <option value="hardware">
+                                Thiết bị phần cứng
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Priority -->
+                    <div class="filter-control">
+
+                        <select id="priorityFilter">
+
+                            <option value="">
+                                Tất cả mức độ
+                            </option>
+
+                            <option value="urgent">
+                                Khẩn cấp
+                            </option>
+
+                            <option value="high">
+                                Cao
+                            </option>
+
+                            <option value="medium">
+                                Trung bình
+                            </option>
+
+                            <option value="low">
+                                Thấp
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Status -->
+                    <div class="filter-control">
+
+                        <select id="statusFilter">
+
+                            <option value="">
+                                Tất cả trạng thái
+                            </option>
+
+                            <option value="new">
+                                Mới tiếp nhận
+                            </option>
+
+                            <option value="in_progress">
+                                Đang xử lý
+                            </option>
+
+                            <option value="responded">
+                                Đã phản hồi
+                            </option>
+
+                            <option value="closed">
+                                Đã đóng
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Assignee -->
+                    <div class="filter-control">
+
+                        <select id="assigneeFilter">
+
+                            <option value="">
+                                Người xử lý (Tất cả)
+                            </option>
+
+                            <option value="vanan">
+                                Nguyễn Văn An
+                            </option>
+
+                            <option value="minhcuong">
+                                Lê Minh Cường
+                            </option>
+
+                            <option value="thuylinh">
+                                Hoàng Thùy Linh
+                            </option>
+
+                            <option value="unassigned">
+                                Chưa gán
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Filter Tags -->
+                <div class="filter-bottom">
+
+                    <div class="active-filters">
+
+                        <span>Đang áp dụng:</span>
+
+                        <span class="filter-tag">
+                            Phạm vi: Leader Dự án
+
+                            <button type="button"
+                                    class="remove-filter"
+                                    data-filter="scope">
+
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+
+                            </button>
+
+                        </span>
+
+                        <span class="filter-tag">
+                            Độ ưu tiên: Tất cả
+
+                            <button type="button"
+                                    class="remove-filter"
+                                    data-filter="priority">
+
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+
+                            </button>
+
+                        </span>
+
+                    </div>
+
+                    <button class="reset-button"
+                            id="resetFilters"
+                            type="button">
+
+                        <span class="material-symbols-outlined">
+                            restart_alt
+                        </span>
+
+                        Đặt lại bộ lọc
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 TABLE
+            ================================================== -->
+            <section class="table-card">
+
+                <div class="table-wrapper">
+
+                    <table class="ticket-table">
+
+                        <thead>
+
+                        <tr>
+
+                            <th class="checkbox-column">
+                                <input type="checkbox"
+                                       id="selectAllTickets">
+                            </th>
+
+                            <th>Mã Ticket</th>
+
+                            <th>Tiêu đề & Mô tả sự cố</th>
+
+                            <th>Người gửi</th>
+
+                            <th>Danh mục</th>
+
+                            <th>Mức độ</th>
+
+                            <th>Thời gian</th>
+
+                            <th>Trạng thái</th>
+
+                            <th>Kỹ thuật viên gán</th>
+
+                            <th class="action-column">
+                                Thao tác
+                            </th>
+
+                        </tr>
+
+                        </thead>
+
+
+                        <tbody id="ticketTableBody">
+
+                        <!-- ======================================
+                             TICKET 108
+                        ======================================= -->
+                        <tr class="ticket-row"
+                            data-category="infra"
+                            data-priority="urgent"
+                            data-status="new"
+                            data-assignee="minhcuong">
+
+                            <td class="checkbox-column">
+                                <input type="checkbox"
+                                       class="ticket-checkbox">
+                            </td>
+
+                            <td>
+                                <span class="ticket-id">
+                                    #TK-108
+                                </span>
+                            </td>
+
+                            <td class="ticket-title-cell">
+
+                                <div class="ticket-title-wrapper">
+
+                                    <a href="#"
+                                       class="ticket-title">
+
+                                        Không thể kết nối cơ sở dữ liệu PostgreSQL từ máy trạm dev
+
+                                    </a>
+
+                                    <span class="ticket-description">
+
+                                        Lỗi socket timeout cổng 5432 sau khi phân lại dải IP subnet văn phòng tầng 4.
+
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="sender">
+
+                                    <div class="avatar avatar-gray">
+                                        HN
+                                    </div>
+
+                                    <div class="sender-info">
+
+                                        <span>
+                                            Phạm Hoàng Nam
+                                        </span>
+
+                                        <small>
+                                            Database Spec
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <span class="category-text">
+                                    Hạ tầng hệ thống
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="priority-pill urgent">
+                                    <span class="priority-dot"></span>
+                                    Khẩn cấp
+                                </span>
+
+                            </td>
+
+                            <td>
+                                <span class="time-text">
+                                    15 phút trước
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-new">
+                                    Mới tiếp nhận
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="assignee-button"
+                                        data-action="assign"
+                                        data-ticket="#TK-108">
+
+                                    <span class="material-symbols-outlined">
+                                        person_add
+                                    </span>
+
+                                    Lê Minh Cường
+
+                                </button>
+
+                            </td>
+
+                            <td class="action-column">
+
+                                <div class="row-actions">
+
+                                    <button class="row-action"
+                                            title="Xem chi tiết"
+                                            data-action="view"
+                                            data-ticket="#TK-108">
+
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Phản hồi nhanh"
+                                            data-action="reply"
+                                            data-ticket="#TK-108">
+
+                                        <span class="material-symbols-outlined">
+                                            reply
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Đóng ticket"
+                                            data-action="close"
+                                            data-ticket="#TK-108">
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- ======================================
+                             TICKET 107
+                        ======================================= -->
+                        <tr class="ticket-row"
+                            data-category="access"
+                            data-priority="high"
+                            data-status="in_progress"
+                            data-assignee="vanan">
+
+                            <td class="checkbox-column">
+                                <input type="checkbox"
+                                       class="ticket-checkbox">
+                            </td>
+
+                            <td>
+                                <span class="ticket-id">
+                                    #TK-107
+                                </span>
+                            </td>
+
+                            <td class="ticket-title-cell">
+
+                                <div class="ticket-title-wrapper">
+
+                                    <a href="#" class="ticket-title">
+                                        Yêu cầu cấp quyền truy cập kho lưu trữ PRJ-ECOMM-01
+                                    </a>
+
+                                    <span class="ticket-description">
+                                        Thành viên mới gia nhập sprint 14 cần quyền Maintainer trên Gitlab.
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="sender">
+
+                                    <div class="avatar avatar-purple">
+                                        TB
+                                    </div>
+
+                                    <div class="sender-info">
+
+                                        <span>
+                                            Trần Thị Bình
+                                        </span>
+
+                                        <small>
+                                            UI/UX Designer
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <span class="category-text">
+                                    Phân quyền IAM
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="priority-pill high">
+                                    <span class="priority-dot"></span>
+                                    Cao
+                                </span>
+
+                            </td>
+
+                            <td>
+                                <span class="time-text">
+                                    1 giờ trước
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-progress">
+                                    Đang xử lý
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="assigned-user">
+
+                                    <div class="small-avatar avatar-primary">
+                                        VA
+                                    </div>
+
+                                    <span>
+                                        Nguyễn Văn An
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td class="action-column">
+
+                                <div class="row-actions">
+
+                                    <button class="row-action"
+                                            title="Xem chi tiết"
+                                            data-action="view"
+                                            data-ticket="#TK-107">
+
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Phản hồi nhanh"
+                                            data-action="reply"
+                                            data-ticket="#TK-107">
+
+                                        <span class="material-symbols-outlined">
+                                            reply
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Đóng ticket"
+                                            data-action="close"
+                                            data-ticket="#TK-107">
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- ======================================
+                             TICKET 106
+                        ======================================= -->
+                        <tr class="ticket-row"
+                            data-category="bug"
+                            data-priority="medium"
+                            data-status="responded"
+                            data-assignee="thuylinh">
+
+                            <td class="checkbox-column">
+                                <input type="checkbox"
+                                       class="ticket-checkbox">
+                            </td>
+
+                            <td>
+                                <span class="ticket-id">
+                                    #TK-106
+                                </span>
+                            </td>
+
+                            <td class="ticket-title-cell">
+
+                                <div class="ticket-title-wrapper">
+
+                                    <a href="#" class="ticket-title">
+                                        Lỗi crash ứng dụng khi xuất file báo cáo PDF dung lượng lớn
+                                    </a>
+
+                                    <span class="ticket-description">
+                                        Bộ nhớ node process tràn Out of Memory khi dữ liệu vượt 5.000 dòng.
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="sender">
+
+                                    <div class="avatar avatar-dark">
+                                        QH
+                                    </div>
+
+                                    <div class="sender-info">
+
+                                        <span>
+                                            Đỗ Quốc Hùng
+                                        </span>
+
+                                        <small>
+                                            Frontend Dev
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <span class="category-text">
+                                    Báo cáo lỗi (Bug)
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="priority-pill medium">
+                                    <span class="priority-dot"></span>
+                                    Trung bình
+                                </span>
+
+                            </td>
+
+                            <td>
+                                <span class="time-text">
+                                    09:30 Hôm nay
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-responded">
+                                    Đã phản hồi
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="assigned-user">
+
+                                    <div class="small-avatar avatar-teal">
+                                        TL
+                                    </div>
+
+                                    <span>
+                                        Hoàng Thùy Linh
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td class="action-column">
+
+                                <div class="row-actions">
+
+                                    <button class="row-action"
+                                            title="Xem chi tiết"
+                                            data-action="view"
+                                            data-ticket="#TK-106">
+
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Phản hồi nhanh"
+                                            data-action="reply"
+                                            data-ticket="#TK-106">
+
+                                        <span class="material-symbols-outlined">
+                                            reply
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Đóng ticket"
+                                            data-action="close"
+                                            data-ticket="#TK-106">
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- ======================================
+                             TICKET 105
+                        ======================================= -->
+                        <tr class="ticket-row"
+                            data-category="access"
+                            data-priority="low"
+                            data-status="closed"
+                            data-assignee="vanan">
+
+                            <td class="checkbox-column">
+                                <input type="checkbox"
+                                       class="ticket-checkbox">
+                            </td>
+
+                            <td>
+                                <span class="ticket-id">
+                                    #TK-105
+                                </span>
+                            </td>
+
+                            <td class="ticket-title-cell">
+
+                                <div class="ticket-title-wrapper">
+
+                                    <a href="#" class="ticket-title">
+                                        Cần reset mã xác thực 2FA do đổi thiết bị điện thoại mới
+                                    </a>
+
+                                    <span class="ticket-description">
+                                        Đã xác minh danh tính qua email quản trị công ty, cần mã khôi phục tạm thời.
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="sender">
+
+                                    <div class="avatar avatar-gray">
+                                        VĐ
+                                    </div>
+
+                                    <div class="sender-info">
+
+                                        <span>
+                                            Lê Văn Đạt
+                                        </span>
+
+                                        <small>
+                                            QA Engineer
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <span class="category-text">
+                                    Bảo mật tài khoản
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="priority-pill low">
+                                    Thấp
+                                </span>
+
+                            </td>
+
+                            <td>
+                                <span class="time-text">
+                                    Hôm qua
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-closed">
+                                    Đã đóng
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="assigned-user">
+
+                                    <div class="small-avatar avatar-primary">
+                                        VA
+                                    </div>
+
+                                    <span>
+                                        Nguyễn Văn An
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td class="action-column">
+
+                                <div class="row-actions">
+
+                                    <button class="row-action"
+                                            title="Xem chi tiết"
+                                            data-action="view"
+                                            data-ticket="#TK-105">
+
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Phản hồi nhanh"
+                                            data-action="reply"
+                                            data-ticket="#TK-105">
+
+                                        <span class="material-symbols-outlined">
+                                            reply
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action danger"
+                                            title="Xóa bản ghi"
+                                            data-action="delete"
+                                            data-ticket="#TK-105">
+
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- ======================================
+                             TICKET 104
+                        ======================================= -->
+                        <tr class="ticket-row"
+                            data-category="hardware"
+                            data-priority="high"
+                            data-status="new"
+                            data-assignee="unassigned">
+
+                            <td class="checkbox-column">
+                                <input type="checkbox"
+                                       class="ticket-checkbox">
+                            </td>
+
+                            <td>
+                                <span class="ticket-id">
+                                    #TK-104
+                                </span>
+                            </td>
+
+                            <td class="ticket-title-cell">
+
+                                <div class="ticket-title-wrapper">
+
+                                    <a href="#" class="ticket-title">
+                                        Yêu cầu nâng cấp dung lượng RAM máy chủ staging server
+                                    </a>
+
+                                    <span class="ticket-description">
+                                        Dự án thương mại điện tử cần chạy stress test tải cao vào cuối tuần này.
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="sender">
+
+                                    <div class="avatar avatar-teal">
+                                        NH
+                                    </div>
+
+                                    <div class="sender-info">
+
+                                        <span>
+                                            Nguyễn Huy Hoàng
+                                        </span>
+
+                                        <small>
+                                            DevOps Lead
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <span class="category-text">
+                                    Phần cứng & Hạ tầng
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="priority-pill high">
+                                    <span class="priority-dot"></span>
+                                    Cao
+                                </span>
+
+                            </td>
+
+                            <td>
+                                <span class="time-text">
+                                    3 giờ trước
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <span class="status-badge status-new">
+                                    Mới tiếp nhận
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="unassigned-button"
+                                        data-action="assign"
+                                        data-ticket="#TK-104">
+
+                                    <span class="material-symbols-outlined">
+                                        warning
+                                    </span>
+
+                                    Chưa gán - Gán ngay
+
+                                </button>
+
+                            </td>
+
+                            <td class="action-column">
+
+                                <div class="row-actions">
+
+                                    <button class="row-action"
+                                            title="Xem chi tiết"
+                                            data-action="view"
+                                            data-ticket="#TK-104">
+
+                                        <span class="material-symbols-outlined">
+                                            visibility
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Phản hồi nhanh"
+                                            data-action="reply"
+                                            data-ticket="#TK-104">
+
+                                        <span class="material-symbols-outlined">
+                                            reply
+                                        </span>
+
+                                    </button>
+
+                                    <button class="row-action"
+                                            title="Đóng ticket"
+                                            data-action="close"
+                                            data-ticket="#TK-104">
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <!-- Empty state -->
+                    <div class="empty-state" id="emptyState">
+
+                        <span class="material-symbols-outlined">
+                            search_off
+                        </span>
+
+                        <h3>Không tìm thấy yêu cầu</h3>
+
+                        <p>
+                            Không có ticket nào phù hợp với bộ lọc hiện tại.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="pagination-bar">
+
+                    <div class="pagination-info">
+                        Hiển thị
+                        <strong id="visibleStart">1</strong>
+                        đến
+                        <strong id="visibleEnd">5</strong>
+                        trong số
+                        <strong>68</strong>
+                        yêu cầu hỗ trợ
+                    </div>
+
+                    <div class="pagination">
+
+                        <button class="page-button disabled"
+                                id="prevPage"
+                                type="button"
+                                disabled>
+
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+
+                        </button>
+
+                        <button class="page-button active"
+                                type="button">
+                            1
+                        </button>
+
+                        <button class="page-button"
+                                type="button">
+                            2
+                        </button>
+
+                        <button class="page-button"
+                                type="button">
+                            3
+                        </button>
+
+                        <span class="page-dots">
+                            ...
+                        </span>
+
+                        <button class="page-button"
+                                type="button">
+                            14
+                        </button>
+
+                        <button class="page-button"
+                                id="nextPage"
+                                type="button">
+
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 INTELLIGENCE SECTION
+            ================================================== -->
+            <section class="intelligence-grid">
+
+                <!-- Priority Action -->
+                <div class="priority-card">
+
+                    <div class="priority-card-content">
+
+                        <div class="section-heading">
+
+                            <div class="section-heading-title">
+
+                                <span class="pulse-dot"></span>
+
+                                <h2>
+                                    Yêu cầu cần ưu tiên xử lý trong ngày
+                                </h2>
+
+                            </div>
+
+                            <span class="ticket-highlight">
+                                #TK-108 - Cần gán kỹ thuật
+                            </span>
+
+                        </div>
+
+
+                        <!-- Ticket snapshot -->
+                        <div class="ticket-snapshot">
+
+                            <div class="snapshot-header">
+
+                                <h3>
+                                    Không thể kết nối cơ sở dữ liệu PostgreSQL từ máy trạm dev
+                                </h3>
+
+                                <span>
+                                    15 phút trước
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Người gửi:
+                                <strong>Phạm Hoàng Nam</strong>
+                                (Database Specialist - Dự án Core Engine).
+                                Mô tả: Toàn bộ máy trạm thuộc dải IP
+                                192.168.10.x bị chặn kết nối pooler lúc 14:15.
+                                Tiến độ test API đang bị tạm dừng.
+                            </p>
+
+                            <div class="snapshot-tags">
+
+                                <span>
+                                    Subnet: VLAN-4
+                                </span>
+
+                                <span>
+                                    PostgreSQL 15
+                                </span>
+
+                                <span class="urgent-tag">
+                                    Khẩn cấp
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Quick reply -->
+                        <div class="quick-reply">
+
+                            <label>
+
+                                <span>
+                                    Phản hồi chỉ đạo trực tiếp từ Leader:
+                                </span>
+
+                                <small>
+                                    Sẽ gửi thông báo đến Slack & Email người gửi
+                                </small>
+
+                            </label>
+
+                            <textarea id="quickReply"
+                                      rows="3"
+                                      placeholder="Nhập chỉ đạo kỹ thuật hoặc hướng dẫn khắc phục tạm thời..."></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Action footer -->
+                    <div class="priority-footer">
+
+                        <div class="quick-assign">
+
+                            <span>
+                                Chỉ định nhanh:
+                            </span>
+
+                            <button type="button"
+                                    class="quick-assign-button"
+                                    data-assign="Lê Minh Cường">
+
+                                Gán cho Lê Minh Cường
+
+                            </button>
+
+                            <button type="button"
+                                    class="quick-assign-button"
+                                    data-assign="Nguyễn Văn An">
+
+                                Gán cho tôi
+
+                            </button>
+
+                        </div>
+
+                        <div class="priority-actions">
+
+                            <button class="button button-light"
+                                    id="closePriorityTicket"
+                                    type="button">
+
+                                Đóng yêu cầu
+
+                            </button>
+
+                            <button class="button button-primary"
+                                    id="sendReplyButton"
+                                    type="button">
+
+                                Gửi phản hồi & Gán việc
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLA -->
+                <div class="sla-card">
+
+                    <div>
+
+                        <div class="sla-header">
+
+                            <h2>
+                                Cam kết dịch vụ & Phân loại
+                            </h2>
+
+                            <span>
+                                Tháng hiện tại
+                            </span>
+
+                        </div>
+
+
+                        <!-- SLA -->
+                        <div class="sla-box">
+
+                            <div class="sla-value-row">
+
+                                <span>
+                                    Tỷ lệ đạt SLA (Phản hồi &lt; 15 phút)
+                                </span>
+
+                                <strong>
+                                    96.5%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-track">
+
+                                <div class="progress-fill"
+                                     style="width:96.5%;">
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Mục tiêu cam kết: ≥ 95.0%.
+                                Đã xử lý 65/68 yêu cầu đúng kỳ hạn thỏa thuận.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Distribution -->
+                        <div class="distribution">
+
+                            <span class="distribution-title">
+                                PHÂN BỐ SỰ CỐ THEO DANH MỤC
+                            </span>
+
+
+                            <div class="distribution-item">
+
+                                <div class="distribution-label">
+
+                                    <span>
+                                        Lỗi phần mềm / Bug hệ thống
+                                    </span>
+
+                                    <strong>
+                                        42% (28 yêu cầu)
+                                    </strong>
+
+                                </div>
+
+                                <div class="distribution-track">
+
+                                    <div class="distribution-fill primary"
+                                         style="width:42%;">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="distribution-item">
+
+                                <div class="distribution-label">
+
+                                    <span>
+                                        Quyền truy cập & IAM
+                                    </span>
+
+                                    <strong>
+                                        26% (18 yêu cầu)
+                                    </strong>
+
+                                </div>
+
+                                <div class="distribution-track">
+
+                                    <div class="distribution-fill secondary"
+                                         style="width:26%;">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="distribution-item">
+
+                                <div class="distribution-label">
+
+                                    <span>
+                                        Hạ tầng & Máy chủ Dev
+                                    </span>
+
+                                    <strong>
+                                        20% (14 yêu cầu)
+                                    </strong>
+
+                                </div>
+
+                                <div class="distribution-track">
+
+                                    <div class="distribution-fill tertiary"
+                                         style="width:20%;">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="distribution-item">
+
+                                <div class="distribution-label">
+
+                                    <span>
+                                        Phần cứng & Thiết bị bàn giao
+                                    </span>
+
+                                    <strong>
+                                        12% (8 yêu cầu)
+                                    </strong>
+
+                                </div>
+
+                                <div class="distribution-track">
+
+                                    <div class="distribution-fill outline"
+                                         style="width:12%;">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Notice -->
+                    <div class="escalation-notice">
+
+                        <span class="material-symbols-outlined">
+                            info
+                        </span>
+
+                        <span>
+                            Các ticket quá 4 giờ chưa có kỹ thuật viên
+                            tiếp nhận sẽ tự động chuyển cảnh báo tới
+                            Trưởng bộ phận Kỹ thuật.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     MODAL
+========================================================= -->
+
+<div class="modal-overlay"
+     id="modalOverlay">
+
+    <div class="modal"
+         id="ticketModal">
+
+        <div class="modal-header">
+
+            <div>
+
+                <h2 id="modalTitle">
+                    Chi tiết ticket
+                </h2>
+
+                <span id="modalTicketId">
+                    #TK-108
+                </span>
+
+            </div>
+
+            <button class="modal-close"
+                    id="modalClose"
+                    type="button">
+
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body"
+             id="modalBody">
+
+            <p>
+                Thông tin ticket sẽ được hiển thị tại đây.
+            </p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button class="button button-light"
+                    id="modalCancel"
+                    type="button">
+
+                Đóng
+
+            </button>
+
+            <button class="button button-primary"
+                    id="modalConfirm"
+                    type="button">
+
+                Xác nhận
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+<script src="ho-tro.js"></script>
+
+</body>
+</html>

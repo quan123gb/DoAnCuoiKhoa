@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_blank">
+
+    <title>Đăng nhập hệ thống - Project Management System</title>
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <!-- Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <!-- BRAND -->
+            <div class="brand">
+
+                <img
+                    class="brand-logo"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1Xe_UU--qIZ7r6U4lY1LfuZC_C-sg_sA3Wr8YgQlGNieF3c1173APupe_XRT5DU6dTAAPa58PQ46IS4pI2xb_a5oQFNzQXgNinE6LHxI85qxpi8NebK3J3Uv2J_ICiHltBu448Sfn8JDj4mnUf5c-YUZ0ZYks9TP33BxHG8NFNIZzJw1Gc54VQhqB3dCqfwrrMQXgfikDFr4CX884N7WjptvPgBalcqt_3925x9JQB6ha-9xKIu6Sk3W94"
+                    alt="Project Management Logo">
+
+                <div class="brand-text">
+                    <span class="brand-title">
+                        PROJECT MGMT
+                    </span>
+
+                    <span
+                        class="brand-subtitle"
+                        data-vi="HỆ THỐNG QUẢN TRỊ DỰ ÁN"
+                        data-en="PROJECT MANAGEMENT SYSTEM">
+                        HỆ THỐNG QUẢN TRỊ DỰ ÁN
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- HEADER RIGHT -->
+            <div class="header-actions">
+
+                <!-- LANGUAGE -->
+                <div class="language-switch">
+
+                    <button
+                        type="button"
+                        id="lang-vi"
+                        class="language-btn active"
+                        onclick="setLanguage('vi')">
+                        Tiếng Việt
+                    </button>
+
+                    <button
+                        type="button"
+                        id="lang-en"
+                        class="language-btn"
+                        onclick="setLanguage('en')">
+                        English
+                    </button>
+
+                </div>
+
+                <!-- HELP -->
+                <a href="#" class="help-link">
+
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+
+                    <span
+                        class="help-text"
+                        data-vi="Trợ giúp"
+                        data-en="Help">
+                        Trợ giúp
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main class="main-content">
+
+        <!-- Background pattern -->
+        <div class="background-pattern"></div>
+
+
+        <!-- FULL SCREEN CONTENT -->
+        <div class="page-wrapper">
+
+            <div class="content-container">
+
+                <div class="main-grid">
+
+
+                    <!-- =================================================
+                         LEFT SHOWCASE
+                    ================================================== -->
+                    <section class="showcase-card">
+
+                        <!-- Decorative circles -->
+                        <div class="decorative-circle circle-right"></div>
+                        <div class="decorative-circle circle-left"></div>
+
+
+                        <!-- UPPER SHOWCASE -->
+                        <div class="showcase-upper">
+
+                            <!-- Status badge -->
+                            <div class="server-badge">
+
+                                <span class="status-dot"></span>
+
+                                <span
+                                    data-vi="MÁY CHỦ BẢO MẬT VẬN HÀNH 24/7"
+                                    data-en="SECURE SERVER OPERATING 24/7">
+                                    MÁY CHỦ BẢO MẬT VẬN HÀNH 24/7
+                                </span>
+
+                            </div>
+
+
+                            <!-- Heading -->
+                            <div class="showcase-heading">
+
+                                <h2
+                                    data-vi="Điều phối dự án quy mô lớn với độ tin cậy tuyệt đối."
+                                    data-en="Coordinate large-scale projects with absolute reliability.">
+                                    Điều phối dự án quy mô lớn với độ tin cậy tuyệt đối.
+                                </h2>
+
+                                <p
+                                    data-vi="Giải pháp quản trị tiến độ, phân bổ nguồn lực kỹ thuật và giám sát danh mục đầu tư chuẩn B2B dành riêng cho tổ chức tăng trưởng nhanh."
+                                    data-en="A B2B-grade solution for progress management, technical resource allocation, and portfolio monitoring designed for fast-growing organizations.">
+                                    Giải pháp quản trị tiến độ, phân bổ nguồn lực kỹ thuật và giám sát danh mục đầu tư chuẩn B2B dành riêng cho tổ chức tăng trưởng nhanh.
+                                </p>
+
+                            </div>
+
+
+                            <!-- METRICS -->
+                            <div class="metrics-grid">
+
+                                <!-- Metric 1 -->
+                                <div class="metric-card">
+
+                                    <span class="metric-number">
+                                        500+
+                                    </span>
+
+                                    <span
+                                        class="metric-label"
+                                        data-vi="Dự án doanh nghiệp chạy song song"
+                                        data-en="Enterprise projects running in parallel">
+                                        Dự án doanh nghiệp chạy song song
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Metric 2 -->
+                                <div class="metric-card">
+
+                                    <span class="metric-number">
+                                        &lt;200ms
+                                    </span>
+
+                                    <span
+                                        class="metric-label"
+                                        data-vi="Thời gian phản hồi phân tích thời gian thực"
+                                        data-en="Real-time analytics response time">
+                                        Thời gian phản hồi phân tích thời gian thực
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Metric 3 -->
+                                <div class="metric-card">
+
+                                    <span class="metric-number">
+                                        99.98%
+                                    </span>
+
+                                    <span
+                                        class="metric-label"
+                                        data-vi="Cam kết Uptime SLA doanh nghiệp"
+                                        data-en="Enterprise SLA uptime commitment">
+                                        Cam kết Uptime SLA doanh nghiệp
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Metric 4 -->
+                                <div class="metric-card">
+
+                                    <span class="metric-number">
+                                        0%
+                                    </span>
+
+                                    <span
+                                        class="metric-label"
+                                        data-vi="Thất thoát dữ liệu nghiệp vụ"
+                                        data-en="Business data loss">
+                                        Thất thoát dữ liệu nghiệp vụ
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             TESTIMONIAL
+                        ================================================== -->
+                        <div class="showcase-bottom">
+
+                            <div class="testimonial-card">
+
+                                <!-- Stars -->
+                                <div class="stars">
+
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+
+                                </div>
+
+
+                                <p
+                                    class="testimonial-text"
+                                    data-vi="“Nền tảng giúp tối ưu hơn 35% chu kỳ triển khai sprint của 120 kỹ sư phần mềm. Khả năng truy vết và kiểm soát rủi ro phân quyền cực kỳ chặt chẽ.”"
+                                    data-en="“The platform helped optimize sprint delivery cycles by more than 35% for 120 software engineers. Its traceability and permission risk controls are exceptionally strict.”">
+                                    “Nền tảng giúp tối ưu hơn 35% chu kỳ triển khai sprint của 120 kỹ sư phần mềm. Khả năng truy vết và kiểm soát rủi ro phân quyền cực kỳ chặt chẽ.”
+                                </p>
+
+
+                                <!-- Author -->
+                                <div class="testimonial-author">
+
+                                    <img
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwTpQEInly1OsXLWOUm-pUqLpFGju8iG9IrDz4_F9d4LZDve1brzdXWMtfRqlkzEkwTPK6i40idCK4xxHBHjl6vO2CCf_MBP3FxonQeaKTNcc-GCFj1JSWg5tMjpGrXLoUSZFhgclAiYl5nq8UEeVhkWZIxfE-lQ1Y2W1x36VGQe4o3w9BtK0F87SQVwergt7Lhhux8T6O6ZXgOpkZcFBcPIukmFE7yf4lfW1fCT_CKj6pnMvVnaoxw"
+                                        alt="Professional Vietnamese tech lead portrait">
+
+                                    <div class="author-info">
+
+                                        <span class="author-name">
+                                            Nguyễn Hữu Dũng
+                                        </span>
+
+                                        <span
+                                            class="author-role"
+                                            data-vi="Giám đốc Khối Kỹ thuật • TechCore Solution"
+                                            data-en="Technology Director • TechCore Solution">
+                                            Giám đốc Khối Kỹ thuật • TechCore Solution
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SYSTEM STATUS -->
+                            <div class="system-status">
+
+                                <span class="system-status-left">
+
+                                    <span class="status-dot status-green"></span>
+
+                                    <span
+                                        data-vi="Tất cả cụm dịch vụ đang hoạt động bình thường"
+                                        data-en="All service clusters are operating normally">
+                                        Tất cả cụm dịch vụ đang hoạt động bình thường
+                                    </span>
+
+                                </span>
+
+                                <span class="live-status">
+                                    99.9% LIVE
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         RIGHT LOGIN CARD
+                    ================================================== -->
+                    <section class="login-section">
+
+                        <div class="login-card">
+
+
+                            <!-- HEADER META -->
+                            <div class="login-meta">
+
+                                <div class="login-meta-left">
+
+                                    <span class="system-code">
+                                        ST-LOG01
+                                    </span>
+
+                                    <span class="enterprise-security">
+
+                                        <span class="material-symbols-outlined">
+                                            verified
+                                        </span>
+
+                                        <span
+                                            data-vi="Bảo mật cấp độ Enterprise"
+                                            data-en="Enterprise-level security">
+                                            Bảo mật cấp độ Enterprise
+                                        </span>
+
+                                    </span>
+
+                                </div>
+
+                                <span class="encryption-code">
+                                    AES-256 BIT
+                                </span>
+
+                            </div>
+
+
+                            <!-- TITLE -->
+                            <div class="login-title">
+
+                                <h1
+                                    data-vi="Đăng nhập hệ thống"
+                                    data-en="System Login">
+                                    Đăng nhập hệ thống
+                                </h1>
+
+                                <p
+                                    data-vi="Hệ thống Quản lý và Điều phối Dự án Toàn diện dành cho Doanh nghiệp"
+                                    data-en="Comprehensive Project Management and Coordination System for Enterprises">
+                                    Hệ thống Quản lý và Điều phối Dự án Toàn diện dành cho Doanh nghiệp
+                                </p>
+
+                            </div>
+
+
+                            <!-- =================================================
+                                 LOGIN FORM
+                            ================================================== -->
+                            <form
+                                id="login-form"
+                                class="login-form"
+                                onsubmit="event.preventDefault(); triggerAuth();">
+
+                                <!-- ERROR MESSAGE BOX -->
+                                <div id="login-error" class="error-message">
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">error</span>
+                                    <span id="login-error-text"
+                                        data-vi="Mã định danh hoặc mật khẩu không chính xác!"
+                                        data-en="Invalid identifier or password!">
+                                        Mã định danh hoặc mật khẩu không chính xác!
+                                    </span>
+                                </div>
+
+
+                                <!-- EMAIL / ID -->
+                                <div class="form-group">
+
+                                    <div class="form-label-row">
+
+                                        <label
+                                            for="identifier"
+                                            data-vi="Email công vụ hoặc Mã định danh"
+                                            data-en="Work email or Identifier">
+                                            Email công vụ hoặc Mã định danh
+                                        </label>
+
+                                        <span
+                                            class="valid-id"
+                                            data-vi="ID hợp lệ: NV-002"
+                                            data-en="Valid ID: NV-002">
+                                            ID hợp lệ: NV-002
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="input-wrapper">
+
+                                        <span class="material-symbols-outlined input-icon">
+                                            mail
+                                        </span>
+
+                                        <input
+                                            id="identifier"
+                                            type="text"
+                                            required
+                                            placeholder="name@company.com hoặc NV-002"
+                                            data-placeholder-vi="name@company.com hoặc NV-002"
+                                            data-placeholder-en="name@company.com or NV-002">
+
+                                        <span class="material-symbols-outlined valid-icon">
+                                            check_circle
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PASSWORD -->
+                                <div class="form-group">
+
+                                    <div class="form-label-row">
+
+                                        <label
+                                            for="password"
+                                            data-vi="Mật khẩu truy cập"
+                                            data-en="Access password">
+                                            Mật khẩu truy cập
+                                        </label>
+
+                                        <a
+                                            href="#"
+                                            class="forgot-password"
+                                            data-vi="Quên mật khẩu?"
+                                            data-en="Forgot password?">
+                                            Quên mật khẩu?
+                                        </a>
+
+                                    </div>
+
+
+                                    <div class="input-wrapper">
+
+                                        <span class="material-symbols-outlined input-icon">
+                                            lock
+                                        </span>
+
+                                        <input
+                                            id="password"
+                                            type="password"
+                                            required
+                                            placeholder="••••••••••••">
+
+                                        <button
+                                            type="button"
+                                            class="password-toggle"
+                                            onclick="togglePasswordVisibility()"
+                                            aria-label="Hiện mật khẩu">
+
+                                            <span
+                                                class="material-symbols-outlined"
+                                                id="eye-icon">
+                                                visibility
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- REMEMBER -->
+                                <div class="remember-row">
+
+                                    <label class="remember-label">
+
+                                        <input
+                                            type="checkbox"
+                                            checked>
+
+                                        <span
+                                            data-vi="Ghi nhớ đăng nhập trên thiết bị này trong 30 ngày"
+                                            data-en="Remember me on this device for 30 days">
+                                            Ghi nhớ đăng nhập trên thiết bị này trong 30 ngày
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- LOGIN BUTTON -->
+                                <button
+                                    id="btn-login"
+                                    class="login-button"
+                                    type="submit">
+
+                                    <span id="btn-login-text"
+                                        data-vi="Đăng nhập vào không gian làm việc"
+                                        data-en="Sign in to workspace">
+                                        Đăng nhập vào không gian làm việc
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+
+                                </button>
+
+                            </form>
+
+
+                            <!-- =================================================
+                                 SSO SEPARATOR
+                            ================================================== -->
+                            <div class="sso-separator">
+
+                                <div class="separator-line"></div>
+
+                                <span
+                                    data-vi="Hoặc đăng nhập nhanh bằng SSO Doanh nghiệp"
+                                    data-en="Or sign in quickly with Enterprise SSO">
+                                    Hoặc đăng nhập nhanh bằng SSO Doanh nghiệp
+                                </span>
+
+                                <div class="separator-line"></div>
+
+                            </div>
+
+
+                            <!-- =================================================
+                                 SSO BUTTONS
+                            ================================================== -->
+                            <div class="sso-buttons">
+
+
+                                <!-- GOOGLE -->
+                                <button
+                                    class="sso-button"
+                                    type="button">
+
+                                    <svg
+                                        class="sso-logo"
+                                        viewBox="0 0 24 24">
+
+                                        <path
+                                            d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.15z"
+                                            fill="#4285F4">
+                                        </path>
+
+                                        <path
+                                            d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.36 24 12 24z"
+                                            fill="#34A853">
+                                        </path>
+
+                                        <path
+                                            d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                                            fill="#FBBC05">
+                                        </path>
+
+                                        <path
+                                            d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.36 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                                            fill="#EA4335">
+                                        </path>
+
+                                    </svg>
+
+                                    <span>
+                                        Google Workspace
+                                    </span>
+
+                                </button>
+
+
+                                <!-- MICROSOFT -->
+                                <button
+                                    class="sso-button"
+                                    type="button">
+
+                                    <svg
+                                        class="sso-logo"
+                                        viewBox="0 0 23 23">
+
+                                        <path
+                                            d="M1 1h10v10H1z"
+                                            fill="#f35325">
+                                        </path>
+
+                                        <path
+                                            d="M12 1h10v10H12z"
+                                            fill="#81bc06">
+                                        </path>
+
+                                        <path
+                                            d="M1 12h10v10H1z"
+                                            fill="#05a6f0">
+                                        </path>
+
+                                        <path
+                                            d="M12 12h10v10H12z"
+                                            fill="#ffba08">
+                                        </path>
+
+                                    </svg>
+
+                                    <span>
+                                        Microsoft 365 Azure
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- SECURITY NOTE -->
+                            <div class="security-note">
+
+                                <span class="material-symbols-outlined">
+                                    lock_clock
+                                </span>
+
+                                <p
+                                    data-vi="Phiên làm việc được mã hóa đầu cuối với chuẩn AES-256. Kiểm soát truy cập bảo vệ bởi ISO/IEC 27001 & SOC2 Type II."
+                                    data-en="Your session is end-to-end encrypted using AES-256. Access control is protected by ISO/IEC 27001 & SOC2 Type II.">
+                                    Phiên làm việc được mã hóa đầu cuối với chuẩn AES-256. Kiểm soát truy cập bảo vệ bởi ISO/IEC 27001 & SOC2 Type II.
+                                </p>
+
+                            </div>
+
+
+                            <!-- BOTTOM REGISTER -->
+                            <div class="register-link">
+
+                                <span
+                                    data-vi="Chưa có tài khoản công ty?"
+                                    data-en="Don't have a company account?">
+                                    Chưa có tài khoản công ty?
+                                </span>
+
+                                <a href="../DangKy/register.html" class="register-btn">
+
+                                    <span
+                                        data-vi="Đăng ký tài khoản mới "
+                                        data-en="Register a new account ">
+                                        Đăng ký tài khoản mới (ST-REG01)
+                                    </span>
+
+                                    <span class="material-symbols-outlined">
+                                        open_in_new
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <!-- FOOTER LEFT -->
+            <div class="footer-left">
+
+                <span class="material-symbols-outlined footer-icon">
+                    verified_user
+                </span>
+
+                <span
+                    data-vi="Bản quyền 2025 Enterprise Project Management System"
+                    data-en="Copyright 2025 Enterprise Project Management System">
+                    Bản quyền 2025 Enterprise Project Management System
+                </span>
+
+                <span class="footer-separator">
+                    •
+                </span>
+
+                <span
+                    data-vi="Chứng nhận ISO/IEC 27001"
+                    data-en="ISO/IEC 27001 Certified">
+                    Chứng nhận ISO/IEC 27001
+                </span>
+
+            </div>
+
+
+            <!-- FOOTER LINKS -->
+            <div class="footer-links">
+
+                <a
+                    href="#"
+                    data-vi="Chính sách Bảo mật & Quyền riêng tư"
+                    data-en="Security & Privacy Policy">
+                    Chính sách Bảo mật & Quyền riêng tư
+                </a>
+
+                <a
+                    href="#"
+                    data-vi="Điều khoản Dịch vụ"
+                    data-en="Terms of Service">
+                    Điều khoản Dịch vụ
+                </a>
+
+                <a
+                    href="#"
+                    data-vi="Liên hệ Kỹ thuật"
+                    data-en="Technical Support">
+                    Liên hệ Kỹ thuật
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="login.js"></script>
+
+</body>
+
+</html>

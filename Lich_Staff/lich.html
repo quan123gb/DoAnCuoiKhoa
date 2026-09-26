@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lịch làm việc & Deadline - PROJECT MGMT</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lich.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- =========================================================
+         MOBILE OVERLAY
+    ========================================================== -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Brand -->
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                <span class="material-symbols-outlined">
+                    account_tree
+                </span>
+            </div>
+
+            <div class="brand-text">
+                <div class="brand-title">
+                    PROJECT MGMT
+                </div>
+
+                <div class="brand-subtitle">
+                    NHÂN VIÊN DỰ ÁN
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Employee summary -->
+        <div class="employee-summary">
+
+            <div class="employee-avatar">
+                TB
+            </div>
+
+            <div class="employee-info">
+
+                <div class="employee-name">
+                    Trần Thị Bình
+                </div>
+
+                <div class="employee-role">
+                    NV-002 • UI/UX Designer
+                </div>
+
+            </div>
+
+            <span class="material-symbols-outlined employee-arrow">
+                expand_more
+            </span>
+
+        </div>
+
+
+        <!-- Sidebar navigation -->
+        <nav class="sidebar-navigation">
+
+            <!-- Tổng quan -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TỔNG QUAN
+                </div>
+
+                <a
+                    href="../TongQuan_Staff/tong-quan.html"
+                    class="nav-item"
+                    data-page="tong-quan"
+                >
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+
+                    <span class="nav-label">
+                        Tổng quan của tôi
+                    </span>
+                </a>
+
+
+                <a
+                    href="lich.html"
+                    class="nav-item active"
+                    data-page="lich"
+                >
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+
+                    <span class="nav-label">
+                        Lịch làm việc & Deadline
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Công việc -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    CÔNG VIỆC CỦA TÔI
+                </div>
+
+
+                <a
+                    href="../NhiemVu_Staff/nhiem-vu.html"
+                    class="nav-item"
+                    data-page="nhiem-vu"
+                >
+                    <span class="material-symbols-outlined">
+                        task_alt
+                    </span>
+
+                    <span class="nav-label">
+                        Nhiệm vụ được giao
+                    </span>
+
+                    <span class="nav-badge">
+                        8
+                    </span>
+                </a>
+
+
+                <a
+                    href="../DuAn_Staff/du-an.html"
+                    class="nav-item"
+                    data-page="du-an"
+                >
+                    <span class="material-symbols-outlined">
+                        folder_open
+                    </span>
+
+                    <span class="nav-label">
+                        Dự án tham gia
+                    </span>
+                </a>
+
+
+                <a
+                    href="../BaoCao_Staff/bao-cao.html"
+                    class="nav-item"
+                    data-page="bao-cao"
+                >
+                    <span class="material-symbols-outlined">
+                        monitoring
+                    </span>
+
+                    <span class="nav-label">
+                        Báo cáo tiến độ
+                    </span>
+                </a>
+
+
+                <a
+                    href="../TaiNguyen_Staff/tai-nguyen.html"
+                    class="nav-item"
+                    data-page="tai-nguyen"
+                >
+                    <span class="material-symbols-outlined">
+                        folder_copy
+                    </span>
+
+                    <span class="nav-label">
+                        Tài nguyên & Tài liệu
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Tương tác -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TƯƠNG TÁC & HỖ TRỢ
+                </div>
+
+
+                <a
+                    href="../ThongBao_Staff/thong-bao.html"
+                    class="nav-item"
+                    data-page="thong-bao"
+                >
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="nav-label">
+                        Thông báo & Thảo luận
+                    </span>
+
+                    <span class="nav-dot"></span>
+                </a>
+
+
+                <a
+                    href="../HoTro_Staff/ho-tro.html"
+                    class="nav-item"
+                    data-page="ho-tro"
+                >
+                    <span class="material-symbols-outlined">
+                        support_agent
+                    </span>
+
+                    <span class="nav-label">
+                        Yêu cầu hỗ trợ
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Tài khoản -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TÀI KHOẢN
+                </div>
+
+
+                <a
+                    href="../HoSo_Staff/ho-so.html"
+                    class="nav-item"
+                    data-page="ho-so"
+                >
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+
+                    <span class="nav-label">
+                        Hồ sơ & Kỹ năng
+                    </span>
+                </a>
+
+
+                <button
+                    type="button"
+                    class="nav-item nav-button"
+                    id="logoutButton"
+                >
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+
+                    <span class="nav-label">
+                        Đăng xuất
+                    </span>
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar bottom profile -->
+        <div class="sidebar-profile">
+
+            <div class="profile-main">
+
+                <div class="profile-avatar">
+                    TB
+                </div>
+
+                <div class="profile-content">
+
+                    <div class="profile-name">
+                        Trần Thị Bình
+                    </div>
+
+                    <div class="profile-role">
+                        NV-002 • UI/UX Designer
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-projects">
+
+                <span class="project-tag">
+                    PRJ-HRM-02
+                </span>
+
+                <span class="project-tag">
+                    ECOMM-01
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN AREA
+    ========================================================== -->
+    <div class="main-wrapper">
+
+
+        <!-- =====================================================
+             TOPBAR
+        ====================================================== -->
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Mở menu"
+                >
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+
+
+                <div class="global-search">
+
+                    <span class="material-symbols-outlined search-icon">
+                        search
+                    </span>
+
+                    <input
+                        type="text"
+                        id="globalSearch"
+                        placeholder="Tìm kiếm công việc của tôi, tài liệu, dự án..."
+                        autocomplete="off"
+                    >
+
+                    <span class="search-shortcut">
+                        Ctrl K
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button
+                    type="button"
+                    class="topbar-action-button report-button"
+                    id="quickReportButton"
+                >
+                    <span class="material-symbols-outlined">
+                        add_chart
+                    </span>
+
+                    <span>
+                        Báo cáo nhanh
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="icon-button"
+                    id="helpButton"
+                    aria-label="Trợ giúp"
+                >
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="icon-button notification-button"
+                    id="notificationButton"
+                    aria-label="Thông báo"
+                >
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-count" id="notificationCount">
+                        3
+                    </span>
+                </button>
+
+
+                <div class="topbar-user" id="topbarUser">
+
+                    <div class="topbar-user-avatar">
+                        TB
+                    </div>
+
+                    <div class="topbar-user-info">
+
+                        <div class="topbar-user-name">
+                            Trần Thị Bình
+                        </div>
+
+                        <div class="topbar-user-status">
+                            <span class="online-dot"></span>
+                            Trực tuyến
+                        </div>
+
+                    </div>
+
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+        <main class="main-content">
+
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+
+                <a href="tong-quan.html">
+                    Trang chủ
+                </a>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <span>
+                    Phân hệ Nhân viên
+                </span>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <strong>
+                    Lịch làm việc & Deadline
+                </strong>
+
+            </div>
+
+
+            <!-- Page heading -->
+            <section class="page-heading">
+
+                <div class="page-heading-text">
+
+                    <div class="title-line">
+
+                        <h1>
+                            Lịch làm việc & Deadline
+                        </h1>
+
+                        <span class="page-code">
+                            ST-TSK02 - Calendar View
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Theo dõi lịch làm việc cá nhân, các buổi họp Sprint,
+                        deadline thiết kế và các mốc bàn giao của dự án.
+                    </p>
+
+                </div>
+
+
+                <div class="page-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        id="syncCalendarButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            sync
+                        </span>
+
+                        Đồng bộ Google Calendar
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        id="requestLeaveButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            event_available
+                        </span>
+
+                        Đặt lịch / Xin nghỉ
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="createDeadlineButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+
+                        Tạo ghi chú / Deadline
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI CARDS
+            ================================================== -->
+            <section class="kpi-grid">
+
+
+                <!-- KPI 1 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+
+                        <div class="kpi-icon blue">
+                            <span class="material-symbols-outlined">
+                                event
+                            </span>
+                        </div>
+
+                        <span class="kpi-trend warning">
+                            Cần chú ý
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-label">
+                        Deadline trong tuần
+                    </div>
+
+                    <div class="kpi-value">
+                        05
+                        <span class="kpi-unit">
+                            nhiệm vụ
+                        </span>
+                    </div>
+
+                    <div class="kpi-description">
+                        <strong>02</strong> mốc khẩn cấp &lt;24h
+                        <span class="separator-dot">•</span>
+                        <strong>03</strong> mốc Sprint
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 2 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+
+                        <div class="kpi-icon purple">
+                            <span class="material-symbols-outlined">
+                                groups
+                            </span>
+                        </div>
+
+                        <span class="kpi-trend info">
+                            Hôm nay
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-label">
+                        Họp & sự kiện hôm nay
+                    </div>
+
+                    <div class="kpi-value">
+                        03
+                        <span class="kpi-unit">
+                            phiên họp
+                        </span>
+                    </div>
+
+                    <div class="kpi-description">
+                        Gần nhất <strong>10:30</strong> (Critique)
+                        <span class="separator-dot">•</span>
+                        Kế tiếp <strong>14:00</strong> (Tokens)
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 3 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+
+                        <div class="kpi-icon green">
+                            <span class="material-symbols-outlined">
+                                task_alt
+                            </span>
+                        </div>
+
+                        <span class="kpi-trend success">
+                            Hạng A+
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-label">
+                        Tỷ lệ bàn giao đúng hạn
+                    </div>
+
+                    <div class="kpi-value">
+                        96.2%
+                    </div>
+
+                    <div class="kpi-description">
+                        <strong>15/15</strong> task hoàn thành tốt
+                        <span class="separator-dot">•</span>
+                        <strong>0</strong> trễ hạn
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 4 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-header">
+
+                        <div class="kpi-icon orange">
+                            <span class="material-symbols-outlined">
+                                schedule
+                            </span>
+                        </div>
+
+                        <span class="kpi-trend neutral">
+                            Tuần 24
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-label">
+                        Giờ làm việc dự kiến
+                    </div>
+
+                    <div class="kpi-value">
+                        38.5
+                        <span class="kpi-unit">
+                            / 40.0h
+                        </span>
+                    </div>
+
+                    <div class="kpi-progress">
+
+                        <div class="progress-track">
+                            <div
+                                class="progress-fill orange-fill"
+                                style="width: 82%;"
+                            ></div>
+                        </div>
+
+                        <span>
+                            82%
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-description">
+                        Còn <strong>7.5h</strong> ngày thứ 6
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =================================================
+                 CALENDAR TOOLBAR
+            ================================================== -->
+            <section class="calendar-toolbar-card">
+
+                <div class="calendar-navigation">
+
+                    <div class="calendar-nav-left">
+
+                        <button
+                            type="button"
+                            class="today-button"
+                            id="todayButton"
+                        >
+                            Hôm nay
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="calendar-arrow"
+                            id="previousMonthButton"
+                            aria-label="Tháng trước"
+                        >
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="calendar-arrow"
+                            id="nextMonthButton"
+                            aria-label="Tháng sau"
+                        >
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </button>
+
+
+                        <div class="calendar-title-area">
+
+                            <h2 id="calendarTitle">
+                                Tháng 06 / 2025
+                            </h2>
+
+                            <span class="week-label" id="calendarWeekLabel">
+                                Tuần 24
+                                <span>
+                                    (15/06 - 21/06/2025)
+                                </span>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- View selector -->
+                    <div class="view-tabs" id="viewTabs">
+
+                        <button
+                            type="button"
+                            class="view-tab active"
+                            data-view="month"
+                        >
+                            Tháng
+                        </button>
+
+                        <button
+                            type="button"
+                            class="view-tab"
+                            data-view="week"
+                        >
+                            Tuần
+                        </button>
+
+                        <button
+                            type="button"
+                            class="view-tab"
+                            data-view="day"
+                        >
+                            Ngày
+                        </button>
+
+                        <button
+                            type="button"
+                            class="view-tab"
+                            data-view="schedule"
+                        >
+                            Lịch trình
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Filters -->
+                <div class="calendar-filters">
+
+                    <div class="filter-group">
+
+                        <label for="projectFilter">
+                            Dự án
+                        </label>
+
+                        <div class="select-wrapper">
+
+                            <select id="projectFilter">
+
+                                <option value="all">
+                                    Tất cả dự án (2)
+                                </option>
+
+                                <option value="ecomm">
+                                    PRJ-ECOMM-01
+                                </option>
+
+                                <option value="hrm">
+                                    PRJ-HRM-02
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="eventTypeFilter">
+                            Loại sự kiện
+                        </label>
+
+                        <div class="select-wrapper">
+
+                            <select id="eventTypeFilter">
+
+                                <option value="all">
+                                    Tất cả loại sự kiện
+                                </option>
+
+                                <option value="urgent">
+                                    Deadline khẩn cấp
+                                </option>
+
+                                <option value="design">
+                                    Bàn giao Design/UI
+                                </option>
+
+                                <option value="meeting">
+                                    Lịch họp & Review
+                                </option>
+
+                                <option value="sprint">
+                                    Nghiệm thu Sprint
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Legend -->
+                    <div class="calendar-legend">
+
+                        <div class="legend-item">
+                            <span class="legend-dot urgent"></span>
+                            Deadline khẩn cấp
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-dot design"></span>
+                            UI / Design
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-dot meeting"></span>
+                            Họp / Standup
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-dot sprint"></span>
+                            Nghiệm thu Sprint
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 CALENDAR + RIGHT SIDEBAR
+            ================================================== -->
+            <section class="calendar-layout">
+
+
+                <!-- =================================================
+                     MAIN CALENDAR
+                ================================================== -->
+                <div class="calendar-panel">
+
+                    <div class="calendar-scroll">
+
+                        <div class="calendar-grid" id="calendarGrid">
+
+                            <!-- JS render calendar -->
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Calendar tips -->
+                    <div class="calendar-tip">
+
+                        <div class="tip-icon">
+
+                            <span class="material-symbols-outlined">
+                                tips_and_updates
+                            </span>
+
+                        </div>
+
+                        <div class="tip-content">
+
+                            <strong>
+                                Mẹo nhanh:
+                            </strong>
+
+                            Kéo & thả deadline để gửi yêu cầu
+                            thay đổi lịch. Mọi thay đổi deadline cần
+                            được Project Manager phê duyệt.
+
+                            <button
+                                type="button"
+                                class="text-link"
+                                id="slaButton"
+                            >
+                                Xem quy định SLA
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     RIGHT SIDEBAR
+                ================================================== -->
+                <aside class="calendar-sidebar">
+
+
+                    <!-- Mini Calendar -->
+                    <section class="side-card mini-calendar-card">
+
+                        <div class="side-card-header">
+
+                            <h3 id="miniCalendarTitle">
+                                Tháng 06 / 2025
+                            </h3>
+
+                            <button
+                                type="button"
+                                class="small-icon-button"
+                                id="miniTodayButton"
+                                title="Về hôm nay"
+                            >
+                                <span class="material-symbols-outlined">
+                                    today
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="mini-weekdays">
+
+                            <span>T2</span>
+                            <span>T3</span>
+                            <span>T4</span>
+                            <span>T5</span>
+                            <span>T6</span>
+                            <span>T7</span>
+                            <span>CN</span>
+
+                        </div>
+
+
+                        <div
+                            class="mini-calendar-grid"
+                            id="miniCalendarGrid"
+                        >
+                            <!-- JS -->
+                        </div>
+
+
+                        <div class="mini-calendar-legend">
+
+                            <span>
+                                <i class="mini-dot selected"></i>
+                                Hôm nay
+                            </span>
+
+                            <span>
+                                <i class="mini-dot deadline"></i>
+                                Deadline
+                            </span>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Deadline 48h -->
+                    <section class="side-card">
+
+                        <div class="side-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Deadline trong 48h
+                                </h3>
+
+                                <span class="side-card-subtitle">
+                                    03 nhiệm vụ cần xử lý
+                                </span>
+
+                            </div>
+
+                            <span class="urgent-count">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <!-- Deadline item 1 -->
+                        <article
+                            class="deadline-item searchable-item"
+                            data-project="ecomm"
+                            data-type="urgent"
+                            data-search="PRJ-ECOMM-01 Hoàn thiện UI Kit Component Checkout v2"
+                        >
+
+                            <div class="deadline-status urgent"></div>
+
+                            <div class="deadline-content">
+
+                                <div class="deadline-project">
+                                    PRJ-ECOMM-01
+                                </div>
+
+                                <h4>
+                                    Hoàn thiện UI Kit & Component
+                                    Checkout v2
+                                </h4>
+
+                                <div class="deadline-meta">
+
+                                    <span class="deadline-time urgent-text">
+                                        <span class="material-symbols-outlined">
+                                            timer
+                                        </span>
+
+                                        Còn 4h15m
+                                    </span>
+
+                                    <span>
+                                        17:00 hôm nay
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="deadline-button"
+                                    data-action="open-task"
+                                >
+                                    Mở Task
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Deadline item 2 -->
+                        <article
+                            class="deadline-item searchable-item"
+                            data-project="ecomm"
+                            data-type="design"
+                            data-search="PRJ-ECOMM-01 Prototype VNPAY MoMo"
+                        >
+
+                            <div class="deadline-status design"></div>
+
+                            <div class="deadline-content">
+
+                                <div class="deadline-project">
+                                    PRJ-ECOMM-01
+                                </div>
+
+                                <h4>
+                                    Cập nhật Prototype luồng thanh toán
+                                    VNPAY & MoMo
+                                </h4>
+
+                                <div class="deadline-meta">
+
+                                    <span>
+                                        12:00 • 19/06
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="deadline-button"
+                                    data-action="submit-task"
+                                >
+                                    Nộp bài
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Deadline item 3 -->
+                        <article
+                            class="deadline-item searchable-item"
+                            data-project="hrm"
+                            data-type="design"
+                            data-search="PRJ-HRM-02 Responsive Mobile giao diện Đơn hàng"
+                        >
+
+                            <div class="deadline-status design"></div>
+
+                            <div class="deadline-content">
+
+                                <div class="deadline-project">
+                                    PRJ-HRM-02
+                                </div>
+
+                                <h4>
+                                    Bàn giao Responsive Mobile
+                                    giao diện Đơn hàng
+                                </h4>
+
+                                <div class="deadline-meta">
+
+                                    <span>
+                                        17:00 • 20/06
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="deadline-button"
+                                    data-action="detail-task"
+                                >
+                                    Chi tiết
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </section>
+
+
+                    <!-- Meetings -->
+                    <section class="side-card">
+
+                        <div class="side-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Lịch họp hôm nay
+                                </h3>
+
+                                <span class="side-card-subtitle">
+                                    02 cuộc họp
+                                </span>
+
+                            </div>
+
+                            <span class="material-symbols-outlined side-header-icon">
+                                videocam
+                            </span>
+
+                        </div>
+
+
+                        <!-- Meeting 1 -->
+                        <article
+                            class="meeting-item searchable-item"
+                            data-search="Design Critique Leader Tech Team Room 302"
+                        >
+
+                            <div class="meeting-time">
+                                10:30
+                                <span>
+                                    - 11:30
+                                </span>
+                            </div>
+
+                            <div class="meeting-content">
+
+                                <h4>
+                                    Design Critique cùng
+                                    Leader & Tech Team
+                                </h4>
+
+                                <div class="meeting-meta">
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            location_on
+                                        </span>
+                                        Room 302
+                                    </span>
+
+                                    <span class="attendee-list">
+                                        AN
+                                        TM
+                                        QH
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="meeting-button"
+                                    data-action="meeting"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        videocam
+                                    </span>
+                                    Vào Meet ngay
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Meeting 2 -->
+                        <article
+                            class="meeting-item searchable-item"
+                            data-search="Design Tokens Tailwind Config Google Meet Nguyễn Văn An"
+                        >
+
+                            <div class="meeting-time">
+                                14:00
+                                <span>
+                                    - 15:00
+                                </span>
+                            </div>
+
+                            <div class="meeting-content">
+
+                                <h4>
+                                    Đồng bộ Design Tokens v1.4
+                                    & Tailwind Config
+                                </h4>
+
+                                <div class="meeting-meta">
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            public
+                                        </span>
+                                        Google Meet Online
+                                    </span>
+
+                                    <span>
+                                        Host: Nguyễn Văn An
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="meeting-button secondary"
+                                    data-action="meeting-link"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        link
+                                    </span>
+                                    Link họp
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </section>
+
+
+                    <!-- Personal notes -->
+                    <section class="side-card">
+
+                        <div class="side-card-header">
+
+                            <div>
+
+                                <h3>
+                                    Ghi chú cá nhân
+                                </h3>
+
+                                <span class="side-card-subtitle">
+                                    Công việc cần nhớ
+                                </span>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="small-add-button"
+                                id="addNoteButton"
+                                title="Thêm ghi chú"
+                            >
+                                <span class="material-symbols-outlined">
+                                    add
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="notes-list" id="notesList">
+
+                            <label class="note-item completed">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="custom-checkbox">
+                                    <span class="material-symbols-outlined">
+                                        check
+                                    </span>
+                                </span>
+
+                                <span class="note-text">
+                                    Nộp bản cập nhật typography Inter
+                                    cho design system.
+                                </span>
+
+                            </label>
+
+
+                            <label class="note-item">
+
+                                <input
+                                    type="checkbox"
+                                >
+
+                                <span class="custom-checkbox">
+                                    <span class="material-symbols-outlined">
+                                        check
+                                    </span>
+                                </span>
+
+                                <span class="note-text">
+                                    Nhớ export bộ SVG icons 24px chuẩn
+                                    cho đội Android trước 16:00.
+                                </span>
+
+                            </label>
+
+
+                            <label class="note-item">
+
+                                <input
+                                    type="checkbox"
+                                >
+
+                                <span class="custom-checkbox">
+                                    <span class="material-symbols-outlined">
+                                        check
+                                    </span>
+                                </span>
+
+                                <span class="note-text">
+                                    Gửi tài liệu spec màu và border-radius
+                                    cho anh Hùng Frontend.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="add-note-full-button"
+                            id="addNoteFullButton"
+                        >
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+
+                            Thêm ghi chú
+                        </button>
+
+                    </section>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================== -->
+<div
+    class="toast-container"
+    id="toastContainer"
+    aria-live="polite"
+></div>
+
+
+<!-- =========================================================
+     MODAL
+========================================================== -->
+<div
+    class="modal-overlay"
+    id="modalOverlay"
+    aria-hidden="true"
+>
+
+    <div
+        class="modal"
+        id="modal"
+        role="dialog"
+        aria-modal="true"
+    >
+
+        <div class="modal-header">
+
+            <div class="modal-title-wrapper">
+
+                <div class="modal-icon">
+                    <span
+                        class="material-symbols-outlined"
+                        id="modalIcon"
+                    >
+                        event
+                    </span>
+                </div>
+
+                <div>
+
+                    <h2 id="modalTitle">
+                        Tạo ghi chú / Deadline
+                    </h2>
+
+                    <p id="modalDescription">
+                        Tạo một công việc hoặc ghi chú cá nhân.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                class="modal-close"
+                id="modalClose"
+                aria-label="Đóng"
+            >
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+
+        </div>
+
+
+        <div class="modal-body" id="modalBody">
+
+            <div class="form-group">
+
+                <label for="modalTitleInput">
+                    Tiêu đề
+                </label>
+
+                <input
+                    type="text"
+                    id="modalTitleInput"
+                    placeholder="Nhập tiêu đề..."
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="modalDateInput">
+                        Ngày
+                    </label>
+
+                    <input
+                        type="date"
+                        id="modalDateInput"
+                        value="2025-06-18"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="modalTimeInput">
+                        Thời gian
+                    </label>
+
+                    <input
+                        type="time"
+                        id="modalTimeInput"
+                        value="16:00"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="modalProjectInput">
+                    Dự án
+                </label>
+
+                <select id="modalProjectInput">
+
+                    <option value="ecomm">
+                        PRJ-ECOMM-01
+                    </option>
+
+                    <option value="hrm">
+                        PRJ-HRM-02
+                    </option>
+
+                    <option value="personal">
+                        Cá nhân
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="modalDescriptionInput">
+                    Ghi chú
+                </label>
+
+                <textarea
+                    id="modalDescriptionInput"
+                    rows="4"
+                    placeholder="Nhập nội dung..."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-footer">
+
+            <button
+                type="button"
+                class="secondary-button"
+                id="modalCancel"
+            >
+                Hủy
+            </button>
+
+            <button
+                type="button"
+                class="primary-button"
+                id="modalConfirm"
+            >
+                Lưu lại
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NOTIFICATION PANEL
+========================================================== -->
+<div
+    class="notification-panel"
+    id="notificationPanel"
+>
+
+    <div class="notification-panel-header">
+
+        <div>
+            <strong>
+                Thông báo
+            </strong>
+
+            <span id="notificationSubtitle">
+                3 thông báo mới
+            </span>
+        </div>
+
+        <button
+            type="button"
+            id="markNotificationsRead"
+        >
+            Đánh dấu đã đọc
+        </button>
+
+    </div>
+
+
+    <div class="notification-list">
+
+        <div class="notification-item unread">
+
+            <div class="notification-icon blue">
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+            </div>
+
+            <div>
+
+                <strong>
+                    Deadline sắp đến
+                </strong>
+
+                <p>
+                    UI Kit & Component Checkout v2 còn 4h15m.
+                </p>
+
+                <span>
+                    5 phút trước
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="notification-item unread">
+
+            <div class="notification-icon purple">
+                <span class="material-symbols-outlined">
+                    groups
+                </span>
+            </div>
+
+            <div>
+
+                <strong>
+                    Sắp có cuộc họp
+                </strong>
+
+                <p>
+                    Design Critique bắt đầu lúc 10:30.
+                </p>
+
+                <span>
+                    20 phút trước
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="notification-item unread">
+
+            <div class="notification-icon green">
+                <span class="material-symbols-outlined">
+                    task_alt
+                </span>
+            </div>
+
+            <div>
+
+                <strong>
+                    Task đã được cập nhật
+                </strong>
+
+                <p>
+                    Leader đã cập nhật trạng thái task.
+                </p>
+
+                <span>
+                    1 giờ trước
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+<script src="lich.js"></script>
+
+</body>
+</html>

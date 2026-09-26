@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Leader - Project Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-brand">
+
+            <div class="brand-logo">
+                <img
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1Xz3WPKPSeVvhF4-GMhIT7bEALEIV82ymnKBxOu2L0XLuGCKILJhF6KYq6JUVcVc_ZJeh5fAHlnDQwGH__vNpIsaZ6GEzNZMl2Y8SPMPiaK_yHNuiQOnAIPCpNyQQ2JZfCZRth9sPmVmya1yYg1X0I8Prbig_ndvnjZGJmv6LP0yb0VsTOBfMVxnGiszqUvarxX6J3dIh1O69BT01VizN67DEIr1lfJabA8kSFvl5iWt6YKNE2mhtyi9F4"
+                    alt="Project Management Logo">
+            </div>
+
+            <div class="brand-content">
+                <div class="brand-title">PROJECT MGMT</div>
+                <div class="brand-subtitle">Hệ Thống Quản Trị</div>
+            </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+
+            <!-- Tổng quan -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TỔNG QUAN
+                </div>
+
+                <a href="dashboard.html" class="nav-item active" data-page="dashboard">
+                    <span class="material-symbols-outlined">
+                        dashboard
+                    </span>
+
+                    <span class="nav-text">
+                        Tổng quan
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Quản lý -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    QUẢN LÝ
+                </div>
+
+                <a href="../NhanVien_Leader/nhan-vien.html" class="nav-item" data-page="employees">
+                    <span class="material-symbols-outlined">
+                        badge
+                    </span>
+
+                    <span class="nav-text">
+                        Nhân viên
+                    </span>
+                </a>
+
+
+                <a href="../DuAn_Leader/du-an.html" class="nav-item" data-page="projects">
+                    <span class="material-symbols-outlined">
+                        folder_managed
+                    </span>
+
+                    <span class="nav-text">
+                        Dự án
+                    </span>
+                </a>
+
+
+                <a href="../NhiemVu_Leader/nhiem-vu.html" class="nav-item" data-page="tasks">
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+
+                    <span class="nav-text">
+                        Nhiệm vụ
+                    </span>
+                </a>
+
+
+                <a href="../TaiNguyen_Leader/tai-nguyen.html" class="nav-item" data-page="resources">
+                    <span class="material-symbols-outlined">
+                        inventory_2
+                    </span>
+
+                    <span class="nav-text">
+                        Tài nguyên
+                    </span>
+                </a>
+
+
+                <a href="../ThanhVien_Leader/thanh-vien.html" class="nav-item" data-page="members">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+
+                    <span class="nav-text">
+                        Thành viên
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Theo dõi -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    THEO DÕI
+                </div>
+
+                <a href="../TienDo_Leader/tien-do.html" class="nav-item" data-page="progress">
+                    <span class="material-symbols-outlined">
+                        trending_up
+                    </span>
+
+                    <span class="nav-text">
+                        Tiến độ dự án
+                    </span>
+                </a>
+
+
+                <a href="../KhungThoiGian_Leader/khung-thoi-gian.html" class="nav-item" data-page="timeline">
+                    <span class="material-symbols-outlined">
+                        date_range
+                    </span>
+
+                    <span class="nav-text">
+                        Khung thời gian
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Hệ thống -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    HỆ THỐNG
+                </div>
+
+                <a href="../ThongBao_Leader/thong-bao.html" class="nav-item" data-page="notifications">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="nav-text">
+                        Thông báo
+                    </span>
+                </a>
+
+
+                <a href="../HoTro_Leader/ho-tro.html" class="nav-item" data-page="support">
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+
+                    <span class="nav-text">
+                        Hỗ trợ
+                    </span>
+                </a>
+
+
+                <a href="../BaoMat_Leader/bao-mat.html" class="nav-item" data-page="security">
+                    <span class="material-symbols-outlined">
+                        shield
+                    </span>
+
+                    <span class="nav-text">
+                        Bảo mật
+                    </span>
+                </a>
+
+            </div>
+
+
+            <!-- Tài khoản -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TÀI KHOẢN
+                </div>
+                <a href="../index.html" class="nav-item logout-item" data-page="logout">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+
+                    <span class="nav-text">
+                        Đăng xuất
+                    </span>
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- User profile -->
+        <div class="sidebar-profile">
+
+            <div class="profile-avatar">
+                VA
+            </div>
+
+            <div class="profile-info">
+
+                <div class="profile-name">
+                    Nguyễn Văn An
+                </div>
+
+                <div class="profile-role">
+                    Trưởng dự án / Leader
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+    <div class="main-shell">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+        <header class="top-header">
+
+            <div class="header-search">
+
+                <span class="material-symbols-outlined search-icon">
+                    search
+                </span>
+
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã tài liệu..."
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <!-- Help -->
+                <button
+                    class="header-icon-button"
+                    title="Trợ giúp & Hướng dẫn"
+                    id="helpButton">
+
+                    <span class="material-symbols-outlined">
+                        help_outline
+                    </span>
+
+                </button>
+
+
+                <!-- Notification -->
+                <button
+                    class="header-icon-button notification-button"
+                    title="Thông báo hệ thống"
+                    id="notificationButton">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="header-divider"></div>
+
+
+                <!-- User -->
+                <button class="header-user">
+
+                    <div class="header-user-avatar">
+                        VA
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <span class="header-user-name">
+                            Nguyễn Văn An
+                        </span>
+
+                        <span class="header-user-role">
+                            Quản trị hệ thống
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+        <main class="dashboard-content">
+
+            <div class="dashboard-inner">
+
+
+                <!-- =========================================
+                     PAGE HEADER
+                ========================================== -->
+                <section class="page-header">
+
+                    <div class="page-heading">
+
+                        <div class="breadcrumb">
+
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+
+                            <span>
+                                Trang chủ
+                            </span>
+
+                            <span class="breadcrumb-arrow">
+                                /
+                            </span>
+
+                            <strong>
+                                Tổng quan
+                            </strong>
+
+                        </div>
+
+
+                        <h1>
+                            Tổng quan Hệ thống
+                        </h1>
+
+                        <p>
+                            Chào mừng quay trở lại, Nguyễn Văn An.
+                            Dưới đây là bức tranh tổng thể về các dự án
+                            và nguồn lực nhân sự.
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-actions">
+
+                        <button class="button button-secondary" id="exportButton">
+
+                            <span class="material-symbols-outlined">
+                                ios_share
+                            </span>
+
+                            Xuất báo cáo
+
+                        </button>
+
+
+                        <button class="button button-primary" id="addProjectButton">
+
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+
+                            Thêm dự án mới
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     KPI CARDS
+                ========================================== -->
+                <section class="kpi-grid">
+
+
+                    <!-- KPI 1 -->
+                    <article class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <div>
+
+                                <div class="kpi-label">
+                                    Tổng số nhân viên
+                                </div>
+
+                                <div class="kpi-value">
+                                    48
+                                </div>
+
+                                <div class="kpi-change positive">
+                                    +4 tháng này
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <span class="material-symbols-outlined">
+                                    group
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-footer">
+                            Khối Kỹ thuật: 32 • Thiết kế & QA: 16
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- KPI 2 -->
+                    <article class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <div>
+
+                                <div class="kpi-label">
+                                    Tổng số dự án
+                                </div>
+
+                                <div class="kpi-value" id="kpiTotalProjects">
+                                    12
+                                </div>
+
+                                <div class="kpi-change">
+                                    đang quản lý
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <span class="material-symbols-outlined">
+                                    folder_managed
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-tags">
+
+                            <span class="status-tag blue">
+                                8 Đang làm
+                            </span>
+
+                            <span class="status-tag green">
+                                3 Hoàn thành
+                            </span>
+
+                            <span class="status-tag red">
+                                1 Trễ hạn
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- KPI 3 -->
+                    <article class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <div>
+
+                                <div class="kpi-label">
+                                    Tổng nhiệm vụ
+                                </div>
+
+                                <div class="kpi-value">
+                                    156
+                                </div>
+
+                                <div class="kpi-change">
+                                    Hoàn thành 27%
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <span class="material-symbols-outlined">
+                                    assignment
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-footer">
+                            102 Đang làm • 42 Xong • 12 Chưa chạy
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- KPI 4 -->
+                    <article class="kpi-card">
+
+                        <div class="kpi-top">
+
+                            <div>
+
+                                <div class="kpi-label">
+                                    Tiến độ trung bình
+                                </div>
+
+                                <div class="kpi-value">
+                                    76%
+                                </div>
+
+                                <div class="kpi-change positive">
+                                    +3.4% so với tuần trước
+                                </div>
+
+                            </div>
+
+
+                            <div class="kpi-icon">
+
+                                <span class="material-symbols-outlined">
+                                    donut_large
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress-fill"
+                                style="width: 76%;">
+                            </div>
+
+                        </div>
+
+
+                        <div class="kpi-footer">
+                            Mục tiêu Q2 85%
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     PROJECT + TASK ANALYTICS
+                ========================================== -->
+                <section class="analytics-grid">
+
+
+                    <!-- Project Progress -->
+                    <article class="card project-progress-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2>
+                                    Tiến độ Dự án Trọng điểm
+                                </h2>
+
+                                <p>
+                                    Theo dõi hiệu suất hoàn thành
+                                    các mốc giai đoạn quan trọng
+                                </p>
+
+                            </div>
+
+
+                            <div class="filter-buttons">
+
+                                <button class="filter-button active">
+                                    Tất cả
+                                </button>
+
+                                <button class="filter-button">
+                                    Ưu tiên cao
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-list" id="projectListContainer">
+
+
+                            <!-- Project 1 -->
+                            <div class="project-item">
+
+                                <div class="project-main">
+
+                                    <div class="project-icon blue-icon">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+                                    </div>
+
+                                    <div class="project-info">
+
+                                        <h3>
+                                            Xây dựng Website thương mại điện tử
+                                        </h3>
+
+                                        <div class="project-meta">
+                                            Trưởng dự án:
+                                            <strong>Nguyễn Văn An</strong>
+                                            <span>•</span>
+                                            Hạn:
+                                            <strong>15/06/2025</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-progress">
+
+                                    <div class="project-progress-top">
+
+                                        <span class="project-status blue">
+                                            Đang thực hiện
+                                        </span>
+
+                                        <strong>
+                                            85%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="progress-bar small">
+                                        <div
+                                            class="progress-fill"
+                                            style="width: 85%;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Project 2 -->
+                            <div class="project-item">
+
+                                <div class="project-main">
+
+                                    <div class="project-icon purple-icon">
+                                        <span class="material-symbols-outlined">
+                                            groups
+                                        </span>
+                                    </div>
+
+                                    <div class="project-info">
+
+                                        <h3>
+                                            Phát triển ứng dụng quản lý nhân sự
+                                        </h3>
+
+                                        <div class="project-meta">
+                                            Trưởng dự án:
+                                            <strong>Trần Thị Bình</strong>
+                                            <span>•</span>
+                                            Hạn:
+                                            <strong>30/07/2025</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-progress">
+
+                                    <div class="project-progress-top">
+
+                                        <span class="project-status blue">
+                                            Đang thực hiện
+                                        </span>
+
+                                        <strong>
+                                            64%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="progress-bar small">
+                                        <div
+                                            class="progress-fill"
+                                            style="width: 64%;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Project 3 -->
+                            <div class="project-item">
+
+                                <div class="project-main">
+
+                                    <div class="project-icon green-icon">
+                                        <span class="material-symbols-outlined">
+                                            local_library
+                                        </span>
+                                    </div>
+
+                                    <div class="project-info">
+
+                                        <h3>
+                                            Thiết kế hệ thống quản lý thư viện
+                                        </h3>
+
+                                        <div class="project-meta">
+                                            Trưởng dự án:
+                                            <strong>Lê Minh Cường</strong>
+                                            <span>•</span>
+                                            Hạn:
+                                            <strong>20/05/2025</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-progress">
+
+                                    <div class="project-progress-top">
+
+                                        <span class="project-status green">
+                                            Sắp hoàn tất
+                                        </span>
+
+                                        <strong>
+                                            92%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="progress-bar small">
+                                        <div
+                                            class="progress-fill green-fill"
+                                            style="width: 92%;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Project 4 -->
+                            <div class="project-item">
+
+                                <div class="project-main">
+
+                                    <div class="project-icon orange-icon">
+                                        <span class="material-symbols-outlined">
+                                            school
+                                        </span>
+                                    </div>
+
+                                    <div class="project-info">
+
+                                        <h3>
+                                            Xây dựng nền tảng học trực tuyến
+                                        </h3>
+
+                                        <div class="project-meta">
+                                            Trưởng dự án:
+                                            <strong>Phạm Hoàng Nam</strong>
+                                            <span>•</span>
+                                            Hạn:
+                                            <strong>10/08/2025</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-progress">
+
+                                    <div class="project-progress-top">
+
+                                        <span class="project-status orange">
+                                            Cần đẩy nhanh
+                                        </span>
+
+                                        <strong>
+                                            40%
+                                        </strong>
+
+                                    </div>
+
+                                    <div class="progress-bar small">
+                                        <div
+                                            class="progress-fill orange-fill"
+                                            style="width: 40%;">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Task Status -->
+                    <article class="card task-status-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2>
+                                    Trạng thái Nhiệm vụ
+                                </h2>
+
+                                <p>
+                                    Phân bổ 156 nhiệm vụ toàn hệ thống
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                class="more-button"
+                                title="Chi tiết">
+
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="donut-wrapper">
+
+                            <div class="donut-chart">
+
+                                <svg
+                                    width="190"
+                                    height="190"
+                                    viewBox="0 0 190 190">
+
+                                    <circle
+                                        cx="95"
+                                        cy="95"
+                                        r="70"
+                                        fill="none"
+                                        stroke="#e5eeff"
+                                        stroke-width="20">
+                                    </circle>
+
+                                    <circle
+                                        class="donut-segment segment-primary"
+                                        cx="95"
+                                        cy="95"
+                                        r="70"
+                                        fill="none"
+                                        stroke="#2563eb"
+                                        stroke-width="20"
+                                        stroke-dasharray="286 440"
+                                        stroke-dashoffset="0"
+                                        transform="rotate(-90 95 95)">
+                                    </circle>
+
+                                    <circle
+                                        class="donut-segment"
+                                        cx="95"
+                                        cy="95"
+                                        r="70"
+                                        fill="none"
+                                        stroke="#0074a6"
+                                        stroke-width="20"
+                                        stroke-dasharray="119 440"
+                                        stroke-dashoffset="-286"
+                                        transform="rotate(-90 95 95)">
+                                    </circle>
+
+                                    <circle
+                                        class="donut-segment"
+                                        cx="95"
+                                        cy="95"
+                                        r="70"
+                                        fill="none"
+                                        stroke="#ba1a1a"
+                                        stroke-width="20"
+                                        stroke-dasharray="22 440"
+                                        stroke-dashoffset="-405"
+                                        transform="rotate(-90 95 95)">
+                                    </circle>
+
+                                    <circle
+                                        class="donut-segment"
+                                        cx="95"
+                                        cy="95"
+                                        r="70"
+                                        fill="none"
+                                        stroke="#565e74"
+                                        stroke-width="20"
+                                        stroke-dasharray="13 440"
+                                        stroke-dashoffset="-427"
+                                        transform="rotate(-90 95 95)">
+                                    </circle>
+
+                                </svg>
+
+
+                                <div class="donut-center">
+
+                                    <strong>
+                                        156
+                                    </strong>
+
+                                    <span>
+                                        Tổng tác vụ
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="task-legend">
+
+                            <div class="legend-item">
+
+                                <div class="legend-left">
+                                    <span class="legend-dot primary-dot"></span>
+                                    <span>Đang thực hiện</span>
+                                </div>
+
+                                <strong>102</strong>
+
+                            </div>
+
+
+                            <div class="legend-item">
+
+                                <div class="legend-left">
+                                    <span class="legend-dot tertiary-dot"></span>
+                                    <span>Đã hoàn thành</span>
+                                </div>
+
+                                <strong>42</strong>
+
+                            </div>
+
+
+                            <div class="legend-item">
+
+                                <div class="legend-left">
+                                    <span class="legend-dot error-dot"></span>
+                                    <span>Trễ hạn</span>
+                                </div>
+
+                                <strong>8</strong>
+
+                            </div>
+
+
+                            <div class="legend-item">
+
+                                <div class="legend-left">
+                                    <span class="legend-dot secondary-dot"></span>
+                                    <span>Chờ duyệt</span>
+                                </div>
+
+                                <strong>4</strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     ACTIVITIES + ALERTS
+                ========================================== -->
+                <section class="bottom-grid">
+
+
+                    <!-- Recent Activities -->
+                    <article class="card activities-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2>
+                                    Hoạt động Gần đây
+                                </h2>
+
+                                <p>
+                                    Cập nhật tương tác và trạng thái
+                                    công việc thời gian thực
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                class="text-button"
+                                id="viewAllActivities">
+
+                                Xem tất cả
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="activity-list">
+
+
+                            <!-- Activity 1 -->
+                            <div class="activity-item">
+
+                                <div class="activity-avatar blue-avatar">
+                                    TB
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+
+                                        <strong>
+                                            Trần Thị Bình
+                                        </strong>
+
+                                        <span>
+                                            10 phút trước
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        đã cập nhật nhiệm vụ
+                                        <strong>
+                                            "Phát triển API xác thực"
+                                        </strong>
+                                        trong dự án
+                                        <strong>
+                                            E-Commerce
+                                        </strong>.
+                                    </p>
+
+                                    <div class="activity-tags">
+
+                                        <span class="activity-tag">
+                                            Backend
+                                        </span>
+
+                                        <span class="activity-tag success">
+                                            Đã review mã nguồn
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Activity 2 -->
+                            <div class="activity-item">
+
+                                <div class="activity-avatar purple-avatar">
+                                    LC
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+
+                                        <strong>
+                                            Lê Minh Cường
+                                        </strong>
+
+                                        <span>
+                                            45 phút trước
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        đã tải lên
+                                        <strong>
+                                            "Kien_truc_he_thong_v2.pdf"
+                                        </strong>
+                                        cho nhóm giải pháp hạ tầng.
+                                    </p>
+
+                                    <div class="attachment">
+
+                                        <span class="material-symbols-outlined">
+                                            attach_file
+                                        </span>
+
+                                        <span>
+                                            Tập tin đính kèm • 4.8 MB
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Activity 3 -->
+                            <div class="activity-item">
+
+                                <div class="activity-avatar orange-avatar">
+                                    PN
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <div class="activity-title">
+
+                                        <strong>
+                                            Phạm Hoàng Nam
+                                        </strong>
+
+                                        <span>
+                                            2 giờ trước
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        đã hoàn thành checklist
+                                        <strong>
+                                            "Thiết kế giao diện trang chủ"
+                                        </strong>
+                                        trên Figma.
+                                    </p>
+
+                                    <div class="activity-tags">
+
+                                        <span class="activity-tag success">
+                                            Hoàn thành đúng hạn
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Alerts -->
+                    <article class="card alerts-card">
+
+                        <div class="alert-header">
+
+                            <div class="alert-title-wrapper">
+
+                                <div class="alert-icon">
+                                    <span class="material-symbols-outlined">
+                                        notifications_active
+                                    </span>
+                                </div>
+
+                                <div>
+
+                                    <h2>
+                                        Yêu cầu & Cảnh báo Cần duyệt
+                                    </h2>
+
+                                    <p>
+                                        Thông báo quan trọng yêu cầu cấp quyền
+                                        và phê duyệt từ Leader
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="alert-count" id="pendingAlertCount">
+                                2 Yêu cầu
+                            </span>
+
+                        </div>
+
+
+                        <div class="alert-list" id="alertListContainer">
+
+
+                            <!-- Alert 1 -->
+                            <div class="alert-item critical" data-id="alert-1">
+
+                                <div class="alert-item-top">
+
+                                    <div>
+
+                                        <h3>
+                                            Cấp quyền AWS Cloud Production
+                                        </h3>
+
+                                        <span class="priority critical-priority">
+                                            Khẩn cấp
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p>
+                                    DevOps Hoàng Văn Đức yêu cầu quyền IAM
+                                    để mở rộng tài nguyên máy chủ cho
+                                    E-Commerce trước khi kiểm thử tải.
+                                </p>
+
+
+                                <div class="alert-actions">
+
+                                    <button
+                                        class="button button-danger-outline reject-button">
+
+                                        Từ chối
+
+                                    </button>
+
+                                    <button
+                                        class="button button-danger approve-button">
+
+                                        Phê duyệt ngay
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Alert 2 -->
+                            <div class="alert-item warning" data-id="alert-2">
+
+                                <div class="alert-item-top">
+
+                                    <div>
+
+                                        <h3>
+                                            Bổ sung nhân sự Thiết kế UI/UX
+                                        </h3>
+
+                                        <span class="priority warning-priority">
+                                            Cần xét duyệt
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p>
+                                    Dự án Nền tảng học trực tuyến đề xuất
+                                    bổ sung +1 nhân sự Micro-interaction
+                                    cho giai đoạn hoàn thiện.
+                                </p>
+
+
+                                <div class="alert-actions">
+
+                                    <button
+                                        class="button button-secondary detail-button">
+
+                                        Xem chi tiết
+
+                                    </button>
+
+                                    <button
+                                        class="button button-primary approve-button">
+
+                                        Chấp thuận
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="approval-center-button"
+                            id="approvalCenterButton">
+
+                            <span>
+                                Truy cập Trung tâm Phê duyệt Hệ thống
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+
+                        </button>
+
+                    </article>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- =====================================================
+         MODALS (CÁC CỬA SỔ BẬT)
+    ====================================================== -->
+
+    <!-- Modal 1: Thêm dự án mới -->
+    <div class="modal-overlay" id="addProjectModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Thêm Dự Án Mới</h3>
+                <button class="modal-close material-symbols-outlined" data-close-modal>close</button>
+            </div>
+            <form id="addProjectForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="projectName">Tên dự án <span style="color:red">*</span></label>
+                        <input type="text" id="projectName" class="form-control" placeholder="Ví dụ: Xây dựng Hệ thống POS" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectLeader">Trưởng dự án <span style="color:red">*</span></label>
+                        <input type="text" id="projectLeader" class="form-control" placeholder="Ví dụ: Nguyễn Văn An" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDeadline">Hạn hoàn thành <span style="color:red">*</span></label>
+                        <input type="date" id="projectDeadline" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectIcon">Biểu tượng & Loại dự án</label>
+                        <select id="projectIcon" class="form-control">
+                            <option value="shopping_cart|blue-icon">Thương mại (Blue)</option>
+                            <option value="groups|purple-icon">Nhân sự / Quản lý (Purple)</option>
+                            <option value="local_library|green-icon">Thư viện / Tài liệu (Green)</option>
+                            <option value="school|orange-icon">Giáo dục / Khóa học (Orange)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectProgress">Tiến độ khởi tạo (%)</label>
+                        <input type="number" id="projectProgress" class="form-control" min="0" max="100" value="0">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button button-secondary" data-close-modal>Hủy</button>
+                    <button type="submit" class="button button-primary">Tạo Dự Án</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal 2: Xem chi tiết Yêu cầu / Nhiệm vụ -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="detailModalTitle">Chi Tiết Thông Tin</h3>
+                <button class="modal-close material-symbols-outlined" data-close-modal>close</button>
+            </div>
+            <div class="modal-body" id="detailModalBody">
+                <!-- Nội dung chi tiết được nạp bằng JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-close-modal>Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Trung tâm Phê duyệt Hệ thống -->
+    <div class="modal-overlay" id="approvalCenterModal">
+        <div class="modal-container" style="width: min(720px, 94%);">
+            <div class="modal-header">
+                <h3>Trung Tâm Phê Duyệt Hệ Thống</h3>
+                <button class="modal-close material-symbols-outlined" data-close-modal>close</button>
+            </div>
+            <div class="modal-body">
+                <p style="font-size:12px; color:var(--secondary);">Danh sách tất cả các đề xuất, yêu cầu cấp quyền và tài nguyên đang chờ Leader phê duyệt.</p>
+                
+                <div class="approval-modal-list" id="approvalModalList">
+                    <!-- Được nạp động từ JS -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-close-modal>Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

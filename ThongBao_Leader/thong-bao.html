@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quản lý thông báo hệ thống Project Management">
+    <title>Quản lý thông báo - PROJECT MGMT</title>
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="thong-bao.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+<aside class="sidebar">
+
+    <div class="sidebar-inner">
+
+        <!-- Logo -->
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                PM
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-name">PROJECT MGMT</span>
+                <span class="brand-subtitle">HỆ THỐNG QUẢN TRỊ</span>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="sidebar-menu">
+
+            <!-- Tổng quan -->
+            <div class="menu-group">
+                <span class="menu-title">Tổng quan</span>
+
+                <nav>
+                    <a href="../TongQuan_Leader/dashboard.html" class="menu-item" data-path="tong-quan">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span>Tổng quan</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Quản lý -->
+            <div class="menu-group">
+                <span class="menu-title">Quản lý</span>
+
+                <nav>
+                    <a href="../NhanVien_Leader/nhan-vien.html" class="menu-item" data-path="nhan-vien">
+                        <span class="material-symbols-outlined">badge</span>
+                        <span>Nhân viên</span>
+                    </a>
+
+                    <a href="../DuAn_Leader/du-an.html" class="menu-item" data-path="du-an">
+                        <span class="material-symbols-outlined">folder</span>
+                        <span>Dự án</span>
+                    </a>
+
+                    <a href="../NhiemVu_Leader/nhiem-vu.html" class="menu-item" data-path="nhiem-vu">
+                        <span class="material-symbols-outlined">assignment</span>
+                        <span>Nhiệm vụ</span>
+                    </a>
+
+                    <a href="../TaiNguyen_Leader/tai-nguyen.html" class="menu-item" data-path="tai-nguyen">
+                        <span class="material-symbols-outlined">category</span>
+                        <span>Tài nguyên</span>
+                    </a>
+
+                    <a href="../ThanhVien_Leader/thanh-vien.html" class="menu-item" data-path="thanh-vien">
+                        <span class="material-symbols-outlined">group</span>
+                        <span>Thành viên</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Theo dõi -->
+            <div class="menu-group">
+                <span class="menu-title">Theo dõi</span>
+
+                <nav>
+                    <a href="../TienDoDuAn_Leader/tien-do-du-an.html" class="menu-item" data-path="tien-do-du-an">
+                        <span class="material-symbols-outlined">insights</span>
+                        <span>Tiến độ dự án</span>
+                    </a>
+
+                    <a href="../KhungThoiGian_Leader/khung-thoi-gian.html" class="menu-item" data-path="khung-thoi-gian">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <span>Khung thời gian</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Hệ thống -->
+            <div class="menu-group">
+                <span class="menu-title">Hệ thống</span>
+
+                <nav>
+                    <a href="../ThongBao_Leader/thong-bao.html"
+                       class="menu-item active"
+                       data-path="thong-bao"
+                       aria-current="page">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span>Thông báo</span>
+                    </a>
+
+                    <a href="../HoTro_Leader/ho-tro.html" class="menu-item" data-path="ho-tro">
+                        <span class="material-symbols-outlined">help</span>
+                        <span>Hỗ trợ</span>
+                    </a>
+
+                    <a href="../BaoMat_Leader/bao-mat.html" class="menu-item" data-path="bao-mat">
+                        <span class="material-symbols-outlined">lock</span>
+                        <span>Bảo mật</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Tài khoản -->
+            <div class="menu-group">
+                <span class="menu-title">Tài khoản</span>
+
+                <nav>
+                    <a href="../DangXuat_Leader/dang-xuat.html" class="menu-item" data-path="dang-xuat">
+                        <span class="material-symbols-outlined">logout</span>
+                        <span>Đăng xuất</span>
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- User -->
+        <div class="sidebar-user">
+            <div class="user-card">
+                <div class="avatar avatar-blue">VA</div>
+
+                <div class="user-info">
+                    <span class="user-name">Nguyễn Văn An</span>
+                    <span class="user-role">Trưởng dự án / Leader</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+
+<!-- =========================================================
+     MAIN AREA
+========================================================= -->
+<div class="page-wrapper">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <div class="mobile-brand">
+                <div class="brand-logo small">PM</div>
+            </div>
+
+            <div class="global-search">
+                <span class="material-symbols-outlined">search</span>
+
+                <input
+                    type="text"
+                    placeholder="Tìm kiếm dự án, công việc, thành viên..."
+                    id="globalSearch"
+                >
+            </div>
+
+        </div>
+
+        <div class="topbar-right">
+
+            <button class="icon-button notification-button" id="notificationButton">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="notification-dot"></span>
+            </button>
+
+            <div class="top-user">
+
+                <div class="avatar avatar-primary">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+
+                <div class="top-user-info">
+                    <span>Nguyễn Văn An</span>
+                    <small>Quản trị hệ thống</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+    <main class="main-content">
+
+        <div class="content-container">
+
+            <!-- TOAST -->
+            <div class="toast hidden" id="toastNotification">
+
+                <div class="toast-icon">
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+                </div>
+
+                <div class="toast-content">
+                    <strong>Thao tác thành công</strong>
+
+                    <span>
+                        Thông báo bảo trì hệ thống đã được gửi thành công
+                        đến 48 nhân viên.
+                    </span>
+                </div>
+
+                <button class="toast-close" id="toastClose">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+
+            </div>
+
+
+            <!-- BREADCRUMB -->
+            <nav class="breadcrumb">
+
+                <a href="#">
+                    <span class="material-symbols-outlined">home</span>
+                    Trang chủ
+                </a>
+
+                <span class="material-symbols-outlined separator">
+                    chevron_right
+                </span>
+
+                <span>Hệ thống</span>
+
+                <span class="material-symbols-outlined separator">
+                    chevron_right
+                </span>
+
+                <strong>Thông báo</strong>
+
+            </nav>
+
+
+            <!-- PAGE HEADER -->
+            <section class="page-header">
+
+                <div class="page-title-area">
+
+                    <div class="title-row">
+
+                        <h1>Quản lý thông báo</h1>
+
+                        <span class="badge badge-secondary">
+                            LD-ADM05
+                        </span>
+
+                        <span class="badge badge-gray">
+                            Hệ thống
+                        </span>
+
+                        <span class="badge badge-blue">
+                            Vai trò: Leader
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Soạn thảo, điều phối, lên lịch và theo dõi tỷ lệ tiếp
+                        cận thông báo toàn hệ thống hoặc theo từng dự án
+                        trọng điểm.
+                    </p>
+
+                </div>
+
+                <div class="header-actions">
+
+                    <button class="btn btn-light" id="templateButton">
+                        <span class="material-symbols-outlined">
+                            tune
+                        </span>
+
+                        <span>Cài đặt mẫu thông báo</span>
+                    </button>
+
+                    <button class="btn btn-primary" id="newNotificationButton">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+
+                        <span>+ Tạo thông báo mới</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI
+            ================================================== -->
+            <section class="kpi-grid">
+
+                <!-- KPI 1 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Tổng số thông báo
+                            </span>
+
+                            <div class="kpi-value-row">
+                                <strong id="kpiTotal">128</strong>
+
+                                <span class="mini-badge">
+                                    bản ghi
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon blue">
+                            <span class="material-symbols-outlined">
+                                campaign
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+                        <span class="material-symbols-outlined">
+                            hub
+                        </span>
+
+                        <span>
+                            Bao gồm tất cả các kênh thông tin gửi nội bộ
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 2 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Đã gửi thành công
+                            </span>
+
+                            <div class="kpi-value-row">
+                                <strong id="kpiSent">94</strong>
+
+                                <span class="kpi-success">
+                                    73.4% tổng lượng
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon cyan">
+                            <span class="material-symbols-outlined">
+                                mark_email_read
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-progress">
+
+                        <div>
+                            Tỷ lệ mở xem:
+                            <strong>88.5%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div style="width:88.5%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 3 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Bản nháp chờ duyệt
+                            </span>
+
+                            <div class="kpi-value-row">
+                                <strong id="kpiDrafts">08</strong>
+
+                                <span class="mini-badge">
+                                    Cần xử lý
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon gray">
+                            <span class="material-symbols-outlined">
+                                edit_document
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+                        <span class="material-symbols-outlined">
+                            pending_actions
+                        </span>
+
+                        <span>
+                            Có 3 bản nháp chưa hoàn thiện nội dung
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 4 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Đã lên lịch phát
+                            </span>
+
+                            <div class="kpi-value-row">
+                                <strong id="kpiScheduled">06</strong>
+
+                                <span class="kpi-success">
+                                    Tự động hóa
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon blue">
+                            <span class="material-symbols-outlined">
+                                schedule_send
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+                        <span class="material-symbols-outlined">
+                            event_available
+                        </span>
+
+                        <span>
+                            Sẽ gửi tự động trong 7 ngày tới
+                        </span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 WORKSPACE
+            ================================================== -->
+            <section class="workspace">
+
+                <!-- LEFT -->
+                <div class="notification-column">
+
+                    <!-- CATEGORY TABS -->
+                    <div class="category-tabs">
+
+                        <button class="category-tab active">
+                            Tất cả (128)
+                        </button>
+
+                        <button class="category-tab">
+                            Hệ thống &amp; Bảo trì (24)
+                        </button>
+
+                        <button class="category-tab">
+                            Cảnh báo khẩn cấp (12)
+                        </button>
+
+                        <button class="category-tab">
+                            Cập nhật dự án (58)
+                        </button>
+
+                        <button class="category-tab">
+                            Bản nháp (8)
+                        </button>
+
+                        <button class="category-tab">
+                            Đã lên lịch (6)
+                        </button>
+
+                    </div>
+
+
+                    <!-- FILTER -->
+                    <div class="filter-box">
+
+                        <div class="notification-search">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+
+                            <input
+                                id="notificationSearch"
+                                type="text"
+                                placeholder="Tìm kiếm theo tiêu đề, người tạo, mã dự án..."
+                            >
+
+                        </div>
+
+                        <div class="filters">
+
+                            <select id="priorityFilter">
+                                <option value="">
+                                    Mức độ ưu tiên: Tất cả
+                                </option>
+
+                                <option value="urgent">
+                                    Khẩn cấp
+                                </option>
+
+                                <option value="important">
+                                    Quan trọng
+                                </option>
+
+                                <option value="normal">
+                                    Bình thường
+                                </option>
+                            </select>
+
+
+                            <select id="audienceFilter">
+                                <option value="">
+                                    Đối tượng nhận: Tất cả
+                                </option>
+
+                                <option value="all">
+                                    Toàn công ty
+                                </option>
+
+                                <option value="project">
+                                    Theo dự án
+                                </option>
+
+                                <option value="leader">
+                                    Chỉ nhóm Leader
+                                </option>
+                            </select>
+
+
+                            <button
+                                class="refresh-button"
+                                id="refreshButton"
+                                title="Làm mới"
+                            >
+                                <span class="material-symbols-outlined">
+                                    refresh
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         NOTIFICATION LIST
+                    ================================================== -->
+                    <div class="notification-list" id="notificationList">
+
+                        <!-- NOTIFICATION 1 -->
+                        <article
+                            class="notification-card"
+                            data-priority="urgent"
+                            data-audience="all"
+                        >
+
+                            <div class="notification-header">
+
+                                <div class="notification-meta">
+
+                                    <span class="priority urgent">
+                                        <span class="material-symbols-outlined">
+                                            warning
+                                        </span>
+                                        Khẩn cấp
+                                    </span>
+
+                                    <span class="category-label">
+                                        Hệ thống &amp; Bảo trì
+                                    </span>
+
+                                    <span class="time-label">
+                                        <span class="material-symbols-outlined">
+                                            schedule
+                                        </span>
+                                        10:00 Hôm nay
+                                    </span>
+
+                                </div>
+
+                                <span class="status sent">
+                                    <span class="status-dot"></span>
+                                    Đã gửi
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-body">
+
+                                <h3>
+                                    Bảo trì nâng cấp hạ tầng máy chủ định kỳ Q2/2025
+                                </h3>
+
+                                <p>
+                                    Toàn bộ hệ thống cơ sở dữ liệu chính và
+                                    API cổng thanh toán sẽ được tạm ngừng
+                                    hoạt động trong vòng 45 phút từ 23:00
+                                    đến 23:45 nhằm triển khai bản vá bảo mật
+                                    hạt nhân kernel phiên bản 6.8. Vui lòng
+                                    lưu trữ các tác vụ dở dang.
+                                </p>
+
+                            </div>
+
+
+                            <div class="notification-info">
+
+                                <div class="info-list">
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            group
+                                        </span>
+                                        Đối tượng:
+                                        <strong>Toàn thể nhân viên</strong>
+                                    </span>
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            cell_tower
+                                        </span>
+                                        Kênh:
+                                        <strong>Email + In-app</strong>
+                                    </span>
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            account_circle
+                                        </span>
+                                        Người gửi:
+                                        <strong>
+                                            Nguyễn Văn An (Leader)
+                                        </strong>
+                                    </span>
+
+                                </div>
+
+                                <div class="read-ratio">
+
+                                    <span>
+                                        Đã đọc:
+                                        <strong>45/48 NV</strong>
+                                        (93.8%)
+                                    </span>
+
+                                    <div class="small-progress">
+                                        <div style="width:93.8%"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="notification-footer">
+
+                                <div class="mini-avatars">
+
+                                    <div class="mini-avatar blue">TH</div>
+                                    <div class="mini-avatar purple">TM</div>
+                                    <div class="mini-avatar cyan">DQ</div>
+                                    <div class="mini-avatar gray">+42</div>
+
+                                </div>
+
+                                <div class="card-actions">
+
+                                    <button class="card-button edit-button">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                        Chỉnh sửa
+                                    </button>
+
+                                    <button class="card-button copy-button">
+                                        <span class="material-symbols-outlined">
+                                            content_copy
+                                        </span>
+                                        Sao chép
+                                    </button>
+
+                                    <button class="card-button danger recall-button">
+                                        <span class="material-symbols-outlined">
+                                            undo
+                                        </span>
+                                        Thu hồi
+                                    </button>
+
+                                    <button class="card-button danger delete-button">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Xóa
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- NOTIFICATION 2 -->
+                        <article
+                            class="notification-card"
+                            data-priority="normal"
+                            data-audience="project"
+                        >
+
+                            <div class="notification-header">
+
+                                <div class="notification-meta">
+
+                                    <span class="priority normal">
+                                        <span class="material-symbols-outlined">
+                                            info
+                                        </span>
+                                        Bình thường
+                                    </span>
+
+                                    <span class="category-label">
+                                        Cập nhật dự án
+                                    </span>
+
+                                    <span class="time-label blue-text">
+                                        <span class="material-symbols-outlined">
+                                            alarm
+                                        </span>
+                                        Lên lịch: 08:30 ngày 15/06/2025
+                                    </span>
+
+                                </div>
+
+                                <span class="status scheduled">
+                                    <span class="material-symbols-outlined">
+                                        schedule
+                                    </span>
+                                    Đã lên lịch
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-body">
+
+                                <h3>
+                                    Nhắc nhở hoàn thành đánh giá sprint và nghiệm thu dự án E-Commerce
+                                </h3>
+
+                                <p>
+                                    Đề nghị toàn bộ các thành viên thuộc nhóm
+                                    dự án PRJ-ECOMM-01 tiến hành rà soát danh
+                                    sách công việc trên hệ thống, cập nhật lại
+                                    trạng thái thẻ Kanban trước phiên họp đánh
+                                    giá nghiệm thu cuối kỳ.
+                                </p>
+
+                            </div>
+
+
+                            <div class="notification-info">
+
+                                <div class="info-list">
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            folder_shared
+                                        </span>
+                                        Đối tượng:
+                                        <strong>
+                                            Theo dự án cụ thể (PRJ-ECOMM-01)
+                                        </strong>
+                                    </span>
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            notifications_active
+                                        </span>
+                                        Kênh:
+                                        <strong>
+                                            In-app Notification
+                                        </strong>
+                                    </span>
+
+                                </div>
+
+                                <span class="schedule-note">
+                                    Sẽ kích hoạt tự động sau 3 ngày
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-footer">
+
+                                <span class="creator">
+                                    Người lập lịch:
+                                    <strong>Nguyễn Văn An</strong>
+                                </span>
+
+                                <div class="card-actions">
+
+                                    <button class="card-button edit-button">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                        Chỉnh sửa
+                                    </button>
+
+                                    <button class="card-button danger cancel-schedule-button">
+                                        <span class="material-symbols-outlined">
+                                            event_busy
+                                        </span>
+                                        Hủy lịch
+                                    </button>
+
+                                    <button class="card-button danger delete-button">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Xóa
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- NOTIFICATION 3 -->
+                        <article
+                            class="notification-card"
+                            data-priority="important"
+                            data-audience="all"
+                        >
+
+                            <div class="notification-header">
+
+                                <div class="notification-meta">
+
+                                    <span class="priority important">
+                                        <span class="material-symbols-outlined">
+                                            priority_high
+                                        </span>
+                                        Quan trọng
+                                    </span>
+
+                                    <span class="category-label">
+                                        Bảo mật &amp; Tuân thủ
+                                    </span>
+
+                                    <span class="time-label">
+                                        <span class="material-symbols-outlined">
+                                            history
+                                        </span>
+                                        Đã gửi 2 ngày trước
+                                    </span>
+
+                                </div>
+
+                                <span class="status read">
+                                    <span class="material-symbols-outlined">
+                                        done_all
+                                    </span>
+                                    100% Đã đọc
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-body">
+
+                                <h3>
+                                    Công bố quy trình bảo mật mới và kích hoạt xác thực 2 lớp (2FA)
+                                </h3>
+
+                                <p>
+                                    Từ tuần tới, tất cả tài khoản truy cập vào
+                                    cổng quản trị dự án bắt buộc phải liên kết
+                                    mã xác thực OTP qua Google Authenticator
+                                    hoặc ứng dụng Microsoft Authenticator.
+                                </p>
+
+                            </div>
+
+
+                            <div class="notification-info">
+
+                                <div class="info-list">
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            corporate_fare
+                                        </span>
+                                        Đối tượng:
+                                        <strong>Toàn thể nhân viên</strong>
+                                    </span>
+
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        Kênh:
+                                        <strong>
+                                            Email Broadcast + Web Pop-up
+                                        </strong>
+                                    </span>
+
+                                </div>
+
+                                <div class="verified">
+                                    <span class="material-symbols-outlined">
+                                        verified
+                                    </span>
+
+                                    Đã tiếp cận 48/48 thành viên
+                                </div>
+
+                            </div>
+
+
+                            <div class="notification-footer">
+
+                                <span class="record-code">
+                                    Mã bản ghi: NOTIF-2025-SEC09
+                                </span>
+
+                                <div class="card-actions">
+
+                                    <button class="card-button edit-button">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                        Chỉnh sửa
+                                    </button>
+
+                                    <button class="card-button copy-button">
+                                        <span class="material-symbols-outlined">
+                                            content_copy
+                                        </span>
+                                        Tạo bản sao
+                                    </button>
+
+                                    <button class="card-button danger delete-button">
+                                        <span class="material-symbols-outlined">
+                                            delete
+                                        </span>
+                                        Xóa
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- NOTIFICATION 4 -->
+                        <article
+                            class="notification-card"
+                            data-priority="draft"
+                            data-audience="all"
+                        >
+
+                            <div class="notification-header">
+
+                                <div class="notification-meta">
+
+                                    <span class="priority draft">
+                                        <span class="material-symbols-outlined">
+                                            drafts
+                                        </span>
+                                        Bản nháp
+                                    </span>
+
+                                    <span class="category-label">
+                                        Hành chính nhân sự
+                                    </span>
+
+                                    <span class="time-label">
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                        Cập nhật 3 giờ trước
+                                    </span>
+
+                                </div>
+
+                                <span class="status draft-status">
+                                    Chưa gửi
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-body">
+
+                                <h3>
+                                    Thông báo nghỉ lễ Quốc khánh và kế hoạch trực dự án
+                                </h3>
+
+                                <p>
+                                    Kế hoạch bố trí nhân sự hỗ trợ khẩn cấp
+                                    trong các ngày nghỉ lễ ngày 2/9. Các
+                                    trưởng nhóm kỹ thuật rà soát danh sách
+                                    nhân sự trực on-call và phản hồi trước
+                                    thứ Sáu tuần này.
+                                </p>
+
+                            </div>
+
+
+                            <div class="draft-warning">
+
+                                <span>
+                                    Biên tập viên:
+                                    <strong>Nguyễn Văn An</strong>
+                                </span>
+
+                                <span>
+                                    Nội dung chưa hoàn chỉnh:
+                                    Thiếu file danh sách phân công
+                                </span>
+
+                            </div>
+
+
+                            <div class="notification-footer">
+
+                                <button class="card-button danger delete-draft delete-button">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                    Xóa nháp
+                                </button>
+
+                                <button class="card-button primary edit-draft edit-button">
+                                    <span class="material-symbols-outlined">
+                                        stylus
+                                    </span>
+                                    Tiếp tục chỉnh sửa
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     RIGHT COMPOSER
+                ================================================== -->
+                <div class="composer-column">
+
+                    <div class="composer-card">
+
+                        <!-- Header -->
+                        <div class="composer-header">
+
+                            <div class="composer-heading">
+
+                                <div class="composer-icon">
+                                    <span class="material-symbols-outlined">
+                                        add_comment
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <h2 id="composerTitle">Soạn thông báo mới</h2>
+
+                                    <span id="composerSubtitle">
+                                        Gửi tức thời hoặc đặt lịch phát tự động
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <span class="auto-badge">
+                                Mẫu tự động
+                            </span>
+
+                        </div>
+
+
+                        <!-- FORM -->
+                        <form id="composeForm">
+
+                            <!-- Title -->
+                            <div class="form-group">
+
+                                <label for="titleInput">
+                                    <span>
+                                        Tiêu đề thông báo
+                                        <b>*</b>
+                                    </span>
+
+                                    <small>
+                                        Tối đa 120 ký tự
+                                    </small>
+                                </label>
+
+                                <input
+                                    id="titleInput"
+                                    type="text"
+                                    maxlength="120"
+                                    required
+                                    placeholder="Nhập tiêu đề thông báo rõ ràng, súc tích..."
+                                >
+
+                            </div>
+
+
+                            <!-- Audience -->
+                            <div class="form-group">
+
+                                <label>
+                                    Đối tượng nhận <b>*</b>
+                                </label>
+
+                                <div class="select-wrapper">
+
+                                    <select id="audienceInput">
+
+                                        <option value="all">
+                                            Toàn bộ nhân viên công ty (48 nhân sự)
+                                        </option>
+
+                                        <option value="dept">
+                                            Theo phòng ban (Khối Kỹ thuật & Khối Dự án)
+                                        </option>
+
+                                        <option value="project">
+                                            Theo dự án cụ thể (PRJ-ECOMM-01, PRJ-FIN-02...)
+                                        </option>
+
+                                        <option value="leader">
+                                            Nhóm Leader & Quản lý cấp cao (8 thành viên)
+                                        </option>
+
+                                    </select>
+
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Priority -->
+                            <div class="form-group">
+
+                                <label>
+                                    Mức độ ưu tiên <b>*</b>
+                                </label>
+
+                                <div class="priority-grid">
+
+                                    <label class="priority-option normal-option">
+
+                                        <input
+                                            type="radio"
+                                            name="priority"
+                                            value="normal"
+                                            checked
+                                        >
+
+                                        <span>Bình thường</span>
+
+                                    </label>
+
+
+                                    <label class="priority-option important-option">
+
+                                        <input
+                                            type="radio"
+                                            name="priority"
+                                            value="important"
+                                        >
+
+                                        <span>Quan trọng</span>
+
+                                    </label>
+
+
+                                    <label class="priority-option urgent-option">
+
+                                        <input
+                                            type="radio"
+                                            name="priority"
+                                            value="urgent"
+                                        >
+
+                                        <span>Khẩn cấp</span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Channels -->
+                            <div class="form-group">
+
+                                <label>Kênh phát tin đồng thời</label>
+
+                                <div class="channels">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked
+                                        >
+                                        <span>
+                                            Thông báo Web/App
+                                        </span>
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked
+                                        >
+                                        <span>
+                                            Gửi Email thông báo
+                                        </span>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>
+                                            Tin nhắn SMS khẩn
+                                        </span>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Content -->
+                            <div class="form-group">
+
+                                <label>
+                                    Nội dung chi tiết <b>*</b>
+                                </label>
+
+                                <div class="editor">
+
+                                    <div class="editor-toolbar">
+
+                                        <button type="button" title="Đậm">
+                                            <span class="material-symbols-outlined">
+                                                format_bold
+                                            </span>
+                                        </button>
+
+                                        <button type="button" title="Nghiêng">
+                                            <span class="material-symbols-outlined">
+                                                format_italic
+                                            </span>
+                                        </button>
+
+                                        <button type="button" title="Gạch chân">
+                                            <span class="material-symbols-outlined">
+                                                format_underlined
+                                            </span>
+                                        </button>
+
+                                        <span class="toolbar-divider"></span>
+
+                                        <button type="button">
+                                            <span class="material-symbols-outlined">
+                                                format_list_numbered
+                                            </span>
+                                        </button>
+
+                                        <button type="button">
+                                            <span class="material-symbols-outlined">
+                                                format_list_bulleted
+                                            </span>
+                                        </button>
+
+                                        <button type="button">
+                                            <span class="material-symbols-outlined">
+                                                link
+                                            </span>
+                                        </button>
+
+                                        <span class="toolbar-divider"></span>
+
+                                        <button type="button">
+                                            <span class="material-symbols-outlined">
+                                                attach_file
+                                            </span>
+                                        </button>
+
+                                    </div>
+
+                                    <textarea
+                                        id="contentInput"
+                                        rows="4"
+                                        required
+                                        placeholder="Nhập chi tiết nội dung cần thông báo đến đội ngũ..."
+                                    ></textarea>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Schedule -->
+                            <div class="form-group">
+
+                                <label>Thời gian gửi</label>
+
+                                <div class="schedule-options">
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="schedule"
+                                            value="now"
+                                            checked
+                                        >
+
+                                        <span>
+                                            Gửi ngay lập tức
+                                        </span>
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="schedule"
+                                            value="later"
+                                        >
+
+                                        <span>
+                                            Lên lịch gửi sau
+                                        </span>
+                                    </label>
+
+                                </div>
+
+
+                                <div
+                                    class="schedule-picker"
+                                    id="schedulePicker"
+                                >
+
+                                    <input
+                                        type="date"
+                                        id="scheduleDate"
+                                        value="2025-06-15"
+                                    >
+
+                                    <input
+                                        type="time"
+                                        id="scheduleTime"
+                                        value="09:00"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Bottom -->
+                            <div class="form-actions">
+
+                                <div class="secondary-actions">
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-light"
+                                        id="previewButton"
+                                    >
+                                        Xem trước
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="btn btn-light"
+                                        id="saveDraftButton"
+                                    >
+                                        Lưu bản nháp
+                                    </button>
+
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary send-button"
+                                    id="submitFormButton"
+                                >
+
+                                    <span class="material-symbols-outlined">
+                                        send
+                                    </span>
+
+                                    <span id="submitButtonText">Gửi thông báo ngay</span>
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- TIPS -->
+                    <div class="tips-card">
+
+                        <span class="material-symbols-outlined">
+                            tips_and_updates
+                        </span>
+
+                        <div>
+                            <strong>
+                                Quy chuẩn gửi tin Leader
+                            </strong>
+
+                            <p>
+                                Các thông báo có gắn nhãn
+                                <b>Khẩn cấp</b>
+                                sẽ tự động kích hoạt rung thiết bị trên ứng
+                                dụng di động và gửi bản sao qua email tới
+                                toàn bộ thành viên trong danh sách nhận.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     MODAL: CÀI ĐẶT MẪU THÔNG BÁO
+========================================================= -->
+<div class="modal-overlay hidden" id="templateModal">
+    <div class="modal-card">
+
+        <div class="modal-header">
+            <div class="modal-title">
+                <span class="material-symbols-outlined">tune</span>
+                <h3>Cài đặt mẫu thông báo</h3>
+            </div>
+
+            <button class="modal-close" id="closeTemplateModal">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <p class="modal-desc">
+                Chọn một trong các mẫu thiết lập sẵn bên dưới để áp dụng nhanh nội dung vào khung soạn thảo:
+            </p>
+
+            <div class="template-list">
+
+                <!-- Mẫu 1 -->
+                <div class="template-item"
+                     data-title="Bảo trì nâng cấp hạ tầng máy chủ định kỳ"
+                     data-content="Toàn bộ hệ thống cơ sở dữ liệu chính và cổng dịch vụ sẽ tạm dừng trong vòng 45 phút để cập nhật bản vá bảo mật hạt nhân kernel. Vui lòng lưu lại công việc trước thời gian trên."
+                     data-priority="urgent"
+                     data-audience="all">
+                    <div class="template-info">
+                        <strong>Bảo trì hệ thống khẩn cấp</strong>
+                        <span>Áp dụng cho bảo trì định kỳ, nâng cấp máy chủ &amp; hạ tầng.</span>
+                    </div>
+                    <button type="button" class="btn btn-light use-template-btn">
+                        Sử dụng
+                    </button>
+                </div>
+
+                <!-- Mẫu 2 -->
+                <div class="template-item"
+                     data-title="Nhắc nhở hoàn thành đánh giá sprint và nghiệm thu công việc"
+                     data-content="Đề nghị toàn bộ thành viên thuộc nhóm dự án tiến hành rà soát danh sách công việc trên hệ thống, cập nhật lại trạng thái thẻ Kanban trước phiên họp nghiệm thu."
+                     data-priority="normal"
+                     data-audience="project">
+                    <div class="template-info">
+                        <strong>Nhắc nhở tiến độ Sprint</strong>
+                        <span>Áp dụng cho nhắc nhở báo cáo, cập nhật tiến độ công việc định kỳ.</span>
+                    </div>
+                    <button type="button" class="btn btn-light use-template-btn">
+                        Sử dụng
+                    </button>
+                </div>
+
+                <!-- Mẫu 3 -->
+                <div class="template-item"
+                     data-title="Công bố quy trình bảo mật mới và kích hoạt xác thực 2 lớp (2FA)"
+                     data-content="Bắt đầu từ tuần tới, tất cả tài khoản truy cập cổng quản trị dự án bắt buộc phải bật mã xác thực OTP qua Google Authenticator hoặc Microsoft Authenticator."
+                     data-priority="important"
+                     data-audience="all">
+                    <div class="template-info">
+                        <strong>Bảo mật &amp; Quy định tuân thủ</strong>
+                        <span>Áp dụng cho cập nhật chính sách, quy định an toàn thông tin nội bộ.</span>
+                    </div>
+                    <button type="button" class="btn btn-light use-template-btn">
+                        Sử dụng
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-light" id="btnCancelTemplate">
+                Đóng
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="thong-bao.js"></script>
+
+</body>
+</html>

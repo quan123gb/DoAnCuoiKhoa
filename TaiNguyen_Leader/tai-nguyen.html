@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_dashboard">
+
+    <title>Quản lý tài nguyên - Project Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="tai-nguyen.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+    <aside class="sidebar">
+
+        <div class="sidebar-inner">
+
+            <!-- Brand -->
+            <div class="sidebar-brand">
+
+                <div class="brand-logo">
+                    <span class="material-symbols-outlined">
+                        account_tree
+                    </span>
+                </div>
+
+                <div class="brand-content">
+                    <div class="brand-title">PROJECT MGMT</div>
+                    <div class="brand-subtitle">Hệ thống quản trị</div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar Nav -->
+            <div class="sidebar-nav">
+
+                <!-- Tổng quan -->
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        TỔNG QUAN
+                    </span>
+
+                    <nav class="nav-list">
+
+                        <a href="../TongQuan_Leader/dashboard.html"
+                           class="nav-item"
+                           data-path="tong-quan">
+
+                            <span class="material-symbols-outlined">
+                                dashboard
+                            </span>
+
+                            <span class="nav-text">Tổng quan</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Quản lý -->
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        QUẢN LÝ
+                    </span>
+
+                    <nav class="nav-list">
+
+                        <a href="../NhanVien_Leader/nhan-vien.html"
+                           class="nav-item"
+                           data-path="nhan-vien">
+
+                            <span class="material-symbols-outlined">
+                                badge
+                            </span>
+
+                            <span class="nav-text">Nhân viên</span>
+
+                        </a>
+
+
+                        <a href="#"
+                           class="nav-item"
+                           data-path="du-an">
+
+                            <span class="material-symbols-outlined">
+                                folder
+                            </span>
+
+                            <span class="nav-text">Dự án</span>
+
+                        </a>
+
+
+                        <a href="../NhiemVu_Leader/nhiem-vu.html"
+                           class="nav-item"
+                           data-path="nhiem-vu">
+
+                            <span class="material-symbols-outlined">
+                                assignment
+                            </span>
+
+                            <span class="nav-text">Nhiệm vụ</span>
+
+                        </a>
+
+
+                        <a href="../TaiNguyen_Leader/tai-nguyen.html"
+                           class="nav-item active"
+                           aria-current="page"
+                           data-path="tai-nguyen">
+
+                            <span class="material-symbols-outlined">
+                                category
+                            </span>
+
+                            <span class="nav-text">Tài nguyên</span>
+
+                        </a>
+
+
+                        <a href="../ThanhVien_Leader/thanh-vien.html"
+                           class="nav-item"
+                           data-path="thanh-vien">
+
+                            <span class="material-symbols-outlined">
+                                group
+                            </span>
+
+                            <span class="nav-text">Thành viên</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Theo dõi -->
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        THEO DÕI
+                    </span>
+
+                    <nav class="nav-list">
+
+                        <a href="../TienDo_Leader/tien-do.html"
+                           class="nav-item"
+                           data-path="tien-do-du-an">
+
+                            <span class="material-symbols-outlined">
+                                insights
+                            </span>
+
+                            <span class="nav-text">Tiến độ dự án</span>
+
+                        </a>
+
+
+                        <a href="../KhungThoiGian_Leader/khung-thoi-gian.html"
+                           class="nav-item"
+                           data-path="khung-thoi-gian">
+
+                            <span class="material-symbols-outlined">
+                                calendar_today
+                            </span>
+
+                            <span class="nav-text">Khung thời gian</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Hệ thống -->
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        HỆ THỐNG
+                    </span>
+
+                    <nav class="nav-list">
+
+                        <a href="../ThongBao_Leader/thong-bao.html"
+                           class="nav-item"
+                           data-path="thong-bao">
+
+                            <span class="material-symbols-outlined">
+                                notifications
+                            </span>
+
+                            <span class="nav-text">Thông báo</span>
+
+                        </a>
+
+
+                        <a href="../HoTro_Leader/ho-tro.html"
+                           class="nav-item"
+                           data-path="ho-tro">
+
+                            <span class="material-symbols-outlined">
+                                help
+                            </span>
+
+                            <span class="nav-text">Hỗ trợ</span>
+
+                        </a>
+
+
+                        <a href="../BaoMat_Leader/bao-mat.html"
+                           class="nav-item"
+                           data-path="bao-mat">
+
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+
+                            <span class="nav-text">Bảo mật</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- Tài khoản -->
+                <div class="nav-section">
+
+                    <span class="nav-section-title">
+                        TÀI KHOẢN
+                    </span>
+
+                    <nav class="nav-list">
+
+                     
+
+
+                        <a href="../DangXuat_Leader/dang-xuat.html"
+                           class="nav-item"
+                           data-path="dang-xuat">
+
+                            <span class="material-symbols-outlined">
+                                logout
+                            </span>
+
+                            <span class="nav-text">Đăng xuất</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+            <!-- User -->
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-box">
+
+                    <div class="avatar avatar-blue">
+                        VA
+                    </div>
+
+                    <div class="sidebar-user-info">
+
+                        <span class="sidebar-user-name">
+                            Nguyễn Văn An
+                        </span>
+
+                        <span class="sidebar-user-role">
+                            Trưởng dự án / Leader
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN WRAPPER
+    ========================================================== -->
+    <div class="page-wrapper">
+
+        <!-- =====================================================
+             TOP HEADER
+        ====================================================== -->
+        <header class="top-header">
+
+            <div class="header-left">
+
+                <div class="mobile-brand">
+                    <div class="brand-logo">
+                        <span class="material-symbols-outlined">
+                            account_tree
+                        </span>
+                    </div>
+                </div>
+
+                <div class="global-search">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="text"
+                        placeholder="Tìm kiếm dự án, công việc, thành viên...">
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button
+                    class="header-icon-button notification-button"
+                    type="button"
+                    title="Thông báo">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="header-user">
+
+                    <div class="avatar avatar-primary">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <span class="header-user-name">
+                            Nguyễn Văn An
+                        </span>
+
+                        <span class="header-user-role">
+                            Quản trị hệ thống
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN
+        ====================================================== -->
+        <main class="main-content">
+
+            <div class="content-container">
+
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb">
+
+                    <a href="#" class="breadcrumb-link">
+
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+
+                        <span>Trang chủ</span>
+
+                    </a>
+
+                    <span class="material-symbols-outlined breadcrumb-arrow">
+                        chevron_right
+                    </span>
+
+                    <span class="breadcrumb-muted">
+                        Quản lý
+                    </span>
+
+                    <span class="material-symbols-outlined breadcrumb-arrow">
+                        chevron_right
+                    </span>
+
+                    <span class="breadcrumb-current">
+                        Tài nguyên
+                    </span>
+
+                </nav>
+
+
+                <!-- =================================================
+                     PAGE HEADER
+                ================================================== -->
+                <section class="page-header">
+
+                    <div class="page-header-info">
+
+                        <div class="page-title-row">
+
+                            <h1>
+                                Quản lý tài nguyên
+                            </h1>
+
+                            <span class="page-code">
+                                LD-ADM04
+                            </span>
+
+                            <span class="scope-badge">
+
+                                <span class="material-symbols-outlined">
+                                    shield_person
+                                </span>
+
+                                Leader Scope
+
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Quản lý tập trung tài liệu, tệp đính kèm dự án,
+                            dung lượng lưu trữ đám mây và phân quyền tệp dữ liệu
+                            cấp doanh nghiệp.
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="openFolderModal">
+
+                            <span class="material-symbols-outlined">
+                                create_new_folder
+                            </span>
+
+                            <span>Tạo thư mục mới</span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="uploadButton">
+
+                            <span class="material-symbols-outlined">
+                                upload
+                            </span>
+
+                            <span>+ Tải lên tài liệu</span>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     KPI STORAGE CARDS
+                ================================================== -->
+                <section class="kpi-grid">
+
+                    <!-- Card 1 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-card-top">
+
+                            <span class="kpi-label">
+                                Tổng dung lượng
+                            </span>
+
+                            <div class="kpi-icon icon-blue">
+
+                                <span class="material-symbols-outlined">
+                                    cloud
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="kpi-number-row">
+
+                                <span class="kpi-number">
+                                    64.8
+                                </span>
+
+                                <span class="kpi-unit">
+                                    / 100 GB
+                                </span>
+
+                                <span class="kpi-percent">
+                                    64.8%
+                                </span>
+
+                            </div>
+
+
+                            <div class="progress-track">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:64.8%;">
+                                </div>
+
+                            </div>
+
+
+                            <p class="kpi-description">
+
+                                <span class="material-symbols-outlined">
+                                    trending_up
+                                </span>
+
+                                <span class="strong-text">
+                                    +5.2 GB
+                                </span>
+
+                                tuần này
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-card-top">
+
+                            <span class="kpi-label">
+                                Tổng số tài liệu
+                            </span>
+
+                            <div class="kpi-icon icon-teal">
+
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="kpi-number-row">
+
+                                <span class="kpi-number">
+                                    1,248
+                                </span>
+
+                                <span class="kpi-unit">
+                                    tệp tin
+                                </span>
+
+                            </div>
+
+
+                            <p class="kpi-description">
+                                Tài liệu dự án, hợp đồng, thiết kế
+                            </p>
+
+
+                            <div class="indexed-status">
+
+                                <span class="status-dot teal"></span>
+
+                                <span>
+                                    Đã lập chỉ mục 100% tìm kiếm
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-card-top">
+
+                            <span class="kpi-label">
+                                Đa phương tiện & Thiết kế
+                            </span>
+
+                            <div class="kpi-icon icon-purple">
+
+                                <span class="material-symbols-outlined">
+                                    palette
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="kpi-number-row">
+
+                                <span class="kpi-number">
+                                    412
+                                </span>
+
+                                <span class="kpi-unit">
+                                    tệp
+                                </span>
+
+                            </div>
+
+
+                            <p class="kpi-description">
+                                Figma, PNG, PDF bản vẽ kỹ thuật
+                            </p>
+
+
+                            <div class="kpi-bottom-row">
+
+                                <span>
+                                    Chiếm 38.4 GB
+                                </span>
+
+                                <span class="text-primary">
+                                    Chi tiết →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-card-top">
+
+                            <span class="kpi-label">
+                                Cần dọn dẹp / Sắp hết hạn
+                            </span>
+
+                            <div class="kpi-icon icon-error">
+
+                                <span class="material-symbols-outlined">
+                                    auto_delete
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="kpi-number-row">
+
+                                <span class="kpi-number danger-number">
+                                    14
+                                </span>
+
+                                <span class="kpi-unit">
+                                    tệp lưu trữ
+                                </span>
+
+                            </div>
+
+
+                            <p class="kpi-description">
+                                Bản nháp cũ hơn 90 ngày
+                            </p>
+
+
+                            <div class="kpi-bottom-row">
+
+                                <span class="text-danger">
+                                    Ước tính giải phóng 3.2 GB
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="link-button">
+                                    Dọn dẹp
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     RECENT FILES
+                ================================================== -->
+                <section class="recent-section">
+
+                    <div class="section-header">
+
+                        <div class="section-title">
+
+                            <span class="material-symbols-outlined">
+                                schedule
+                            </span>
+
+                            <h2>
+                                Tài liệu mở gần đây
+                            </h2>
+
+                        </div>
+
+
+                        <a href="#" class="section-link">
+
+                            <span>
+                                Xem toàn bộ lịch sử
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="recent-grid">
+
+                        <!-- Recent 1 -->
+                        <div class="recent-card">
+
+                            <div class="recent-file-main">
+
+                                <div class="file-icon large pdf-icon">
+                                    <span class="material-symbols-outlined">
+                                        picture_as_pdf
+                                    </span>
+                                </div>
+
+                                <div class="file-info">
+
+                                    <span class="project-tag">
+                                        PRJ-INFRA-05
+                                    </span>
+
+                                    <h3 title="Kien_truc_he_thong_v2.pdf">
+                                        Kien_truc_he_thong_v2.pdf
+                                    </h3>
+
+                                    <p>
+                                        PDF • 4.8 MB
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recent-card-footer">
+
+                                <div class="file-owner">
+
+                                    <div class="avatar small avatar-light-blue">
+                                        LC
+                                    </div>
+
+                                    <span>
+                                        Lê Minh Cường
+                                    </span>
+
+                                </div>
+
+                                <span>
+                                    45 phút trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Recent 2 -->
+                        <div class="recent-card">
+
+                            <div class="recent-file-main">
+
+                                <div class="file-icon large figma-icon">
+                                    <span class="material-symbols-outlined">
+                                        draw
+                                    </span>
+                                </div>
+
+                                <div class="file-info">
+
+                                    <span class="project-tag">
+                                        PRJ-ECOMM-01
+                                    </span>
+
+                                    <h3 title="Design_System_Figma_Export.fig">
+                                        Design_System_Figma_Export.fig
+                                    </h3>
+
+                                    <p>
+                                        Figma • 28.5 MB
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recent-card-footer">
+
+                                <div class="file-owner">
+
+                                    <div class="avatar small avatar-light-teal">
+                                        TB
+                                    </div>
+
+                                    <span>
+                                        Trần Thị Bình
+                                    </span>
+
+                                </div>
+
+                                <span>
+                                    2 giờ trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Recent 3 -->
+                        <div class="recent-card">
+
+                            <div class="recent-file-main">
+
+                                <div class="file-icon large word-icon">
+                                    <span class="material-symbols-outlined">
+                                        article
+                                    </span>
+                                </div>
+
+                                <div class="file-info">
+
+                                    <span class="project-tag">
+                                        PRJ-LIB-03
+                                    </span>
+
+                                    <h3 title="Hop_dong_nghiem_thu_Q1.docx">
+                                        Hop_dong_nghiem_thu_Q1.docx
+                                    </h3>
+
+                                    <p>
+                                        Word • 1.2 MB
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recent-card-footer">
+
+                                <div class="file-owner">
+
+                                    <div class="avatar small avatar-primary">
+                                        VA
+                                    </div>
+
+                                    <span>
+                                        Nguyễn Văn An
+                                    </span>
+
+                                </div>
+
+                                <span>
+                                    Hôm qua
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Recent 4 -->
+                        <div class="recent-card">
+
+                            <div class="recent-file-main">
+
+                                <div class="file-icon large excel-icon">
+                                    <span class="material-symbols-outlined">
+                                        table_chart
+                                    </span>
+                                </div>
+
+                                <div class="file-info">
+
+                                    <span class="project-tag">
+                                        PRJ-HRM-02
+                                    </span>
+
+                                    <h3 title="Bao_cao_hieu_nang_API.xlsx">
+                                        Bao_cao_hieu_nang_API.xlsx
+                                    </h3>
+
+                                    <p>
+                                        Excel • 3.4 MB
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="recent-card-footer">
+
+                                <div class="file-owner">
+
+                                    <div class="avatar small avatar-light-purple">
+                                        HN
+                                    </div>
+
+                                    <span>
+                                        Phạm Hoàng Nam
+                                    </span>
+
+                                </div>
+
+                                <span>
+                                    3 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     SEARCH / FILTERS
+                ================================================== -->
+                <section class="filter-section">
+
+                    <div class="filter-layout">
+
+                        <!-- Search -->
+                        <div class="file-search">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+
+                            <input
+                                type="text"
+                                id="fileSearchInput"
+                                placeholder="Tìm kiếm theo tên tài liệu, đuôi tệp, người tải lên...">
+
+                        </div>
+
+
+                        <!-- Filters -->
+                        <div class="filters-group">
+
+                            <!-- Project -->
+                            <div class="select-wrapper">
+
+                                <select id="projectFilter">
+
+                                    <option value="">
+                                        Tất cả dự án
+                                    </option>
+
+                                    <option value="PRJ-ECOMM-01">
+                                        PRJ-ECOMM-01 (Sàn TMĐT)
+                                    </option>
+
+                                    <option value="PRJ-HRM-02">
+                                        PRJ-HRM-02 (Cổng Nhân sự)
+                                    </option>
+
+                                    <option value="PRJ-LIB-03">
+                                        PRJ-LIB-03 (Thư viện số)
+                                    </option>
+
+                                    <option value="PRJ-INFRA-05">
+                                        PRJ-INFRA-05 (Hạ tầng Cloud)
+                                    </option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+
+                            </div>
+
+
+                            <!-- File Type -->
+                            <div class="select-wrapper">
+
+                                <select id="fileTypeFilter">
+
+                                    <option value="">
+                                        Loại tệp
+                                    </option>
+
+                                    <option value="pdf">
+                                        Tài liệu PDF
+                                    </option>
+
+                                    <option value="doc">
+                                        Tài liệu văn bản (Word)
+                                    </option>
+
+                                    <option value="sheet">
+                                        Bảng tính (Excel/Sheets)
+                                    </option>
+
+                                    <option value="design">
+                                        Hình ảnh / Thiết kế
+                                    </option>
+
+                                    <option value="archive">
+                                        Tệp nén ZIP / RAR
+                                    </option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+
+                            </div>
+
+
+                            <!-- Size -->
+                            <div class="select-wrapper">
+
+                                <select id="sizeFilter">
+
+                                    <option value="">
+                                        Dung lượng
+                                    </option>
+
+                                    <option value="small">
+                                        &lt; 5 MB
+                                    </option>
+
+                                    <option value="medium">
+                                        5 MB - 50 MB
+                                    </option>
+
+                                    <option value="large">
+                                        &gt; 50 MB
+                                    </option>
+
+                                </select>
+
+                                <span class="material-symbols-outlined">
+                                    expand_more
+                                </span>
+
+                            </div>
+
+
+                            <!-- Refresh -->
+                            <button
+                                type="button"
+                                class="filter-icon-button"
+                                id="refreshButton"
+                                title="Làm mới dữ liệu">
+
+                                <span class="material-symbols-outlined">
+                                    refresh
+                                </span>
+
+                            </button>
+
+
+                            <!-- View mode -->
+                            <div class="view-switcher">
+
+                                <button
+                                    type="button"
+                                    class="view-button active"
+                                    id="listViewButton"
+                                    title="Xem dạng bảng">
+
+                                    <span class="material-symbols-outlined">
+                                        view_list
+                                    </span>
+
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="view-button"
+                                    id="gridViewButton"
+                                    title="Xem dạng lưới">
+
+                                    <span class="material-symbols-outlined">
+                                        grid_view
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     DATA TABLE
+                ================================================== -->
+                <section class="table-section">
+
+                    <div class="table-scroll">
+
+                        <table class="resource-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            id="checkAll">
+
+                                    </th>
+
+                                    <th>
+                                        Tên tài liệu
+                                    </th>
+
+                                    <th>
+                                        Kích thước
+                                    </th>
+
+                                    <th>
+                                        Dự án trực thuộc
+                                    </th>
+
+                                    <th>
+                                        Người tải lên
+                                    </th>
+
+                                    <th>
+                                        Ngày cập nhật
+                                    </th>
+
+                                    <th>
+                                        Quyền truy cập
+                                    </th>
+
+                                    <th class="action-column">
+                                        Thao tác
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="resourceTableBody">
+
+                                <!-- Row 1 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon pdf-icon">
+                                                <span class="material-symbols-outlined">
+                                                    picture_as_pdf
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Kien_truc_he_thong_v2.pdf
+                                                </p>
+
+                                                <span>
+                                                    Tài liệu phân tích kiến trúc Microservices
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        4.8 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-INFRA-05
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-light-blue">
+                                                LC
+                                            </div>
+
+                                            <span>
+                                                Lê Minh Cường
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        24/10/2024 14:15
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge public">
+
+                                            <span class="material-symbols-outlined">
+                                                groups
+                                            </span>
+
+                                            Công khai nội bộ
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                                class="row-action preview-button">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                                class="row-action">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Chia sẻ"
+                                                class="row-action">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Xóa"
+                                                class="row-action delete-button">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 2 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon figma-icon">
+                                                <span class="material-symbols-outlined">
+                                                    draw
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Design_System_Figma_Export.fig
+                                                </p>
+
+                                                <span>
+                                                    Bộ linh kiện UI/UX chuẩn hóa sprint 14
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        28.5 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-ECOMM-01
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-light-teal">
+                                                TB
+                                            </div>
+
+                                            <span>
+                                                Trần Thị Bình
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        24/10/2024 11:30
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge restricted">
+
+                                            <span class="material-symbols-outlined">
+                                                lock
+                                            </span>
+
+                                            Chỉ Leader & PM
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button
+                                                type="button"
+                                                title="Xem trước"
+                                                class="row-action">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Tải xuống"
+                                                class="row-action">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Chia sẻ"
+                                                class="row-action">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                title="Xóa"
+                                                class="row-action delete-button">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 3 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon word-icon">
+                                                <span class="material-symbols-outlined">
+                                                    article
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Hop_dong_nghiem_thu_Q1.docx
+                                                </p>
+
+                                                <span>
+                                                    Biên bản nghiệm thu kỹ thuật quý 1
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        1.2 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-LIB-03
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-primary">
+                                                VA
+                                            </div>
+
+                                            <span>
+                                                Nguyễn Văn An
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        23/10/2024 16:40
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge secure">
+
+                                            <span class="material-symbols-outlined">
+                                                verified_user
+                                            </span>
+
+                                            Bảo mật cao
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Xem trước">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Tải xuống">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Chia sẻ">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action delete-button"
+                                                    title="Xóa">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 4 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon excel-icon">
+                                                <span class="material-symbols-outlined">
+                                                    table_chart
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Bao_cao_hieu_nang_API.xlsx
+                                                </p>
+
+                                                <span>
+                                                    Đo lường độ trễ response time hệ thống
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        3.4 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-HRM-02
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-light-purple">
+                                                HN
+                                            </div>
+
+                                            <span>
+                                                Phạm Hoàng Nam
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        21/10/2024 09:20
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge public">
+
+                                            <span class="material-symbols-outlined">
+                                                groups
+                                            </span>
+
+                                            Công khai nội bộ
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Xem trước">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Tải xuống">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Chia sẻ">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action delete-button"
+                                                    title="Xóa">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 5 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon archive-icon">
+                                                <span class="material-symbols-outlined">
+                                                    folder_zip
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Database_Dump_Backup_Oct2024.zip
+                                                </p>
+
+                                                <span>
+                                                    Bản sao lưu cơ sở dữ liệu PostgreSQL
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        142.0 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-INFRA-05
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-light-blue">
+                                                LC
+                                            </div>
+
+                                            <span>
+                                                Lê Minh Cường
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        19/10/2024 23:05
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge secure">
+
+                                            <span class="material-symbols-outlined">
+                                                verified_user
+                                            </span>
+
+                                            Bảo mật cao
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Xem trước">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Tải xuống">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Chia sẻ">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action delete-button"
+                                                    title="Xóa">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 6 -->
+                                <tr>
+
+                                    <td class="check-column">
+
+                                        <input
+                                            type="checkbox"
+                                            class="row-checkbox">
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-file">
+
+                                            <div class="file-icon image-icon">
+                                                <span class="material-symbols-outlined">
+                                                    image
+                                                </span>
+                                            </div>
+
+                                            <div class="table-file-info">
+
+                                                <p>
+                                                    Banner_Campaign_BlackFriday.png
+                                                </p>
+
+                                                <span>
+                                                    Ấn phẩm đồ họa phân giải cao cho chiến dịch
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        12.8 MB
+                                    </td>
+
+                                    <td>
+                                        <span class="project-badge">
+                                            PRJ-ECOMM-01
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-owner">
+
+                                            <div class="avatar tiny avatar-light-teal">
+                                                TB
+                                            </div>
+
+                                            <span>
+                                                Trần Thị Bình
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        18/10/2024 10:11
+                                    </td>
+
+                                    <td>
+
+                                        <span class="permission-badge restricted">
+
+                                            <span class="material-symbols-outlined">
+                                                lock
+                                            </span>
+
+                                            Chỉ Leader & PM
+
+                                        </span>
+
+                                    </td>
+
+                                    <td class="action-column">
+
+                                        <div class="row-actions">
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Xem trước">
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Tải xuống">
+
+                                                <span class="material-symbols-outlined">
+                                                    download
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action"
+                                                    title="Chia sẻ">
+
+                                                <span class="material-symbols-outlined">
+                                                    share
+                                                </span>
+
+                                            </button>
+
+                                            <button type="button"
+                                                    class="row-action delete-button"
+                                                    title="Xóa">
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="table-pagination">
+
+                        <span class="pagination-info">
+                            Hiển thị
+                            <strong>1</strong>
+                            đến
+                            <strong>6</strong>
+                            trong tổng số
+                            <strong>1,248</strong>
+                            tài liệu
+                        </span>
+
+
+                        <div class="pagination">
+
+                            <button
+                                type="button"
+                                class="pagination-button disabled"
+                                disabled>
+
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button active">
+                                1
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button">
+                                2
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button">
+                                3
+                            </button>
+
+
+                            <span class="pagination-dots">
+                                ...
+                            </span>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button">
+                                208
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="pagination-button">
+
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     REPOSITORY SUMMARY
+                ================================================== -->
+                <section class="summary-grid">
+
+                    <!-- Storage -->
+                    <div class="summary-card">
+
+                        <h3>
+                            Phân bố lưu trữ theo định dạng
+                        </h3>
+
+
+                        <div class="storage-chart-row">
+
+                            <div class="donut-chart">
+
+                                <svg
+                                    viewBox="0 0 36 36"
+                                    class="donut-svg">
+
+                                    <circle
+                                        cx="18"
+                                        cy="18"
+                                        r="15.915"
+                                        fill="none"
+                                        stroke="#dce9ff"
+                                        stroke-width="3">
+                                    </circle>
+
+
+                                    <circle
+                                        cx="18"
+                                        cy="18"
+                                        r="15.915"
+                                        fill="none"
+                                        stroke="#2563eb"
+                                        stroke-dasharray="38.4 61.6"
+                                        stroke-dashoffset="0"
+                                        stroke-width="3.5">
+                                    </circle>
+
+
+                                    <circle
+                                        cx="18"
+                                        cy="18"
+                                        r="15.915"
+                                        fill="none"
+                                        stroke="#0074a6"
+                                        stroke-dasharray="26.4 73.6"
+                                        stroke-dashoffset="-38.4"
+                                        stroke-width="3.5">
+                                    </circle>
+
+
+                                    <circle
+                                        cx="18"
+                                        cy="18"
+                                        r="15.915"
+                                        fill="none"
+                                        stroke="#565e74"
+                                        stroke-dasharray="20 80"
+                                        stroke-dashoffset="-64.8"
+                                        stroke-width="3.5">
+                                    </circle>
+
+
+                                    <circle
+                                        cx="18"
+                                        cy="18"
+                                        r="15.915"
+                                        fill="none"
+                                        stroke="#bec6e0"
+                                        stroke-dasharray="15.2 84.8"
+                                        stroke-dashoffset="-84.8"
+                                        stroke-width="3.5">
+                                    </circle>
+
+                                </svg>
+
+                            </div>
+
+
+                            <div class="chart-legend">
+
+                                <div class="legend-row">
+
+                                    <span class="legend-name">
+                                        <span class="legend-dot blue"></span>
+                                        Hình ảnh & Thiết kế
+                                    </span>
+
+                                    <strong>
+                                        38.4 GB
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="legend-row">
+
+                                    <span class="legend-name">
+                                        <span class="legend-dot teal"></span>
+                                        Văn bản & PDF
+                                    </span>
+
+                                    <strong>
+                                        17.1 GB
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="legend-row">
+
+                                    <span class="legend-name">
+                                        <span class="legend-dot gray"></span>
+                                        Tệp sao lưu (Archive)
+                                    </span>
+
+                                    <strong>
+                                        6.3 GB
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="legend-row">
+
+                                    <span class="legend-name">
+                                        <span class="legend-dot light"></span>
+                                        Khác
+                                    </span>
+
+                                    <strong>
+                                        3.0 GB
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="storage-total">
+
+                            <span>
+                                Tổng cộng:
+                                <strong>64.8 GB</strong>
+                            </span>
+
+                            <span class="available-storage">
+                                Khả dụng: 35.2 GB
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Security -->
+                    <div class="summary-card security-card">
+
+                        <div>
+
+                            <div class="summary-title-row">
+
+                                <h3>
+                                    Chính sách bảo mật tệp
+                                </h3>
+
+                                <span class="material-symbols-outlined">
+                                    verified
+                                </span>
+
+                            </div>
+
+
+                            <p class="summary-description">
+                                Tất cả tệp đính kèm đều tuân thủ mã hóa AES-256
+                                đầu cuối theo chuẩn Enterprise Data Governance.
+                            </p>
+
+
+                            <div class="security-list">
+
+                                <div class="security-item">
+
+                                    <span>
+                                        Tự động quét virus & mã độc
+                                    </span>
+
+                                    <strong>
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                        Đang bật
+
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="security-item">
+
+                                    <span>
+                                        Xác thực 2 lớp khi tải dữ liệu nhạy cảm
+                                    </span>
+
+                                    <strong>
+
+                                        <span class="material-symbols-outlined">
+                                            check_circle
+                                        </span>
+
+                                        Đang bật
+
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="security-item">
+
+                                    <span>
+                                        Nhật ký truy vết (Audit log)
+                                    </span>
+
+                                    <strong class="retention">
+                                        Lưu 365 ngày
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="summary-bottom">
+
+                            <a href="#">
+                                Xem cấu hình phân quyền nâng cao
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Help -->
+                    <div class="summary-card help-card">
+
+                        <div>
+
+                            <h3>
+                                Hỗ trợ & Hướng dẫn Leader
+                            </h3>
+
+                            <p class="summary-description">
+                                Các thao tác nhanh dành cho vị trí Trưởng dự án
+                                để tối ưu hóa không gian lưu trữ và luồng tài liệu.
+                            </p>
+
+
+                            <div class="help-list">
+
+                                <a href="#" class="help-item">
+
+                                    <div class="help-icon">
+
+                                        <span class="material-symbols-outlined">
+                                            sync_alt
+                                        </span>
+
+                                    </div>
+
+                                    <div>
+
+                                        <p>
+                                            Đồng bộ Google Drive & OneDrive
+                                        </p>
+
+                                        <span>
+                                            Tích hợp thư mục đám mây doanh nghiệp
+                                        </span>
+
+                                    </div>
+
+                                </a>
+
+
+                                <a href="#" class="help-item">
+
+                                    <div class="help-icon">
+
+                                        <span class="material-symbols-outlined">
+                                            delete_sweep
+                                        </span>
+
+                                    </div>
+
+                                    <div>
+
+                                        <p>
+                                            Thiết lập chính sách tự dọn dẹp
+                                        </p>
+
+                                        <span>
+                                            Tự động xóa tệp rác sau 90 ngày
+                                        </span>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="summary-bottom">
+
+                            <button
+                                type="button"
+                                class="support-button">
+
+                                <span class="material-symbols-outlined">
+                                    support_agent
+                                </span>
+
+                                Liên hệ quản trị viên lưu trữ
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================================
+         MODAL: CREATE FOLDER
+    ========================================================== -->
+    <div
+        class="modal-overlay hidden"
+        id="new-folder-modal">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <div class="modal-title">
+
+                    <span class="material-symbols-outlined">
+                        create_new_folder
+                    </span>
+
+                    <h3>
+                        Tạo thư mục mới
+                    </h3>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="closeFolderModal">
+
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <!-- Folder name -->
+                <div class="form-group">
+
+                    <label>
+                        Tên thư mục
+                        <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="folderName"
+                        placeholder="Nhập tên thư mục (ví dụ: Tài liệu thiết kế sprint 15)">
+
+                </div>
+
+
+                <!-- Project -->
+                <div class="form-group">
+
+                    <label>
+                        Dự án áp dụng
+                        <span class="required">*</span>
+                    </label>
+
+                    <select id="folderProject">
+
+                        <option>
+                            PRJ-ECOMM-01 (Sàn TMĐT)
+                        </option>
+
+                        <option>
+                            PRJ-HRM-02 (Cổng Nhân sự)
+                        </option>
+
+                        <option>
+                            PRJ-LIB-03 (Thư viện số)
+                        </option>
+
+                        <option>
+                            PRJ-INFRA-05 (Hạ tầng Cloud)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Permission -->
+                <div class="form-group">
+
+                    <label>
+                        Quyền truy cập mặc định
+                    </label>
+
+
+                    <div class="radio-group">
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="folder_perm"
+                                checked>
+
+                            <span>
+                                Công khai cho toàn bộ thành viên dự án
+                            </span>
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="folder_perm">
+
+                            <span>
+                                Chỉ Leader & PM (Giới hạn quyền xem)
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-modal-secondary"
+                    id="cancelFolderButton">
+
+                    Hủy bỏ
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn btn-modal-primary"
+                    id="createFolderButton">
+
+                    Tạo thư mục
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         TOAST
+    ========================================================== -->
+    <div
+        class="toast"
+        id="toastNotification">
+
+        <div class="toast-icon">
+
+            <span class="material-symbols-outlined">
+                cloud_done
+            </span>
+
+        </div>
+
+
+        <div class="toast-content">
+
+            <strong>
+                Đồng bộ hoàn tất
+            </strong>
+
+            <span>
+                Tệp 'Kien_truc_he_thong_v2.pdf' đã được đồng bộ an toàn lên Cloud Storage.
+            </span>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="toast-close"
+            id="toastClose">
+
+            <span class="material-symbols-outlined">
+                close
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- JavaScript riêng -->
+    <script src="tai-nguyen.js"></script>
+
+</body>
+</html>

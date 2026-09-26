@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_dashboard">
+
+    <title>Khung thời gian - Hệ Thống Quản Trị Dự Án</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="khung-thoi-gian.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+    <aside class="sidebar">
+
+        <!-- Brand -->
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                PM
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-title">PROJECT MGMT</span>
+                <span class="brand-subtitle">Hệ thống quản trị</span>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="sidebar-nav">
+
+            <!-- Tổng quan -->
+            <nav class="nav-group">
+                <div class="nav-group-title">Tổng quan</div>
+
+                <a href="../TongQuan_Leader/dashboard.html" class="nav-item" data-path="tong-quan">
+                    <span>Tổng quan</span>
+                </a>
+            </nav>
+
+            <!-- Quản lý -->
+            <nav class="nav-group">
+                <div class="nav-group-title">Quản lý</div>
+
+                <a href="../NhanVien_Leader/nhan-vien.html" class="nav-item" data-path="nhan-vien">
+                    <span>Nhân viên</span>
+                    
+                </a>
+
+                <a href="../QuanLy_Leader/du-an.html" class="nav-item" data-path="du-an">
+                    <span>Dự án</span>
+                  
+                </a>
+
+                <a href="../NhiemVu_Leader/nhiem-vu.html" class="nav-item" data-path="nhiem-vu">
+                    <span>Nhiệm vụ</span>
+                    
+                </a>
+
+                <a href="../TaiNguyen_Leader/tai-nguyen.html" class="nav-item" data-path="tai-nguyen">
+                    <span>Tài nguyên</span>
+               
+                </a>
+
+                <a href="../ThanhVien_Leader/thanh-vien.html" class="nav-item" data-path="thanh-vien">
+                    <span>Thành viên</span>
+                </a>
+            </nav>
+
+            <!-- Theo dõi -->
+            <nav class="nav-group">
+                <div class="nav-group-title">Theo dõi</div>
+
+                <a href="../TienDo_Leader/tien-do.html" class="nav-item" data-path="tien-do-du-an">
+                    <span>Tiến độ dự án</span>
+                </a>
+
+                <a
+                    href="../KhungThoiGian_Leader/khung-thoi-gian.html"
+                    class="nav-item active"
+                    aria-current="page"
+                    data-path="khung-thoi-gian"
+                >
+                    <span>Khung thời gian</span>
+                </a>
+            </nav>
+
+            <!-- Hệ thống -->
+            <nav class="nav-group">
+                <div class="nav-group-title">Hệ thống</div>
+
+                <a href="../ThongBao_Leader/thong-bao.html" class="nav-item" data-path="thong-bao">
+                    <span>Thông báo</span>
+              
+                </a>
+
+                <a href="../HoTro_Leader/ho-tro.html" class="nav-item" data-path="ho-tro">
+                    <span>Hỗ trợ</span>
+                 
+                </a>
+
+                <a href="../BaoMat_Leader/bao-mat.html" class="nav-item" data-path="bao-mat">
+                    <span>Bảo mật</span>
+                
+                </a>
+            </nav>
+
+            <!-- Tài khoản -->
+            <nav class="nav-group">
+                <div class="nav-group-title">Tài khoản</div>
+                <a href="../DangXuat_Leader/dang-xuat.html" class="nav-item" data-path="dang-xuat">
+                    <span>Đăng xuất</span>
+                </a>
+            </nav>
+
+        </div>
+
+        <!-- Sidebar user -->
+        <div class="sidebar-user">
+            <div class="sidebar-user-card">
+                <div class="sidebar-avatar">A</div>
+
+                <div class="sidebar-user-info">
+                    <span>Nguyễn Văn An</span>
+                    <small>Trưởng dự án / Leader</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========================================================
+         MAIN WRAPPER
+    ========================================================== -->
+    <div class="main-wrapper">
+
+        <!-- =====================================================
+             TOPBAR
+        ====================================================== -->
+        <header class="topbar">
+
+            <div class="topbar-search">
+                <span class="material-symbols-outlined">search</span>
+
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã tài liệu..."
+                >
+            </div>
+
+            <div class="topbar-actions">
+
+                <button
+                    class="icon-button"
+                    type="button"
+                    title="Trợ giúp"
+                    id="helpButton"
+                >
+                    <span class="material-symbols-outlined">help</span>
+                </button>
+
+                <button
+                    class="icon-button notification-button"
+                    type="button"
+                    title="Thông báo hệ thống"
+                    id="notificationButton"
+                >
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="topbar-divider"></div>
+
+                <button class="profile-button" type="button" id="profileButton">
+
+                    <div class="profile-avatar">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+
+                    <div class="profile-info">
+                        <span>Nguyễn Văn An</span>
+                        <small>Quản trị hệ thống</small>
+                    </div>
+
+                    <span class="material-symbols-outlined profile-arrow">
+                        expand_more
+                    </span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+        <main class="main-content">
+
+            <div class="page-container">
+
+                <!-- =================================================
+                     TOAST
+                ================================================== -->
+                <aside
+                    class="toast"
+                    id="liveToast"
+                    aria-label="Thông báo hệ thống"
+                >
+                    <span class="material-symbols-outlined toast-icon">
+                        check_circle
+                    </span>
+
+                    <div class="toast-content">
+                        <strong>Đồng bộ lịch biểu thành công</strong>
+
+                        <span>
+                            Đã cập nhật khung thời gian mốc
+                            'Module Giỏ hàng' (+4 ngày).
+                        </span>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="toast-close"
+                        id="toastClose"
+                        title="Đóng thông báo"
+                    >
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </aside>
+
+
+                <!-- =================================================
+                     PAGE HEADER
+                ================================================== -->
+                <section class="page-header-section">
+
+                    <!-- Breadcrumb -->
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                        <a href="#" class="breadcrumb-home">
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+                            Trang chủ
+                        </a>
+
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+
+                        <span>Theo dõi</span>
+
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+
+                        <strong>Khung thời gian</strong>
+
+                        <span class="page-code">
+                            LD-ADM10
+                        </span>
+
+                        <span class="role-badge">
+                            Vai trò: Leader
+                        </span>
+
+                    </nav>
+
+
+                    <!-- Title -->
+                    <div class="page-heading">
+
+                        <div class="page-heading-text">
+
+                            <div class="title-row">
+
+                                <h1>
+                                    Quản lý khung thời gian dự án
+                                </h1>
+
+                                <span class="interactive-badge">
+                                    Interactive Gantt
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Hoạch định lộ trình thời gian, theo dõi tiến độ
+                                các mốc trọng yếu (Milestones) và điều phối
+                                tiến trình các giai đoạn phát triển dự án theo
+                                dạng biểu đồ Gantt tương tác đa chiều.
+                            </p>
+
+                        </div>
+
+                        <div class="page-actions">
+
+                            <button
+                                type="button"
+                                class="btn btn-light"
+                                id="exportButton"
+                            >
+                                <span class="material-symbols-outlined">
+                                    download
+                                </span>
+
+                                Xuất lộ trình (PDF/Gantt)
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                id="createMilestoneButton"
+                            >
+                                <span class="material-symbols-outlined">
+                                    calendar_add_on
+                                </span>
+
+                                + Tạo mốc thời gian mới
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     STATS
+                ================================================== -->
+                <section class="stats-grid">
+
+                    <!-- Card 1 -->
+                    <div class="stat-card">
+
+                        <div class="stat-card-top">
+
+                            <span class="stat-label">
+                                Tổng số mốc thời gian
+                            </span>
+
+                            <div class="stat-icon stat-icon-blue">
+                                <span class="material-symbols-outlined">
+                                    flag
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stat-main">
+                            <strong id="statTotalMilestones">36</strong>
+                            <span>mốc</span>
+                        </div>
+
+                        <div class="stat-description">
+                            <span class="material-symbols-outlined">
+                                layers
+                            </span>
+
+                            <span>
+                                Phân bố trên <b>12 dự án</b> đang vận hành
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="stat-card">
+
+                        <div class="stat-card-top">
+
+                            <span class="stat-label">
+                                Mốc đã hoàn thành
+                            </span>
+
+                            <div class="stat-icon stat-icon-green">
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stat-progress-number">
+                            <strong>
+                                <span id="statCompletedMilestones">21</span> <span>/ 36</span>
+                            </strong>
+
+                            <span class="percentage green" id="statCompletedPercent">
+                                58.3%
+                            </span>
+                        </div>
+
+                        <div class="progress-track">
+                            <div
+                                class="progress-fill green-fill"
+                                id="statProgressBar"
+                                style="width:58.3%"
+                            ></div>
+                        </div>
+
+                        <div class="stat-description green-text">
+                            <span class="material-symbols-outlined">
+                                verified
+                            </span>
+
+                            Đạt cam kết tiêu chuẩn chất lượng SLA
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="stat-card">
+
+                        <div class="stat-card-top">
+
+                            <span class="stat-label">
+                                Sắp đến hạn (7 ngày tới)
+                            </span>
+
+                            <div class="stat-icon stat-icon-orange">
+                                <span class="material-symbols-outlined">
+                                    hourglass_top
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stat-progress-number">
+                            <strong>
+                                04 <span>mốc</span>
+                            </strong>
+
+                            <span class="percentage orange">
+                                Cao điểm
+                            </span>
+                        </div>
+
+                        <div class="stat-description orange-text">
+                            <span class="material-symbols-outlined">
+                                priority_high
+                            </span>
+
+                            Có <b>2 mốc</b> cần tổ chức nghiệm thu sprint
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="stat-card">
+
+                        <div class="stat-card-top">
+
+                            <span class="stat-label">
+                                Cảnh báo trễ hạn
+                            </span>
+
+                            <div class="stat-icon stat-icon-red">
+                                <span class="material-symbols-outlined">
+                                    warning
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stat-progress-number">
+                            <strong class="red-number">
+                                02 <span>mốc</span>
+                            </strong>
+
+                            <span class="percentage red">
+                                Rủi ro cao
+                            </span>
+                        </div>
+
+                        <div class="stat-description red-text">
+                            <span class="material-symbols-outlined">
+                                alarm_on
+                            </span>
+
+                            Yêu cầu Leader điều chỉnh lại Timeline
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     TOOLBAR
+                ================================================== -->
+                <section class="toolbar">
+
+                    <div class="toolbar-filters">
+
+                        <!-- Search -->
+                        <div class="filter-search">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+
+                            <input
+                                type="text"
+                                id="timelineSearch"
+                                placeholder="Tìm kiếm theo dự án, mốc, phụ trách..."
+                            >
+
+                        </div>
+
+
+                        <!-- Project -->
+                        <div class="select-wrapper">
+
+                            <select id="projectFilter">
+                                <option value="all" selected>
+                                    Tất cả dự án (12 dự án)
+                                </option>
+
+                                <option value="ecomm">
+                                    PRJ-ECOMM-01 (TMĐT Đa kênh)
+                                </option>
+
+                                <option value="hrm">
+                                    PRJ-HRM-02 (Cổng Quản trị HR)
+                                </option>
+
+                                <option value="edu">
+                                    PRJ-EDU-04 (Học trực tuyến)
+                                </option>
+
+                                <option value="infra">
+                                    PRJ-INFRA-05 (Cloud Infrastructure)
+                                </option>
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+
+                        <!-- Phase -->
+                        <div class="select-wrapper">
+
+                            <select id="phaseFilter">
+
+                                <option value="all" selected>
+                                    Tất cả giai đoạn (Phase)
+                                </option>
+
+                                <option value="init">
+                                    Khởi tạo &amp; Yêu cầu
+                                </option>
+
+                                <option value="design">
+                                    Thiết kế UI/UX &amp; Kiến trúc
+                                </option>
+
+                                <option value="dev">
+                                    Lập trình &amp; Phát triển
+                                </option>
+
+                                <option value="test">
+                                    Kiểm thử UAT &amp; Security
+                                </option>
+
+                                <option value="deploy">
+                                    Bàn giao &amp; Đóng dự án
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+
+                        <!-- Advanced filter -->
+                        <button
+                            type="button"
+                            class="toolbar-button"
+                            id="advancedFilterButton"
+                        >
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+
+                            Bộ lọc nâng cao
+                        </button>
+
+
+                        <!-- Refresh -->
+                        <button
+                            type="button"
+                            class="toolbar-icon-button"
+                            id="refreshButton"
+                            title="Làm mới dữ liệu"
+                        >
+                            <span class="material-symbols-outlined">
+                                refresh
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Timeline controls -->
+                    <div class="timeline-controls">
+
+                        <!-- Scale -->
+                        <div class="scale-tabs">
+
+                            <button type="button" data-scale="day">
+                                Ngày
+                            </button>
+
+                            <button
+                                type="button"
+                                class="active"
+                                data-scale="week"
+                            >
+                                Tuần
+                            </button>
+
+                            <button type="button" data-scale="month">
+                                Tháng
+                            </button>
+
+                            <button type="button" data-scale="quarter">
+                                Quý
+                            </button>
+
+                        </div>
+
+
+                        <!-- Date navigation -->
+                        <div class="date-navigation">
+
+                            <button
+                                type="button"
+                                id="prevMonth"
+                                title="Thời gian trước"
+                            >
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+
+                            <span id="currentMonth">
+                                Tháng 06 / 2025
+                            </span>
+
+                            <button
+                                type="button"
+                                id="nextMonth"
+                                title="Thời gian sau"
+                            >
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="today-button"
+                                id="todayButton"
+                            >
+                                Hôm nay
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     GANTT
+                ================================================== -->
+                <section class="gantt-wrapper">
+
+                    <div class="gantt-container">
+
+                        <!-- LEFT -->
+                        <div class="gantt-left">
+
+                            <!-- Header -->
+                            <div class="gantt-left-header">
+
+                                <span class="work-column">
+                                    Dự án &amp; Mốc công việc
+                                </span>
+
+                                <span class="duration-column">
+                                    Thời lượng
+                                </span>
+
+                                <span class="progress-column">
+                                    Tiến độ
+                                </span>
+
+                                <span class="status-column">
+                                    Trạng thái
+                                </span>
+
+                            </div>
+
+
+                            <div class="gantt-left-body" id="ganttLeftBody">
+
+                                <!-- PROJECT 1 -->
+                                <div class="project-row" data-project="ecomm">
+
+                                    <div class="project-title">
+                                        <span class="material-symbols-outlined">
+                                            folder_open
+                                        </span>
+
+                                        <span>
+                                            PRJ-ECOMM-01: Sàn TMĐT Đa kênh
+                                        </span>
+                                    </div>
+
+                                    <div class="project-meta">
+                                        <span class="project-count">
+                                            3 mốc
+                                        </span>
+
+                                        <div class="avatar avatar-an">
+                                            A
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 1.1 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="ecomm"
+                                    data-task="Thiết kế UI/UX System"
+                                    data-phase="design"
+                                >
+
+                                    <div class="task-name">
+                                        <span class="status-dot green"></span>
+
+                                        <div>
+                                            <strong>
+                                                1.1 Thiết kế UI/UX System
+                                            </strong>
+
+                                            <small>
+                                                01/05 - 25/05/2025
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-duration">
+                                        25 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="green-text">
+                                            100%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:100%"
+                                                class="green-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+                                        <span class="status-badge completed">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+                                            Hoàn thành
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 1.2 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="ecomm"
+                                    data-task="Module Giỏ hàng VNPay"
+                                    data-phase="dev"
+                                >
+
+                                    <div class="task-name">
+                                        <span class="status-dot blue"></span>
+
+                                        <div>
+                                            <strong>
+                                                1.2 Module Giỏ hàng &amp; VNPay
+                                            </strong>
+
+                                            <small>
+                                                26/05 - 20/06/2025
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-duration">
+                                        26 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="blue-text">
+                                            75%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:75%"
+                                                class="blue-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+                                        <span class="status-badge running">
+                                            <span class="material-symbols-outlined">
+                                                sync
+                                            </span>
+                                            Đang chạy
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 1.3 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="ecomm"
+                                    data-task="Stress test UAT"
+                                    data-phase="test"
+                                >
+
+                                    <div class="task-name">
+                                        <span class="status-dot gray"></span>
+
+                                        <div>
+                                            <strong>
+                                                1.3 Stress test 50k CCU &amp; UAT
+                                            </strong>
+
+                                            <small>
+                                                21/06 - 05/07/2025
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-duration">
+                                        15 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong>
+                                            10%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:10%"
+                                                class="gray-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+                                        <span class="status-badge waiting">
+                                            Chờ duyệt
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PROJECT 2 -->
+                                <div class="project-row" data-project="hrm">
+
+                                    <div class="project-title">
+                                        <span class="material-symbols-outlined">
+                                            folder_open
+                                        </span>
+
+                                        <span>
+                                            PRJ-HRM-02: Quản trị Nhân sự &amp; Lương
+                                        </span>
+                                    </div>
+
+                                    <div class="project-meta">
+
+                                        <span class="project-count">
+                                            2 mốc
+                                        </span>
+
+                                        <div class="avatar avatar-binh">
+                                            B
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 2.1 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="hrm"
+                                    data-task="Schema CSDL IAM"
+                                    data-phase="design"
+                                >
+
+                                    <div class="task-name">
+                                        <span class="status-dot green"></span>
+
+                                        <div>
+                                            <strong>
+                                                2.1 Schema CSDL &amp; IAM Security
+                                            </strong>
+
+                                            <small>
+                                                15/05 - 05/06/2025
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-duration">
+                                        22 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="green-text">
+                                            100%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:100%"
+                                                class="green-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+                                        <span class="status-badge completed">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+                                            Hoàn thành
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 2.2 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="hrm"
+                                    data-task="Module Chấm công"
+                                    data-phase="dev"
+                                >
+
+                                    <div class="task-name">
+                                        <span class="status-dot blue"></span>
+
+                                        <div>
+                                            <strong>
+                                                2.2 Module Chấm công tự động
+                                            </strong>
+
+                                            <small>
+                                                06/06 - 28/06/2025
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="task-duration">
+                                        23 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="blue-text">
+                                            45%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:45%"
+                                                class="blue-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+                                        <span class="status-badge running">
+                                            <span class="material-symbols-outlined">
+                                                sync
+                                            </span>
+                                            Đang chạy
+                                        </span>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PROJECT 3 -->
+                                <div class="project-row delayed" data-project="edu">
+
+                                    <div class="project-title">
+                                        <span class="material-symbols-outlined">
+                                            folder_open
+                                        </span>
+
+                                        <span>
+                                            PRJ-EDU-04: Nền tảng Học trực tuyến
+                                        </span>
+                                    </div>
+
+                                    <div class="project-meta">
+
+                                        <span class="project-count danger">
+                                            Trễ hạn
+                                        </span>
+
+                                        <div class="avatar avatar-nam">
+                                            N
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 3.1 -->
+                                <div
+                                    class="gantt-task-row delayed-row"
+                                    data-project="edu"
+                                    data-task="API Thi trắc nghiệm"
+                                    data-phase="dev"
+                                >
+
+                                    <div class="task-name">
+
+                                        <span class="status-dot red pulse"></span>
+
+                                        <div>
+                                            <strong>
+                                                3.1 Tích hợp API Thi trắc nghiệm
+                                            </strong>
+
+                                            <small>
+                                                10/05 - 08/06
+                                                (Quá hạn 7d)
+                                            </small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-duration danger-text">
+                                        30 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="red-text">
+                                            40%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:40%"
+                                                class="red-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+
+                                        <span class="status-badge delayed">
+                                            <span class="material-symbols-outlined">
+                                                error
+                                            </span>
+                                            Trễ hạn
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PROJECT 4 -->
+                                <div class="project-row" data-project="infra">
+
+                                    <div class="project-title">
+                                        <span class="material-symbols-outlined">
+                                            folder_open
+                                        </span>
+
+                                        <span>
+                                            PRJ-INFRA-05: Cloud Infrastructure
+                                        </span>
+                                    </div>
+
+                                    <div class="project-meta">
+
+                                        <span class="project-count success">
+                                            Hoàn thành
+                                        </span>
+
+                                        <div class="avatar avatar-leader">
+                                            L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- 4.1 -->
+                                <div
+                                    class="gantt-task-row"
+                                    data-project="infra"
+                                    data-task="K8s Multi Region"
+                                    data-phase="deploy"
+                                >
+
+                                    <div class="task-name">
+
+                                        <span class="status-dot green"></span>
+
+                                        <div>
+                                            <strong>
+                                                4.1 Cụm K8s Multi-Region Cluster
+                                            </strong>
+
+                                            <small>
+                                                01/05 - 28/05/2025
+                                            </small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-duration">
+                                        28 ngày
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <strong class="green-text">
+                                            100%
+                                        </strong>
+
+                                        <div class="mini-progress">
+                                            <span
+                                                style="width:100%"
+                                                class="green-fill"
+                                            ></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="task-status">
+
+                                        <span class="status-badge completed">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+                                            Hoàn thành
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             RIGHT GANTT (TỰ ĐỘNG THAY ĐỔI QUA JAVASCRIPT)
+                        ================================================== -->
+                        <div class="gantt-right" id="ganttRight">
+                            <!-- Vùng biểu đồ này sẽ được vẽ và cập nhật linh hoạt dựa vào Javascript -->
+                        </div>
+
+                    </div>
+
+
+                    <!-- Legend -->
+                    <div class="gantt-footer">
+
+                        <div class="legend">
+
+                            <strong>CHÚ GIẢI BIỂU ĐỒ:</strong>
+
+                            <span>
+                                <i class="legend-box completed"></i>
+                                Đã hoàn thành
+                            </span>
+
+                            <span>
+                                <i class="legend-box running"></i>
+                                Đang triển khai
+                            </span>
+
+                            <span>
+                                <i class="legend-box delayed"></i>
+                                Trễ hạn / Báo động
+                            </span>
+
+                            <span>
+                                <i class="legend-diamond"></i>
+                                Mốc nghiệm thu quan trọng
+                            </span>
+
+                            <span>
+                                <i class="legend-today"></i>
+                                Vạch mốc Hôm nay
+                            </span>
+
+                        </div>
+
+                        <div class="gantt-info">
+
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+
+                            Thay đổi chế độ Ngày/Tuần/Tháng/Quý để tùy chỉnh tầm nhìn lộ trình
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     BOTTOM PANELS
+                ================================================== -->
+                <section class="bottom-grid">
+
+                    <!-- Critical milestones -->
+                    <div class="critical-panel">
+
+                        <div class="panel-header">
+
+                            <div class="panel-title">
+
+                                <span class="material-symbols-outlined warning-icon">
+                                    crisis_alert
+                                </span>
+
+                                <div>
+
+                                    <h2>
+                                        Mốc trọng yếu cần nghiệm thu
+                                        trong tháng 06/2025
+                                    </h2>
+
+                                    <span>
+                                        Cần Leader kiểm tra chất lượng trước
+                                        khi ký duyệt bàn giao giai đoạn
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="milestone-count">
+                                3 Mốc đến hạn
+                            </span>
+
+                        </div>
+
+
+                        <div class="milestone-list">
+
+                            <!-- Milestone 1 -->
+                            <div class="milestone-card" id="card-milestone-1">
+
+                                <div class="milestone-info">
+
+                                    <div class="milestone-number blue">
+                                        01
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Module Giỏ hàng &amp;
+                                            Cổng thanh toán VNPay
+                                        </h3>
+
+                                        <div class="milestone-meta">
+
+                                            <span>
+                                                Dự án:
+                                                <b>PRJ-ECOMM-01</b>
+                                            </span>
+
+                                            <span>•</span>
+
+                                            <span>
+                                                Hạn chót:
+                                                <b class="blue-text" id="m1-date">
+                                                    20/06/2025
+                                                </b>
+                                            </span>
+
+                                            <span>•</span>
+
+                                            <span class="remaining orange" id="m1-remaining">
+                                                Còn 5 ngày
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="milestone-actions">
+
+                                    <button
+                                        type="button"
+                                        class="small-btn"
+                                        data-action="postpone"
+                                        data-target="1"
+                                    >
+                                        Dời hạn
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="small-btn primary"
+                                        data-action="approve"
+                                        data-target="1"
+                                    >
+                                        <span class="material-symbols-outlined">
+                                            task_alt
+                                        </span>
+                                        Nghiệm thu
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Milestone 2 -->
+                            <div class="milestone-card" id="card-milestone-2">
+
+                                <div class="milestone-info">
+
+                                    <div class="milestone-number orange">
+                                        02
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Tích hợp API Thi trắc nghiệm tự động
+                                        </h3>
+
+                                        <div class="milestone-meta">
+
+                                            <span>
+                                                Dự án:
+                                                <b>PRJ-EDU-04</b>
+                                            </span>
+
+                                            <span>•</span>
+
+                                            <span>
+                                                Đã quá hạn:
+                                                <b class="red-text" id="m2-date">
+                                                    08/06/2025 (-7 ngày)
+                                                </b>
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="milestone-actions">
+
+                                    <button
+                                        type="button"
+                                        class="small-btn danger"
+                                        data-action="reset"
+                                        data-target="2"
+                                    >
+                                        <span class="material-symbols-outlined">
+                                            edit_calendar
+                                        </span>
+
+                                        Tái lập Timeline
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Milestone 3 -->
+                            <div class="milestone-card" id="card-milestone-3">
+
+                                <div class="milestone-info">
+
+                                    <div class="milestone-number blue">
+                                        03
+                                    </div>
+
+                                    <div>
+
+                                        <h3>
+                                            Module Chấm công vân tay
+                                            &amp; Tính lương nhân sự
+                                        </h3>
+
+                                        <div class="milestone-meta">
+
+                                            <span>
+                                                Dự án:
+                                                <b>PRJ-HRM-02</b>
+                                            </span>
+
+                                            <span>•</span>
+
+                                            <span>
+                                                Hạn chót:
+                                                <b id="m3-date">28/06/2025</b>
+                                            </span>
+
+                                            <span>•</span>
+
+                                            <span class="remaining green" id="m3-remaining">
+                                                Còn 13 ngày
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="milestone-actions">
+
+                                    <button
+                                        type="button"
+                                        class="small-btn"
+                                        data-action="detail"
+                                        data-target="3"
+                                    >
+                                        Xem chi tiết
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="panel-footer">
+
+                            <span>
+                                Hiển thị 3 mốc ưu tiên số 1
+                                theo phân quyền Leader
+                            </span>
+
+                            <a href="#" id="viewAllMilestones">
+                                Xem toàn bộ danh sách mốc SLA
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Guide -->
+                    <div class="guide-panel">
+
+                        <div>
+
+                            <div class="guide-header">
+
+                                <div class="guide-icon">
+                                    <span class="material-symbols-outlined">
+                                        lightbulb
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <h2>
+                                        Hướng dẫn thao tác Gantt cho Leader
+                                    </h2>
+
+                                    <span>
+                                        Tối ưu hoá năng suất điều phối lịch trình
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="guide-list">
+
+                                <!-- Guide 1 -->
+                                <div class="guide-item">
+
+                                    <div class="guide-number">
+                                        1
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Chuyển đổi linh hoạt Khung thời gian
+                                        </h4>
+
+                                        <p>
+                                            Ấn các tab Ngày, Tuần, Tháng, Quý để xem tổng quan hoặc chi tiết lộ trình mà không làm gián đoạn vị trí thanh điều hướng.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Guide 2 -->
+                                <div class="guide-item">
+
+                                    <div class="guide-number">
+                                        2
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Tạo liên kết phụ thuộc (Dependency)
+                                        </h4>
+
+                                        <p>
+                                            Nhấp giữ điểm tròn ở đuôi mốc trước và kéo thả vào đầu mốc sau để thiết lập ràng buộc tự động.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Guide 3 -->
+                                <div class="guide-item">
+
+                                    <div class="guide-number">
+                                        3
+                                    </div>
+
+                                    <div>
+                                        <h4>
+                                            Mở Modal chỉnh sửa chi tiết
+                                        </h4>
+
+                                        <p>
+                                            Nhấp đúp chuột lên thanh công việc để đổi nhân sự phụ trách, phân bổ ngân sách chi tiết và kiểm tra danh sách nghiệm thu.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="guide-callout">
+
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    help_outline
+                                </span>
+
+                                <span>
+                                    Cần hỗ trợ tái cấu trúc khung dự án?
+                                </span>
+                            </div>
+
+                            <button
+                                type="button"
+                                id="wikiButton"
+                            >
+                                Mở tài liệu wiki
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================================
+         MODAL POPUPS
+    ========================================================== -->
+
+    <!-- Modal: Tạo mốc thời gian mới -->
+    <div class="modal-backdrop" id="createMilestoneModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>
+                    <span class="material-symbols-outlined">calendar_add_on</span>
+                    Tạo mốc thời gian mới
+                </h3>
+                <button type="button" class="modal-close-btn" data-close-modal="createMilestoneModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <form id="createMilestoneForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Dự án áp dụng</label>
+                        <select class="form-control" id="newMilestoneProject" required>
+                            <option value="ecomm">PRJ-ECOMM-01: Sàn TMĐT Đa kênh</option>
+                            <option value="hrm">PRJ-HRM-02: Quản trị Nhân sự &amp; Lương</option>
+                            <option value="edu">PRJ-EDU-04: Nền tảng Học trực tuyến</option>
+                            <option value="infra">PRJ-INFRA-05: Cloud Infrastructure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên mốc công việc / Giai đoạn</label>
+                        <input type="text" class="form-control" id="newMilestoneTitle" placeholder="VD: Tích hợp Payment Gateway Momo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày bắt đầu &amp; Hạn hoàn thành</label>
+                        <input type="text" class="form-control" id="newMilestoneRange" placeholder="20/06/2025 - 15/07/2025" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Người phụ trách chính (Assignee)</label>
+                        <input type="text" class="form-control" id="newMilestoneAssignee" placeholder="VD: Nguyễn Văn An (Leader)" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-close-modal="createMilestoneModal">Hủy bỏ</button>
+                    <button type="submit" class="btn btn-primary">Tạo mốc công việc</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Dời hạn / Reset timeline -->
+    <div class="modal-backdrop" id="postponeModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>
+                    <span class="material-symbols-outlined">edit_calendar</span>
+                    Điều chỉnh Timeline / Dời hạn
+                </h3>
+                <button type="button" class="modal-close-btn" data-close-modal="postponeModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 12px; color: var(--secondary); font-size: 13px;">
+                    Nhập hạn chót mới cho mốc trọng yếu để đồng bộ lại lịch biểu Gantt.
+                </p>
+                <input type="hidden" id="postponeTargetId">
+                <div class="form-group">
+                    <label>Hạn chót mới</label>
+                    <input type="text" class="form-control" id="postponeNewDate" value="30/06/2025">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-close-modal="postponeModal">Hủy</button>
+                <button type="button" class="btn btn-primary" id="confirmPostponeBtn">Cập nhật hạn mới</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Thông báo hệ thống -->
+    <div class="modal-backdrop" id="notificationModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>
+                    <span class="material-symbols-outlined">notifications</span>
+                    Thông báo mới nhất
+                </h3>
+                <button type="button" class="modal-close-btn" data-close-modal="notificationModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="padding: 10px; background: var(--surface-low); border-radius: 8px;">
+                        <strong>[Cảnh báo] API Thi trắc nghiệm quá hạn 7 ngày</strong>
+                        <p style="font-size: 11px; color: var(--secondary); margin-top: 4px;">10 phút trước - PRJ-EDU-04</p>
+                    </div>
+                    <div style="padding: 10px; background: var(--surface-low); border-radius: 8px;">
+                        <strong>[Nghiệm thu] K8s Cluster đã hoàn thành 100%</strong>
+                        <p style="font-size: 11px; color: var(--secondary); margin-top: 4px;">2 giờ trước - PRJ-INFRA-05</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-close-modal="notificationModal">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Trợ giúp & Wiki -->
+    <div class="modal-backdrop" id="helpModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>
+                    <span class="material-symbols-outlined">menu_book</span>
+                    Tài liệu hướng dẫn &amp; Wiki PM
+                </h3>
+                <button type="button" class="modal-close-btn" data-close-modal="helpModal">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body" style="font-size: 13px; line-height: 1.6;">
+                <p><strong>1. Chuyển đổi khung thời gian:</strong> Chọn chế độ Ngày, Tuần, Tháng hoặc Quý trên Toolbar để thay đổi phạm vi hiển thị của biểu đồ Gantt.</p>
+                <p style="margin-top: 8px;"><strong>2. Điều hướng mốc thời gian:</strong> Sử dụng các nút bấm mũi tên trái/phải hoặc nút "Hôm nay" để di chuyển thời gian xem.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-close-modal="helpModal">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="khung-thoi-gian.js"></script>
+</body>
+</html>

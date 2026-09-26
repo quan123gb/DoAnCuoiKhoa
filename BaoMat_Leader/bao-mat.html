@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quản lý bảo mật hệ thống Project Management">
+    <title>Quản lý bảo mật - Project Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="bao-mat.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+<aside class="sidebar">
+
+    <div class="sidebar-main">
+
+        <!-- Brand -->
+        <div class="brand">
+            <div class="brand-logo">
+                <span class="material-symbols-outlined">shield</span>
+            </div>
+
+            <div class="brand-text">
+                <span class="brand-title">PROJECT MGMT</span>
+                <span class="brand-subtitle">HỆ THỐNG QUẢN TRỊ</span>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+
+            <!-- Tổng quan -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Tổng quan</p>
+
+                <a href="../TongQuan_Leader/dashboard.html" class="nav-link" data-path="tong-quan">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span>Tổng quan</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Quản lý -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Quản lý</p>
+
+                <a href="../NhanVien_Leader/nhan-vien.html" class="nav-link" data-path="nhan-vien">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">badge</span>
+                        <span>Nhân viên</span>
+                    </span>
+
+                    <span class="nav-code">LD-ADM01</span>
+                </a>
+
+                <a href="../DuAn_Leader/du-an.html" class="nav-link" data-path="du-an">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">folder</span>
+                        <span>Dự án</span>
+                    </span>
+
+                </a>
+
+                <a href="../NhiemVu_Leader/nhiem-vu.html" class="nav-link" data-path="nhiem-vu">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">task_alt</span>
+                        <span>Nhiệm vụ</span>
+                    </span>
+
+                </a>
+
+                <a href="../TaiNguyen_Leader/tai-nguyen.html" class="nav-link" data-path="tai-nguyen">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">inventory_2</span>
+                        <span>Tài nguyên</span>
+                    </span>
+                </a>
+
+                <a href="../ThanhVien_Leader/thanh-vien.html" class="nav-link" data-path="thanh-vien">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">group</span>
+                        <span>Thành viên</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Theo dõi -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Theo dõi</p>
+
+                <a href="../TienDoDuAn_Leader/tien-do-du-an.html" class="nav-link" data-path="tien-do-du-an">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <span>Tiến độ dự án</span>
+                    </span>
+
+                </a>
+
+                <a href="../KhungThoiGian_Leader/khung-thoi-gian.html" class="nav-link" data-path="khung-thoi-gian">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <span>Khung thời gian</span>
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- Hệ thống -->
+            <div class="nav-group">
+                <p class="nav-group-title">Hệ thống</p>
+
+                <a href="../ThongBao_Leader/thong-bao.html" class="nav-link" data-path="thong-bao">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span>Thông báo</span>
+                    </span>
+                </a>
+
+                <a href="../HoTro_Leader/ho-tro.html" class="nav-link" data-path="ho-tro">
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">help_outline</span>
+                        <span>Hỗ trợ</span>
+                    </span>
+
+                </a>
+
+                <a
+                    href="bao-mat.html"
+                    class="nav-link active"
+                    data-path="bao-mat"
+                    aria-current="page"
+                >
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">shield</span>
+                        <span>Bảo mật</span>
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- Tài khoản -->
+            <div class="nav-group">
+
+                <p class="nav-group-title">Tài khoản</p>
+
+                <a
+                    href="../DangXuat_Leader/dang-xuat.html"
+                    class="nav-link logout-link"
+                    data-path="dang-xuat"
+                >
+                    <span class="nav-link-left">
+                        <span class="material-symbols-outlined">logout</span>
+                        <span>Đăng xuất</span>
+                    </span>
+                </a>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Sidebar User -->
+    <div class="sidebar-user-wrapper">
+
+        <div class="sidebar-user">
+
+            <div class="sidebar-user-avatar">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+
+            <div class="sidebar-user-info">
+                <span class="sidebar-user-name">Nguyễn Văn An</span>
+                <span class="sidebar-user-role">
+                    Trưởng dự án / Leader
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================================================
+     MAIN AREA
+========================================================= -->
+<div class="page-wrapper">
+
+    <!-- =====================================================
+         TOPBAR
+    ====================================================== -->
+    <header class="topbar">
+
+        <!-- Breadcrumb -->
+        <div class="topbar-breadcrumb">
+
+            <span class="material-symbols-outlined">home</span>
+
+            <span>Hệ thống</span>
+
+            <span class="material-symbols-outlined breadcrumb-arrow">
+                chevron_right
+            </span>
+
+            <span class="breadcrumb-current">
+                Bảng điều khiển
+            </span>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="topbar-search">
+
+            <span class="material-symbols-outlined">
+                search
+            </span>
+
+            <input
+                type="text"
+                id="globalSearch"
+                placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã yêu cầu..."
+            >
+
+        </div>
+
+
+        <!-- Actions -->
+        <div class="topbar-actions">
+
+            <button
+                class="icon-button"
+                type="button"
+                title="Trợ giúp"
+                id="helpButton"
+            >
+                <span class="material-symbols-outlined">
+                    help_outline
+                </span>
+            </button>
+
+            <button
+                class="icon-button notification-button"
+                type="button"
+                title="Thông báo"
+                id="notificationButton"
+            >
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span class="notification-dot"></span>
+            </button>
+
+            <div class="topbar-user">
+
+                <div class="topbar-avatar">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+
+                <div class="topbar-user-info">
+                    <span class="topbar-user-name">
+                        Nguyễn Văn An
+                    </span>
+
+                    <span class="topbar-user-role">
+                        Quản trị hệ thống
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+    <main class="main-content">
+
+        <div class="content-container">
+
+
+            <!-- =================================================
+                 TOAST
+            ================================================== -->
+            <div
+                class="security-toast"
+                id="security-toast"
+                role="alert"
+                aria-live="polite"
+            >
+
+                <div class="toast-icon">
+                    <span
+                        class="material-symbols-outlined"
+                        id="toast-icon"
+                    >
+                        verified_user
+                    </span>
+                </div>
+
+                <div class="toast-content">
+
+                    <div class="toast-title-row">
+
+                        <span
+                            class="toast-title"
+                            id="toast-title"
+                        >
+                            Cập nhật thành công
+                        </span>
+
+                        <span class="toast-dot"></span>
+
+                        <span class="toast-time">
+                            Vừa xong
+                        </span>
+
+                    </div>
+
+                    <p id="toast-message">
+                        Đã áp dụng chính sách bảo mật hệ thống mới
+                        trên toàn bộ phiên làm việc.
+                    </p>
+
+                </div>
+
+                <button
+                    class="toast-close"
+                    type="button"
+                    id="toast-close"
+                    aria-label="Đóng thông báo"
+                >
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 BREADCRUMB + STATUS
+            ================================================== -->
+            <div class="page-meta">
+
+                <nav class="page-breadcrumb">
+
+                    <a href="#" class="breadcrumb-home">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+
+                        Trang chủ
+                    </a>
+
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+
+                    <span>Hệ thống</span>
+
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+
+                    <span class="breadcrumb-highlight">
+                        Bảo mật (LD-ADM07 - Leader Scope)
+                    </span>
+
+                </nav>
+
+
+                <div class="system-status">
+
+                    <div class="realtime-badge">
+                        <span class="realtime-dot"></span>
+
+                        <span>
+                            Hệ thống giám sát: Thời gian thực
+                        </span>
+                    </div>
+
+                    <span class="update-time">
+                        Cập nhật:
+                        <span id="currentTime">
+                            10:48:32 Hôm nay
+                        </span>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PAGE HEADER
+            ================================================== -->
+            <section class="page-header">
+
+                <div class="page-header-text">
+
+                    <div class="page-title-row">
+
+                        <h1>
+                            Quản lý bảo mật
+                        </h1>
+
+                        <span class="page-code">
+                            LD-ADM07
+                        </span>
+
+                        <span class="role-badge">
+                            Vai trò: Leader
+                        </span>
+
+                        <span class="security-level">
+                            <span class="material-symbols-outlined">
+                                shield
+                            </span>
+
+                            Cấp độ bảo mật: Cao (A+)
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Giám sát chính sách truy cập, quản lý xác thực
+                        tài khoản, kiểm soát phiên làm việc thời gian thực
+                        và tra cứu nhật ký an ninh hệ thống.
+                    </p>
+
+                </div>
+
+
+                <!-- Action buttons -->
+                <div class="page-actions">
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        id="exportLogsButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            download
+                        </span>
+
+                        <span>
+                            Xuất nhật ký kiểm toán
+                        </span>
+                    </button>
+
+                    <button
+                        class="btn btn-primary"
+                        type="button"
+                        id="btn-scan"
+                    >
+                        <span
+                            class="material-symbols-outlined"
+                            id="scan-icon"
+                        >
+                            shield_with_heart
+                        </span>
+
+                        <span id="scan-text">
+                            Quét lỗ hổng an ninh
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI CARDS
+            ================================================== -->
+            <section class="kpi-grid">
+
+                <!-- KPI 1 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <span class="kpi-label">
+                            Điểm sức khỏe an ninh
+                        </span>
+
+                        <div class="kpi-icon">
+                            <span class="material-symbols-outlined">
+                                verified
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-value-row">
+
+                        <span class="kpi-value">
+                            98
+                        </span>
+
+                        <span class="kpi-unit">
+                            /100
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-bottom">
+
+                        <div class="kpi-status primary-status">
+                            <span class="status-dot"></span>
+
+                            <span>
+                                Trạng thái: Rất tốt
+                            </span>
+                        </div>
+
+                        <span class="kpi-note">
+                            +2% so với tháng trước
+                        </span>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar primary-progress"
+                            style="width:98%"
+                        ></div>
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 2 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <span class="kpi-label">
+                            Phiên đăng nhập hoạt động
+                        </span>
+
+                        <div class="kpi-icon">
+                            <span class="material-symbols-outlined">
+                                devices
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-value-row">
+
+                        <span class="kpi-value">
+                            42
+                        </span>
+
+                        <span class="kpi-unit">
+                            phiên
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-bottom">
+
+                        <div class="kpi-secondary-info">
+                            <span class="material-symbols-outlined">
+                                laptop_mac
+                            </span>
+
+                            <span>
+                                38 thiết bị độc lập
+                            </span>
+                        </div>
+
+                        <span class="sync-text">
+                            Đồng bộ
+                        </span>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar primary-progress"
+                            style="width:75%"
+                        ></div>
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 3 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <span class="kpi-label">
+                            Cảnh báo bất thường
+                        </span>
+
+                        <div class="kpi-icon danger-icon">
+                            <span class="material-symbols-outlined">
+                                gpp_maybe
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-value-row">
+
+                        <span class="kpi-value danger-text">
+                            01
+                        </span>
+
+                        <span class="danger-badge">
+                            Đã ngăn chặn
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-bottom">
+
+                        <span class="kpi-note truncate">
+                            Đăng nhập IP lạ bị chặn tự động
+                        </span>
+
+                        <button
+                            class="detail-link"
+                            type="button"
+                            id="warningDetailButton"
+                        >
+                            Chi tiết
+                        </button>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar danger-progress"
+                            style="width:15%"
+                        ></div>
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 4 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <span class="kpi-label">
+                            Tỷ lệ kích hoạt 2FA
+                        </span>
+
+                        <div class="kpi-icon">
+                            <span class="material-symbols-outlined">
+                                password
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-value-row">
+
+                        <span class="kpi-value">
+                            95.8%
+                        </span>
+
+                        <span class="kpi-note">
+                            (46/48 NV)
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-bottom">
+
+                        <div class="kpi-status primary-status">
+
+                            <span class="material-symbols-outlined">
+                                check_circle
+                            </span>
+
+                            <span>
+                                2 nhân viên chưa bật
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="text-link"
+                            type="button"
+                            id="remindButton"
+                        >
+                            Gửi nhắc nhở
+                        </button>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar primary-progress"
+                            style="width:95.8%"
+                        ></div>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =================================================
+                 SECURITY PANELS
+            ================================================== -->
+            <div class="security-panels">
+
+
+                <!-- =================================================
+                     KHỐI 01
+                ================================================== -->
+                <section class="security-section">
+
+                    <div class="section-header">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <span class="material-symbols-outlined">
+                                    policy
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <div class="section-title-row">
+
+                                    <span class="block-label">
+                                        KHỐI 01
+                                    </span>
+
+                                    <span class="slash">
+                                        /
+                                    </span>
+
+                                    <h2>
+                                        Bảo mật tài khoản & Chính sách hệ thống
+                                    </h2>
+
+                                </div>
+
+                                <p>
+                                    Thiết lập các tiêu chuẩn an toàn bắt buộc
+                                    áp dụng cho toàn bộ thành viên trong tổ chức
+                                    và dự án.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="last-change">
+
+                            <span class="material-symbols-outlined">
+                                lock_clock
+                            </span>
+
+                            <span>
+                                Thay đổi gần nhất: 3 ngày trước
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Policy list -->
+                    <div class="policy-list">
+
+                        <!-- Policy 1 -->
+                        <div class="policy-item">
+
+                            <div class="policy-content">
+
+                                <div class="policy-icon">
+                                    <span class="material-symbols-outlined">
+                                        pin
+                                    </span>
+                                </div>
+
+                                <div class="policy-info">
+
+                                    <div class="policy-title-row">
+
+                                        <h3>
+                                            Chính sách mật khẩu mạnh
+                                        </h3>
+
+                                        <span class="policy-badge primary-badge">
+                                            Khuyến nghị cao
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Yêu cầu tối thiểu 10 ký tự, gồm chữ hoa,
+                                        chữ thường, số, ký tự đặc biệt
+                                        (@, #, $...). Tự động bắt buộc đổi
+                                        mật khẩu mới sau mỗi 90 ngày.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="policy-control">
+
+                                <span class="enabled-text">
+                                    ĐANG BẬT
+                                </span>
+
+                                <button
+                                    class="switch active"
+                                    type="button"
+                                    role="switch"
+                                    aria-checked="true"
+                                    data-policy="password"
+                                >
+                                    <span></span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Policy 2 -->
+                        <div class="policy-item">
+
+                            <div class="policy-content">
+
+                                <div class="policy-icon">
+                                    <span class="material-symbols-outlined">
+                                        security_update_good
+                                    </span>
+                                </div>
+
+                                <div class="policy-info">
+
+                                    <div class="policy-title-row">
+
+                                        <h3>
+                                            Bắt buộc xác thực hai lớp
+                                            (2FA / OTP)
+                                        </h3>
+
+                                        <span class="policy-badge primary-badge">
+                                            Toàn hệ thống
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Bắt buộc cho cả Leader và tất cả nhân
+                                        viên dự án qua ứng dụng xác thực
+                                        (Google Authenticator,
+                                        Microsoft Authenticator) khi đăng nhập
+                                        trên thiết bị mới.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="policy-control">
+
+                                <span class="enabled-text">
+                                    ĐANG BẬT
+                                </span>
+
+                                <button
+                                    class="switch active"
+                                    type="button"
+                                    role="switch"
+                                    aria-checked="true"
+                                    data-policy="2fa"
+                                >
+                                    <span></span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Policy 3 -->
+                        <div class="policy-item">
+
+                            <div class="policy-content">
+
+                                <div class="policy-icon">
+                                    <span class="material-symbols-outlined">
+                                        timer
+                                    </span>
+                                </div>
+
+                                <div class="policy-info">
+
+                                    <div class="policy-title-row">
+
+                                        <h3>
+                                            Thời gian hết hạn phiên làm việc
+                                            (Session Idle Timeout)
+                                        </h3>
+
+                                        <span class="policy-badge secondary-badge">
+                                            Bảo vệ rảnh rỗi
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Tự động hủy phiên đăng nhập và yêu cầu
+                                        người dùng xác thực lại nếu không phát
+                                        sinh thao tác tương tác chuột hay bàn
+                                        phím.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="policy-control timeout-control">
+
+                                <span>
+                                    Tự đăng xuất sau:
+                                </span>
+
+                                <div class="select-wrapper">
+
+                                    <select id="sessionTimeout">
+
+                                        <option value="30" selected>
+                                            30 phút (Khuyến nghị)
+                                        </option>
+
+                                        <option value="60">
+                                            1 giờ
+                                        </option>
+
+                                        <option value="120">
+                                            2 giờ
+                                        </option>
+
+                                        <option value="240">
+                                            4 giờ
+                                        </option>
+
+                                    </select>
+
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Policy 4 -->
+                        <div class="policy-item">
+
+                            <div class="policy-content">
+
+                                <div class="policy-icon">
+                                    <span class="material-symbols-outlined">
+                                        smart_toy
+                                    </span>
+                                </div>
+
+                                <div class="policy-info">
+
+                                    <div class="policy-title-row">
+
+                                        <h3>
+                                            Giám sát & Chặn đăng nhập bất thường
+                                            tự động
+                                        </h3>
+
+                                        <span class="policy-badge danger-badge">
+                                            Tự động kích hoạt
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Tự động khóa tạm thời tài khoản 15 phút
+                                        khi nhập sai mật khẩu 5 lần liên tiếp;
+                                        đồng thời phong tỏa các địa chỉ IP nước
+                                        ngoài cố gắng dò mật khẩu (Brute Force).
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="policy-control">
+
+                                <span class="enabled-text">
+                                    ĐANG BẬT
+                                </span>
+
+                                <button
+                                    class="switch active"
+                                    type="button"
+                                    role="switch"
+                                    aria-checked="true"
+                                    data-policy="login-monitor"
+                                >
+                                    <span></span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Policy 5 -->
+                        <div class="policy-item">
+
+                            <div class="policy-content">
+
+                                <div class="policy-icon disabled-icon">
+                                    <span class="material-symbols-outlined">
+                                        lan
+                                    </span>
+                                </div>
+
+                                <div class="policy-info">
+
+                                    <div class="policy-title-row">
+
+                                        <h3>
+                                            Giới hạn dải IP nội bộ mạng công ty
+                                            (IP Whitelist)
+                                        </h3>
+
+                                        <span class="policy-badge secondary-badge">
+                                            Tùy chọn nâng cao
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Chỉ cho phép truy cập tài nguyên các dự
+                                        án cấp mật độ cao từ mạng VPN văn phòng
+                                        hoặc địa chỉ IP tĩnh đã được phê duyệt.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="policy-control whitelist-control">
+
+                                <button
+                                    class="config-ip-button"
+                                    type="button"
+                                    id="configIpButton"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        tune
+                                    </span>
+
+                                    <span>
+                                        Cấu hình IP Whitelist
+                                    </span>
+                                </button>
+
+                                <div class="switch-group">
+
+                                    <span class="disabled-text">
+                                        ĐANG TẮT
+                                    </span>
+
+                                    <button
+                                        class="switch"
+                                        type="button"
+                                        role="switch"
+                                        aria-checked="false"
+                                        data-policy="ip-whitelist"
+                                    >
+                                        <span></span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Policy action -->
+                    <div class="policy-action-panel">
+
+                        <div class="policy-info-message">
+
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+
+                            <span>
+                                Mọi chỉnh sửa chính sách sẽ có hiệu lực ngay
+                                lập tức và gửi thông báo an ninh đến toàn bộ
+                                nhóm dự án.
+                            </span>
+
+                        </div>
+
+                        <div class="policy-action-buttons">
+
+                            <button
+                                class="btn btn-secondary small-btn"
+                                type="button"
+                                id="restorePolicyButton"
+                            >
+                                Khôi phục mặc định
+                            </button>
+
+                            <button
+                                class="btn btn-primary small-btn"
+                                type="button"
+                                id="savePolicyButton"
+                            >
+                                <span class="material-symbols-outlined">
+                                    save
+                                </span>
+
+                                <span>
+                                    Lưu thay đổi chính sách
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     KHỐI 02
+                ================================================== -->
+                <section class="security-section">
+
+                    <div class="section-header">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <span class="material-symbols-outlined">
+                                    devices_other
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <div class="section-title-row">
+
+                                    <span class="block-label">
+                                        KHỐI 02
+                                    </span>
+
+                                    <span class="slash">
+                                        /
+                                    </span>
+
+                                    <h2>
+                                        Quản lý phiên đăng nhập thời gian thực
+                                    </h2>
+
+                                </div>
+
+                                <p>
+                                    Kiểm tra các phiên kết nối đang mở, phát hiện
+                                    truy cập lạ và thu hồi quyền truy cập từ xa
+                                    cho nhân viên hoặc phiên cá nhân.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="section-actions">
+
+                            <button
+                                class="btn btn-light small-btn"
+                                type="button"
+                                id="refreshSessionsButton"
+                            >
+                                <span class="material-symbols-outlined">
+                                    refresh
+                                </span>
+
+                                <span>
+                                    Làm mới danh sách
+                                </span>
+                            </button>
+
+                            <button
+                                class="btn btn-danger-light small-btn"
+                                type="button"
+                                id="revokeAllButton"
+                            >
+                                <span class="material-symbols-outlined">
+                                    logout
+                                </span>
+
+                                <span>
+                                    Đăng xuất tất cả phiên khác
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Session table -->
+                    <div class="table-scroll">
+
+                        <table class="security-table session-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Thiết bị & Trình duyệt</th>
+                                    <th>Người dùng</th>
+                                    <th>Địa chỉ IP & Vị trí</th>
+                                    <th>Hoạt động gần nhất</th>
+                                    <th>Trạng thái an toàn</th>
+                                    <th class="text-right">
+                                        Thao tác
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="sessionTableBody">
+
+                                <!-- Session 1 -->
+                                <tr>
+
+                                    <td>
+
+                                        <div class="device-cell">
+
+                                            <div class="device-icon current">
+                                                <span class="material-symbols-outlined">
+                                                    desktop_windows
+                                                </span>
+                                            </div>
+
+                                            <div class="device-info">
+
+                                                <div class="device-name-row">
+
+                                                    <span class="device-name">
+                                                        Chrome trên Windows 11
+                                                    </span>
+
+                                                    <span class="current-badge">
+                                                        Phiên của bạn
+                                                    </span>
+
+                                                </div>
+
+                                                <span class="device-detail">
+                                                    Bản dựng Chrome 129.0.6668.71
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="user-cell">
+
+                                            <div class="user-avatar image-avatar avatar-na">
+                                                NA
+                                            </div>
+
+                                            <div class="user-info">
+
+                                                <span class="user-name">
+                                                    Nguyễn Văn An
+                                                </span>
+
+                                                <span class="user-role primary">
+                                                    Trưởng dự án / Leader
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="ip-cell">
+
+                                            <span class="ip-address">
+                                                118.69.182.45
+                                            </span>
+
+                                            <span class="location">
+                                                <span class="material-symbols-outlined">
+                                                    location_on
+                                                </span>
+                                                Hà Nội, Việt Nam (VNPT)
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="activity-cell">
+
+                                            <span class="online-status">
+                                                <span class="online-ping"></span>
+                                                Đang trực tuyến
+                                            </span>
+
+                                            <span class="activity-detail">
+                                                Bắt đầu lúc 08:15 sáng nay
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge success">
+                                            <span class="material-symbols-outlined">
+                                                verified
+                                            </span>
+
+                                            Hợp lệ
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="unavailable">
+                                            Không khả dụng
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Session 2 -->
+                                <tr>
+
+                                    <td>
+
+                                        <div class="device-cell">
+
+                                            <div class="device-icon">
+                                                <span class="material-symbols-outlined">
+                                                    laptop_mac
+                                                </span>
+                                            </div>
+
+                                            <div class="device-info">
+
+                                                <span class="device-name">
+                                                    Safari trên macOS Sonoma
+                                                </span>
+
+                                                <span class="device-detail">
+                                                    MacBook Pro 14" (M3 Pro)
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="user-cell">
+
+                                            <div class="user-avatar avatar-tb">
+                                                TB
+                                            </div>
+
+                                            <div class="user-info">
+
+                                                <span class="user-name">
+                                                    Trần Thị Bình
+                                                </span>
+
+                                                <span class="user-role">
+                                                    Kỹ sư UI/UX • Staff
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="ip-cell">
+
+                                            <span class="ip-address">
+                                                14.161.22.89
+                                            </span>
+
+                                            <span class="location">
+                                                <span class="material-symbols-outlined">
+                                                    location_on
+                                                </span>
+                                                TP. Hồ Chí Minh, VN (FPT)
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="activity-cell">
+
+                                            <span>
+                                                4 phút trước
+                                            </span>
+
+                                            <span class="activity-detail">
+                                                Đăng nhập: 09:30
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge success">
+                                            <span class="material-symbols-outlined">
+                                                check_circle
+                                            </span>
+
+                                            Đang hoạt động
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="session-revoke-button"
+                                            type="button"
+                                            data-session="Trần Thị Bình"
+                                        >
+                                            <span class="material-symbols-outlined">
+                                                logout
+                                            </span>
+
+                                            <span>
+                                                Thu hồi
+                                            </span>
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Session 3 -->
+                                <tr>
+
+                                    <td>
+
+                                        <div class="device-cell">
+
+                                            <div class="device-icon">
+                                                <span class="material-symbols-outlined">
+                                                    phone_iphone
+                                                </span>
+                                            </div>
+
+                                            <div class="device-info">
+
+                                                <span class="device-name">
+                                                    Chrome Mobile trên iPhone 15 Pro
+                                                </span>
+
+                                                <span class="device-detail">
+                                                    iOS 17.5.1 qua Viettel 5G
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="user-cell">
+
+                                            <div class="user-avatar avatar-lc">
+                                                LC
+                                            </div>
+
+                                            <div class="user-info">
+
+                                                <span class="user-name">
+                                                    Lê Minh Cường
+                                                </span>
+
+                                                <span class="user-role">
+                                                    Backend Lead • Staff
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="ip-cell">
+
+                                            <span class="ip-address">
+                                                171.244.10.12
+                                            </span>
+
+                                            <span class="location">
+                                                <span class="material-symbols-outlined">
+                                                    location_on
+                                                </span>
+                                                Đà Nẵng, Việt Nam (Viettel)
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="activity-cell">
+
+                                            <span>
+                                                18 phút trước
+                                            </span>
+
+                                            <span class="activity-detail">
+                                                Đăng nhập: 07:45
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge success">
+                                            <span class="material-symbols-outlined">
+                                                check_circle
+                                            </span>
+
+                                            Đang hoạt động
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="session-revoke-button"
+                                            type="button"
+                                            data-session="Lê Minh Cường"
+                                        >
+                                            <span class="material-symbols-outlined">
+                                                logout
+                                            </span>
+
+                                            <span>
+                                                Thu hồi
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Session 4 -->
+                                <tr class="suspicious-row">
+
+                                    <td>
+
+                                        <div class="device-cell">
+
+                                            <div class="device-icon danger">
+                                                <span class="material-symbols-outlined">
+                                                    warning
+                                                </span>
+                                            </div>
+
+                                            <div class="device-info">
+
+                                                <div class="device-name-row">
+
+                                                    <span class="device-name danger-text">
+                                                        Trình duyệt không xác định
+                                                    </span>
+
+                                                    <span class="current-badge danger">
+                                                        Khả nghi
+                                                    </span>
+
+                                                </div>
+
+                                                <span class="device-detail">
+                                                    Linux x86_64 / Headless Chrome Bot
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="user-cell">
+
+                                            <div class="user-avatar avatar-hl">
+                                                HTL
+                                            </div>
+
+                                            <div class="user-info">
+
+                                                <span class="user-name">
+                                                    Hoàng Thùy Linh
+                                                </span>
+
+                                                <span class="user-role">
+                                                    Tài khoản bị cố ý dò xét
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="ip-cell">
+
+                                            <span class="ip-address danger-text">
+                                                198.51.100.42
+                                            </span>
+
+                                            <span class="location danger-text">
+                                                <span class="material-symbols-outlined">
+                                                    public
+                                                </span>
+                                                Frankfurt, Đức (VPN / Tor Node)
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="activity-cell">
+
+                                            <span>
+                                                32 phút trước
+                                            </span>
+
+                                            <span class="activity-detail danger-text">
+                                                Bị chặn sau 5 lần nhập sai
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge danger">
+                                            <span class="material-symbols-outlined">
+                                                block
+                                            </span>
+
+                                            Đã chặn IP
+                                        </span>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="permanent-ban-button"
+                                            type="button"
+                                            id="permanentBanButton"
+                                        >
+                                            <span class="material-symbols-outlined">
+                                                gpp_bad
+                                            </span>
+
+                                            <span>
+                                                Cấm vĩnh viễn
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     KHỐI 03
+                ================================================== -->
+                <section class="security-section">
+
+                    <div class="section-header">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <span class="material-symbols-outlined">
+                                    receipt_long
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <div class="section-title-row">
+
+                                    <span class="block-label">
+                                        KHỐI 03
+                                    </span>
+
+                                    <span class="slash">
+                                        /
+                                    </span>
+
+                                    <h2>
+                                        Nhật ký bảo mật & Kiểm toán
+                                        (Audit Logs)
+                                    </h2>
+
+                                </div>
+
+                                <p>
+                                    Ghi nhận toàn văn vết kiểm toán không thể
+                                    xóa bỏ (Immutable Log) phục vụ tuân thủ
+                                    ISO/IEC 27001 và điều tra truy cứu an toàn.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="log-total">
+                            Tổng:
+                            <strong>3,420</strong>
+                            bản ghi
+                        </div>
+
+                    </div>
+
+
+                    <!-- Log toolbar -->
+                    <div class="log-toolbar">
+
+                        <div class="log-search">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+
+                            <input
+                                type="text"
+                                id="logSearch"
+                                placeholder="Tìm kiếm hành động, IP, tác nhân..."
+                            >
+
+                        </div>
+
+
+                        <div class="filter-wrapper">
+
+                            <select id="eventFilter">
+
+                                <option value="all">
+                                    Tất cả loại sự kiện
+                                </option>
+
+                                <option value="login">
+                                    Đăng nhập / Đăng xuất
+                                </option>
+
+                                <option value="password">
+                                    Đổi mật khẩu / 2FA
+                                </option>
+
+                                <option value="policy">
+                                    Cập nhật chính sách an ninh
+                                </option>
+
+                                <option value="permission">
+                                    Phân quyền Leader/Staff
+                                </option>
+
+                                <option value="download">
+                                    Tải tệp tin mật (Documents)
+                                </option>
+
+                                <option value="block">
+                                    Chặn IP & Cảnh báo an ninh
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+
+                        </div>
+
+
+                        <div class="filter-wrapper">
+
+                            <select id="userFilter">
+
+                                <option value="all">
+                                    Tất cả người dùng
+                                </option>
+
+                                <option value="leader">
+                                    Nguyễn Văn An (Leader)
+                                </option>
+
+                                <option value="binh">
+                                    Trần Thị Bình (Staff)
+                                </option>
+
+                                <option value="cuong">
+                                    Lê Minh Cường (Staff)
+                                </option>
+
+                                <option value="linh">
+                                    Hoàng Thùy Linh (Staff)
+                                </option>
+
+                                <option value="system">
+                                    Hệ thống tự động (Cron/Guard)
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="date-filter"
+                            type="button"
+                            id="dateFilterButton"
+                        >
+                            <span>
+                                Hôm nay
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                calendar_today
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Audit log table -->
+                    <div class="table-scroll">
+
+                        <table class="security-table audit-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Thời gian
+                                    </th>
+
+                                    <th>
+                                        Người dùng
+                                    </th>
+
+                                    <th>
+                                        Hành động bảo mật
+                                    </th>
+
+                                    <th>
+                                        Thiết bị & Trình duyệt
+                                    </th>
+
+                                    <th>
+                                        Địa chỉ IP
+                                    </th>
+
+                                    <th class="text-right">
+                                        Trạng thái
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="auditTableBody">
+
+                                <!-- Log 1 -->
+                                <tr
+                                    data-event="policy"
+                                    data-user="leader"
+                                    data-search="10:45:12 24/10/2024 Nguyễn Văn An leader.an@duan.vn cập nhật chính sách mật khẩu kéo dài thời hạn tái cấp từ 60 ngày lên 90 ngày Windows Chrome 118.69.182.45 thành công"
+                                >
+
+                                    <td class="time-cell">
+
+                                        <strong>
+                                            10:45:12
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar primary">
+                                                NA
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name">
+                                                    Nguyễn Văn An
+                                                </span>
+
+                                                <span class="audit-email">
+                                                    leader.an@duan.vn
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title">
+
+                                                <span class="material-symbols-outlined primary-icon">
+                                                    verified_user
+                                                </span>
+
+                                                <span>
+                                                    Cập nhật chính sách mật khẩu
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Kéo dài thời hạn tái cấp từ
+                                                60 ngày lên 90 ngày
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Windows 11 • Chrome 129
+                                    </td>
+
+                                    <td class="mono">
+                                        118.69.182.45
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status success">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+
+                                            Thành công
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Log 2 -->
+                                <tr
+                                    data-event="password"
+                                    data-user="binh"
+                                    data-search="10:14:03 24/10/2024 Trần Thị Bình binh.tt@duan.vn kích hoạt 2FA thành công đồng bộ mã Google Authenticator macOS Safari 14.161.22.89"
+                                >
+
+                                    <td class="time-cell">
+
+                                        <strong>
+                                            10:14:03
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar secondary">
+                                                TB
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name">
+                                                    Trần Thị Bình
+                                                </span>
+
+                                                <span class="audit-email">
+                                                    binh.tt@duan.vn
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title">
+
+                                                <span class="material-symbols-outlined primary-icon">
+                                                    lock_reset
+                                                </span>
+
+                                                <span>
+                                                    Kích hoạt 2FA thành công
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Đồng bộ mã qua Google Authenticator
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        macOS Sonoma • Safari 17
+                                    </td>
+
+                                    <td class="mono">
+                                        14.161.22.89
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status success">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+
+                                            Thành công
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Log 3 -->
+                                <tr
+                                    data-event="download"
+                                    data-user="cuong"
+                                    data-search="09:50:28 24/10/2024 Lê Minh Cường cuong.lm@duan.vn tải xuống tài liệu bảo mật PRJ-LIB-03 sơ đồ kiến trúc DB core iOS Mobile Safari 171.244.10.12"
+                                >
+
+                                    <td class="time-cell">
+
+                                        <strong>
+                                            09:50:28
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar high">
+                                                LC
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name">
+                                                    Lê Minh Cường
+                                                </span>
+
+                                                <span class="audit-email">
+                                                    cuong.lm@duan.vn
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title">
+
+                                                <span class="material-symbols-outlined outline-icon">
+                                                    download
+                                                </span>
+
+                                                <span>
+                                                    Tải xuống tài liệu bảo mật
+                                                    PRJ-LIB-03
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Tệp đính kèm: Sơ đồ kiến trúc DB
+                                                core (Mã hóa SHA-256)
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        iOS 17 • Mobile Safari
+                                    </td>
+
+                                    <td class="mono">
+                                        171.244.10.12
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status recorded">
+                                            <span class="material-symbols-outlined">
+                                                visibility
+                                            </span>
+
+                                            Đã ghi nhận
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Log 4 -->
+                                <tr
+                                    data-event="password"
+                                    data-user="linh"
+                                    data-search="09:22:04 24/10/2024 Hoàng Thùy Linh linh.ht@duan.vn phát hiện đăng nhập thất bại 3 lần nhập sai mật khẩu Windows Edge 42.116.14.78 cảnh báo"
+                                >
+
+                                    <td class="time-cell">
+
+                                        <strong>
+                                            09:22:04
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar high">
+                                                HL
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name">
+                                                    Hoàng Thùy Linh
+                                                </span>
+
+                                                <span class="audit-email">
+                                                    linh.ht@duan.vn
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title">
+
+                                                <span class="material-symbols-outlined outline-icon">
+                                                    password
+                                                </span>
+
+                                                <span>
+                                                    Phát hiện đăng nhập thất bại
+                                                    3 lần
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Nhập sai mật khẩu liên tiếp tại
+                                                cổng giao dịch Web
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Windows 10 • Edge 128
+                                    </td>
+
+                                    <td class="mono">
+                                        42.116.14.78
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status warning">
+                                            <span class="material-symbols-outlined">
+                                                warning
+                                            </span>
+
+                                            Cảnh báo
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Log 5 -->
+                                <tr
+                                    class="danger-log"
+                                    data-event="block"
+                                    data-user="system"
+                                    data-search="08:48:19 24/10/2024 IP Ngoại cảnh lạ tác nhân tự động dò quét chặn IP brute-force mật khẩu 198.51.100.42 Linux Python Requests Scraper bị chặn"
+                                >
+
+                                    <td class="time-cell danger-text">
+
+                                        <strong>
+                                            08:48:19
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar danger-avatar">
+                                                <span class="material-symbols-outlined">
+                                                    robot_2
+                                                </span>
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name danger-text">
+                                                    IP Ngoại cảnh lạ
+                                                </span>
+
+                                                <span class="audit-email danger-text">
+                                                    Tác nhân tự động dò quét
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title danger-text">
+
+                                                <span class="material-symbols-outlined">
+                                                    gpp_bad
+                                                </span>
+
+                                                <span>
+                                                    Chặn IP cố tình brute-force
+                                                    mật khẩu
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Khóa địa chỉ IP 198.51.100.42
+                                                trong 24 giờ
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Linux • Python Requests / Scraper
+                                    </td>
+
+                                    <td class="mono danger-text">
+                                        198.51.100.42
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status danger">
+                                            <span class="material-symbols-outlined">
+                                                block
+                                            </span>
+
+                                            Bị chặn
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Log 6 -->
+                                <tr
+                                    data-event="login"
+                                    data-user="leader"
+                                    data-search="08:15:30 24/10/2024 Nguyễn Văn An leader.an@duan.vn đăng nhập thành công Leader xác thực 2 lớp mã OTP Windows Chrome 118.69.182.45 thành công"
+                                >
+
+                                    <td class="time-cell">
+
+                                        <strong>
+                                            08:15:30
+                                        </strong>
+
+                                        <span>
+                                            24/10/2024
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="audit-user">
+
+                                            <div class="small-avatar primary">
+                                                NA
+                                            </div>
+
+                                            <div>
+
+                                                <span class="audit-user-name">
+                                                    Nguyễn Văn An
+                                                </span>
+
+                                                <span class="audit-email">
+                                                    leader.an@duan.vn
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="action-cell">
+
+                                            <div class="action-title">
+
+                                                <span class="material-symbols-outlined primary-icon">
+                                                    login
+                                                </span>
+
+                                                <span>
+                                                    Đăng nhập thành công
+                                                    (Leader)
+                                                </span>
+
+                                            </div>
+
+                                            <span class="action-description">
+                                                Xác thực 2 lớp mã OTP chuẩn xác
+                                                qua ứng dụng
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        Windows 11 • Chrome 129
+                                    </td>
+
+                                    <td class="mono">
+                                        118.69.182.45
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <span class="audit-status success">
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+
+                                            Thành công
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Empty state -->
+                    <div
+                        class="empty-state"
+                        id="auditEmptyState"
+                    >
+                        <span class="material-symbols-outlined">
+                            search_off
+                        </span>
+
+                        <h3>
+                            Không tìm thấy bản ghi
+                        </h3>
+
+                        <p>
+                            Không có nhật ký phù hợp với điều kiện tìm kiếm
+                            hiện tại.
+                        </p>
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="pagination-wrapper">
+
+                        <div class="pagination-info">
+                            Hiển thị
+                            <strong id="paginationStart">1 - 6</strong>
+                            trong tổng số
+                            <strong id="paginationTotal">3,420</strong>
+                            bản ghi sự kiện an ninh
+                        </div>
+
+                        <div class="pagination">
+
+                            <button
+                                class="page-button disabled"
+                                type="button"
+                                id="prevPage"
+                                disabled
+                            >
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+
+                            <button
+                                class="page-button active"
+                                type="button"
+                                data-page="1"
+                            >
+                                1
+                            </button>
+
+                            <button
+                                class="page-button"
+                                type="button"
+                                data-page="2"
+                            >
+                                2
+                            </button>
+
+                            <button
+                                class="page-button"
+                                type="button"
+                                data-page="3"
+                            >
+                                3
+                            </button>
+
+                            <span class="pagination-dots">
+                                ...
+                            </span>
+
+                            <button
+                                class="page-button"
+                                type="button"
+                                data-page="570"
+                            >
+                                570
+                            </button>
+
+                            <button
+                                class="page-button"
+                                type="button"
+                                id="nextPage"
+                            >
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+<script src="bao-mat.js"></script>
+
+</body>
+</html>

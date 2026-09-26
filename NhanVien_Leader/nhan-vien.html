@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Quản lý nhân viên - Project Management System">
+
+    <title>Quản lý nhân viên - Project Management System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="nhan-vien.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         SIDEBAR (CẬP NHẬT THEO HÌNH CẢNH CHI TIẾT)
+    ========================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-content">
+
+            <!-- Logo -->
+            <div class="sidebar-header">
+
+                <div class="logo-wrapper">
+
+                    <img
+                        class="logo-image"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1Xz3WPKPSeVvhF4-GMhIT7bEALEIV82ymnKBxOu2L0XLuGCKILJhF6KYq6JUVcVc_ZJeh5fAHlnDQwGH__vNpIsaZ6GEzNZMl2Y8SPMPiaK_yHNuiQOnAIPCpNyQQ2JZfCZRth9sPmVmya1yYg1X0I8Prbig_ndvnjZGJmv6LP0yb0VsTOBfMVxnGiszqUvarxX6J3dIh1O69BT01VizN67DEIr1lfJabA8kSFvl5iWt6YKNE2mhtyi9F4"
+                        alt="Project Management System Logo"
+                    >
+
+                    <div class="logo-text">
+                        <span class="logo-title">PROJECT MGMT</span>
+                        <span class="logo-subtitle">Hệ Thống Quản Trị</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Tổng quan -->
+                <div class="nav-group">
+
+                    <div class="nav-section-title">
+                        TỔNG QUAN
+                    </div>
+
+                    <a href="../TongQuan_Leader/dashboard.html" class="nav-item" data-path="tong-quan">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            grid_view
+                        </span>
+
+                        <span class="nav-text">Tổng quan</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Quản lý -->
+                <div class="nav-group">
+
+                    <div class="nav-section-title">
+                        QUẢN LÝ
+                    </div>
+
+                    <a href="nhan-vien.html"
+                       class="nav-item active"
+                       data-path="nhan-vien">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            badge
+                        </span>
+
+                        <span class="nav-text">Nhân viên</span>
+
+                    </a>
+
+
+                    <a href="../DuAn_Leader/du-an.html"
+                       class="nav-item"
+                       data-path="du-an">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            folder_managed
+                        </span>
+
+                        <span class="nav-text">Dự án</span>
+
+                    </a>
+
+
+                    <a href="../NhiemVu_Leader/nhiem-vu.html"
+                       class="nav-item"
+                       data-path="nhiem-vu">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            check_circle
+                        </span>
+
+                        <span class="nav-text">Nhiệm vụ</span>
+
+                    </a>
+
+
+                    <a href="../TaiNguyen_Leader/tai-nguyen.html"
+                       class="nav-item"
+                       data-path="tai-nguyen">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            inventory_2
+                        </span>
+
+                        <span class="nav-text">Tài nguyên</span>
+
+                    </a>
+
+
+                    <a href="../ThanhVien_Leader/thanh-vien.html"
+                       class="nav-item"
+                       data-path="thanh-vien-du-an">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            group
+                        </span>
+
+                        <span class="nav-text">Thành viên</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Theo dõi -->
+                <div class="nav-group">
+
+                    <div class="nav-section-title">
+                        THEO DÕI
+                    </div>
+
+
+                    <a href="../TienDo_Leader/tien-do.html"
+                       class="nav-item"
+                       data-path="tien-do-du-an">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            trending_up
+                        </span>
+
+                        <span class="nav-text">Tiến độ dự án</span>
+
+                    </a>
+
+
+                    <a href="../KhungThoiGian_Leader/khung-thoi-gian.html"
+                       class="nav-item"
+                       data-path="khung-thoi-gian">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            calendar_today
+                        </span>
+
+                        <span class="nav-text">Khung thời gian</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Hệ thống -->
+                <div class="nav-group">
+
+                    <div class="nav-section-title">
+                        HỆ THỐNG
+                    </div>
+
+
+                    <a href="../ThongBao_Leader/thong-bao.html"
+                       class="nav-item"
+                       data-path="thong-bao">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            notifications
+                        </span>
+
+                        <span class="nav-text">Thông báo</span>
+
+                    </a>
+
+
+                    <a href="../HoTro_Leader/ho-tro.html"
+                       class="nav-item"
+                       data-path="ho-tro">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            help
+                        </span>
+
+                        <span class="nav-text">Hỗ trợ</span>
+
+                    </a>
+
+
+                    <a href="../BaoMat_Leader/bao-mat.html"
+                       class="nav-item"
+                       data-path="bao-mat">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            shield
+                        </span>
+
+                        <span class="nav-text">Bảo mật</span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Tài khoản -->
+                <div class="nav-group">
+
+                    <div class="nav-section-title">
+                        TÀI KHOẢN
+                    </div>
+
+
+                    <a href="../index.html"
+                       class="nav-item logout-item"
+                       data-path="dang-xuat">
+
+                        <span class="material-symbols-outlined nav-icon">
+                            logout
+                        </span>
+
+                        <span class="nav-text">Đăng xuất</span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+        <!-- User Sidebar -->
+        <div class="sidebar-user">
+
+            <div class="sidebar-user-card">
+
+                <div class="sidebar-avatar">
+                    VA
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <span class="sidebar-user-name">
+                        Nguyễn Văn An
+                    </span>
+
+                    <span class="sidebar-user-role">
+                        Trưởng dự án / Leader
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN AREA
+    ========================================================== -->
+
+    <div class="main-wrapper">
+
+
+        <!-- =====================================================
+             TOPBAR
+        ====================================================== -->
+
+        <header class="topbar">
+
+            <div class="topbar-search">
+
+                <div class="global-search">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <input
+                        type="text"
+                        placeholder="Tìm kiếm công việc, dự án, tài nguyên, mã tài liệu..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <!-- Help -->
+                <button
+                    class="topbar-icon-button"
+                    type="button"
+                    title="Trợ giúp & Hướng dẫn"
+                >
+
+                    <span class="material-symbols-outlined">
+                        help_outline
+                    </span>
+
+                </button>
+
+
+                <!-- Notification -->
+                <button
+                    class="topbar-icon-button notification-button"
+                    type="button"
+                    title="Thông báo hệ thống"
+                >
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="topbar-divider"></div>
+
+
+                <!-- Account -->
+                <div class="topbar-account">
+
+                    <div class="topbar-avatar">
+
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+
+                    </div>
+
+                    <div class="topbar-account-info">
+
+                        <span class="topbar-name">
+                            Nguyễn Văn An
+                        </span>
+
+                        <span class="topbar-role">
+                            Quản trị hệ thống
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-outlined account-arrow">
+                        expand_more
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+
+        <main class="main-content">
+
+            <div class="content-container">
+
+
+                <!-- Breadcrumb -->
+                <div class="breadcrumb-row">
+
+                    <nav class="breadcrumb">
+
+                        <a href="#">
+
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+
+                            Trang chủ
+
+                        </a>
+
+                        <span class="breadcrumb-separator">
+                            /
+                        </span>
+
+                        <span>
+                            Quản lý
+                        </span>
+
+                        <span class="breadcrumb-separator">
+                            /
+                        </span>
+
+                        <span class="breadcrumb-current">
+                            Nhân viên
+                        </span>
+
+                    </nav>
+
+
+                    <div class="system-update">
+
+                        <span class="status-pulse"></span>
+
+                        Cập nhật hệ thống: 10:42 Hôm nay
+
+                    </div>
+
+                </div>
+
+
+                <!-- Page Header -->
+                <div class="page-header">
+
+                    <div class="page-title-area">
+
+                        <div class="page-title-row">
+
+                            <h1>
+                                Quản lý nhân viên
+                            </h1>
+
+                            <span class="page-code">
+                                LD-ADM01
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Quản lý thông tin, phân quyền và tài khoản nhân viên trong hệ thống doanh nghiệp
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-actions">
+
+                        <button
+                            class="button button-secondary"
+                            type="button"
+                            id="export-button"
+                        >
+
+                            <span class="material-symbols-outlined">
+                                file_download
+                            </span>
+
+                            <span>
+                                Xuất danh sách
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="button button-primary"
+                            type="button"
+                            id="open-add-modal"
+                        >
+
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+
+                            <span>
+                                Thêm nhân viên
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     KPI CARDS
+                ================================================== -->
+
+                <div class="kpi-grid">
+
+
+                    <!-- Card 1 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-info">
+
+                            <div class="kpi-label">
+                                Tổng nhân viên
+                            </div>
+
+                            <div class="kpi-value">
+                                48
+                            </div>
+
+                            <div class="kpi-description">
+
+                                <span class="kpi-positive">
+                                    +3
+                                </span>
+
+                                so với tháng trước
+
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <span class="material-symbols-outlined">
+                                group
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-info">
+
+                            <div class="kpi-label">
+                                Đang hoạt động
+                            </div>
+
+                            <div class="kpi-value">
+                                42
+                            </div>
+
+                            <div class="kpi-description">
+                                Tỷ lệ khả dụng 87.5%
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon">
+                            <span class="material-symbols-outlined">
+                                verified_user
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-info">
+
+                            <div class="kpi-label">
+                                Chờ kích hoạt
+                            </div>
+
+                            <div class="kpi-value">
+                                4
+                            </div>
+
+                            <div class="kpi-description">
+                                Cần phê duyệt email
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon kpi-icon-secondary">
+                            <span class="material-symbols-outlined">
+                                pending
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="kpi-card">
+
+                        <div class="kpi-info">
+
+                            <div class="kpi-label">
+                                Tạm khóa / Nghỉ
+                            </div>
+
+                            <div class="kpi-value">
+                                2
+                            </div>
+
+                            <div class="kpi-description">
+                                Chặn quyền truy cập
+                            </div>
+
+                        </div>
+
+                        <div class="kpi-icon kpi-icon-error">
+                            <span class="material-symbols-outlined">
+                                lock_person
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     SEARCH AND FILTER
+                ================================================== -->
+
+                <div class="filter-toolbar">
+
+
+                    <!-- Search -->
+                    <div class="employee-search">
+
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+
+                        <input
+                            type="text"
+                            id="employee-search"
+                            placeholder="Tìm kiếm theo tên, email, mã nhân viên..."
+                        >
+
+                    </div>
+
+
+                    <!-- Filters -->
+                    <div class="filter-group">
+
+
+                        <!-- Department -->
+                        <div class="select-wrapper">
+
+                            <select id="department-filter">
+
+                                <option value="">
+                                    Tất cả phòng ban
+                                </option>
+
+                                <option value="tech">
+                                    Phòng Công nghệ
+                                </option>
+
+                                <option value="design">
+                                    Phòng Thiết kế
+                                </option>
+
+                                <option value="product">
+                                    Phòng Sản phẩm
+                                </option>
+
+                                <option value="qa">
+                                    Phòng QA/Kiểm thử
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+
+                        <!-- Role -->
+                        <div class="select-wrapper">
+
+                            <select id="role-filter">
+
+                                <option value="">
+                                    Tất cả vai trò
+                                </option>
+
+                                <option value="leader">
+                                    Trưởng nhóm (Leader)
+                                </option>
+
+                                <option value="staff">
+                                    Nhân viên (Staff)
+                                </option>
+
+                                <option value="admin">
+                                    Quản trị viên
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+
+                        <!-- Status -->
+                        <div class="select-wrapper">
+
+                            <select id="status-filter">
+
+                                <option value="">
+                                    Tất cả trạng thái
+                                </option>
+
+                                <option value="active">
+                                    Đang hoạt động
+                                </option>
+
+                                <option value="suspended">
+                                    Tạm khóa
+                                </option>
+
+                                <option value="pending">
+                                    Chờ kích hoạt
+                                </option>
+
+                            </select>
+
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+
+                        </div>
+
+
+                        <!-- Reset -->
+                        <button
+                            class="reset-button"
+                            type="button"
+                            id="reset-filter"
+                            title="Làm mới bộ lọc"
+                        >
+
+                            <span class="material-symbols-outlined">
+                                restart_alt
+                            </span>
+
+                            <span class="reset-text">
+                                Làm mới
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     EMPLOYEE TABLE
+                ================================================== -->
+
+                <div class="table-card">
+
+                    <div class="table-wrapper">
+
+                        <table class="employee-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th class="stt-column">
+                                        STT
+                                    </th>
+
+                                    <th>
+                                        Nhân viên
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Số điện thoại
+                                    </th>
+
+                                    <th>
+                                        Phòng ban
+                                    </th>
+
+                                    <th>
+                                        Vai trò
+                                    </th>
+
+                                    <th>
+                                        Trạng thái
+                                    </th>
+
+                                    <th>
+                                        Ngày tham gia
+                                    </th>
+
+                                    <th class="action-column">
+                                        Thao tác
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="employee-table-body">
+
+
+                                <!-- ROW 1 -->
+
+                                <tr
+                                    data-department="tech"
+                                    data-role="leader"
+                                    data-status="active"
+                                >
+
+                                    <td class="text-center employee-number">
+                                        01
+                                    </td>
+
+                                    <td>
+
+                                        <div class="employee-info">
+
+                                            <img
+                                                class="employee-avatar-image"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH4I42QmJ1YGPnDgcrZfgJZJR-QLai4FLuXhBAcQrHEWzVHS8XcrgutDH65cnnekuTWrlVfLRZ0XvsihUnsT1sJ97JlRRQ2Tv4uCFBJsOsmuY5PDqic1sp3k-PyOIA_Wli9DfRwP6GD3UOXgA1F0XqXicyTRgjB2nrM_jGE9Co3aeggCt9SUbqCS10EtioLVpo3hyAuiVXsrjMZOzzo6_5ZRChdFn2NUV7RCpJbrlSQKSbnbFmG0yQkA"
+                                                alt="Nguyễn Văn An"
+                                            >
+
+                                            <div class="employee-name-wrapper">
+
+                                                <span class="employee-name">
+                                                    Nguyễn Văn An
+                                                </span>
+
+                                                <span class="employee-code">
+                                                    NV-001
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="muted-text">
+                                            an.nguyen@company.vn
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="phone-text">
+                                            0912 345 678
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <span class="department-badge department-tech">
+                                            Phòng Công nghệ
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="role-badge role-leader">
+
+                                            <span class="material-symbols-outlined">
+                                                stars
+                                            </span>
+
+                                            Trưởng nhóm (Leader)
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge status-active">
+
+                                            <span class="status-dot"></span>
+
+                                            Đang hoạt động
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="date-text">
+                                            15/01/2023
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-actions">
+
+                                            <button
+                                                class="action-button view-button"
+                                                type="button"
+                                                title="Xem chi tiết"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button edit-button"
+                                                type="button"
+                                                title="Chỉnh sửa"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button delete-button"
+                                                type="button"
+                                                title="Xóa nhân viên"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 2 -->
+
+                                <tr
+                                    data-department="design"
+                                    data-role="staff"
+                                    data-status="active"
+                                >
+
+                                    <td class="text-center employee-number">
+                                        02
+                                    </td>
+
+                                    <td>
+
+                                        <div class="employee-info">
+
+                                            <img
+                                                class="employee-avatar-image"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8xtKo-IeoVUQ6TBMlB0aEvy5c-8Xl4hHk9aYGIuoKP6J2lZsGMoA2GaiRGpdhhCoar0q-F2RZL-j95p8RUy7xXIoQSaPAdoOn65bdOUua3-y0i3K_fvVKmwivhmxEjM0UOoTc20VbgHZQWsbaDYeWmLC0uUBqO5g50-aucgdexMCg-CBBlkvC-o_TgLlu_ikiOVqkUdwfsEMuJcxdtnHfK16plNygSU0CmKqQOtQm7nNf5pFqqJbcKA"
+                                                alt="Trần Thị Bình"
+                                            >
+
+                                            <div class="employee-name-wrapper">
+
+                                                <span class="employee-name">
+                                                    Trần Thị Bình
+                                                </span>
+
+                                                <span class="employee-code">
+                                                    NV-002
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="muted-text">
+                                            binh.tran@company.vn
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="phone-text">
+                                            0987 654 321
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <span class="department-badge department-design">
+                                            Phòng Thiết kế
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="role-badge role-staff">
+                                            Nhân viên (Staff)
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge status-active">
+
+                                            <span class="status-dot"></span>
+
+                                            Đang hoạt động
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="date-text">
+                                            20/03/2023
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-actions">
+
+                                            <button
+                                                class="action-button view-button"
+                                                type="button"
+                                                title="Xem chi tiết"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button edit-button"
+                                                type="button"
+                                                title="Chỉnh sửa"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button delete-button"
+                                                type="button"
+                                                title="Xóa nhân viên"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 3 -->
+
+                                <tr
+                                    data-department="tech"
+                                    data-role="staff"
+                                    data-status="active"
+                                >
+
+                                    <td class="text-center employee-number">
+                                        03
+                                    </td>
+
+                                    <td>
+
+                                        <div class="employee-info">
+
+                                            <img
+                                                class="employee-avatar-image"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHaRQw5MLGX1x_jYvGJLe9ucY4IzcOYPgdd585apLm5HICBXNT6JvHRRJtcjrTejigeNtk6HV-pP7wL8QtTwaDwVXkWA4B2VyREM-ssrM1FZa9IXyfmZhvCA1mFPZf1SBaARm9WodaeYUCJRLC5rRbwbk-IOyk7VkONDtXIR1l4wKggQv1Q_cemf_qwyCnwHRriJ4oEbfew03iBa-15mFISB2mIKJiK--a7KuIO114GFFHzz6uPSjG_Q"
+                                                alt="Lê Minh Cường"
+                                            >
+
+                                            <div class="employee-name-wrapper">
+
+                                                <span class="employee-name">
+                                                    Lê Minh Cường
+                                                </span>
+
+                                                <span class="employee-code">
+                                                    NV-003
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="muted-text">
+                                            cuong.le@company.vn
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="phone-text">
+                                            0903 112 233
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <span class="department-badge department-tech">
+                                            Phòng Công nghệ
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="role-badge role-staff">
+                                            Nhân viên (Staff)
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge status-active">
+
+                                            <span class="status-dot"></span>
+
+                                            Đang hoạt động
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="date-text">
+                                            05/06/2023
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-actions">
+
+                                            <button
+                                                class="action-button view-button"
+                                                type="button"
+                                                title="Xem chi tiết"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button edit-button"
+                                                type="button"
+                                                title="Chỉnh sửa"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button delete-button"
+                                                type="button"
+                                                title="Xóa nhân viên"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 4 -->
+
+                                <tr
+                                    data-department="product"
+                                    data-role="staff"
+                                    data-status="active"
+                                >
+
+                                    <td class="text-center employee-number">
+                                        04
+                                    </td>
+
+                                    <td>
+
+                                        <div class="employee-info">
+
+                                            <div class="employee-avatar initials-avatar avatar-pn">
+                                                PN
+                                            </div>
+
+                                            <div class="employee-name-wrapper">
+
+                                                <span class="employee-name">
+                                                    Phạm Hoàng Nam
+                                                </span>
+
+                                                <span class="employee-code">
+                                                    NV-004
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="muted-text">
+                                            nam.pham@company.vn
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="phone-text">
+                                            0938 445 566
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <span class="department-badge department-product">
+                                            Phòng Sản phẩm
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="role-badge role-staff">
+                                            Nhân viên (Staff)
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge status-active">
+
+                                            <span class="status-dot"></span>
+
+                                            Đang hoạt động
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="date-text">
+                                            12/08/2023
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-actions">
+
+                                            <button
+                                                class="action-button view-button"
+                                                type="button"
+                                                title="Xem chi tiết"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button edit-button"
+                                                type="button"
+                                                title="Chỉnh sửa"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button delete-button"
+                                                type="button"
+                                                title="Xóa nhân viên"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 5 -->
+
+                                <tr
+                                    data-department="qa"
+                                    data-role="staff"
+                                    data-status="pending"
+                                >
+
+                                    <td class="text-center employee-number">
+                                        05
+                                    </td>
+
+                                    <td>
+
+                                        <div class="employee-info">
+
+                                            <div class="employee-avatar initials-avatar avatar-hl">
+                                                HL
+                                            </div>
+
+                                            <div class="employee-name-wrapper">
+
+                                                <span class="employee-name">
+                                                    Hoàng Thùy Linh
+                                                </span>
+
+                                                <span class="employee-code">
+                                                    NV-005
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="muted-text">
+                                            linh.hoang@company.vn
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        <span class="phone-text">
+                                            0977 889 900
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <span class="department-badge department-qa">
+                                            Phòng QA/Kiểm thử
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="role-badge role-staff">
+                                            Nhân viên (Staff)
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status-badge status-pending">
+
+                                            <span class="status-dot"></span>
+
+                                            Chờ kích hoạt
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+                                        <span class="date-text">
+                                            01/10/2024
+                                        </span>
+                                    </td>
+
+                                    <td>
+
+                                        <div class="table-actions">
+
+                                            <button
+                                                class="action-button resend-button"
+                                                type="button"
+                                                title="Gửi lại link kích hoạt"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    forward_to_inbox
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button view-button"
+                                                type="button"
+                                                title="Xem chi tiết"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    visibility
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button edit-button"
+                                                type="button"
+                                                title="Chỉnh sửa"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+
+                                            </button>
+
+                                            <button
+                                                class="action-button delete-button"
+                                                type="button"
+                                                title="Xóa nhân viên"
+                                            >
+
+                                                <span class="material-symbols-outlined">
+                                                    delete
+                                                </span>
+
+                                            </button>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="pagination-section">
+
+                        <span class="pagination-info">
+
+                            Hiển thị
+                            <strong id="pagination-from">1</strong>
+                            đến
+                            <strong id="pagination-to">5</strong>
+                            trong tổng số
+                            <strong id="pagination-total">48</strong>
+                            nhân viên
+
+                        </span>
+
+
+                        <div class="pagination">
+
+                            <button
+                                class="pagination-button disabled"
+                                id="previous-page"
+                                type="button"
+                                disabled
+                            >
+
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="pagination-button active"
+                                type="button"
+                                data-page="1"
+                            >
+                                1
+                            </button>
+
+
+                            <button
+                                class="pagination-button"
+                                type="button"
+                                data-page="2"
+                            >
+                                2
+                            </button>
+
+
+                            <button
+                                class="pagination-button"
+                                type="button"
+                                data-page="3"
+                            >
+                                3
+                            </button>
+
+
+                            <span class="pagination-dots">
+                                ...
+                            </span>
+
+
+                            <button
+                                class="pagination-button"
+                                type="button"
+                                data-page="10"
+                            >
+                                10
+                            </button>
+
+
+                            <button
+                                class="pagination-button"
+                                id="next-page"
+                                type="button"
+                            >
+
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================================
+         ADD EMPLOYEE MODAL
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="add-modal"
+    >
+
+        <div class="modal">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+
+                <div class="modal-header-left">
+
+                    <div class="modal-icon">
+
+                        <span class="material-symbols-outlined">
+                            person_add
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Thêm nhân viên mới
+                        </h3>
+
+                        <p>
+                            Tạo tài khoản và phân quyền truy cập hệ thống
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    id="close-add-modal"
+                >
+
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <div class="form-grid">
+
+
+                    <!-- Họ tên -->
+                    <div class="form-group">
+
+                        <label>
+                            Họ và tên
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <input
+                            id="employee-name-input"
+                            type="text"
+                            placeholder="Ví dụ: Nguyễn Văn Hoàng"
+                        >
+
+                    </div>
+
+
+                    <!-- Mã -->
+                    <div class="form-group">
+
+                        <label>
+                            Mã nhân viên
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <input
+                            id="employee-code-input"
+                            type="text"
+                            value="NV-049"
+                            class="readonly-input"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label>
+                            Email công việc
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <input
+                            id="employee-email-input"
+                            type="email"
+                            placeholder="hoang.nguyen@company.vn"
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label>
+                            Số điện thoại
+                        </label>
+
+                        <input
+                            id="employee-phone-input"
+                            type="text"
+                            placeholder="0912 xxx xxx"
+                        >
+
+                    </div>
+
+
+                    <!-- Department -->
+                    <div class="form-group">
+
+                        <label>
+                            Phòng ban
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <select id="employee-department-input">
+
+                            <option value="tech">
+                                Phòng Công nghệ
+                            </option>
+
+                            <option value="design">
+                                Phòng Thiết kế
+                            </option>
+
+                            <option value="product">
+                                Phòng Sản phẩm
+                            </option>
+
+                            <option value="qa">
+                                Phòng QA/Kiểm thử
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="form-group">
+
+                        <label>
+                            Vai trò phân quyền
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <select id="employee-role-input">
+
+                            <option value="staff">
+                                Nhân viên (Staff)
+                            </option>
+
+                            <option value="leader">
+                                Trưởng nhóm (Leader)
+                            </option>
+
+                            <option value="admin">
+                                Quản trị viên (Admin)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Send mail -->
+                <div class="send-mail-option">
+
+                    <input
+                        type="checkbox"
+                        id="send-mail"
+                        checked
+                    >
+
+                    <label for="send-mail">
+                        Gửi email kích hoạt tài khoản kèm mật khẩu tạm thời
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+
+                <button
+                    class="button button-cancel"
+                    type="button"
+                    id="cancel-add-modal"
+                >
+                    Hủy bỏ
+                </button>
+
+
+                <button
+                    class="button button-primary"
+                    type="button"
+                    id="confirm-add"
+                >
+
+                    <span class="material-symbols-outlined">
+                        check
+                    </span>
+
+                    Xác nhận thêm
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         VIEW DETAILS MODAL
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="view-modal"
+    >
+
+        <div class="modal">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+
+                <div class="modal-header-left">
+
+                    <div class="modal-icon">
+
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Chi tiết nhân viên
+                        </h3>
+
+                        <p>
+                            Thông tin hồ sơ và trạng thái nhân sự trong hệ thống
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    id="close-view-modal"
+                >
+
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <div class="view-profile-header">
+
+                    <div class="view-avatar-wrapper" id="view-avatar-container">
+                        <!-- Avatar render động bằng JS -->
+                    </div>
+
+                    <div class="view-profile-info">
+
+                        <h4 id="view-employee-name">
+                            --
+                        </h4>
+
+                        <span class="employee-code" id="view-employee-code">
+                            --
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-grid">
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Email công việc
+                        </span>
+
+                        <span class="detail-value" id="view-employee-email">
+                            --
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Số điện thoại
+                        </span>
+
+                        <span class="detail-value" id="view-employee-phone">
+                            --
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Phòng ban
+                        </span>
+
+                        <div id="view-employee-department">
+                            --
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Vai trò phân quyền
+                        </span>
+
+                        <div id="view-employee-role">
+                            --
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Trạng thái tài khoản
+                        </span>
+
+                        <div id="view-employee-status">
+                            --
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Ngày tham gia
+                        </span>
+
+                        <span class="detail-value" id="view-employee-date">
+                            --
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+
+                <button
+                    class="button button-cancel"
+                    type="button"
+                    id="close-view-btn"
+                >
+                    Đóng
+                </button>
+
+                <button
+                    class="button button-primary"
+                    type="button"
+                    id="switch-to-edit-btn"
+                >
+
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+
+                    Chỉnh sửa
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         EDIT EMPLOYEE MODAL
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="edit-modal"
+    >
+
+        <div class="modal">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+
+                <div class="modal-header-left">
+
+                    <div class="modal-icon">
+
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Chỉnh sửa thông tin nhân viên
+                        </h3>
+
+                        <p>
+                            Cập nhật thông tin hồ sơ và vai trò người dùng
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="modal-close"
+                    type="button"
+                    id="close-edit-modal"
+                >
+
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <div class="form-grid">
+
+                    <!-- Mã nhân viên -->
+                    <div class="form-group">
+
+                        <label>
+                            Mã nhân viên
+                        </label>
+
+                        <input
+                            id="edit-employee-code"
+                            type="text"
+                            class="readonly-input"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- Họ tên -->
+                    <div class="form-group">
+
+                        <label>
+                            Họ và tên
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <input
+                            id="edit-employee-name"
+                            type="text"
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label>
+                            Email công việc
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <input
+                            id="edit-employee-email"
+                            type="email"
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label>
+                            Số điện thoại
+                        </label>
+
+                        <input
+                            id="edit-employee-phone"
+                            type="text"
+                        >
+
+                    </div>
+
+
+                    <!-- Department -->
+                    <div class="form-group">
+
+                        <label>
+                            Phòng ban
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <select id="edit-employee-department">
+
+                            <option value="tech">
+                                Phòng Công nghệ
+                            </option>
+
+                            <option value="design">
+                                Phòng Thiết kế
+                            </option>
+
+                            <option value="product">
+                                Phòng Sản phẩm
+                            </option>
+
+                            <option value="qa">
+                                Phòng QA/Kiểm thử
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="form-group">
+
+                        <label>
+                            Vai trò phân quyền
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <select id="edit-employee-role">
+
+                            <option value="staff">
+                                Nhân viên (Staff)
+                            </option>
+
+                            <option value="leader">
+                                Trưởng nhóm (Leader)
+                            </option>
+
+                            <option value="admin">
+                                Quản trị viên (Admin)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Status -->
+                    <div class="form-group">
+
+                        <label>
+                            Trạng thái tài khoản
+                            <span class="required">
+                                *
+                            </span>
+                        </label>
+
+                        <select id="edit-employee-status">
+
+                            <option value="active">
+                                Đang hoạt động
+                            </option>
+
+                            <option value="pending">
+                                Chờ kích hoạt
+                            </option>
+
+                            <option value="suspended">
+                                Tạm khóa
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+
+                <button
+                    class="button button-cancel"
+                    type="button"
+                    id="cancel-edit-modal"
+                >
+                    Hủy bỏ
+                </button>
+
+
+                <button
+                    class="button button-primary"
+                    type="button"
+                    id="confirm-edit"
+                >
+
+                    <span class="material-symbols-outlined">
+                        save
+                    </span>
+
+                    Lưu thay đổi
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         TOAST
+    ========================================================== -->
+
+    <div
+        class="toast-notification hidden"
+        id="toast-notification"
+    >
+
+        <div class="toast-icon">
+
+            <span class="material-symbols-outlined">
+                check_circle
+            </span>
+
+        </div>
+
+        <div class="toast-content">
+
+            <span class="toast-title">
+                Thành công!
+            </span>
+
+            <span
+                class="toast-message"
+                id="toast-message"
+            >
+                Thao tác đã được thực hiện thành công.
+            </span>
+
+        </div>
+
+
+        <button
+            class="toast-close"
+            type="button"
+            id="toast-close"
+        >
+
+            <span class="material-symbols-outlined">
+                close
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="nhan-vien.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="shell-type" content="web_dashboard">
+
+    <title>Project Management System - Phân hệ Nhân viên</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="ho-so.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                <span class="material-symbols-outlined">task_alt</span>
+            </div>
+
+            <div class="brand-text">
+                <h1>Project Management</h1>
+                <span>PHÂN HỆ NHÂN VIÊN</span>
+            </div>
+        </div>
+
+        <div class="sidebar-profile">
+            <div class="profile-avatar" id="sidebar-avatar">
+                TB
+            </div>
+
+            <div class="profile-info">
+                <strong id="sidebar-user-name">Trần Thị Bình</strong>
+                <span id="sidebar-user-role">Nhân viên</span>
+            </div>
+
+            <span class="material-symbols-outlined profile-more">
+                more_vert
+            </span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <div class="nav-section">
+                <div class="nav-section-title">
+                    TỔNG QUAN
+                </div>
+
+                <a href="../TongQuan_Staff/tong-quan.html" class="nav-item">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span>Tổng quan</span>
+                </a>
+
+                <a href="../DuAn_Staff/du-an.html" class="nav-item">
+                    <span class="material-symbols-outlined">folder</span>
+                    <span>Dự án</span>
+                </a>
+
+                <a href="../NhiemVu_Staff/nhiem-vu.html" class="nav-item">
+                    <span class="material-symbols-outlined">task</span>
+                    <span>Nhiệm vụ</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">
+                    LÀM VIỆC
+                </div>
+
+                <a href="../TaiNguyen_Staff/tai-nguyen.html" class="nav-item">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    <span>Tài nguyên</span>
+                </a>
+
+                <a href="../ThongBao_Staff/thong-bao.html" class="nav-item">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span>Thông báo</span>
+                    <span class="notification-badge">3</span>
+                </a>
+
+                <a href="../YeuCau_Staff/yeu-cau.html" class="nav-item">
+                    <span class="material-symbols-outlined">forum</span>
+                    <span>Yêu cầu &amp; Thảo luận</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">
+                    TÀI KHOẢN
+                </div>
+
+                <a href="../HoSo_Staff/ho-so.html" class="nav-item active">
+                    <span class="material-symbols-outlined">person</span>
+                    <span>Hồ sơ cá nhân</span>
+                </a>
+                <a href="#" class="nav-item logout-item">
+                    <span class="material-symbols-outlined">logout</span>
+                    <span>Đăng xuất</span>
+                </a>
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                <span>Nhân viên</span>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <strong>Hồ sơ cá nhân</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button" type="button">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+
+                <button class="icon-button notification-button" type="button">
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="topbar-user">
+
+                    <div class="topbar-avatar" id="topbar-avatar">
+                        TB
+                    </div>
+
+                    <div class="topbar-user-info">
+                        <strong id="topbar-user-name">Trần Thị Bình</strong>
+                        <span id="topbar-user-role">Nhân viên</span>
+                    </div>
+
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="page-content">
+
+            <div class="page-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        HỒ SƠ NHÂN VIÊN
+                    </div>
+
+                    <h2>Hồ sơ cá nhân &amp; Kỹ năng</h2>
+
+                    <p>
+                        Quản lý thông tin cá nhân, kỹ năng và đánh giá hiệu suất
+                        của bạn trong hệ thống.
+                    </p>
+                </div>
+
+                <button class="primary-button" id="btn-edit-profile" type="button">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                    Chỉnh sửa hồ sơ
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE HEADER -->
+            <div class="profile-card">
+
+                <div class="profile-cover"></div>
+
+                <div class="profile-card-content">
+
+                    <div class="large-avatar" id="profile-large-avatar">
+                        TB
+                    </div>
+
+                    <div class="profile-main">
+
+                        <div class="profile-name-row">
+
+                            <div>
+                                <h3 id="profile-card-name">Trần Thị Bình</h3>
+
+                                <p id="profile-card-title">
+                                    Nhân viên phát triển dự án
+                                </p>
+                            </div>
+
+                            <span class="status-badge">
+                                <span class="status-dot"></span>
+                                Đang hoạt động
+                            </span>
+
+                        </div>
+
+                        <div class="profile-meta">
+
+                            <div class="meta-item">
+                                <span class="material-symbols-outlined">
+                                    badge
+                                </span>
+                                <span id="profile-card-code">ST-PRO01</span>
+                            </div>
+
+                            <div class="meta-item">
+                                <span class="material-symbols-outlined">
+                                    business
+                                </span>
+                                <span id="profile-card-dept">Phòng Dự án</span>
+                            </div>
+
+                            <div class="meta-item">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                                <span id="profile-card-email">binh.tran@example.com</span>
+                            </div>
+
+                            <div class="meta-item">
+                                <span class="material-symbols-outlined">
+                                    phone
+                                </span>
+                                <span id="profile-card-phone">0901 234 567</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TABS -->
+            <div class="tabs-wrapper">
+
+                <div class="tabs" role="tablist">
+
+                    <button
+                        type="button"
+                        class="tab-button active"
+                        data-tab="overview">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        Thông tin cá nhân
+                    </button>
+
+                    <button
+                        type="button"
+                        class="tab-button"
+                        data-tab="skills">
+                        <span class="material-symbols-outlined">
+                            psychology
+                        </span>
+                        Kỹ năng
+                    </button>
+
+                    <button
+                        type="button"
+                        class="tab-button"
+                        data-tab="history">
+                        <span class="material-symbols-outlined">
+                            history
+                        </span>
+                        Lịch sử đánh giá
+                    </button>
+
+                    <button
+                        type="button"
+                        class="tab-button"
+                        data-tab="resources">
+                        <span class="material-symbols-outlined">
+                            devices
+                        </span>
+                        Tài nguyên được cấp
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TAB: OVERVIEW -->
+            <div class="tab-panel active" id="overview">
+
+                <div class="content-grid">
+
+                    <section class="card">
+
+                        <div class="card-header">
+                            <div>
+                                <h3>Thông tin cá nhân</h3>
+                                <p>
+                                    Thông tin cơ bản của nhân viên.
+                                </p>
+                            </div>
+
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </div>
+
+                        <div class="info-grid">
+
+                            <div class="info-field">
+                                <span>Họ và tên</span>
+                                <strong id="info-fullname">Trần Thị Bình</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Mã nhân viên</span>
+                                <strong id="info-code">ST-PRO01</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Email</span>
+                                <strong id="info-email">binh.tran@example.com</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Số điện thoại</span>
+                                <strong id="info-phone">0901 234 567</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Phòng ban</span>
+                                <strong id="info-dept">Phòng Dự án</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Chức vụ</span>
+                                <strong id="info-position">Nhân viên</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Ngày tham gia</span>
+                                <strong id="info-join-date">15/03/2023</strong>
+                            </div>
+
+                            <div class="info-field">
+                                <span>Quản lý trực tiếp</span>
+                                <strong id="info-manager">Nguyễn Văn An</strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section class="card">
+
+                        <div class="card-header">
+                            <div>
+                                <h3>Giới thiệu</h3>
+                                <p>
+                                    Thông tin giới thiệu cá nhân.
+                                </p>
+                            </div>
+
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                        </div>
+
+                        <div class="about-text" id="about-text-container">
+                            <p>
+                                Tôi là nhân viên phát triển dự án với kinh
+                                nghiệm tham gia vào nhiều dự án phần mềm và
+                                quản lý công việc nhóm.
+                            </p>
+
+                            <p>
+                                Tôi yêu thích việc tổ chức công việc, phối hợp
+                                với các thành viên và tìm kiếm các giải pháp
+                                hiệu quả cho dự án.
+                            </p>
+                        </div>
+
+                        <div class="contact-list">
+
+                            <div class="contact-row">
+                                <span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                                <div>
+                                    <span>Địa chỉ</span>
+                                    <strong id="info-address">Cần Thơ, Việt Nam</strong>
+                                </div>
+                            </div>
+
+                            <div class="contact-row">
+                                <span class="material-symbols-outlined">
+                                    language
+                                </span>
+                                <div>
+                                    <span>Ngôn ngữ</span>
+                                    <strong id="info-languages">Tiếng Việt, English</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- PERFORMANCE -->
+                <section class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Tổng quan hiệu suất</h3>
+                            <p>
+                                Chỉ số hiệu suất gần nhất của bạn.
+                            </p>
+                        </div>
+
+                        <button class="text-button" type="button">
+                            Xem chi tiết
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div class="performance-grid">
+
+                        <div class="performance-item">
+
+                            <div class="performance-icon blue">
+                                <span class="material-symbols-outlined">
+                                    task_alt
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>Hoàn thành nhiệm vụ</span>
+                                <strong>94%</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-item">
+
+                            <div class="performance-icon green">
+                                <span class="material-symbols-outlined">
+                                    schedule
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>Đúng hạn</span>
+                                <strong>91%</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-item">
+
+                            <div class="performance-icon orange">
+                                <span class="material-symbols-outlined">
+                                    groups
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>Phối hợp nhóm</span>
+                                <strong>96%</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-item">
+
+                            <div class="performance-icon purple">
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>Điểm đánh giá</span>
+                                <strong>94/100</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- TAB: SKILLS -->
+            <div class="tab-panel" id="skills">
+
+                <div class="content-grid">
+
+                    <section class="card">
+
+                        <div class="card-header">
+                            <div>
+                                <h3>Kỹ năng chuyên môn</h3>
+                                <p>
+                                    Các kỹ năng đã được ghi nhận.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skills-list">
+
+                            <div class="skill-row">
+
+                                <div class="skill-title">
+                                    <strong>Quản lý dự án</strong>
+                                    <span>90%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width:90%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-title">
+                                    <strong>Lập kế hoạch</strong>
+                                    <span>92%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width:92%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-title">
+                                    <strong>Làm việc nhóm</strong>
+                                    <span>96%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width:96%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-title">
+                                    <strong>Giao tiếp</strong>
+                                    <span>88%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width:88%"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skill-row">
+
+                                <div class="skill-title">
+                                    <strong>Phân tích</strong>
+                                    <span>91%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width:91%"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section class="card">
+
+                        <div class="card-header">
+                            <div>
+                                <h3>Kỹ năng mềm</h3>
+                                <p>
+                                    Kỹ năng hỗ trợ công việc.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tag-list">
+
+                            <span class="skill-tag">Lãnh đạo</span>
+                            <span class="skill-tag">Thuyết trình</span>
+                            <span class="skill-tag">Giải quyết vấn đề</span>
+                            <span class="skill-tag">Tư duy phản biện</span>
+                            <span class="skill-tag">Quản lý thời gian</span>
+                            <span class="skill-tag">Làm việc nhóm</span>
+
+                        </div>
+
+                        <div class="skill-note">
+
+                            <span class="material-symbols-outlined">
+                                info
+                            </span>
+
+                            <p>
+                                Kỹ năng được cập nhật dựa trên đánh giá
+                                của quản lý và quá trình tham gia dự án.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <section class="card">
+
+                    <div class="card-header">
+                        <div>
+                            <h3>Chứng chỉ &amp; đào tạo</h3>
+                            <p>
+                                Các chương trình đào tạo đã hoàn thành.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="certificate-list">
+
+                        <div class="certificate-item">
+
+                            <div class="certificate-icon">
+                                <span class="material-symbols-outlined">
+                                    workspace_premium
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Project Management Fundamentals</strong>
+                                <span>2024 • Hoàn thành</span>
+                            </div>
+
+                            <span class="certificate-status">
+                                Đã cấp
+                            </span>
+
+                        </div>
+
+
+                        <div class="certificate-item">
+
+                            <div class="certificate-icon">
+                                <span class="material-symbols-outlined">
+                                    workspace_premium
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Agile &amp; Scrum</strong>
+                                <span>2024 • Hoàn thành</span>
+                            </div>
+
+                            <span class="certificate-status">
+                                Đã cấp
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- TAB: HISTORY -->
+            <div class="tab-panel" id="history">
+
+                <section class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Lịch sử đánh giá</h3>
+                            <p>
+                                Kết quả đánh giá hiệu suất theo từng kỳ.
+                            </p>
+                        </div>
+
+                        <button class="outline-button" type="button">
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                            Xuất báo cáo
+                        </button>
+
+                    </div>
+
+
+                    <div class="evaluation-highlight">
+
+                        <div class="evaluation-period">
+                            <span>Kỳ đánh giá</span>
+                            <strong>Q4 / 2024</strong>
+                        </div>
+
+                        <div class="evaluation-score">
+                            <strong>94</strong>
+                            <span>/ 100</span>
+                        </div>
+
+                        <div class="evaluation-rank">
+                            <span>Xếp loại</span>
+                            <strong>Hạng A</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Kỳ đánh giá</th>
+                                    <th>Người đánh giá</th>
+                                    <th>Hoàn thành</th>
+                                    <th>Đúng hạn</th>
+                                    <th>Điểm</th>
+                                    <th>Xếp loại</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Q4 / 2024</td>
+                                    <td>Nguyễn Văn An</td>
+                                    <td>94%</td>
+                                    <td>91%</td>
+                                    <td><strong>94</strong></td>
+                                    <td>
+                                        <span class="grade-badge">A</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Q3 / 2024</td>
+                                    <td>Nguyễn Văn An</td>
+                                    <td>92%</td>
+                                    <td>90%</td>
+                                    <td><strong>92</strong></td>
+                                    <td>
+                                        <span class="grade-badge">A</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Q2 / 2024</td>
+                                    <td>Nguyễn Văn An</td>
+                                    <td>89%</td>
+                                    <td>87%</td>
+                                    <td><strong>89</strong></td>
+                                    <td>
+                                        <span class="grade-badge">A</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Q1 / 2024</td>
+                                    <td>Nguyễn Văn An</td>
+                                    <td>86%</td>
+                                    <td>85%</td>
+                                    <td><strong>86</strong></td>
+                                    <td>
+                                        <span class="grade-badge">B+</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <section class="card">
+
+                    <div class="card-header">
+                        <div>
+                            <h3>Nhận xét gần nhất</h3>
+                            <p>
+                                Nhận xét từ quản lý trực tiếp.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+
+                        <div class="testimonial-avatar">
+                            NA
+                        </div>
+
+                        <div class="testimonial-content">
+
+                            <p>
+                                “Trần Thị Bình có tinh thần trách nhiệm cao,
+                                chủ động trong công việc và phối hợp tốt với
+                                các thành viên trong nhóm. Trong kỳ vừa qua,
+                                Bình đã hoàn thành tốt các nhiệm vụ được giao.”
+                            </p>
+
+                            <div class="testimonial-author">
+                                <strong>Nguyễn Văn An</strong>
+                                <span>Project Lead / Quản lý trực tiếp</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- TAB: RESOURCES -->
+            <div class="tab-panel" id="resources">
+
+                <section class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Thiết bị được cấp</h3>
+                            <p>
+                                Danh sách tài nguyên phần cứng đang sử dụng.
+                            </p>
+                        </div>
+
+                        <span class="resource-count">
+                            2 thiết bị
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-grid">
+
+                        <div class="resource-card">
+
+                            <div class="resource-image">
+                                <span class="material-symbols-outlined">
+                                    laptop_mac
+                                </span>
+                            </div>
+
+                            <div class="resource-body">
+
+                                <div class="resource-top">
+                                    <span class="resource-type">
+                                        LAPTOP
+                                    </span>
+
+                                    <span class="resource-status">
+                                        Đang sử dụng
+                                    </span>
+                                </div>
+
+                                <h4>MacBook Pro M3 Max 16-inch</h4>
+
+                                <p>
+                                    36GB RAM • 1TB SSD
+                                </p>
+
+                                <div class="resource-code">
+                                    <span>Mã tài sản</span>
+                                    <strong>AST-DEV-042</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resource-card">
+
+                            <div class="resource-image">
+                                <span class="material-symbols-outlined">
+                                    desktop_windows
+                                </span>
+                            </div>
+
+                            <div class="resource-body">
+
+                                <div class="resource-top">
+                                    <span class="resource-type">
+                                        MÀN HÌNH
+                                    </span>
+
+                                    <span class="resource-status">
+                                        Đang sử dụng
+                                    </span>
+                                </div>
+
+                                <h4>Dell UltraSharp 27&quot; 4K</h4>
+
+                                <p>
+                                    Ultra HD • USB-C
+                                </p>
+
+                                <div class="resource-code">
+                                    <span>Mã tài sản</span>
+                                    <strong>AST-MON-118</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Phần mềm &amp; bản quyền</h3>
+                            <p>
+                                Các phần mềm được cấp quyền sử dụng.
+                            </p>
+                        </div>
+
+                        <span class="resource-count">
+                            3 bản quyền
+                        </span>
+
+                    </div>
+
+
+                    <div class="software-list">
+
+                        <div class="software-item">
+
+                            <div class="software-icon figma">
+                                F
+                            </div>
+
+                            <div class="software-info">
+                                <strong>Figma Enterprise</strong>
+                                <span>Design Seat</span>
+                            </div>
+
+                            <span class="software-status">
+                                Đang hoạt động
+                            </span>
+
+                        </div>
+
+
+                        <div class="software-item">
+
+                            <div class="software-icon adobe">
+                                A
+                            </div>
+
+                            <div class="software-info">
+                                <strong>Adobe Creative Cloud</strong>
+                                <span>All Apps</span>
+                            </div>
+
+                            <span class="software-status">
+                                Đang hoạt động
+                            </span>
+
+                        </div>
+
+
+                        <div class="software-item">
+
+                            <div class="software-icon jira">
+                                J
+                            </div>
+
+                            <div class="software-info">
+                                <strong>Jira / Confluence Cloud</strong>
+                                <span>Standard License</span>
+                            </div>
+
+                            <span class="software-status">
+                                Đang hoạt động
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- MODAL CHỈNH SỬA HỒ SƠ -->
+<div class="modal-overlay" id="edit-profile-modal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h3>Chỉnh sửa thông tin cá nhân</h3>
+            <button class="modal-close" id="btn-close-modal" type="button">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        
+        <div class="modal-body">
+            <form id="edit-profile-form">
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="input-fullname">Họ và tên</label>
+                        <input type="text" id="input-fullname" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-title">Chức danh / Mô tả công việc</label>
+                        <input type="text" id="input-title" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-email">Email</label>
+                        <input type="email" id="input-email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-phone">Số điện thoại</label>
+                        <input type="text" id="input-phone" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-address">Địa chỉ</label>
+                        <input type="text" id="input-address" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-languages">Ngôn ngữ</label>
+                        <input type="text" id="input-languages" class="form-control">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="input-bio">Giới thiệu cá nhân</label>
+                        <textarea id="input-bio" class="form-control" rows="4"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <button class="outline-button" id="btn-cancel-modal" type="button">Hủy bỏ</button>
+            <button class="primary-button" id="btn-save-profile" type="button">
+                <span class="material-symbols-outlined">save</span>
+                Lưu thay đổi
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast-notification" id="toast-notification">
+    <span class="material-symbols-outlined">check_circle</span>
+    <span id="toast-message">Cập nhật thông tin thành công!</span>
+</div>
+
+
+<script src="ho-so.js"></script>
+
+</body>
+</html>

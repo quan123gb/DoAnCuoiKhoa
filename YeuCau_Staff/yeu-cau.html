@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Management System - Yêu cầu hỗ trợ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="yeu-cau.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-main">
+
+        <!-- USER -->
+        <div class="sidebar-profile">
+
+            <div class="profile-row">
+
+                <div class="avatar avatar-primary">
+                    TB
+                </div>
+
+                <div class="profile-info">
+                    <p class="profile-name">Trần Thị Bình</p>
+                    <p class="profile-role">
+                        NV-002 • UI/UX Designer
+                    </p>
+                </div>
+
+                <span
+                    class="online-dot"
+                    title="Trực tuyến">
+                </span>
+
+            </div>
+
+            <div class="project-tags">
+
+                <span class="project-label">
+                    Dự án:
+                </span>
+
+                <span class="project-tag">
+                    PRJ-HRM-02
+                </span>
+
+                <span class="project-tag">
+                    ECOMM-01
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-content">
+
+            <!-- TỔNG QUAN -->
+            <div class="menu-group">
+
+                <p class="menu-title">
+                    TỔNG QUAN
+                </p>
+
+                <nav class="menu-list">
+
+                    <a
+                        href="../TongQuan_Staff/tong-quan.html"
+                        class="menu-link"
+                        data-path="tong-quan-cua-toi">
+
+                        <span class="material-symbols-outlined">
+                            dashboard
+                        </span>
+
+                        <span>
+                            Tổng quan của tôi
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="../Lich_Staff/lich.html"
+                        class="menu-link"
+                        data-path="lich-lam-viec-va-deadline">
+
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+
+                        <span>
+                            Lịch làm việc &amp; Deadline
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <!-- CÔNG VIỆC -->
+            <div class="menu-group">
+
+                <p class="menu-title">
+                    CÔNG VIỆC CỦA TÔI
+                </p>
+
+                <nav class="menu-list">
+
+                    <a
+                        href="../NhiemVu_Staff/nhiem-vu.html"
+                        class="menu-link menu-link-badge"
+                        data-path="nhiem-vu-duoc-giao">
+
+                        <div class="menu-link-content">
+
+                            <span class="material-symbols-outlined">
+                                task_alt
+                            </span>
+
+                            <span>
+                                Nhiệm vụ được giao
+                            </span>
+
+                        </div>
+
+                        <span class="menu-badge">
+                            8
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="../DuAn_Staff/du-an.html"
+                        class="menu-link"
+                        data-path="du-an-tham-gia">
+
+                        <span class="material-symbols-outlined">
+                            folder_managed
+                        </span>
+
+                        <span>
+                            Dự án tham gia
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="../BaoCao_Staff/bao-cao.html"
+                        class="menu-link"
+                        data-path="bao-cao-tien-do">
+
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+
+                        <span>
+                            Báo cáo tiến độ
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="../TaiNguyen_Staff/tai-nguyen.html"
+                        class="menu-link"
+                        data-path="tai-nguyen-va-tai-lieu">
+
+                        <span class="material-symbols-outlined">
+                            folder_shared
+                        </span>
+
+                        <span>
+                            Tài nguyên &amp; Tài liệu
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <!-- TƯƠNG TÁC -->
+            <div class="menu-group">
+
+                <p class="menu-title">
+                    TƯƠNG TÁC &amp; HỖ TRỢ
+                </p>
+
+                <nav class="menu-list">
+
+                    <a
+                        href="../ThongBao_Staff/thong-bao.html"
+                        class="menu-link menu-link-badge"
+                        data-path="thong-bao-va-thao-luan">
+
+                        <div class="menu-link-content">
+
+                            <span class="material-symbols-outlined">
+                                forum
+                            </span>
+
+                            <span>
+                                Thông báo &amp; Thảo luận
+                            </span>
+
+                        </div>
+
+                        <span class="notification-dot"></span>
+
+                    </a>
+
+                    <a
+                        href="../YeuCau_Staff/yeu-cau.html"
+                        class="menu-link active"
+                        data-path="yeu-cau-ho-tro">
+
+                        <span class="material-symbols-outlined">
+                            contact_support
+                        </span>
+
+                        <span>
+                            Yêu cầu hỗ trợ
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ACCOUNT -->
+    <div class="sidebar-account">
+
+        <p class="menu-title">
+            TÀI KHOẢN
+        </p>
+
+        <nav class="menu-list">
+
+            <a
+                href="../HoSo_Staff/ho-so.html"
+                class="menu-link"
+                data-path="ho-so-va-ky-nang">
+
+                <span class="material-symbols-outlined">
+                    badge
+                </span>
+
+                <span>
+                    Hồ sơ &amp; Kỹ năng
+                </span>
+
+            </a>
+
+            <a
+                href="../DangXuat_Staff/dang-xuat.html"
+                class="menu-link logout-link"
+                data-path="dang-xuat">
+
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+
+                <span>
+                    Đăng xuất
+                </span>
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================================================
+     MOBILE OVERLAY
+========================================================= -->
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+<!-- =========================================================
+     MAIN WRAPPER
+========================================================= -->
+<div class="main-wrapper">
+
+    <!-- =====================================================
+         TOPBAR
+    ====================================================== -->
+    <header class="topbar">
+
+        <div class="topbar-left">
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                type="button"
+                title="Mở menu">
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+
+            </button>
+
+            <div class="brand-logo">
+                <div class="brand-mark">
+                    PM
+                </div>
+
+                <div class="brand-name">
+                    PROJECT MGMT
+                </div>
+
+                <span class="role-badge">
+                    NHÂN VIÊN DỰ ÁN
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="topbar-search">
+
+            <span class="material-symbols-outlined">
+                search
+            </span>
+
+            <input
+                id="globalSearch"
+                type="text"
+                placeholder="Tìm kiếm công việc của tôi, tài liệu, dự án..."
+            >
+
+        </div>
+
+
+        <!-- ACTIONS -->
+        <div class="topbar-actions">
+
+            <button
+                class="quick-report-btn"
+                id="quickReportBtn"
+                type="button">
+
+                <span class="material-symbols-outlined">
+                    add_circle
+                </span>
+
+                <span>
+                    Báo cáo nhanh
+                </span>
+
+            </button>
+
+            <div class="topbar-divider"></div>
+
+            <button
+                class="icon-btn"
+                id="helpBtn"
+                type="button"
+                title="Trợ giúp">
+
+                <span class="material-symbols-outlined">
+                    help
+                </span>
+
+            </button>
+
+            <button
+                class="icon-btn notification-btn"
+                id="notificationBtn"
+                type="button"
+                title="Thông báo">
+
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </button>
+
+            <div class="topbar-user">
+
+                <div class="topbar-user-info">
+
+                    <p>
+                        Trần Thị Bình
+                    </p>
+
+                    <span>
+                        <span class="small-online-dot"></span>
+                        Trực tuyến
+                    </span>
+
+                </div>
+
+                <div class="avatar avatar-primary avatar-small">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main class="main-content">
+
+        <div class="page-container">
+
+            <!-- =================================================
+                 BREADCRUMB + TITLE
+            ================================================== -->
+            <section class="page-header">
+
+                <nav class="breadcrumb">
+
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+
+                        Trang chủ
+                    </a>
+
+                    <span>/</span>
+
+                    <span>
+                        Phân hệ Nhân viên
+                    </span>
+
+                    <span>/</span>
+
+                    <span>
+                        Tương tác &amp; Hỗ trợ
+                    </span>
+
+                    <span>/</span>
+
+                    <strong>
+                        Yêu cầu hỗ trợ (ST-SUP01)
+                    </strong>
+
+                </nav>
+
+
+                <div class="title-action-row">
+
+                    <div class="page-title-area">
+
+                        <div class="page-title-line">
+
+                            <h1>
+                                Yêu cầu hỗ trợ &amp; Báo cáo sự cố
+                            </h1>
+
+                            <span class="code-badge">
+                                ST-SUP01
+                            </span>
+
+                            <span class="system-badge">
+                                Hệ thống tiếp nhận Ticket IT/Thiết bị/Dự án
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Cổng gửi phản ánh kỹ thuật, xin cấp quyền tài nguyên
+                            và theo dõi tiến trình xử lý SLA cho nhân viên dự án.
+                        </p>
+
+                    </div>
+
+
+                    <div class="header-actions">
+
+                        <button
+                            class="secondary-btn"
+                            id="faqBtn"
+                            type="button">
+
+                            <span class="material-symbols-outlined">
+                                menu_book
+                            </span>
+
+                            Hướng dẫn &amp; FAQ SLA
+
+                        </button>
+
+                        <button
+                            class="secondary-btn"
+                            id="historyBtn"
+                            type="button">
+
+                            <span class="material-symbols-outlined">
+                                history
+                            </span>
+
+                            Lịch sử xử lý
+
+                        </button>
+
+                        <button
+                            class="primary-btn"
+                            id="newTicketBtn"
+                            type="button">
+
+                            <span class="material-symbols-outlined">
+                                add_task
+                            </span>
+
+                            + Tạo yêu cầu hỗ trợ mới
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI
+            ================================================== -->
+            <section class="kpi-grid">
+
+                <!-- KPI 1 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Yêu cầu đang mở
+                            </span>
+
+                            <span class="kpi-value">
+                                03
+                            </span>
+                        </div>
+
+                        <div class="kpi-icon kpi-blue">
+
+                            <span class="material-symbols-outlined">
+                                confirmation_number
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span class="pulse-dot red"></span>
+
+                        <strong class="danger-text">
+                            01 Khẩn cấp
+                        </strong>
+
+                        <span>
+                            (SLA &lt; 2h), 02 Đang xử lý
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 2 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Thời gian xử lý TB
+                            </span>
+
+                            <span class="kpi-value">
+                                3.2
+                                <small>giờ</small>
+                            </span>
+                        </div>
+
+                        <div class="kpi-icon kpi-green">
+
+                            <span class="material-symbols-outlined">
+                                timelapse
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer green-text">
+
+                        <span class="material-symbols-outlined">
+                            trending_down
+                        </span>
+
+                        <strong>
+                            Nhanh hơn 28%
+                        </strong>
+
+                        <span class="muted">
+                            so với SLA (4.5h)
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 3 -->
+                <div class="kpi-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Đã giải quyết tháng này
+                            </span>
+
+                            <span class="kpi-value">
+                                11
+                            </span>
+                        </div>
+
+                        <div class="kpi-icon kpi-purple">
+
+                            <span class="material-symbols-outlined">
+                                verified
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <div class="stars">
+
+                            <span class="material-symbols-outlined filled">
+                                star
+                            </span>
+
+                            <span class="material-symbols-outlined filled">
+                                star
+                            </span>
+
+                            <span class="material-symbols-outlined filled">
+                                star
+                            </span>
+
+                            <span class="material-symbols-outlined filled">
+                                star
+                            </span>
+
+                            <span class="material-symbols-outlined filled">
+                                star
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            100% đánh giá 5 sao
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- KPI 4 -->
+                <div class="kpi-card warning-card">
+
+                    <div class="kpi-top">
+
+                        <div>
+                            <span class="kpi-label">
+                                Cần bạn phản hồi
+                            </span>
+
+                            <span class="kpi-value">
+                                01
+                            </span>
+                        </div>
+
+                        <div class="kpi-icon kpi-warning">
+
+                            <span class="material-symbols-outlined">
+                                notification_important
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer warning-text">
+
+                        <span class="pulse-dot amber"></span>
+
+                        <span>
+                            DevOps Lead đang chờ bạn kiểm thử
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 FILTER TOOLBAR
+            ================================================== -->
+            <section class="filter-card">
+
+                <div class="ticket-tabs">
+
+                    <button
+                        class="ticket-tab"
+                        data-tab="all"
+                        type="button">
+
+                        Tất cả yêu cầu
+
+                        <span>
+                            14
+                        </span>
+
+                    </button>
+
+                    <button
+                        class="ticket-tab active"
+                        data-tab="processing"
+                        type="button">
+
+                        Đang xử lý
+
+                        <span>
+                            3
+                        </span>
+
+                    </button>
+
+                    <button
+                        class="ticket-tab"
+                        data-tab="feedback"
+                        type="button">
+
+                        Cần bạn phản hồi
+
+                        <span class="tab-warning">
+                            1
+                        </span>
+
+                    </button>
+
+                    <button
+                        class="ticket-tab"
+                        data-tab="completed"
+                        type="button">
+
+                        Đã hoàn thành
+
+                        <span class="tab-success">
+                            10
+                        </span>
+
+                    </button>
+
+                    <button
+                        class="ticket-tab"
+                        data-tab="draft"
+                        type="button">
+
+                        Bản nháp
+
+                        <span class="tab-gray">
+                            1
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <div class="filter-grid">
+
+                    <div class="search-field">
+
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+
+                        <input
+                            id="ticketSearch"
+                            type="text"
+                            placeholder="Tìm theo mã ticket (TK-xxx), tiêu đề, người xử lý..."
+                        >
+
+                    </div>
+
+
+                    <select id="categoryFilter">
+                        <option value="">
+                            Tất cả danh mục hỗ trợ
+                        </option>
+
+                        <option value="access">
+                            Cấp quyền &amp; License
+                        </option>
+
+                        <option value="hardware">
+                            Thiết bị phần cứng
+                        </option>
+
+                        <option value="software">
+                            Lỗi kỹ thuật / Dự án
+                        </option>
+
+                        <option value="admin">
+                            Hành chính &amp; Vận hành
+                        </option>
+                    </select>
+
+
+                    <select id="priorityFilter">
+                        <option value="">
+                            Tất cả mức độ ưu tiên
+                        </option>
+
+                        <option value="p1">
+                            Khẩn cấp (P1)
+                        </option>
+
+                        <option value="p2">
+                            Mức cao (P2)
+                        </option>
+
+                        <option value="p3">
+                            Trung bình (P3)
+                        </option>
+
+                        <option value="p4">
+                            Mức thấp (P4)
+                        </option>
+                    </select>
+
+
+                    <select id="projectFilter">
+                        <option value="">
+                            Tất cả dự án liên quan
+                        </option>
+
+                        <option value="ecomm">
+                            PRJ-ECOMM-01
+                        </option>
+
+                        <option value="hrm">
+                            PRJ-HRM-02
+                        </option>
+
+                        <option value="internal">
+                            Nội bộ công ty
+                        </option>
+                    </select>
+
+
+                    <button
+                        class="refresh-btn"
+                        id="refreshBtn"
+                        type="button"
+                        title="Làm mới danh sách">
+
+                        <span class="material-symbols-outlined">
+                            refresh
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SPLIT VIEW
+            ================================================== -->
+            <section class="ticket-layout">
+
+                <!-- =============================================
+                     TICKET TABLE
+                ============================================== -->
+                <div class="ticket-list-card">
+
+                    <div class="ticket-list-header">
+
+                        <div class="ticket-list-title">
+
+                            <h2>
+                                Danh sách Ticket yêu cầu
+                            </h2>
+
+                            <span>
+                                Trang 1 / 3
+                            </span>
+
+                        </div>
+
+                        <div class="sort-box">
+
+                            <span>
+                                Sắp xếp theo:
+                            </span>
+
+                            <button
+                                type="button"
+                                id="sortBtn">
+
+                                Hạn SLA &amp; Ưu tiên
+
+                                <span class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table class="ticket-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Mã &amp; Tiêu đề Ticket
+                                    </th>
+
+                                    <th>
+                                        Dự án / Danh mục
+                                    </th>
+
+                                    <th class="text-center">
+                                        Ưu tiên
+                                    </th>
+
+                                    <th>
+                                        Trạng thái
+                                    </th>
+
+                                    <th>
+                                        Người xử lý
+                                    </th>
+
+                                    <th>
+                                        SLA Còn lại
+                                    </th>
+
+                                    <th class="text-right">
+                                        Thao tác
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="ticketTableBody">
+
+                                <!-- ROW 1 -->
+                                <tr
+                                    class="ticket-row"
+                                    data-id="TK-2025-089"
+                                    data-category="access"
+                                    data-priority="p1"
+                                    data-project="ecomm"
+                                    data-status="processing">
+
+                                    <td>
+
+                                        <div class="ticket-title-cell">
+
+                                            <span class="ticket-code">
+                                                TK-2025-089
+                                            </span>
+
+                                            <span class="ticket-title">
+                                                Nâng cấp Figma Enterprise &amp;
+                                                cấp 2 editor seats Sprint 4
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="project-category">
+
+                                            <strong>
+                                                PRJ-ECOMM-01
+                                            </strong>
+
+                                            <span>
+                                                License &amp; Bản quyền
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span class="priority priority-p1">
+                                            <i></i>
+                                            P1 - Khẩn cấp
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status status-processing">
+                                            Đang xử lý
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="assignee">
+
+                                            <div class="mini-avatar avatar-gray">
+                                                LN
+                                            </div>
+
+                                            <div>
+                                                <strong>
+                                                    Lê H. Nam
+                                                </strong>
+
+                                                <span>
+                                                    IT Helpdesk
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="sla danger-text">
+
+                                            <span class="material-symbols-outlined">
+                                                schedule
+                                            </span>
+
+                                            1h 45m
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="row-action view-ticket"
+                                            type="button"
+                                            data-ticket="TK-2025-089">
+
+                                            <span class="material-symbols-outlined">
+                                                visibility
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 2 -->
+                                <tr
+                                    class="ticket-row selected"
+                                    data-id="TK-2025-084"
+                                    data-category="software"
+                                    data-priority="p2"
+                                    data-project="ecomm"
+                                    data-status="feedback">
+
+                                    <td>
+
+                                        <div class="ticket-title-cell">
+
+                                            <div class="ticket-code-line">
+
+                                                <span class="ticket-code">
+                                                    TK-2025-084
+                                                </span>
+
+                                                <span class="viewing-badge">
+                                                    Đang xem
+                                                </span>
+
+                                            </div>
+
+                                            <span class="ticket-title bold">
+                                                Lỗi timeout Webhook Sandbox
+                                                MoMo/VNPAY staging
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="project-category">
+
+                                            <strong>
+                                                PRJ-ECOMM-01
+                                            </strong>
+
+                                            <span>
+                                                Vướng mắc kỹ thuật
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span class="priority priority-p2">
+                                            <i></i>
+                                            P2 - Cao
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status status-feedback">
+                                            <span class="material-symbols-outlined">
+                                                outgoing_mail
+                                            </span>
+
+                                            Chờ bạn phản hồi
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="assignee">
+
+                                            <div class="mini-avatar avatar-indigo">
+                                                DT
+                                            </div>
+
+                                            <div>
+                                                <strong>
+                                                    Đặng M. Tuấn
+                                                </strong>
+
+                                                <span>
+                                                    DevOps Lead
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="sla orange-text">
+
+                                            <span class="material-symbols-outlined">
+                                                timer
+                                            </span>
+
+                                            4h 30m
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="row-action primary-action view-ticket"
+                                            type="button"
+                                            data-ticket="TK-2025-084">
+
+                                            <span class="material-symbols-outlined">
+                                                edit_note
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 3 -->
+                                <tr
+                                    class="ticket-row"
+                                    data-id="TK-2025-078"
+                                    data-category="hardware"
+                                    data-priority="p3"
+                                    data-project="internal"
+                                    data-status="processing">
+
+                                    <td>
+
+                                        <div class="ticket-title-cell">
+
+                                            <span class="ticket-code">
+                                                TK-2025-078
+                                            </span>
+
+                                            <span class="ticket-title">
+                                                Đề nghị cấp màn hình rời
+                                                Dell UltraSharp 27" 4K test UI
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="project-category">
+
+                                            <strong>
+                                                Nội bộ công ty
+                                            </strong>
+
+                                            <span>
+                                                Thiết bị phần cứng
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span class="priority priority-p3">
+                                            <i></i>
+                                            P3 - Trung bình
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status status-processing">
+                                            Đã duyệt mua sắm
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="assignee">
+
+                                            <div class="mini-avatar avatar-green">
+                                                NH
+                                            </div>
+
+                                            <div>
+                                                <strong>
+                                                    Nguyễn T. Hà
+                                                </strong>
+
+                                                <span>
+                                                    Hành chính IT
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="sla">
+
+                                            <span class="material-symbols-outlined">
+                                                event
+                                            </span>
+
+                                            Hạn 22/06
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="row-action view-ticket"
+                                            type="button"
+                                            data-ticket="TK-2025-078">
+
+                                            <span class="material-symbols-outlined">
+                                                visibility
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ROW 4 -->
+                                <tr
+                                    class="ticket-row completed-row"
+                                    data-id="TK-2025-065"
+                                    data-category="access"
+                                    data-priority="p2"
+                                    data-project="hrm"
+                                    data-status="completed">
+
+                                    <td>
+
+                                        <div class="ticket-title-cell">
+
+                                            <span class="ticket-code muted-code">
+                                                TK-2025-065
+                                            </span>
+
+                                            <span class="ticket-title">
+                                                Cấp quyền GitHub Repo
+                                                Design-Tokens và PRJ-HRM-02
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="project-category">
+
+                                            <strong>
+                                                PRJ-HRM-02
+                                            </strong>
+
+                                            <span>
+                                                Cấp quyền truy cập
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-center">
+
+                                        <span class="priority priority-p2-gray">
+                                            P2 - Cao
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <span class="status status-completed">
+
+                                            <span class="material-symbols-outlined">
+                                                check
+                                            </span>
+
+                                            Đã hoàn thành
+
+                                        </span>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="assignee">
+
+                                            <div class="mini-avatar avatar-cyan">
+                                                DH
+                                            </div>
+
+                                            <div>
+                                                <strong>
+                                                    Đỗ Q. Hùng
+                                                </strong>
+
+                                                <span>
+                                                    DevOps Eng
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+
+                                        <div class="sla green-text">
+
+                                            <span class="material-symbols-outlined">
+                                                done_all
+                                            </span>
+
+                                            Đã xong (5★)
+
+                                        </div>
+
+                                    </td>
+
+                                    <td class="text-right">
+
+                                        <button
+                                            class="row-action"
+                                            type="button">
+
+                                            <span class="material-symbols-outlined">
+                                                rate_review
+                                            </span>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- PAGINATION -->
+                    <div class="table-footer">
+
+                        <span>
+                            Hiển thị
+                            <strong>4</strong>
+                            trên tổng số
+                            <strong>14</strong>
+                            yêu cầu hỗ trợ
+                        </span>
+
+                        <div class="pagination">
+
+                            <button type="button" disabled>
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+
+                            <button
+                                class="page-number active"
+                                type="button">
+                                1
+                            </button>
+
+                            <button
+                                class="page-number"
+                                type="button">
+                                2
+                            </button>
+
+                            <button
+                                class="page-number"
+                                type="button">
+                                3
+                            </button>
+
+                            <button type="button">
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     TICKET DETAIL
+                ============================================== -->
+                <aside class="ticket-detail-card">
+
+                    <div class="detail-header">
+
+                        <div class="detail-code-row">
+
+                            <span class="detail-code">
+                                TK-2025-084
+                            </span>
+
+                            <div class="detail-status-group">
+
+                                <span class="detail-priority">
+                                    P2 - Mức cao
+                                </span>
+
+                                <span class="detail-feedback">
+                                    Chờ bạn phản hồi
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <h3 id="detailTitle">
+                            Lỗi không kết nối được Webhook
+                            Sandbox MoMo/VNPAY môi trường staging
+                        </h3>
+
+
+                        <div class="detail-info-grid">
+
+                            <div>
+                                <span>
+                                    Người gửi:
+                                </span>
+
+                                <strong>
+                                    Trần Thị Bình (NV-002)
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Kỹ thuật viên:
+                                </span>
+
+                                <strong class="primary-text">
+                                    Đặng Minh Tuấn (DevOps)
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Dự án:
+                                </span>
+
+                                <strong>
+                                    PRJ-ECOMM-01
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Cam kết SLA:
+                                </span>
+
+                                <strong class="orange-text">
+                                    Còn 4h 30m
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIVITY -->
+                    <div class="activity-section">
+
+                        <div class="activity-heading">
+
+                            <span>
+                                TIẾN TRÌNH XỬ LÝ
+                            </span>
+
+                            <small>
+                                3 sự kiện ghi nhận
+                            </small>
+
+                        </div>
+
+
+                        <div class="timeline">
+
+                            <!-- EVENT 1 -->
+                            <div class="timeline-item">
+
+                                <div class="timeline-avatar avatar-primary-light">
+                                    TB
+                                </div>
+
+                                <div class="timeline-content">
+
+                                    <div class="timeline-head">
+
+                                        <strong>
+                                            Trần Thị Bình
+                                        </strong>
+
+                                        <span>
+                                            18/06 • 09:15
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Gửi yêu cầu kiểm tra webhook callback
+                                        của MoMo bị timeout liên tục ở bước
+                                        xác nhận đơn checkout trên Staging.
+                                    </p>
+
+                                    <div class="attachment">
+
+                                        <span class="material-symbols-outlined">
+                                            attachment
+                                        </span>
+
+                                        error_momo_timeout_log.png
+                                        (1.2 MB)
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EVENT 2 -->
+                            <div class="timeline-item">
+
+                                <div class="timeline-avatar avatar-system">
+
+                                    <span class="material-symbols-outlined">
+                                        smart_toy
+                                    </span>
+
+                                </div>
+
+                                <div class="timeline-content compact">
+
+                                    <div class="timeline-head">
+
+                                        <strong>
+                                            Hệ thống phân luồng Ticket
+                                        </strong>
+
+                                        <span>
+                                            18/06 • 09:40
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Tự động gán cho DevOps Team phụ trách
+                                        hạ tầng mạng. Anh Đặng Minh Tuấn đã tiếp nhận.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EVENT 3 -->
+                            <div class="timeline-item">
+
+                                <div class="timeline-avatar avatar-indigo">
+                                    DT
+                                </div>
+
+                                <div class="timeline-content warning">
+
+                                    <div class="timeline-head">
+
+                                        <strong>
+                                            Đặng Minh Tuấn (DevOps Lead)
+                                        </strong>
+
+                                        <span>
+                                            18/06 • 11:20
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        "Em đã whitelist dải IP MoMo Sandbox và
+                                        mở lại cổng firewall 8443 cho Staging Server
+                                        rồi nhé. Chị Bình thử chạy lại giao dịch mẫu
+                                        kiểm tra xem callback đã nhận được chưa
+                                        giúp em với!"
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESPONSE -->
+                    <div class="response-section">
+
+                        <label for="feedbackInput">
+                            Phản hồi của bạn (Trần Thị Bình):
+                        </label>
+
+                        <textarea
+                            id="feedbackInput"
+                            rows="3"
+                            placeholder="Nhập kết quả kiểm tra hoặc yêu cầu IT hỗ trợ thêm..."></textarea>
+
+
+                        <div class="response-actions">
+
+                            <button
+                                class="attach-btn"
+                                id="attachBtn"
+                                type="button">
+
+                                <span class="material-symbols-outlined">
+                                    attach_file
+                                </span>
+
+                                Đính kèm ảnh/log
+
+                            </button>
+
+                            <div class="response-buttons">
+
+                                <button
+                                    class="request-more-btn"
+                                    id="requestMoreBtn"
+                                    type="button">
+
+                                    Yêu cầu thêm
+
+                                </button>
+
+                                <button
+                                    class="close-ticket-btn"
+                                    id="closeTicketBtn"
+                                    type="button">
+
+                                    <span class="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+
+                                    Đã kiểm tra &amp; Đóng Ticket
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+
+            <!-- =================================================
+                 SUPPORT RESOURCES
+            ================================================== -->
+            <section class="support-grid">
+
+                <!-- EMERGENCY -->
+                <div class="support-card">
+
+                    <div class="support-card-header">
+
+                        <div class="support-icon emergency">
+
+                            <span class="material-symbols-outlined">
+                                support_agent
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Kênh hỗ trợ khẩn cấp 24/7
+                            </h4>
+
+                            <p>
+                                Khi phát sinh sự cố làm gián đoạn toàn bộ dự án
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="support-list">
+
+                        <div>
+                            <span>
+                                Hotline IT nội bộ:
+                            </span>
+
+                            <strong class="primary-text">
+                                Ext 102 (Nhánh 1)
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Kênh Slack trực chiến:
+                            </span>
+
+                            <strong>
+                                #internal-it-support
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Bàn hỗ trợ tại chỗ:
+                            </span>
+
+                            <strong>
+                                Phòng 302, Tòa nhà A
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLA -->
+                <div class="support-card">
+
+                    <div class="support-card-header">
+
+                        <div class="support-icon service">
+
+                            <span class="material-symbols-outlined">
+                                policy
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Cam kết chuẩn dịch vụ (SLA)
+                            </h4>
+
+                            <p>
+                                Quy định thời gian phản hồi theo cấp ưu tiên
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="sla-grid">
+
+                        <div>
+                            <span class="sla-p1">
+                                P1 - Khẩn cấp:
+                            </span>
+
+                            <strong>
+                                &lt; 2 giờ tiếp nhận
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span class="sla-p2">
+                                P2 - Mức cao:
+                            </span>
+
+                            <strong>
+                                &lt; 4 giờ làm việc
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span class="sla-p3">
+                                P3 - Tiêu chuẩn:
+                            </span>
+
+                            <strong>
+                                &lt; 24 giờ phản hồi
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                P4 - Mua sắm thiết bị:
+                            </span>
+
+                            <strong>
+                                &lt; 3 ngày làm việc
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ -->
+                <div class="support-card">
+
+                    <div class="support-card-header">
+
+                        <div class="support-icon faq">
+
+                            <span class="material-symbols-outlined">
+                                quiz
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Câu hỏi thường gặp (Quick FAQ)
+                            </h4>
+
+                            <p>
+                                Tự khắc phục các vướng mắc phổ biến
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-list">
+
+                        <a href="#" class="faq-link">
+
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                            </span>
+
+                            Cách tự cấp mới chứng chỉ VPN nội bộ khi hết hạn
+
+                        </a>
+
+                        <a href="#" class="faq-link">
+
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                            </span>
+
+                            Hướng dẫn đồng bộ SSO Google Workspace vào Figma
+
+                        </a>
+
+                        <a href="#" class="faq-link">
+
+                            <span class="material-symbols-outlined">
+                                arrow_right
+                            </span>
+
+                            Quy trình bàn giao và nghiệm thu thiết bị văn phòng
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+<div
+    class="toast"
+    id="toast">
+
+    <span
+        class="material-symbols-outlined"
+        id="toastIcon">
+        check_circle
+    </span>
+
+    <span id="toastMessage">
+        Thao tác thành công.
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     MODAL TẠO TICKET
+========================================================= -->
+<div
+    class="modal-overlay"
+    id="newTicketModal">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div>
+                <h3>
+                    Tạo yêu cầu hỗ trợ mới
+                </h3>
+
+                <p>
+                    Gửi yêu cầu IT, thiết bị hoặc hỗ trợ dự án.
+                </p>
+            </div>
+
+            <button
+                class="modal-close"
+                type="button"
+                data-close-modal>
+
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <form id="newTicketForm">
+
+            <div class="form-group">
+
+                <label>
+                    Tiêu đề yêu cầu
+                </label>
+
+                <input
+                    type="text"
+                    id="newTicketTitle"
+                    required
+                    placeholder="Nhập tiêu đề yêu cầu">
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+                        Danh mục
+                    </label>
+
+                    <select id="newTicketCategory">
+
+                        <option value="access">
+                            Cấp quyền &amp; License
+                        </option>
+
+                        <option value="hardware">
+                            Thiết bị phần cứng
+                        </option>
+
+                        <option value="software">
+                            Lỗi kỹ thuật / Dự án
+                        </option>
+
+                        <option value="admin">
+                            Hành chính &amp; Vận hành
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Mức độ ưu tiên
+                    </label>
+
+                    <select id="newTicketPriority">
+
+                        <option value="p1">
+                            P1 - Khẩn cấp
+                        </option>
+
+                        <option value="p2" selected>
+                            P2 - Cao
+                        </option>
+
+                        <option value="p3">
+                            P3 - Trung bình
+                        </option>
+
+                        <option value="p4">
+                            P4 - Thấp
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Dự án liên quan
+                </label>
+
+                <select id="newTicketProject">
+
+                    <option value="ecomm">
+                        PRJ-ECOMM-01
+                    </option>
+
+                    <option value="hrm">
+                        PRJ-HRM-02
+                    </option>
+
+                    <option value="internal">
+                        Nội bộ công ty
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Nội dung chi tiết
+                </label>
+
+                <textarea
+                    id="newTicketDescription"
+                    rows="4"
+                    required
+                    placeholder="Mô tả chi tiết vấn đề cần hỗ trợ..."></textarea>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    class="secondary-btn"
+                    type="button"
+                    data-close-modal>
+
+                    Hủy
+
+                </button>
+
+                <button
+                    class="primary-btn"
+                    type="submit">
+
+                    <span class="material-symbols-outlined">
+                        send
+                    </span>
+
+                    Gửi yêu cầu
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="yeu-cau.js"></script>
+
+</body>
+</html>

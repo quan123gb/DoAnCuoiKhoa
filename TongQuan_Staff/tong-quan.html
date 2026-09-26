@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="shell-type" content="web_dashboard">
+
+    <title>Tổng quan của tôi - Hệ Thống Quản Trị Dự Án</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Inter + Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="tong-quan.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-header">
+
+            <img
+                class="sidebar-logo"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqTj8QJ1dKxqL6Y6G7M8V7L8LxVxJ3vZ0bNQ7b2mKqT7gG4R4L8x9Y9gF9oK6nW7P7v4dX2rR4T3J5yZ1fX6G4sH8kM3bP6mV7uH2jL5qW4sN6dY3eA7rK9wP2sD5fG8hJ1kL4mN7qR0tU3wX6yZ9"
+                alt="Project Management Logo"
+                onerror="this.style.display='none';"
+            >
+
+            <div class="sidebar-brand">
+                <div class="sidebar-brand-title">
+                    PROJECT MGMT
+                </div>
+
+                <div class="sidebar-brand-subtitle">
+                    NHÂN VIÊN DỰ ÁN
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Role -->
+        <div class="sidebar-role">
+
+            <div class="sidebar-role-left">
+                <span class="sidebar-role-dot"></span>
+
+                <span class="sidebar-role-name">
+                    UI/UX Designer
+                </span>
+            </div>
+
+            <span class="sidebar-project-count">
+                2 Dự án
+            </span>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+
+            <!-- Tổng quan -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TỔNG QUAN
+                </div>
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a
+                            href="tong-quan.html"
+                            class="nav-item active"
+                            data-page="tong-quan"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    space_dashboard
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Tổng quan của tôi
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../Lich_Staff/lich.html"
+                            class="nav-item"
+                            data-page="lich-lam-viec"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Lịch làm việc &amp; Deadline
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Công việc -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    CÔNG VIỆC CỦA TÔI
+                </div>
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a
+                            href="../NhiemVu_Staff/nhiem-vu.html"
+                            class="nav-item"
+                            data-page="nhiem-vu"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    task_alt
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Nhiệm vụ được giao
+                            </span>
+
+                            <span class="nav-badge">
+                                8
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../DuAn_Staff/du-an.html"
+                            class="nav-item"
+                            data-page="du-an"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    folder_open
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Dự án tham gia
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../BaoCao_Staff/bao-cao.html"
+                            class="nav-item"
+                            data-page="bao-cao"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    monitoring
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Báo cáo tiến độ
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../TaiNguyen_Staff/tai-nguyen.html"
+                            class="nav-item"
+                            data-page="tai-nguyen"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    inventory_2
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Tài nguyên &amp; Tài liệu
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Tương tác -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TƯƠNG TÁC &amp; HỖ TRỢ
+                </div>
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a
+                            href="../ThongBao_Staff/thong-bao.html"
+                            class="nav-item"
+                            data-page="thong-bao"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    forum
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Thông báo &amp; Thảo luận
+                            </span>
+
+                            <span class="nav-notification-dot"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../YeuCau_Staff/yeu-cau.html"
+                            class="nav-item"
+                            data-page="yeu-cau"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    support_agent
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Yêu cầu hỗ trợ
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Tài khoản -->
+            <div class="nav-section">
+
+                <div class="nav-section-title">
+                    TÀI KHOẢN
+                </div>
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a
+                            href="../HoSo_Staff/ho-so.html"
+                            class="nav-item"
+                            data-page="ho-so"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    person
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Hồ sơ &amp; Kỹ năng
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="../index.html"
+                            class="nav-item logout-item"
+                            id="logoutButton"
+                        >
+                            <span class="nav-item-icon">
+                                <span class="material-symbols-outlined">
+                                    logout
+                                </span>
+                            </span>
+
+                            <span class="nav-item-text">
+                                Đăng xuất
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- User -->
+        <div class="sidebar-user">
+
+            <div class="sidebar-user-avatar">
+
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+
+                <span class="online-indicator"></span>
+
+            </div>
+
+            <div class="sidebar-user-info">
+
+                <div class="sidebar-user-name">
+                    Trần Thị Bình
+                </div>
+
+                <div class="sidebar-user-role">
+                    UI/UX Designer
+                </div>
+
+                <div class="sidebar-user-projects">
+
+                    <span class="sidebar-user-project">
+                        PRJ-ECOMM
+                    </span>
+
+                    <span class="sidebar-user-project">
+                        PRJ-HRM
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+    <div class="main-wrapper" id="mainWrapper">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <!-- Mobile menu -->
+                <button
+                    type="button"
+                    class="icon-button mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Mở menu"
+                >
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+
+
+                <!-- Search -->
+                <div class="top-search">
+
+                    <span class="material-symbols-outlined top-search-icon">
+                        search
+                    </span>
+
+                    <input
+                        type="search"
+                        id="globalSearch"
+                        placeholder="Tìm kiếm công việc của tôi, tài liệu, dự án..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button
+                    type="button"
+                    class="quick-report-button"
+                    id="quickReportButton"
+                >
+                    <span class="material-symbols-outlined">
+                        add_chart
+                    </span>
+
+                    <span>
+                        Báo cáo nhanh
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="icon-button"
+                    id="helpButton"
+                    title="Trợ giúp"
+                >
+                    <span class="material-symbols-outlined">
+                        help
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="icon-button notification-button"
+                    id="notificationButton"
+                    title="Thông báo"
+                >
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="top-notification-badge">
+                        3
+                    </span>
+                </button>
+
+
+                <div class="top-user">
+
+                    <div class="top-user-info">
+
+                        <div class="top-user-name">
+                            Trần Thị Bình
+                        </div>
+
+                        <div class="top-user-status">
+                            <span class="top-online-dot"></span>
+                            Đang hoạt động
+                        </div>
+
+                    </div>
+
+                    <div class="top-user-avatar">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+        <main class="main-content">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+
+                <a href="#">
+                    Trang chủ
+                </a>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <a href="#">
+                    Phân hệ Nhân viên
+                </a>
+
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+
+                <span class="breadcrumb-current">
+                    Tổng quan của tôi
+                </span>
+
+            </div>
+
+
+            <!-- Page Header -->
+            <section class="page-header">
+
+                <div class="page-header-content">
+
+                    <div class="page-title-row">
+
+                        <h1>
+                            Chào buổi sáng, Bình! 👋
+                        </h1>
+
+                        <span class="employee-badge">
+                            NV-002
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Theo dõi nhiệm vụ, tiến độ dự án và các hoạt động cần xử lý của bạn trong ngày hôm nay.
+                    </p>
+
+                </div>
+
+
+                <div class="page-header-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        id="exportReportButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            download
+                        </span>
+
+                        Xuất báo cáo cá nhân
+                    </button>
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="logWorkButton"
+                    >
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+
+                        Log giờ làm / Cập nhật
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 KPI
+            ================================================== -->
+            <section class="kpi-grid">
+
+
+                <!-- KPI 1 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-card-header">
+
+                        <div>
+                            <div class="kpi-label">
+                                NHIỆM VỤ ĐANG THỰC HIỆN
+                            </div>
+
+                            <div class="kpi-value">
+                                06
+                                <span>/ 12 được giao</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon blue">
+                            <span class="material-symbols-outlined">
+                                checklist
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span>
+                            3 ưu tiên cao • 2 đang review
+                        </span>
+
+                        <strong>
+                            85% đúng hẹn
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 2 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-card-header">
+
+                        <div>
+                            <div class="kpi-label">
+                                DEADLINE SẮP TỚI (48H)
+                            </div>
+
+                            <div class="kpi-value">
+                                02
+                            </div>
+
+                            <div class="kpi-subtext danger-text">
+                                Cần hoàn thành gấp
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon red">
+                            <span class="material-symbols-outlined">
+                                alarm
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span>
+                            UI Checkout: 17:00 hôm nay
+                        </span>
+
+                        <span class="urgent-badge">
+                            GẤP
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 3 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-card-header">
+
+                        <div>
+                            <div class="kpi-label">
+                                GIỜ LÀM VIỆC TUẦN NÀY
+                            </div>
+
+                            <div class="kpi-value">
+                                32.5
+                                <span>/ 40.0h (81%)</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon green">
+                            <span class="material-symbols-outlined">
+                                schedule
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-bar">
+                        <div
+                            class="progress-fill green-fill"
+                            style="width: 81%;"
+                        ></div>
+                    </div>
+
+                    <div class="kpi-footer">
+
+                        <span>
+                            Bình quân: 6.5h / ngày
+                        </span>
+
+                        <strong class="success-text">
+                            Đạt chuẩn KPI
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- KPI 4 -->
+                <article class="kpi-card">
+
+                    <div class="kpi-card-header">
+
+                        <div>
+                            <div class="kpi-label">
+                                DỰ ÁN ĐANG PHỤ TRÁCH
+                            </div>
+
+                            <div class="kpi-value">
+                                02
+                            </div>
+                        </div>
+
+                        <div class="kpi-icon purple">
+                            <span class="material-symbols-outlined">
+                                folder
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="kpi-projects">
+
+                        <span>
+                            PRJ-ECOMM
+                        </span>
+
+                        <span>
+                            PRJ-HRM
+                        </span>
+
+                    </div>
+
+                    <div class="kpi-footer">
+                        <span>
+                            Vai trò: Lead UI/UX
+                        </span>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =================================================
+                 WORKSPACE
+            ================================================== -->
+            <div class="workspace-grid">
+
+
+                <!-- =================================================
+                     LEFT COLUMN
+                ================================================== -->
+                <div class="workspace-left">
+
+
+                    <!-- =================================================
+                         SECTION A - TASKS
+                    ================================================== -->
+                    <section class="content-card">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <div class="section-title-row">
+
+                                    <h2>
+                                        Nhiệm vụ trọng tâm hôm nay
+                                    </h2>
+
+                                    <span class="count-badge">
+                                        4 cần xử lý
+                                    </span>
+
+                                </div>
+
+                                <p class="section-description">
+                                    Các nhiệm vụ cần ưu tiên hoàn thành hoặc cập nhật trong ngày.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="icon-button small"
+                                title="Tùy chọn"
+                            >
+                                <span class="material-symbols-outlined">
+                                    more_horiz
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <!-- Task tabs -->
+                        <div class="task-tabs" id="taskTabs">
+
+                            <button
+                                type="button"
+                                class="task-tab active"
+                                data-filter="all"
+                            >
+                                Tất cả
+                                <span>(6)</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="task-tab"
+                                data-filter="urgent"
+                            >
+                                Cần làm ngay
+                                <span>(2)</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="task-tab"
+                                data-filter="review"
+                            >
+                                Đang review
+                                <span>(2)</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="task-tab"
+                                data-filter="done"
+                            >
+                                Đã xong
+                                <span>(1)</span>
+                            </button>
+
+                        </div>
+
+
+                        <!-- Task list -->
+                        <div class="task-list" id="taskList">
+
+
+                            <!-- Task 1 -->
+                            <article
+                                class="task-card urgent-task"
+                                data-status="urgent"
+                                data-search="Hoàn thiện UI Kit Component Checkout 1 bước Figma PRJ ECOMM"
+                            >
+
+                                <div class="task-check">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-checkbox"
+                                        aria-label="Hoàn thành nhiệm vụ"
+                                    >
+
+                                </div>
+
+                                <div class="task-main">
+
+                                    <div class="task-top-row">
+
+                                        <div class="task-meta">
+
+                                            <span class="deadline urgent">
+                                                <span class="material-symbols-outlined">
+                                                    schedule
+                                                </span>
+
+                                                Hôm nay, 17:00
+                                            </span>
+
+                                            <span class="project-tag">
+                                                PRJ-ECOMM-01
+                                            </span>
+
+                                            <span class="task-type">
+                                                Figma
+                                            </span>
+
+                                        </div>
+
+                                        <span class="priority-badge">
+                                            ƯU TIÊN CAO
+                                        </span>
+
+                                    </div>
+
+                                    <h3 class="task-title">
+                                        Hoàn thiện UI Kit &amp; Component Checkout 1-bước
+                                    </h3>
+
+                                    <div class="task-info-row">
+
+                                        <span>
+                                            17 / 20 Artboards hoàn tất
+                                        </span>
+
+                                        <span>
+                                            Còn 5 giờ 30 phút
+                                        </span>
+
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <div class="progress-track">
+                                            <div
+                                                class="progress-fill"
+                                                style="width: 85%;"
+                                            ></div>
+                                        </div>
+
+                                        <span>
+                                            85%
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="task-actions">
+
+                                    <button
+                                        type="button"
+                                        class="task-action-button"
+                                        data-action="edit"
+                                    >
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+
+                                        Sửa
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="task-action-button primary"
+                                        data-action="review"
+                                    >
+                                        Nộp Review
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Task 2 -->
+                            <article
+                                class="task-card"
+                                data-status="urgent"
+                                data-search="Thiết kế Responsive Mobile App Đơn xin nghỉ phép PRJ HRM"
+                            >
+
+                                <div class="task-check">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-checkbox"
+                                        aria-label="Hoàn thành nhiệm vụ"
+                                    >
+
+                                </div>
+
+                                <div class="task-main">
+
+                                    <div class="task-top-row">
+
+                                        <div class="task-meta">
+
+                                            <span class="deadline">
+                                                <span class="material-symbols-outlined">
+                                                    schedule
+                                                </span>
+
+                                                Ngày mai, 12:00
+                                            </span>
+
+                                            <span class="project-tag">
+                                                PRJ-HRM-02
+                                            </span>
+
+                                            <span class="task-type">
+                                                Mobile UI
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <h3 class="task-title">
+                                        Thiết kế Responsive Mobile App phân hệ Đơn xin nghỉ phép
+                                    </h3>
+
+                                    <div class="task-info-row">
+
+                                        <span>
+                                            3 / 5 Luồng màn hình hoàn tất
+                                        </span>
+
+                                        <span>
+                                            Cập nhật 2h trước
+                                        </span>
+
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <div class="progress-track">
+                                            <div
+                                                class="progress-fill"
+                                                style="width: 60%;"
+                                            ></div>
+                                        </div>
+
+                                        <span>
+                                            60%
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="task-actions">
+
+                                    <button
+                                        type="button"
+                                        class="task-action-button primary"
+                                        data-action="continue"
+                                    >
+                                        Tiếp tục làm
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Task 3 -->
+                            <article
+                                class="task-card"
+                                data-status="review"
+                                data-search="Kiểm tra Design QA Frontend Team Sprint 14 Review PRJ ECOMM"
+                            >
+
+                                <div class="task-check">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-checkbox"
+                                        aria-label="Hoàn thành nhiệm vụ"
+                                    >
+
+                                </div>
+
+                                <div class="task-main">
+
+                                    <div class="task-top-row">
+
+                                        <div class="task-meta">
+
+                                            <span class="deadline">
+                                                <span class="material-symbols-outlined">
+                                                    calendar_today
+                                                </span>
+
+                                                15/06/2025
+                                            </span>
+
+                                            <span class="project-tag">
+                                                PRJ-ECOMM-01
+                                            </span>
+
+                                            <span class="task-type">
+                                                Review &amp; QA
+                                            </span>
+
+                                        </div>
+
+                                        <span class="review-badge">
+                                            ĐANG REVIEW
+                                        </span>
+
+                                    </div>
+
+                                    <h3 class="task-title">
+                                        Kiểm tra Design QA với Frontend Team (Sprint 14 Review)
+                                    </h3>
+
+                                    <div class="task-info-row">
+
+                                        <span>
+                                            Phối hợp cùng Lead Đỗ Quốc Hùng
+                                        </span>
+
+                                        <span>
+                                            4 bug giao diện tồn đọng
+                                        </span>
+
+                                    </div>
+
+                                    <div class="task-progress">
+
+                                        <div class="progress-track">
+                                            <div
+                                                class="progress-fill warning-fill"
+                                                style="width: 30%;"
+                                            ></div>
+                                        </div>
+
+                                        <span>
+                                            30%
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="task-actions">
+
+                                    <button
+                                        type="button"
+                                        class="task-action-button"
+                                        data-action="qa"
+                                    >
+                                        Chi tiết QA
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Task 4 -->
+                            <article
+                                class="task-card"
+                                data-status="review"
+                                data-search="Prototype Thanh toán VNPay MoMo PRJ ECOMM"
+                            >
+
+                                <div class="task-check">
+
+                                    <input
+                                        type="checkbox"
+                                        class="task-checkbox"
+                                        aria-label="Hoàn thành nhiệm vụ"
+                                    >
+
+                                </div>
+
+                                <div class="task-main">
+
+                                    <div class="task-top-row">
+
+                                        <div class="task-meta">
+
+                                            <span class="deadline">
+                                                <span class="material-symbols-outlined">
+                                                    calendar_today
+                                                </span>
+
+                                                18/06/2025
+                                            </span>
+
+                                            <span class="project-tag">
+                                                PRJ-ECOMM-01
+                                            </span>
+
+                                            <span class="task-type">
+                                                Wireframe &amp; Proto
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <h3 class="task-title">
+                                        Cập nhật Prototype luồng Thanh toán VNPay &amp; MoMo
+                                    </h3>
+
+                                    <div class="task-waiting">
+
+                                        <span class="material-symbols-outlined">
+                                            hourglass_top
+                                        </span>
+
+                                        Đang chờ duyệt từ Leader Nguyễn Văn An
+
+                                    </div>
+
+                                </div>
+
+                                <div class="task-actions">
+
+                                    <span class="waiting-badge">
+                                        Chờ Feedback
+                                    </span>
+
+                                    <button
+                                        type="button"
+                                        class="icon-button small"
+                                        title="Tùy chọn"
+                                    >
+                                        <span class="material-symbols-outlined">
+                                            more_vert
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <!-- Task footer -->
+                        <div class="section-footer">
+
+                            <span id="taskFooterText">
+                                Hiển thị 4 trong số 12 nhiệm vụ đang kích hoạt
+                            </span>
+
+                            <a href="#" id="allTasksLink">
+                                Xem toàn bộ nhiệm vụ được giao (12 task)
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         SECTION B - PROJECTS
+                    ================================================== -->
+                    <section class="content-card">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <h2>
+                                    Tiến độ các dự án tham gia
+                                </h2>
+
+                                <p class="section-description">
+                                    Tổng quan tiến độ dự án và phần việc bạn đang phụ trách.
+                                </p>
+
+                            </div>
+
+                            <a
+                                href="#"
+                                class="text-link"
+                                id="allProjectsLink"
+                            >
+                                Xem tất cả
+                                <span class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                            </a>
+
+                        </div>
+
+
+                        <div class="project-grid">
+
+
+                            <!-- Project 1 -->
+                            <article
+                                class="project-card"
+                                data-search="PRJ ECOMM Sàn TMĐT Đa kênh Nguyễn Văn An"
+                            >
+
+                                <div class="project-card-top">
+
+                                    <div>
+
+                                        <span class="project-code">
+                                            PRJ-ECOMM-01
+                                        </span>
+
+                                        <h3>
+                                            Sàn TMĐT Đa kênh
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="project-status active">
+                                        Đang thực hiện
+                                    </span>
+
+                                </div>
+
+                                <div class="project-stage">
+                                    Sprint 4/6
+                                </div>
+
+                                <div class="project-manager">
+
+                                    <div class="manager-avatar">
+                                        NA
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            Nguyễn Văn An
+                                        </span>
+
+                                        <small>
+                                            PM
+                                        </small>
+                                    </div>
+
+                                </div>
+
+                                <div class="project-progress-header">
+
+                                    <span>
+                                        Tiến độ tổng thể
+                                    </span>
+
+                                    <strong>
+                                        75%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track large">
+                                    <div
+                                        class="progress-fill"
+                                        style="width: 75%;"
+                                    ></div>
+                                </div>
+
+                                <div class="personal-progress">
+
+                                    <span>
+                                        Phần việc cá nhân
+                                    </span>
+
+                                    <strong>
+                                        14/16 (87.5%)
+                                    </strong>
+
+                                </div>
+
+                                <div class="project-deadline">
+
+                                    <span class="material-symbols-outlined">
+                                        event
+                                    </span>
+
+                                    Deadline nghiệm thu Sprint 4:
+                                    <strong>
+                                        15/06/2025
+                                    </strong>
+
+                                </div>
+
+                                <a href="#" class="project-link">
+                                    Vào dự án
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+                                </a>
+
+                            </article>
+
+
+                            <!-- Project 2 -->
+                            <article
+                                class="project-card"
+                                data-search="PRJ HRM Cổng Quản trị Nhân sự Đãi ngộ Trần Thị Mai"
+                            >
+
+                                <div class="project-card-top">
+
+                                    <div>
+
+                                        <span class="project-code">
+                                            PRJ-HRM-02
+                                        </span>
+
+                                        <h3>
+                                            Cổng Quản trị Nhân sự &amp; Đãi ngộ
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="project-status active">
+                                        Đang thực hiện
+                                    </span>
+
+                                </div>
+
+                                <div class="project-stage">
+                                    Giai đoạn Thiết kế v1.2
+                                </div>
+
+                                <div class="project-manager">
+
+                                    <div class="manager-avatar purple-avatar">
+                                        TM
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            Trần Thị Mai
+                                        </span>
+
+                                        <small>
+                                            PM
+                                        </small>
+                                    </div>
+
+                                </div>
+
+                                <div class="project-progress-header">
+
+                                    <span>
+                                        Tiến độ tổng thể
+                                    </span>
+
+                                    <strong>
+                                        45%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-track large">
+                                    <div
+                                        class="progress-fill"
+                                        style="width: 45%;"
+                                    ></div>
+                                </div>
+
+                                <div class="personal-progress">
+
+                                    <span>
+                                        Phần việc cá nhân
+                                    </span>
+
+                                    <strong>
+                                        6/10 (60%)
+                                    </strong>
+
+                                </div>
+
+                                <div class="project-deadline">
+
+                                    <span class="material-symbols-outlined">
+                                        event
+                                    </span>
+
+                                    Deadline bàn giao:
+                                    <strong>
+                                        28/06/2025
+                                    </strong>
+
+                                </div>
+
+                                <a href="#" class="project-link">
+                                    Vào dự án
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+                                </a>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- =================================================
+                     RIGHT COLUMN
+                ================================================== -->
+                <div class="workspace-right">
+
+
+                    <!-- =================================================
+                         SECTION C - TODAY
+                    ================================================== -->
+                    <section class="content-card">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <h2>
+                                    Lịch hôm nay
+                                </h2>
+
+                                <p class="section-description">
+                                    Thứ Tư, 11/06/2025
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="icon-button small"
+                            >
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <div class="timeline">
+
+
+                            <!-- Event 1 -->
+                            <div class="timeline-item completed">
+
+                                <div class="timeline-time">
+                                    09:00
+                                    <span>09:30</span>
+                                </div>
+
+                                <div class="timeline-line">
+
+                                    <span class="timeline-dot"></span>
+
+                                </div>
+
+                                <div class="timeline-content">
+
+                                    <div class="timeline-title">
+                                        Daily Standup
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        PRJ-ECOMM-01
+                                    </div>
+
+                                    <div class="timeline-description">
+                                        Phòng họp A2 • Google Meet
+                                    </div>
+
+                                </div>
+
+                                <span class="completed-icon material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+                            </div>
+
+
+                            <!-- Event 2 -->
+                            <div class="timeline-item current">
+
+                                <div class="timeline-time">
+                                    10:30
+                                    <span>11:30</span>
+                                </div>
+
+                                <div class="timeline-line">
+
+                                    <span class="timeline-dot"></span>
+
+                                </div>
+
+                                <div class="timeline-content">
+
+                                    <div class="timeline-title">
+                                        Design Critique với Leader &amp; PM
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        PRJ-ECOMM-01
+                                    </div>
+
+                                    <div class="timeline-description">
+                                        Review chi tiết luồng Checkout 1-bước
+                                    </div>
+
+                                </div>
+
+                                <span class="live-badge">
+                                    ĐANG DIỄN RA
+                                </span>
+
+                            </div>
+
+
+                            <!-- Event 3 -->
+                            <div class="timeline-item">
+
+                                <div class="timeline-time">
+                                    14:00
+                                    <span>15:00</span>
+                                </div>
+
+                                <div class="timeline-line">
+
+                                    <span class="timeline-dot"></span>
+
+                                </div>
+
+                                <div class="timeline-content">
+
+                                    <div class="timeline-title">
+                                        Đồng bộ hóa Design Tokens
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        PRJ-ECOMM-01
+                                    </div>
+
+                                    <div class="timeline-description">
+                                        Cùng Frontend Lead Đỗ Quốc Hùng
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Event 4 -->
+                            <div class="timeline-item">
+
+                                <div class="timeline-time">
+                                    16:30
+                                    <span>17:00</span>
+                                </div>
+
+                                <div class="timeline-line">
+
+                                    <span class="timeline-dot"></span>
+
+                                </div>
+
+                                <div class="timeline-content">
+
+                                    <div class="timeline-title">
+                                        Log Timesheet &amp; Báo cáo cuối ngày
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        Công việc cá nhân
+                                    </div>
+
+                                    <div class="timeline-description">
+                                        Cập nhật ERP nội bộ
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="outline-full-button"
+                            id="addScheduleButton"
+                        >
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+
+                            Thêm lịch hẹn / Xin vắng mặt
+                        </button>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         SECTION D - NOTIFICATIONS
+                    ================================================== -->
+                    <section class="content-card">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <h2>
+                                    Thông báo &amp; Phản hồi
+                                </h2>
+
+                                <p class="section-description">
+                                    Các cập nhật mới liên quan đến công việc của bạn.
+                                </p>
+
+                            </div>
+
+                            <span class="unread-count">
+                                8 chưa đọc
+                            </span>
+
+                        </div>
+
+
+                        <div class="notification-list">
+
+
+                            <!-- Notification 1 -->
+                            <article class="notification-item">
+
+                                <div class="notification-icon success">
+
+                                    <span class="material-symbols-outlined">
+                                        check_circle
+                                    </span>
+
+                                </div>
+
+                                <div class="notification-content">
+
+                                    <div class="notification-text">
+                                        Leader Nguyễn Văn An đã duyệt
+                                        <strong>
+                                            "Homepage Redesign v2"
+                                        </strong>
+                                    </div>
+
+                                    <div class="notification-meta">
+                                        15 phút trước • PRJ-ECOMM-01
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Notification 2 -->
+                            <article class="notification-item">
+
+                                <div class="notification-icon info">
+
+                                    <span class="material-symbols-outlined">
+                                        chat
+                                    </span>
+
+                                </div>
+
+                                <div class="notification-content">
+
+                                    <div class="notification-text">
+                                        Đỗ Quốc Hùng đã nhắc bạn với bình luận:
+                                        <strong>
+                                            "File Figma thiếu hover state nút Thanh toán"
+                                        </strong>
+                                    </div>
+
+                                    <div class="notification-meta">
+                                        1 giờ trước • PRJ-ECOMM-01
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Notification 3 -->
+                            <article class="notification-item">
+
+                                <div class="notification-icon warning">
+
+                                    <span class="material-symbols-outlined">
+                                        warning
+                                    </span>
+
+                                </div>
+
+                                <div class="notification-content">
+
+                                    <div class="notification-text">
+                                        Vui lòng log timesheet trước
+                                        <strong>
+                                            Thứ Sáu 17:30
+                                        </strong>
+                                    </div>
+
+                                    <div class="notification-meta">
+                                        Hôm qua • Hệ thống HR
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+
+                        <a href="#" class="section-bottom-link" id="allNotificationsLink">
+                            Xem tất cả thông báo (8 chưa đọc)
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </a>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         SECTION E - RESOURCES
+                    ================================================== -->
+                    <section class="content-card">
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <h2>
+                                    Tài nguyên thường dùng
+                                </h2>
+
+                                <p class="section-description">
+                                    Các công cụ và tài liệu bạn thường xuyên sử dụng.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="resource-list">
+
+
+                            <a href="#" class="resource-item">
+
+                                <div class="resource-icon figma">
+                                    <span class="material-symbols-outlined">
+                                        design_services
+                                    </span>
+                                </div>
+
+                                <div class="resource-content">
+
+                                    <strong>
+                                        Figma Team
+                                    </strong>
+
+                                    <span>
+                                        Design Specs
+                                    </span>
+
+                                </div>
+
+                                <span class="material-symbols-outlined resource-arrow">
+                                    open_in_new
+                                </span>
+
+                            </a>
+
+
+                            <a href="#" class="resource-item">
+
+                                <div class="resource-icon drive">
+                                    <span class="material-symbols-outlined">
+                                        folder_shared
+                                    </span>
+                                </div>
+
+                                <div class="resource-content">
+
+                                    <strong>
+                                        Drive Dự Án
+                                    </strong>
+
+                                    <span>
+                                        Tài liệu PRD
+                                    </span>
+
+                                </div>
+
+                                <span class="material-symbols-outlined resource-arrow">
+                                    open_in_new
+                                </span>
+
+                            </a>
+
+
+                            <a href="#" class="resource-item">
+
+                                <div class="resource-icon token">
+                                    <span class="material-symbols-outlined">
+                                        palette
+                                    </span>
+                                </div>
+
+                                <div class="resource-content">
+
+                                    <strong>
+                                        Design Tokens
+                                    </strong>
+
+                                    <span>
+                                        Thư viện UI Kit
+                                    </span>
+
+                                </div>
+
+                                <span class="material-symbols-outlined resource-arrow">
+                                    open_in_new
+                                </span>
+
+                            </a>
+
+
+                            <a href="#" class="resource-item">
+
+                                <div class="resource-icon support">
+                                    <span class="material-symbols-outlined">
+                                        support_agent
+                                    </span>
+                                </div>
+
+                                <div class="resource-content">
+
+                                    <strong>
+                                        Hỗ trợ IT
+                                    </strong>
+
+                                    <span>
+                                        Gửi Ticket
+                                    </span>
+
+                                </div>
+
+                                <span class="material-symbols-outlined resource-arrow">
+                                    open_in_new
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+
+        <span
+            class="material-symbols-outlined"
+            id="toastIcon"
+        >
+            check_circle
+        </span>
+
+        <span id="toastMessage">
+            Thao tác thành công.
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL
+    ====================================================== -->
+    <div
+        class="modal-overlay"
+        id="modalOverlay"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <div class="modal-header">
+
+                <div>
+                    <h2 id="modalTitle">
+                        Báo cáo nhanh
+                    </h2>
+
+                    <p id="modalDescription">
+                        Cập nhật nhanh tình hình công việc của bạn.
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    class="icon-button small"
+                    id="modalCloseButton"
+                    aria-label="Đóng"
+                >
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <div class="form-group">
+
+                    <label for="modalStatus">
+                        Trạng thái hôm nay
+                    </label>
+
+                    <select id="modalStatus">
+                        <option value="normal">
+                            Đang làm việc bình thường
+                        </option>
+
+                        <option value="busy">
+                            Đang xử lý nhiều nhiệm vụ
+                        </option>
+
+                        <option value="blocked">
+                            Có công việc đang bị chặn
+                        </option>
+
+                        <option value="complete">
+                            Đã hoàn thành công việc chính
+                        </option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="modalNote">
+                        Nội dung cập nhật
+                    </label>
+
+                    <textarea
+                        id="modalNote"
+                        rows="5"
+                        placeholder="Nhập nội dung cập nhật..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="secondary-button"
+                    id="modalCancelButton"
+                >
+                    Hủy
+                </button>
+
+                <button
+                    type="button"
+                    class="primary-button"
+                    id="modalSaveButton"
+                >
+                    <span class="material-symbols-outlined">
+                        save
+                    </span>
+
+                    Lưu cập nhật
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="tong-quan.js" defer></script>
+
+</body>
+</html>
